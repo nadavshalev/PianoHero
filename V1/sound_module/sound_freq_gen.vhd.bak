@@ -1,0 +1,43 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity TURBO is
+	port( RESETN, CLK, TURBO_in : in std_logic;
+			OneSec, duty50	   	  : out std_logic );
+end entity;
+
+architecture arc_freq_dev_turbo of TURBO is
+	signal one_sec_flag, duty_flag	 : std_logic ; 
+begin
+
+
+	process(CLK,RESETN, TURBO_in)
+		variable one_sec: integer ;
+	   --constant sec: integer := 100000000 ; -- for Real operation 
+		constant sec: integer := 300 ; -- for simulation 
+		constant turbo_num : integer := 100;
+		constant step_num : integer := 10;
+	begin
+		if RESETN = '0' then
+			one_sec := 0 ;
+			one_sec_flag <= '0' ;
+		elsif rising_edge(CLK) then
+			if (TURBO_in = '1' and sec > turbo_num) then
+				one_sec := one_sec + turbo_num ;
+			else
+				one_sec := one_sec + step_num ;
+			end if;
+			if (one_sec > sec) then
+				one_sec_flag <= '1' ;
+				one_sec := 0 ;
+				duty_flag <= not(duty_flag);
+			else
+				one_sec_flag <= '0';
+			end if;
+		end if;
+	end process;
+
+	OneSec <= one_sec_flag;
+	duty50 <= duty_flag;
+
+end arc_freq_dev_turbo;
