@@ -18,20 +18,20 @@ begin
 process(clk,resetN)
 begin
 	if resetN = '0' then
-		--NoteLength_in <= 0;
+		NoteLength_out <= 0;
+	elsif(rising_edge(CLK)) then
+		start1 <= '0';
+		start2 <= '0';
+		start3 <= '0';
 		if NoteLength_in > 0 then
 			NoteLength_out <= NoteLength_in;
-			if ObjectStart1 > 480 then
+			if ObjectStart1 >= 480 then
 				start1 <= '1';
-			elsif ObjectStart2 > 480 then
+			elsif ObjectStart2 >= 480 then
 				start2 <= '1';
-			elsif ObjectStart3 > 480 then
+			elsif ObjectStart3 >= 480 then
 				start3 <= '1';
 			end if;
-		else
-			start1 <= '0';
-			start2 <= '0';
-			start3 <= '0';
 		end if;
 	end if;
 end process;

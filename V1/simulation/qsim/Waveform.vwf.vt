@@ -19,64 +19,71 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "08/27/2018 14:41:30"
+// Generated on "08/27/2018 18:39:55"
                                                                                 
-// Verilog Test Bench (with test vectors) for design :                          testSong
+// Verilog Test Bench (with test vectors) for design :                          addr_counter
 // 
 // Simulation tool : 3rd Party
 // 
 
 `timescale 1 ps/ 1 ps
-module testSong_vlg_vec_tst();
+module addr_counter_vlg_vec_tst();
 // constants                                           
 // general purpose registers
-reg CLK;
+reg CLK_IN;
+reg en;
+reg en1;
 reg resetN;
-reg screen_end;
 // wires                                               
+wire [7:0] addr;
 wire finish;
-wire [31:0] note_length;
 
 // assign statements (if any)                          
-testSong i1 (
+addr_counter i1 (
 // port map - connection between master ports and signals/registers   
-	.CLK(CLK),
+	.addr(addr),
+	.CLK_IN(CLK_IN),
+	.en(en),
+	.en1(en1),
 	.finish(finish),
-	.note_length(note_length),
-	.resetN(resetN),
-	.screen_end(screen_end)
+	.resetN(resetN)
 );
 initial 
 begin 
 #1000000 $finish;
 end 
 
-// CLK
+// CLK_IN
 always
 begin
-	CLK = 1'b0;
-	CLK = #100 1'b1;
-	#100;
+	CLK_IN = 1'b0;
+	CLK_IN = #1000 1'b1;
+	#1000;
+end 
+
+// en
+always
+begin
+	en = 1'b0;
+	en = #19000 1'b1;
+	#1000;
+end 
+
+// en1
+initial
+begin
+	en1 = 1'b0;
+	en1 = #40000 1'b1;
+	en1 = #30000 1'b0;
+	en1 = #630000 1'b1;
+	en1 = #220000 1'b0;
 end 
 
 // resetN
 initial
 begin
 	resetN = 1'b0;
-	resetN = #20000 1'b1;
-end 
-
-// screen_end
-initial
-begin
-	repeat(1666)
-	begin
-		screen_end = 1'b0;
-		screen_end = #300 1'b1;
-		# 300;
-	end
-	screen_end = 1'b0;
-	screen_end = #300 1'b1;
+	resetN = #10000 1'b1;
 end 
 endmodule
 

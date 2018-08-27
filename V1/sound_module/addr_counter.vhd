@@ -22,28 +22,33 @@ END addr_counter;
 	
 architecture addr_counter_arch of 		addr_counter is
 
-	signal temp : std_logic_vector(COUNT_SIZE - 1 downto 0) := (others => '0');
+	
 	constant one : std_logic_vector(COUNT_SIZE - 1 downto 0) := (0 => '1', others => '0');
 	constant zeros : std_logic_vector(COUNT_SIZE - 1 downto 0) := (others => '0');
 	constant maxval : std_logic_vector(COUNT_SIZE - 1 downto 0) := (others => '1');
 begin
 
-	addr <= temp;
 	process(CLK_IN,resetN)
+		variable temp : std_logic_vector(COUNT_SIZE - 1 downto 0) := (others => '0');
 	begin
 		if resetN = '0' then
-			temp <= zeros ;
+			temp := zeros ;
 			finish <= '0';
 		elsif rising_edge(CLK_IN) then
 			finish <= '0';
-			if en = '1' and en1 = '1' then
-				temp <= temp + one;
-				if (temp = MAX_VAL) then
-					temp <= zeros ;
-					finish <= '1';
+			if en = '1' then
+				if en1 = '1' then
+					temp := temp + one;
+					if (temp = MAX_VAL) then
+						temp := zeros ;
+						finish <= '1';
+					end if;
+				else
+					temp := zeros;
 				end if;
 			end if;
 		end if;
+		addr <= temp;
 	end process;
 
 

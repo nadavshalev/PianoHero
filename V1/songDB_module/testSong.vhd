@@ -28,7 +28,7 @@ begin
  
    
 	process(resetN, CLK)
-		constant song1 : table_type := (-50, 50, -100, 45, -5, 95, -5, 45, -5, -50);
+		constant song1 : table_type := (-50, 50, -100, 45, -5, 85, -15, 35, -15, 50);
 		
 		
 		variable tmp_wait : integer := 0;

@@ -402,42 +402,7 @@ agreement for further details.
 	)
 )
 (symbol
-	(rect -1128 312 -952 392)
-	(text "sound_freq_gen" (rect 5 0 84 12)(font "Arial" ))
-	(text "inst2" (rect 8 64 30 81)(font "Intel Clear" ))
-	(port
-		(pt 0 32)
-		(input)
-		(text "RESETN" (rect 0 0 43 12)(font "Arial" ))
-		(text "RESETN" (rect 21 27 64 39)(font "Arial" ))
-		(line (pt 0 32)(pt 16 32))
-	)
-	(port
-		(pt 0 48)
-		(input)
-		(text "CLK" (rect 0 0 21 12)(font "Arial" ))
-		(text "CLK" (rect 21 43 42 55)(font "Arial" ))
-		(line (pt 0 48)(pt 16 48))
-	)
-	(port
-		(pt 176 32)
-		(output)
-		(text "OneSec" (rect 0 0 38 12)(font "Arial" ))
-		(text "OneSec" (rect 123 27 161 39)(font "Arial" ))
-		(line (pt 176 32)(pt 160 32))
-	)
-	(parameter
-		"FREQUENCY"
-		"440"
-		""
-		(type "PARAMETER_SIGNED_DEC")	)
-	(drawing
-		(rectangle (rect 16 16 160 64))
-	)
-	(annotation_block (parameter)(rect -1160 224 -979 262))
-)
-(symbol
-	(rect -40 264 184 440)
+	(rect -16 264 208 440)
 	(text "sound_chooser" (rect 5 0 79 12)(font "Arial" ))
 	(text "inst6" (rect 8 160 30 177)(font "Intel Clear" ))
 	(port
@@ -516,41 +481,6 @@ agreement for further details.
 		(line (pt 16 16)(pt 24 8))
 		(line (pt 8 8)(pt 24 8))
 	)
-)
-(symbol
-	(rect -1120 568 -944 648)
-	(text "sound_freq_gen" (rect 5 0 84 12)(font "Arial" ))
-	(text "inst5" (rect 8 64 30 81)(font "Intel Clear" ))
-	(port
-		(pt 0 32)
-		(input)
-		(text "RESETN" (rect 0 0 43 12)(font "Arial" ))
-		(text "RESETN" (rect 21 27 64 39)(font "Arial" ))
-		(line (pt 0 32)(pt 16 32))
-	)
-	(port
-		(pt 0 48)
-		(input)
-		(text "CLK" (rect 0 0 21 12)(font "Arial" ))
-		(text "CLK" (rect 21 43 42 55)(font "Arial" ))
-		(line (pt 0 48)(pt 16 48))
-	)
-	(port
-		(pt 176 32)
-		(output)
-		(text "OneSec" (rect 0 0 38 12)(font "Arial" ))
-		(text "OneSec" (rect 123 27 161 39)(font "Arial" ))
-		(line (pt 176 32)(pt 160 32))
-	)
-	(parameter
-		"FREQUENCY"
-		"12500"
-		""
-		(type "PARAMETER_SIGNED_DEC")	)
-	(drawing
-		(rectangle (rect 16 16 160 64))
-	)
-	(annotation_block (parameter)(rect -1152 480 -965 518))
 )
 (symbol
 	(rect -488 504 -304 616)
@@ -647,7 +577,7 @@ agreement for further details.
 	(drawing
 		(rectangle (rect 16 16 200 96))
 	)
-	(annotation_block (parameter)(rect -568 216 -384 280))
+	(annotation_block (parameter)(rect -872 192 -688 256))
 )
 (symbol
 	(rect -784 536 -568 648)
@@ -708,7 +638,119 @@ agreement for further details.
 	(drawing
 		(rectangle (rect 16 16 200 96))
 	)
-	(annotation_block (parameter)(rect -568 472 -384 529))
+	(annotation_block (parameter)(rect -752 456 -568 513))
+)
+(symbol
+	(rect -1096 304 -920 384)
+	(text "sound_freq_gen" (rect 5 0 84 12)(font "Arial" ))
+	(text "inst8" (rect 8 64 30 81)(font "Intel Clear" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "RESETN" (rect 0 0 43 12)(font "Arial" ))
+		(text "RESETN" (rect 21 27 64 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "CLK" (rect 0 0 21 12)(font "Arial" ))
+		(text "CLK" (rect 21 43 42 55)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 176 32)
+		(output)
+		(text "OneSec" (rect 0 0 38 12)(font "Arial" ))
+		(text "OneSec" (rect 123 27 161 39)(font "Arial" ))
+		(line (pt 176 32)(pt 160 32))
+	)
+	(parameter
+		"FREQUENCY"
+		"440"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(drawing
+		(rectangle (rect 16 16 160 64))
+	)
+	(annotation_block (parameter)(rect -1216 248 -1032 288))
+)
+(symbol
+	(rect -1120 560 -944 640)
+	(text "sound_freq_gen" (rect 5 0 84 12)(font "Arial" ))
+	(text "inst9" (rect 8 64 30 81)(font "Intel Clear" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "RESETN" (rect 0 0 43 12)(font "Arial" ))
+		(text "RESETN" (rect 21 27 64 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "CLK" (rect 0 0 21 12)(font "Arial" ))
+		(text "CLK" (rect 21 43 42 55)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 176 32)
+		(output)
+		(text "OneSec" (rect 0 0 38 12)(font "Arial" ))
+		(text "OneSec" (rect 123 27 161 39)(font "Arial" ))
+		(line (pt 176 32)(pt 160 32))
+	)
+	(parameter
+		"FREQUENCY"
+		"16"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(drawing
+		(rectangle (rect 16 16 160 64))
+	)
+	(annotation_block (parameter)(rect -1200 496 -1019 534))
+)
+(symbol
+	(rect -1048 728 -904 840)
+	(text "vrise" (rect 5 0 29 12)(font "Arial" ))
+	(text "inst1" (rect 8 96 30 113)(font "Intel Clear" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "resetN" (rect 0 0 33 12)(font "Arial" ))
+		(text "resetN" (rect 21 27 54 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "clk" (rect 0 0 14 12)(font "Arial" ))
+		(text "clk" (rect 21 43 35 55)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "din" (rect 0 0 14 12)(font "Arial" ))
+		(text "din" (rect 21 59 35 71)(font "Arial" ))
+		(line (pt 0 64)(pt 16 64))
+	)
+	(port
+		(pt 144 32)
+		(output)
+		(text "dout" (rect 0 0 21 12)(font "Arial" ))
+		(text "dout" (rect 106 27 127 39)(font "Arial" ))
+		(line (pt 144 32)(pt 128 32))
+	)
+	(parameter
+		"rise_size"
+		"276000000"
+		""
+		(type "PARAMETER_UNSIGNED_DEC")	)
+	(drawing
+		(rectangle (rect 16 16 128 96))
+	)
+	(annotation_block (parameter)(rect -1256 664 -1040 702))
 )
 (connector
 	(pt 304 112)
@@ -781,19 +823,9 @@ agreement for further details.
 	(pt 336 80)
 )
 (connector
-	(pt -568 312)
-	(pt -488 312)
-	(bus)
-)
-(connector
 	(pt -304 280)
 	(pt -296 280)
 	(bus)
-)
-(connector
-	(text "CLOCK_50" (rect -846 296 -793 313)(font "Intel Clear" ))
-	(pt -848 312)
-	(pt -784 312)
 )
 (connector
 	(text "CLOCK_50" (rect -536 264 -483 281)(font "Intel Clear" ))
@@ -801,101 +833,9 @@ agreement for further details.
 	(pt -536 280)
 )
 (connector
-	(text "resetN" (rect -846 312 -816 329)(font "Intel Clear" ))
-	(pt -848 328)
-	(pt -784 328)
-)
-(connector
 	(text "resetN" (rect -550 280 -520 297)(font "Intel Clear" ))
 	(pt -552 296)
 	(pt -488 296)
-)
-(connector
-	(text "sound_enable" (rect -846 344 -779 361)(font "Intel Clear" ))
-	(pt -848 360)
-	(pt -784 360)
-)
-(connector
-	(pt -784 344)
-	(pt -952 344)
-)
-(connector
-	(text "resetN" (rect -1190 328 -1160 345)(font "Intel Clear" ))
-	(pt -1192 344)
-	(pt -1128 344)
-)
-(connector
-	(text "CLOCK_50" (rect -1190 344 -1137 361)(font "Intel Clear" ))
-	(pt -1192 360)
-	(pt -1128 360)
-)
-(connector
-	(pt 184 296)
-	(pt 216 296)
-	(bus)
-)
-(connector
-	(pt 216 296)
-	(pt 216 128)
-	(bus)
-)
-(connector
-	(text "CLOCK_50" (rect -88 296 -35 313)(font "Intel Clear" ))
-	(pt -40 312)
-	(pt -88 312)
-)
-(connector
-	(text "resetN" (rect -102 280 -72 297)(font "Intel Clear" ))
-	(pt -104 296)
-	(pt -40 296)
-)
-(connector
-	(pt -72 392)
-	(pt -40 392)
-	(bus)
-)
-(connector
-	(pt -296 280)
-	(pt -296 376)
-	(bus)
-)
-(connector
-	(pt -296 376)
-	(pt -40 376)
-	(bus)
-)
-(connector
-	(text "error_enable" (rect -102 328 -41 345)(font "Intel Clear" ))
-	(pt -104 344)
-	(pt -40 344)
-)
-(connector
-	(text "sound_enable" (rect -102 312 -35 329)(font "Intel Clear" ))
-	(pt -104 328)
-	(pt -40 328)
-)
-(connector
-	(pt -48 496)
-	(pt -48 360)
-)
-(connector
-	(pt -48 360)
-	(pt -40 360)
-)
-(connector
-	(text "resetN" (rect -1182 584 -1152 601)(font "Intel Clear" ))
-	(pt -1184 600)
-	(pt -1120 600)
-)
-(connector
-	(text "CLOCK_50" (rect -1182 600 -1129 617)(font "Intel Clear" ))
-	(pt -1184 616)
-	(pt -1120 616)
-)
-(connector
-	(pt -72 392)
-	(pt -72 536)
-	(bus)
 )
 (connector
 	(pt -72 536)
@@ -928,12 +868,152 @@ agreement for further details.
 	(pt -784 584)
 )
 (connector
-	(pt -944 600)
-	(pt -784 600)
+	(pt -784 616)
+	(pt -872 616)
 )
 (connector
-	(text "error_enable" (rect -846 600 -785 617)(font "Intel Clear" ))
-	(pt -848 616)
-	(pt -784 616)
+	(text "resetN" (rect -1110 744 -1080 761)(font "Intel Clear" ))
+	(pt -1112 760)
+	(pt -1048 760)
+)
+(connector
+	(text "CLOCK_50" (rect -1110 760 -1057 777)(font "Intel Clear" ))
+	(pt -1128 776)
+	(pt -1048 776)
+)
+(connector
+	(text "error_enable" (rect -1110 776 -1049 793)(font "Intel Clear" ))
+	(pt -1112 792)
+	(pt -1048 792)
+)
+(connector
+	(pt -872 616)
+	(pt -872 760)
+)
+(connector
+	(pt -872 760)
+	(pt -904 760)
+)
+(connector
+	(text "CLOCK_50" (rect -846 296 -793 313)(font "Intel Clear" ))
+	(pt -848 312)
+	(pt -784 312)
+)
+(connector
+	(text "resetN" (rect -846 312 -816 329)(font "Intel Clear" ))
+	(pt -848 328)
+	(pt -784 328)
+)
+(connector
+	(text "sound_enable" (rect -846 344 -779 361)(font "Intel Clear" ))
+	(pt -848 360)
+	(pt -784 360)
+)
+(connector
+	(pt -568 312)
+	(pt -488 312)
+	(bus)
+)
+(connector
+	(pt 216 296)
+	(pt 208 296)
+	(bus)
+)
+(connector
+	(pt 216 128)
+	(pt 216 296)
+	(bus)
+)
+(connector
+	(pt -296 280)
+	(pt -296 376)
+	(bus)
+)
+(connector
+	(pt -48 496)
+	(pt -48 360)
+)
+(connector
+	(pt -72 536)
+	(pt -72 392)
+	(bus)
+)
+(connector
+	(text "resetN" (rect -78 280 -48 297)(font "Intel Clear" ))
+	(pt -80 296)
+	(pt -16 296)
+)
+(connector
+	(text "CLOCK_50" (rect -64 296 -11 313)(font "Intel Clear" ))
+	(pt -64 312)
+	(pt -16 312)
+)
+(connector
+	(text "sound_enable" (rect -78 312 -11 329)(font "Intel Clear" ))
+	(pt -80 328)
+	(pt -16 328)
+)
+(connector
+	(text "error_enable" (rect -78 328 -17 345)(font "Intel Clear" ))
+	(pt -80 344)
+	(pt -16 344)
+)
+(connector
+	(pt -48 360)
+	(pt -16 360)
+)
+(connector
+	(pt -296 376)
+	(pt -16 376)
+	(bus)
+)
+(connector
+	(pt -72 392)
+	(pt -16 392)
+	(bus)
+)
+(connector
+	(text "resetN" (rect -1182 576 -1152 593)(font "Intel Clear" ))
+	(pt -1184 592)
+	(pt -1120 592)
+)
+(connector
+	(text "CLOCK_50" (rect -1182 592 -1129 609)(font "Intel Clear" ))
+	(pt -1184 608)
+	(pt -1120 608)
+)
+(connector
+	(pt -792 600)
+	(pt -792 592)
+)
+(connector
+	(pt -784 600)
+	(pt -792 600)
+)
+(connector
+	(pt -792 592)
+	(pt -944 592)
+)
+(connector
+	(pt -792 344)
+	(pt -792 336)
+)
+(connector
+	(pt -784 344)
+	(pt -792 344)
+)
+(connector
+	(pt -792 336)
+	(pt -920 336)
+)
+(connector
+	(text "resetN" (rect -1150 320 -1120 337)(font "Intel Clear" ))
+	(pt -1152 336)
+	(pt -1096 336)
+)
+(connector
+	(text "CLOCK_50" (rect -1150 336 -1097 353)(font "Intel Clear" ))
+	(pt -1152 352)
+	(pt -1096 352)
 )
 (junction (pt 304 128))

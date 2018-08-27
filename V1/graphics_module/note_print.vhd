@@ -49,18 +49,15 @@ begin
 		noteLen := y_frame - ObjectStartY - pianoHight;
 		StartY := ObjectStartY;
 		collision_tmp := '1';
-	elsif ObjectStartY < 0 then
-		StartY := 0;
-		noteLen := NoteLength + ObjectStartY;
-		collision_tmp := '0';
 	else
 		noteLen := NoteLength;
 		StartY := ObjectStartY;
 		collision_tmp := '0';
 	end if;
-	if ObjectStartY > y_frame - pianoHight then
+	if ObjectStartY > y_frame - pianoHight then				--no collision yet
 		collision_tmp := '0';
 	end if;
+	
 	if (oCoord_X <  ObjectStartX + NoteWidth and oCoord_X > ObjectStartX - NoteWidth and oCoord_Y < StartY + noteLen and oCoord_Y > StartY) then
 		if sound = '0' and collision_tmp = '1' then
 			mVGA_R <= "000";

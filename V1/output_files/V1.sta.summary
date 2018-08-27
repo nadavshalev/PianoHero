@@ -3,99 +3,211 @@ TimeQuest Timing Analyzer Summary
 ------------------------------------------------------------
 
 Type  : Slow 1100mV 85C Model Setup 'CLOCK_50'
-Slack : -13.950
-TNS   : -1064.081
+Slack : -14.404
+TNS   : -3782.460
 
-Type  : Slow 1100mV 85C Model Setup 'VGA_Controller:inst1231|oCoord_X[0]'
-Slack : -5.876
-TNS   : -11.453
+Type  : Slow 1100mV 85C Model Setup 'graphics_module_diag:inst9|VGA_Controller:inst1231|oCoord_X[0]'
+Slack : -8.083
+TNS   : -43.654
+
+Type  : Slow 1100mV 85C Model Setup 'AUD_BCLK'
+Slack : -6.556
+TNS   : -227.775
 
 Type  : Slow 1100mV 85C Model Hold 'CLOCK_50'
-Slack : -1.733
-TNS   : -1.733
+Slack : 0.228
+TNS   : 0.000
 
-Type  : Slow 1100mV 85C Model Hold 'VGA_Controller:inst1231|oCoord_X[0]'
-Slack : 1.125
+Type  : Slow 1100mV 85C Model Hold 'AUD_BCLK'
+Slack : 0.285
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'graphics_module_diag:inst9|VGA_Controller:inst1231|oCoord_X[0]'
+Slack : 0.697
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Recovery 'CLOCK_50'
+Slack : -7.541
+TNS   : -44.287
+
+Type  : Slow 1100mV 85C Model Recovery 'AUD_BCLK'
+Slack : -6.062
+TNS   : -320.050
+
+Type  : Slow 1100mV 85C Model Removal 'AUD_BCLK'
+Slack : 0.584
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Removal 'CLOCK_50'
+Slack : 0.943
 TNS   : 0.000
 
 Type  : Slow 1100mV 85C Model Minimum Pulse Width 'CLOCK_50'
-Slack : -0.394
-TNS   : -155.742
+Slack : -2.174
+TNS   : -811.989
 
-Type  : Slow 1100mV 85C Model Minimum Pulse Width 'VGA_Controller:inst1231|oCoord_X[0]'
-Slack : 0.040
-TNS   : 0.000
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'AUD_BCLK'
+Slack : -2.174
+TNS   : -275.742
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'graphics_module_diag:inst9|VGA_Controller:inst1231|oCoord_X[0]'
+Slack : -0.080
+TNS   : -0.287
 
 Type  : Slow 1100mV 0C Model Setup 'CLOCK_50'
-Slack : -13.825
-TNS   : -1032.251
+Slack : -14.449
+TNS   : -3677.401
 
-Type  : Slow 1100mV 0C Model Setup 'VGA_Controller:inst1231|oCoord_X[0]'
-Slack : -6.093
-TNS   : -11.799
+Type  : Slow 1100mV 0C Model Setup 'graphics_module_diag:inst9|VGA_Controller:inst1231|oCoord_X[0]'
+Slack : -8.277
+TNS   : -44.814
+
+Type  : Slow 1100mV 0C Model Setup 'AUD_BCLK'
+Slack : -6.322
+TNS   : -219.281
 
 Type  : Slow 1100mV 0C Model Hold 'CLOCK_50'
-Slack : -1.812
-TNS   : -1.812
+Slack : 0.213
+TNS   : 0.000
 
-Type  : Slow 1100mV 0C Model Hold 'VGA_Controller:inst1231|oCoord_X[0]'
-Slack : 1.080
+Type  : Slow 1100mV 0C Model Hold 'AUD_BCLK'
+Slack : 0.261
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'graphics_module_diag:inst9|VGA_Controller:inst1231|oCoord_X[0]'
+Slack : 0.752
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Recovery 'CLOCK_50'
+Slack : -7.136
+TNS   : -40.250
+
+Type  : Slow 1100mV 0C Model Recovery 'AUD_BCLK'
+Slack : -5.808
+TNS   : -307.493
+
+Type  : Slow 1100mV 0C Model Removal 'AUD_BCLK'
+Slack : 0.431
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Removal 'CLOCK_50'
+Slack : 0.875
 TNS   : 0.000
 
 Type  : Slow 1100mV 0C Model Minimum Pulse Width 'CLOCK_50'
-Slack : -0.394
-TNS   : -141.751
+Slack : -2.174
+TNS   : -753.579
 
-Type  : Slow 1100mV 0C Model Minimum Pulse Width 'VGA_Controller:inst1231|oCoord_X[0]'
-Slack : 0.022
-TNS   : 0.000
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'AUD_BCLK'
+Slack : -2.174
+TNS   : -272.491
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'graphics_module_diag:inst9|VGA_Controller:inst1231|oCoord_X[0]'
+Slack : -0.092
+TNS   : -0.345
 
 Type  : Fast 1100mV 85C Model Setup 'CLOCK_50'
-Slack : -8.137
-TNS   : -536.950
+Slack : -7.772
+TNS   : -1844.916
 
-Type  : Fast 1100mV 85C Model Setup 'VGA_Controller:inst1231|oCoord_X[0]'
-Slack : -2.922
-TNS   : -5.591
+Type  : Fast 1100mV 85C Model Setup 'AUD_BCLK'
+Slack : -4.548
+TNS   : -66.723
+
+Type  : Fast 1100mV 85C Model Setup 'graphics_module_diag:inst9|VGA_Controller:inst1231|oCoord_X[0]'
+Slack : -3.831
+TNS   : -19.839
+
+Type  : Fast 1100mV 85C Model Hold 'graphics_module_diag:inst9|VGA_Controller:inst1231|oCoord_X[0]'
+Slack : 0.112
+TNS   : 0.000
 
 Type  : Fast 1100mV 85C Model Hold 'CLOCK_50'
-Slack : -0.899
-TNS   : -0.899
+Slack : 0.137
+TNS   : 0.000
 
-Type  : Fast 1100mV 85C Model Hold 'VGA_Controller:inst1231|oCoord_X[0]'
-Slack : 0.507
+Type  : Fast 1100mV 85C Model Hold 'AUD_BCLK'
+Slack : 0.179
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Recovery 'CLOCK_50'
+Slack : -4.895
+TNS   : -10.920
+
+Type  : Fast 1100mV 85C Model Recovery 'AUD_BCLK'
+Slack : -3.725
+TNS   : -205.968
+
+Type  : Fast 1100mV 85C Model Removal 'CLOCK_50'
+Slack : 0.545
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Removal 'AUD_BCLK'
+Slack : 0.648
 TNS   : 0.000
 
 Type  : Fast 1100mV 85C Model Minimum Pulse Width 'CLOCK_50'
-Slack : -0.401
-TNS   : -103.704
+Slack : -2.174
+TNS   : -593.225
 
-Type  : Fast 1100mV 85C Model Minimum Pulse Width 'VGA_Controller:inst1231|oCoord_X[0]'
-Slack : 0.157
-TNS   : 0.000
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'AUD_BCLK'
+Slack : -2.174
+TNS   : -286.913
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'graphics_module_diag:inst9|VGA_Controller:inst1231|oCoord_X[0]'
+Slack : -0.048
+TNS   : -0.099
 
 Type  : Fast 1100mV 0C Model Setup 'CLOCK_50'
-Slack : -7.277
-TNS   : -463.921
+Slack : -7.081
+TNS   : -1599.138
 
-Type  : Fast 1100mV 0C Model Setup 'VGA_Controller:inst1231|oCoord_X[0]'
-Slack : -2.648
-TNS   : -5.058
+Type  : Fast 1100mV 0C Model Setup 'AUD_BCLK'
+Slack : -3.820
+TNS   : -51.442
+
+Type  : Fast 1100mV 0C Model Setup 'graphics_module_diag:inst9|VGA_Controller:inst1231|oCoord_X[0]'
+Slack : -3.590
+TNS   : -18.747
 
 Type  : Fast 1100mV 0C Model Hold 'CLOCK_50'
-Slack : -0.929
-TNS   : -0.929
+Slack : 0.126
+TNS   : 0.000
 
-Type  : Fast 1100mV 0C Model Hold 'VGA_Controller:inst1231|oCoord_X[0]'
-Slack : 0.498
+Type  : Fast 1100mV 0C Model Hold 'AUD_BCLK'
+Slack : 0.155
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'graphics_module_diag:inst9|VGA_Controller:inst1231|oCoord_X[0]'
+Slack : 0.249
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Recovery 'CLOCK_50'
+Slack : -4.154
+TNS   : -6.625
+
+Type  : Fast 1100mV 0C Model Recovery 'AUD_BCLK'
+Slack : -3.039
+TNS   : -169.055
+
+Type  : Fast 1100mV 0C Model Removal 'AUD_BCLK'
+Slack : 0.270
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Removal 'CLOCK_50'
+Slack : 0.496
 TNS   : 0.000
 
 Type  : Fast 1100mV 0C Model Minimum Pulse Width 'CLOCK_50'
-Slack : -0.437
-TNS   : -123.641
+Slack : -2.174
+TNS   : -679.814
 
-Type  : Fast 1100mV 0C Model Minimum Pulse Width 'VGA_Controller:inst1231|oCoord_X[0]'
-Slack : 0.182
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'AUD_BCLK'
+Slack : -2.174
+TNS   : -304.663
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'graphics_module_diag:inst9|VGA_Controller:inst1231|oCoord_X[0]'
+Slack : 0.043
 TNS   : 0.000
 
 ------------------------------------------------------------

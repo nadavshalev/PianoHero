@@ -19,9 +19,9 @@
 -- the top level entity of the current Quartus project .The user can use this   
 -- testbench to simulate his design using a third-party simulation tool .       
 -- *****************************************************************************
--- Generated on "08/21/2018 19:49:15"
+-- Generated on "08/27/2018 18:41:57"
                                                              
--- Vhdl Test Bench(with test vectors) for design  :          play_controller
+-- Vhdl Test Bench(with test vectors) for design  :          addr_counter
 -- 
 -- Simulation tool : 3rd Party
 -- 
@@ -29,129 +29,77 @@
 LIBRARY ieee;                                               
 USE ieee.std_logic_1164.all;                                
 
-ENTITY play_controller_vhd_vec_tst IS
-END play_controller_vhd_vec_tst;
-ARCHITECTURE play_controller_arch OF play_controller_vhd_vec_tst IS
+ENTITY addr_counter_vhd_vec_tst IS
+END addr_counter_vhd_vec_tst;
+ARCHITECTURE addr_counter_arch OF addr_counter_vhd_vec_tst IS
 -- constants                                                 
 -- signals                                                   
-SIGNAL break : STD_LOGIC;
-SIGNAL clk : STD_LOGIC;
-SIGNAL collision : STD_LOGIC;
-SIGNAL error : STD_LOGIC;
-SIGNAL make : STD_LOGIC;
+SIGNAL addr : STD_LOGIC_VECTOR(7 DOWNTO 0);
+SIGNAL CLK_IN : STD_LOGIC;
+SIGNAL en : STD_LOGIC;
+SIGNAL en1 : STD_LOGIC;
+SIGNAL finish : STD_LOGIC;
 SIGNAL resetN : STD_LOGIC;
-SIGNAL scors : STD_LOGIC_VECTOR(15 DOWNTO 0);
-SIGNAL sound : STD_LOGIC;
-COMPONENT play_controller
+COMPONENT addr_counter
 	PORT (
-	break : IN STD_LOGIC;
-	clk : IN STD_LOGIC;
-	collision : IN STD_LOGIC;
-	error : OUT STD_LOGIC;
-	make : IN STD_LOGIC;
-	resetN : IN STD_LOGIC;
-	scors : OUT STD_LOGIC_VECTOR(15 DOWNTO 0);
-	sound : OUT STD_LOGIC
+	addr : OUT STD_LOGIC_VECTOR(7 DOWNTO 0);
+	CLK_IN : IN STD_LOGIC;
+	en : IN STD_LOGIC;
+	en1 : IN STD_LOGIC;
+	finish : OUT STD_LOGIC;
+	resetN : IN STD_LOGIC
 	);
 END COMPONENT;
 BEGIN
-	i1 : play_controller
+	i1 : addr_counter
 	PORT MAP (
 -- list connections between master ports and signals
-	break => break,
-	clk => clk,
-	collision => collision,
-	error => error,
-	make => make,
-	resetN => resetN,
-	scors => scors,
-	sound => sound
+	addr => addr,
+	CLK_IN => CLK_IN,
+	en => en,
+	en1 => en1,
+	finish => finish,
+	resetN => resetN
 	);
 
--- clk
-t_prcs_clk: PROCESS
+-- CLK_IN
+t_prcs_CLK_IN: PROCESS
 BEGIN
 LOOP
-	clk <= '0';
-	WAIT FOR 2500 ps;
-	clk <= '1';
-	WAIT FOR 2500 ps;
+	CLK_IN <= '0';
+	WAIT FOR 1000 ps;
+	CLK_IN <= '1';
+	WAIT FOR 1000 ps;
 	IF (NOW >= 1000000 ps) THEN WAIT; END IF;
 END LOOP;
-END PROCESS t_prcs_clk;
+END PROCESS t_prcs_CLK_IN;
 
--- collision
-t_prcs_collision: PROCESS
+-- en
+t_prcs_en: PROCESS
 BEGIN
-	collision <= '0';
-	WAIT FOR 150000 ps;
-	collision <= '1';
-	WAIT FOR 290000 ps;
-	collision <= '0';
-	WAIT FOR 130000 ps;
-	collision <= '1';
-	WAIT FOR 250000 ps;
-	collision <= '0';
-	WAIT FOR 100000 ps;
-	collision <= '1';
-	WAIT FOR 50000 ps;
-	collision <= '0';
-WAIT;
-END PROCESS t_prcs_collision;
+LOOP
+	en <= '0';
+	WAIT FOR 3000 ps;
+	en <= '1';
+	WAIT FOR 1000 ps;
+	IF (NOW >= 1000000 ps) THEN WAIT; END IF;
+END LOOP;
+END PROCESS t_prcs_en;
 
--- make
-t_prcs_make: PROCESS
+-- en1
+t_prcs_en1: PROCESS
 BEGIN
-	make <= '0';
-	WAIT FOR 50000 ps;
-	make <= '1';
-	WAIT FOR 60000 ps;
-	make <= '0';
-	WAIT FOR 70000 ps;
-	make <= '1';
-	WAIT FOR 70000 ps;
-	make <= '0';
-	WAIT FOR 80000 ps;
-	make <= '1';
-	WAIT FOR 50000 ps;
-	make <= '0';
-	WAIT FOR 160000 ps;
-	make <= '1';
-	WAIT FOR 90000 ps;
-	make <= '0';
-	WAIT FOR 160000 ps;
-	make <= '1';
-	WAIT FOR 90000 ps;
-	make <= '0';
+	en1 <= '0';
+	WAIT FOR 40000 ps;
+	en1 <= '1';
+	WAIT FOR 30000 ps;
+	en1 <= '0';
+	WAIT FOR 630000 ps;
+	en1 <= '1';
+	WAIT FOR 220000 ps;
+	en1 <= '0';
 WAIT;
-END PROCESS t_prcs_make;
-
--- break
-t_prcs_break: PROCESS
-BEGIN
-	break <= '0';
-	WAIT FOR 110000 ps;
-	break <= '1';
-	WAIT FOR 10000 ps;
-	break <= '0';
-	WAIT FOR 130000 ps;
-	break <= '1';
-	WAIT FOR 10000 ps;
-	break <= '0';
-	WAIT FOR 120000 ps;
-	break <= '1';
-	WAIT FOR 10000 ps;
-	break <= '0';
-	WAIT FOR 240000 ps;
-	break <= '1';
-	WAIT FOR 10000 ps;
-	break <= '0';
-	WAIT FOR 240000 ps;
-	break <= '1';
-	WAIT FOR 10000 ps;
-	break <= '0';
-WAIT;
-END PROCESS t_prcs_break;
+END PROCESS t_prcs_en1;
 
 -- resetN
 t_prcs_resetN: PROCESS
@@ -161,4 +109,4 @@ BEGIN
 	resetN <= '1';
 WAIT;
 END PROCESS t_prcs_resetN;
-END play_controller_arch;
+END addr_counter_arch;

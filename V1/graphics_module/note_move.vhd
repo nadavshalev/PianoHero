@@ -14,7 +14,8 @@ port 	(
 		timer_done		: in std_logic;
 		max_NoteLength		: in integer;
 		ObjectStartY	: out integer;
-		NoteLength : out integer
+		NoteLength : out integer;
+		Working			: out std_logic
 		
 		
 	);
@@ -22,22 +23,24 @@ end note_move;
 
 architecture behav of note_move is 
 
-
-signal ObjectStartY_t : integer;
-signal NoteLength_t : integer;
+	signal ObjectStartY_t : integer;
+	signal NoteLength_t : integer;
 begin
  
 	process ( resetN, start,CLK)
+		variable tmp_len		: integer;
 	begin
 		if resetN = '0' then
-			ObjectStartY_t	<= 0;
+			ObjectStartY_t	<= 480;
 			NoteLength_t <= 0;
+			tmp_len := 0;
 		elsif rising_edge(CLK) then
-			if	 start = '0' then
+			if start = '1' then
 				ObjectStartY_t	<= 0;
 				NoteLength_t <= 0;
+				tmp_len := max_NoteLength;
 			elsif timer_done = '1' and ObjectStartY_t < 480  then
-				if NoteLength_t < max_NoteLength then
+				if NoteLength_t < tmp_len then
 					NoteLength_t <= NoteLength_t+ 1;
 				else
 					ObjectStartY_t  <= ObjectStartY_t + 1;

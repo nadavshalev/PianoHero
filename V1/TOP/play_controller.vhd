@@ -17,8 +17,8 @@ begin
 		variable press : std_logic;
 		type count_state is (col_pre_play, uncol_pre_err, col_unpre, uncol_unpre, second_pre_err);
 		variable state : count_state;
-		constant scors_up : integer := 1;
-		constant scors_down: integer := -5;
+		constant scors_up : integer := 5;
+		constant scors_down: integer := -1;
 		variable scors_num : integer := 0;
 	begin
 		if resetN = '0' then

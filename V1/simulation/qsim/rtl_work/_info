@@ -1,0 +1,165 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/maa3/Desktop/V1/simulation/qsim
+Eaddr_counter
+Z1 w1535384519
+Z2 DPx8 cyclonev 18 cyclonev_atom_pack 0 22 cD3@N^MdoDolN5@R6?T[V1
+Z3 DPx8 cyclonev 19 cyclonev_components 0 22 3BCIeZzdIHLCX<;R;K38G3
+Z4 DPx12 altera_lnsim 23 altera_lnsim_components 0 22 PQDYM9fR]Wek<A7X8bA8S1
+Z5 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
+Z6 DPx6 altera 11 dffeas_pack 0 22 >EJOc2K4@P4f?njWHdOcd0
+Z7 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
+Z8 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z9 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z10 DPx6 altera 28 altera_primitives_components 0 22 14j`ZKHCzSI;]V?hmAE6_1
+R0
+Z11 8V1.vho
+Z12 FV1.vho
+l0
+L39
+Vj`7CgmliU?o[X]jhX1D3F0
+!s100 gOV_mEC_^BgNCjU<jAcFn0
+Z13 OV;C;10.5b;63
+32
+Z14 !s110 1535384521
+!i10b 1
+Z15 !s108 1535384521.000000
+Z16 !s90 -work|work|V1.vho|
+Z17 !s107 V1.vho|
+!i113 1
+Z18 o-work work
+Z19 tExplicit 1 CvgOpt 0
+Astructure
+R2
+R3
+R4
+R5
+R6
+R7
+R8
+R9
+R10
+DEx4 work 12 addr_counter 0 22 j`7CgmliU?o[X]jhX1D3F0
+l126
+L66
+V9kXZCDW0fU2S3Kk>3O4io1
+!s100 gMefVSz>EU=XA=o;o9dlH0
+R13
+32
+R14
+!i10b 1
+R15
+R16
+R17
+!i113 1
+R18
+R19
+Eaddr_counter_vhd_vec_tst
+Z20 w1535384517
+R8
+R9
+R0
+Z21 8Waveform.vwf.vht
+Z22 FWaveform.vwf.vht
+l0
+L32
+VW`Q;AO]RAGUX9:gi_jai>3
+!s100 6_oZ9jkakiO7f^XSBIQ_<3
+R13
+32
+R14
+!i10b 1
+R15
+Z23 !s90 -work|work|Waveform.vwf.vht|
+Z24 !s107 Waveform.vwf.vht|
+!i113 1
+R18
+R19
+Aaddr_counter_arch
+R8
+R9
+Z25 DEx4 work 24 addr_counter_vhd_vec_tst 0 22 W`Q;AO]RAGUX9:gi_jai>3
+l53
+L34
+VePL>GBzT2i1U=_Z14gcY`2
+!s100 c2A;Lcg<KcQgM?O[k7i@B0
+R13
+32
+R14
+!i10b 1
+R15
+R23
+R24
+!i113 1
+R18
+R19
+vaddr_counter_vlg_vec_tst
+!s110 1535384400
+!i10b 1
+!s100 7FEXF<>bDocY4D0OQbMRE1
+Ife0@:f]R2bb<6KlbhRje]3
+Z26 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1535384396
+Z27 8Waveform.vwf.vt
+Z28 FWaveform.vwf.vt
+Z29 L0 30
+Z30 OV;L;10.5b;63
+r1
+!s85 0
+31
+!s108 1535384400.000000
+Z31 !s107 Waveform.vwf.vt|
+Z32 !s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R18
+Z33 tCvgOpt 0
+vvrise
+!s110 1535383143
+!i10b 1
+!s100 HgEHj4_TOo7i_Qj6`B]@c1
+IhJP1n]fZHfMR_hi7[31HA1
+R26
+R0
+w1535383141
+8V1.vo
+FV1.vo
+L0 32
+R30
+r1
+!s85 0
+31
+!s108 1535383143.000000
+!s107 V1.vo|
+!s90 -work|work|V1.vo|
+!i113 1
+R18
+R33
+vvrise_vlg_vec_tst
+!s110 1535383144
+!i10b 1
+!s100 Gjb^J3X?VG]AN8BX2Z^]`0
+Idm<TbKKhCJHaGd]I5W`eM3
+R26
+R0
+w1535383139
+R27
+R28
+R29
+R30
+r1
+!s85 0
+31
+!s108 1535383144.000000
+R31
+R32
+!i113 1
+R18
+R33
