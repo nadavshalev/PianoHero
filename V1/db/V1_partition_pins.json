@@ -4,99 +4,55 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "MICROPHON_LED",
+					"name" : "VGA_VS",
 					"strict" : false
 				},
 				{
-					"name" : "AUD_DACDAT",
+					"name" : "VGA_HS",
 					"strict" : false
 				},
 				{
-					"name" : "AUD_XCK",
+					"name" : "VGA_CLK",
 					"strict" : false
 				},
 				{
-					"name" : "AUD_I2C_SCLK",
+					"name" : "VGA_BLANK_N",
 					"strict" : false
 				},
 				{
-					"name" : "AUD_I2C_SDAT",
+					"name" : "Collision",
 					"strict" : false
 				},
 				{
-					"name" : "AUD_BCLK",
+					"name" : "VGA_B[7]",
 					"strict" : false
 				},
 				{
-					"name" : "AUD_DACLRCK",
+					"name" : "VGA_B[6]",
 					"strict" : false
 				},
 				{
-					"name" : "AUD_ADCLRCK",
+					"name" : "VGA_G[7]",
 					"strict" : false
 				},
 				{
-					"name" : "MICROPHON_ON",
+					"name" : "VGA_G[6]",
 					"strict" : false
 				},
 				{
-					"name" : "AUD_ADCDAT",
+					"name" : "VGA_G[5]",
 					"strict" : false
 				},
 				{
-					"name" : "HEX0[6]",
+					"name" : "VGA_R[7]",
 					"strict" : false
 				},
 				{
-					"name" : "HEX0[5]",
+					"name" : "VGA_R[6]",
 					"strict" : false
 				},
 				{
-					"name" : "HEX0[4]",
-					"strict" : false
-				},
-				{
-					"name" : "HEX0[3]",
-					"strict" : false
-				},
-				{
-					"name" : "HEX0[2]",
-					"strict" : false
-				},
-				{
-					"name" : "HEX0[1]",
-					"strict" : false
-				},
-				{
-					"name" : "HEX0[0]",
-					"strict" : false
-				},
-				{
-					"name" : "HEX1[6]",
-					"strict" : false
-				},
-				{
-					"name" : "HEX1[5]",
-					"strict" : false
-				},
-				{
-					"name" : "HEX1[4]",
-					"strict" : false
-				},
-				{
-					"name" : "HEX1[3]",
-					"strict" : false
-				},
-				{
-					"name" : "HEX1[2]",
-					"strict" : false
-				},
-				{
-					"name" : "HEX1[1]",
-					"strict" : false
-				},
-				{
-					"name" : "HEX1[0]",
+					"name" : "VGA_R[5]",
 					"strict" : false
 				},
 				{
@@ -108,15 +64,11 @@
 					"strict" : false
 				},
 				{
-					"name" : "collision",
+					"name" : "reset1N",
 					"strict" : false
 				},
 				{
-					"name" : "KBD_DAT",
-					"strict" : false
-				},
-				{
-					"name" : "KBD_CLK",
+					"name" : "sound",
 					"strict" : false
 				}
 			]

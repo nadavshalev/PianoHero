@@ -108,37 +108,37 @@ I3?n2[6W3Iz[B7>G6R_FT40
 Z26 VDg1SIo80bB@j0V0VzS_@n1
 Z27 dD:/Data/OneDrive/Documents/Prog/PianoHero/V1/simulation/qsim
 w1535354306
-8V1.vo
-FV1.vo
-L0 32
-Z28 OV;L;10.5b;63
+Z28 8V1.vo
+Z29 FV1.vo
+Z30 L0 32
+Z31 OV;L;10.5b;63
 r1
 !s85 0
 31
 !s108 1535354307.000000
-!s107 V1.vo|
-!s90 -work|work|V1.vo|
+Z32 !s107 V1.vo|
+Z33 !s90 -work|work|V1.vo|
 !i113 1
 R18
-Z29 tCvgOpt 0
+Z34 tCvgOpt 0
 Escore_vhd_vec_tst
-Z30 w1535354279
+Z35 w1535354279
 R8
 R9
 R27
-Z31 8Waveform1.vwf.vht
-Z32 FWaveform1.vwf.vht
+Z36 8Waveform1.vwf.vht
+Z37 FWaveform1.vwf.vht
 l0
 L32
 VK9k_`iJO6F3;6Xhd?=^jh1
 !s100 Bml@XWo7WJh]bD:aI^4[S3
 R13
 32
-Z33 !s110 1535354282
+Z38 !s110 1535354282
 !i10b 1
-Z34 !s108 1535354282.000000
-Z35 !s90 -work|work|Waveform1.vwf.vht|
-Z36 !s107 Waveform1.vwf.vht|
+Z39 !s108 1535354282.000000
+Z40 !s90 -work|work|Waveform1.vwf.vht|
+Z41 !s107 Waveform1.vwf.vht|
 !i113 1
 R18
 R19
@@ -152,11 +152,11 @@ Vf7G<V@L93PI:Bg[A_hn[<0
 !s100 IHhJ=j5K[9?hD>JWWBnjd2
 R13
 32
-R33
+R38
 !i10b 1
-R34
-R35
-R36
+R39
+R40
+R41
 !i113 1
 R18
 R19
@@ -170,8 +170,8 @@ R27
 w1535354304
 8Waveform1.vwf.vt
 FWaveform1.vwf.vt
-L0 30
-R28
+Z42 L0 30
+R31
 r1
 !s85 0
 31
@@ -180,4 +180,48 @@ r1
 !s90 -work|work|Waveform1.vwf.vt|
 !i113 1
 R18
+R34
+vtestSong
+Z43 !s110 1535370093
+!i10b 1
+!s100 Go`:<iU1[]R;`IJWRhCna2
+IV16m4L]fMYLB8=6@^>bmo1
+R26
+R27
+w1535370092
+R28
 R29
+R30
+R31
+r1
+!s85 0
+31
+Z44 !s108 1535370093.000000
+R32
+R33
+!i113 1
+R18
+R34
+ntest@song
+vtestSong_vlg_vec_tst
+R43
+!i10b 1
+!s100 dX?Po;@m0j9MMb@5NEYN;0
+IQ8dL`VO`gBCXF?`_WVH6k2
+R26
+R27
+w1535370090
+8Waveform.vwf.vt
+FWaveform.vwf.vt
+R42
+R31
+r1
+!s85 0
+31
+R44
+!s107 Waveform.vwf.vt|
+!s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R18
+R34
+ntest@song_vlg_vec_tst

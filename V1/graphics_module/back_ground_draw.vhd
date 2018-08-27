@@ -1,6 +1,6 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.all;
-use IEEE.std_logic_unsigned.all;
+use IEEE.std_logic_signed.all;
 use ieee.numeric_std.all;
 -- Alex Grinshpun July 24 2017 
 -- Dudy Nov 13 2017
@@ -37,7 +37,7 @@ process ( oCoord_X,oCoord_y )
 begin 
 
 	mVGA_R <= "000" ;	
-	mVGA_G <= "000"  ;	
+	mVGA_G <= "110"  ;	
 	mVGA_B <= "00" ;
 
 end process ; 
