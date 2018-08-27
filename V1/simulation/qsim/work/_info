@@ -85,11 +85,11 @@ R19
 Aplay_controller_arch
 R8
 R9
-Z25 DEx4 work 27 play_controller_vhd_vec_tst 0 22 [1b;GBUnP4;VPP_]J5]0i0
+DEx4 work 27 play_controller_vhd_vec_tst 0 22 [1b;GBUnP4;VPP_]J5]0i0
 l57
 L34
-Z26 VBdM@mXd1J<86fG>h[6@?b3
-Z27 !s100 g:dS=PHh4i?IdV`KGXOEj1
+VBdM@mXd1J<86fG>h[6@?b3
+!s100 g:dS=PHh4i?IdV`KGXOEj1
 R13
 32
 R14
@@ -100,3 +100,84 @@ R24
 !i113 1
 R18
 R19
+vscore
+Z25 !s110 1535354308
+!i10b 1
+!s100 fVk7l;JXoGJb7hRD_EdWE2
+I3?n2[6W3Iz[B7>G6R_FT40
+Z26 VDg1SIo80bB@j0V0VzS_@n1
+Z27 dD:/Data/OneDrive/Documents/Prog/PianoHero/V1/simulation/qsim
+w1535354306
+8V1.vo
+FV1.vo
+L0 32
+Z28 OV;L;10.5b;63
+r1
+!s85 0
+31
+!s108 1535354307.000000
+!s107 V1.vo|
+!s90 -work|work|V1.vo|
+!i113 1
+R18
+Z29 tCvgOpt 0
+Escore_vhd_vec_tst
+Z30 w1535354279
+R8
+R9
+R27
+Z31 8Waveform1.vwf.vht
+Z32 FWaveform1.vwf.vht
+l0
+L32
+VK9k_`iJO6F3;6Xhd?=^jh1
+!s100 Bml@XWo7WJh]bD:aI^4[S3
+R13
+32
+Z33 !s110 1535354282
+!i10b 1
+Z34 !s108 1535354282.000000
+Z35 !s90 -work|work|Waveform1.vwf.vht|
+Z36 !s107 Waveform1.vwf.vht|
+!i113 1
+R18
+R19
+Ascore_arch
+R8
+R9
+DEx4 work 17 score_vhd_vec_tst 0 22 K9k_`iJO6F3;6Xhd?=^jh1
+l51
+L34
+Vf7G<V@L93PI:Bg[A_hn[<0
+!s100 IHhJ=j5K[9?hD>JWWBnjd2
+R13
+32
+R33
+!i10b 1
+R34
+R35
+R36
+!i113 1
+R18
+R19
+vscore_vlg_vec_tst
+R25
+!i10b 1
+!s100 V5eXmHza63:81T7<f`V?@1
+IOfY@i`S:XEKBCYHJ6mC4C3
+R26
+R27
+w1535354304
+8Waveform1.vwf.vt
+FWaveform1.vwf.vt
+L0 30
+R28
+r1
+!s85 0
+31
+!s108 1535354308.000000
+!s107 Waveform1.vwf.vt|
+!s90 -work|work|Waveform1.vwf.vt|
+!i113 1
+R18
+R29

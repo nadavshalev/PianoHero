@@ -1,5 +1,5 @@
 EDA Netlist Writer report for V1
-Tue Aug 21 19:49:18 2018
+Mon Aug 27 10:18:26 2018
 Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
 
 
@@ -37,42 +37,42 @@ agreement for further details.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Tue Aug 21 19:49:17 2018 ;
+; EDA Netlist Writer Status ; Successful - Mon Aug 27 10:18:26 2018 ;
 ; Revision Name             ; V1                                    ;
-; Top-level Entity Name     ; play_controller                       ;
+; Top-level Entity Name     ; score                                 ;
 ; Family                    ; Cyclone V                             ;
 ; Simulation Files Creation ; Successful                            ;
 +---------------------------+---------------------------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------+
-; Simulation Settings                                                                                                        ;
-+---------------------------------------------------------------------------------------------------+------------------------+
-; Option                                                                                            ; Setting                ;
-+---------------------------------------------------------------------------------------------------+------------------------+
-; Tool Name                                                                                         ; ModelSim-Altera (VHDL) ;
-; Generate functional simulation netlist                                                            ; On                     ;
-; Truncate long hierarchy paths                                                                     ; Off                    ;
-; Map illegal HDL characters                                                                        ; Off                    ;
-; Flatten buses into individual nodes                                                               ; Off                    ;
-; Maintain hierarchy                                                                                ; Off                    ;
-; Bring out device-wide set/reset signals as ports                                                  ; Off                    ;
-; Enable glitch filtering                                                                           ; Off                    ;
-; Do not write top level VHDL entity                                                                ; Off                    ;
-; Disable detection of setup and hold time violations in the input registers of bi-directional pins ; Off                    ;
-; Architecture name in VHDL output netlist                                                          ; structure              ;
-; Generate third-party EDA tool command script for RTL functional simulation                        ; Off                    ;
-; Generate third-party EDA tool command script for gate-level simulation                            ; Off                    ;
-+---------------------------------------------------------------------------------------------------+------------------------+
++-------------------------------------------------------------------------------------------------------------------------------+
+; Simulation Settings                                                                                                           ;
++---------------------------------------------------------------------------------------------------+---------------------------+
+; Option                                                                                            ; Setting                   ;
++---------------------------------------------------------------------------------------------------+---------------------------+
+; Tool Name                                                                                         ; ModelSim-Altera (Verilog) ;
+; Generate functional simulation netlist                                                            ; On                        ;
+; Truncate long hierarchy paths                                                                     ; Off                       ;
+; Map illegal HDL characters                                                                        ; Off                       ;
+; Flatten buses into individual nodes                                                               ; Off                       ;
+; Maintain hierarchy                                                                                ; Off                       ;
+; Bring out device-wide set/reset signals as ports                                                  ; Off                       ;
+; Enable glitch filtering                                                                           ; Off                       ;
+; Do not write top level VHDL entity                                                                ; Off                       ;
+; Disable detection of setup and hold time violations in the input registers of bi-directional pins ; Off                       ;
+; Architecture name in VHDL output netlist                                                          ; structure                 ;
+; Generate third-party EDA tool command script for RTL functional simulation                        ; Off                       ;
+; Generate third-party EDA tool command script for gate-level simulation                            ; Off                       ;
++---------------------------------------------------------------------------------------------------+---------------------------+
 
 
-+----------------------------------------------------------------------+
-; Simulation Generated Files                                           ;
-+----------------------------------------------------------------------+
-; Generated Files                                                      ;
-+----------------------------------------------------------------------+
-; D:/Data/Dropbox/Technion/044151_Lab/Piano/V1/simulation/qsim//V1.vho ;
-+----------------------------------------------------------------------+
++---------------------------------------------------------------------+
+; Simulation Generated Files                                          ;
++---------------------------------------------------------------------+
+; Generated Files                                                     ;
++---------------------------------------------------------------------+
+; D:/Data/OneDrive/Documents/Prog/PianoHero/V1/simulation/qsim//V1.vo ;
++---------------------------------------------------------------------+
 
 
 +-----------------------------+
@@ -95,14 +95,14 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: devices manufactured by Intel and sold by Intel or its 
     Info: authorized distributors.  Please refer to the applicable 
     Info: agreement for further details.
-    Info: Processing started: Tue Aug 21 19:49:16 2018
-Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory=D:/Data/Dropbox/Technion/044151_Lab/Piano/V1/simulation/qsim/ V1 -c V1
+    Info: Processing started: Mon Aug 27 10:18:25 2018
+Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=D:/Data/OneDrive/Documents/Prog/PianoHero/V1/simulation/qsim/ V1 -c V1
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (204019): Generated file V1.vho in folder "D:/Data/Dropbox/Technion/044151_Lab/Piano/V1/simulation/qsim//" for EDA simulation tool
+Info (204019): Generated file V1.vo in folder "D:/Data/OneDrive/Documents/Prog/PianoHero/V1/simulation/qsim//" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4722 megabytes
-    Info: Processing ended: Tue Aug 21 19:49:18 2018
-    Info: Elapsed time: 00:00:02
+    Info: Peak virtual memory: 4726 megabytes
+    Info: Processing ended: Mon Aug 27 10:18:26 2018
+    Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 
 
