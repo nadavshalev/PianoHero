@@ -1,0 +1,21 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.all;
+use IEEE.std_logic_unsigned.all;
+
+
+entity score is
+GENERIC ( ObjectStartX		: INTEGER := 200);
+port 	(
+		
+	   CLK      : in std_logic;
+		RESETn	: in std_logic;
+		oCoord_X : in integer;
+		oCoord_Y : in integer;
+		
+		ObjectStartY 	: in integer;
+		NoteLength		: in integer;
+		drawing_request	: out std_logic ;
+		collision		: out std_logic;
+		mVGA_RGB	: out std_logic_vector(7 downto 0) --	,//	VGA composite RGB
+	);
+end score;

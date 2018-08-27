@@ -1,5 +1,5 @@
 Flow report for V1
-Wed Aug 22 18:47:26 2018
+Thu Aug 23 12:01:48 2018
 Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Standard Edition
 
 
@@ -41,18 +41,18 @@ agreement for further details.
 +-----------------------------------------------------------------------------------+
 ; Flow Summary                                                                      ;
 +---------------------------------+-------------------------------------------------+
-; Flow Status                     ; Successful - Wed Aug 22 18:46:52 2018           ;
+; Flow Status                     ; Successful - Thu Aug 23 12:01:48 2018           ;
 ; Quartus Prime Version           ; 17.0.0 Build 595 04/25/2017 SJ Standard Edition ;
 ; Revision Name                   ; V1                                              ;
-; Top-level Entity Name           ; graphics_module_diag                            ;
+; Top-level Entity Name           ; audio_module_diag                               ;
 ; Family                          ; Cyclone V                                       ;
 ; Device                          ; 5CSXFC6D6F31C6                                  ;
 ; Timing Models                   ; Final                                           ;
-; Logic utilization (in ALMs)     ; 1,495 / 41,910 ( 4 % )                          ;
-; Total registers                 ; 2268                                            ;
-; Total pins                      ; 33 / 499 ( 7 % )                                ;
+; Logic utilization (in ALMs)     ; 912 / 41,910 ( 2 % )                            ;
+; Total registers                 ; 530                                             ;
+; Total pins                      ; 14 / 499 ( 3 % )                                ;
 ; Total virtual pins              ; 0                                               ;
-; Total block memory bits         ; 540,672 / 5,662,720 ( 10 % )                    ;
+; Total block memory bits         ; 1,024 / 5,662,720 ( < 1 % )                     ;
 ; Total DSP Blocks                ; 0 / 112 ( 0 % )                                 ;
 ; Total HSSI RX PCSs              ; 0 / 9 ( 0 % )                                   ;
 ; Total HSSI PMA RX Deserializers ; 0 / 9 ( 0 % )                                   ;
@@ -68,91 +68,56 @@ agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 08/22/2018 18:43:52 ;
+; Start date & time ; 08/23/2018 12:00:44 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; V1                  ;
 +-------------------+---------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Flow Non-Default Global Settings                                                                                                                                     ;
-+-------------------------------------+----------------------------------------------------------------------+---------------+----------------------+------------------+
-; Assignment Name                     ; Value                                                                ; Default Value ; Entity Name          ; Section Id       ;
-+-------------------------------------+----------------------------------------------------------------------+---------------+----------------------+------------------+
-; COMPILER_SIGNATURE_ID               ; 48710646989442.153495263110668                                       ; --            ; --                   ; --               ;
-; ENABLE_SIGNALTAP                    ; On                                                                   ; --            ; --                   ; --               ;
-; PARTITION_COLOR                     ; -- (Not supported for targeted family)                               ; --            ; graphics_module_diag ; Top              ;
-; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family)                               ; --            ; graphics_module_diag ; Top              ;
-; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family)                               ; --            ; graphics_module_diag ; Top              ;
-; PROJECT_OUTPUT_DIRECTORY            ; output_files                                                         ; --            ; --                   ; --               ;
-; SLD_FILE                            ; db/stp1_auto_stripped.stp                                            ; --            ; --                   ; --               ;
-; SLD_NODE_CREATOR_ID                 ; 110                                                                  ; --            ; --                   ; auto_signaltap_0 ;
-; SLD_NODE_ENTITY_NAME                ; sld_signaltap                                                        ; --            ; --                   ; auto_signaltap_0 ;
-; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_RAM_BLOCK_TYPE=AUTO                                              ; --            ; --                   ; auto_signaltap_0 ;
-; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_DATA_BITS=132                                                    ; --            ; --                   ; auto_signaltap_0 ;
-; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_TRIGGER_BITS=132                                                 ; --            ; --                   ; auto_signaltap_0 ;
-; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_STORAGE_QUALIFIER_BITS=132                                       ; --            ; --                   ; auto_signaltap_0 ;
-; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_NODE_INFO=805334528                                              ; --            ; --                   ; auto_signaltap_0 ;
-; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_POWER_UP_TRIGGER=0                                               ; --            ; --                   ; auto_signaltap_0 ;
-; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_STORAGE_QUALIFIER_INVERSION_MASK_LENGTH=0                        ; --            ; --                   ; auto_signaltap_0 ;
-; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_ATTRIBUTE_MEM_MODE=OFF                                           ; --            ; --                   ; auto_signaltap_0 ;
-; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_STATE_FLOW_USE_GENERATED=0                                       ; --            ; --                   ; auto_signaltap_0 ;
-; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_STATE_BITS=11                                                    ; --            ; --                   ; auto_signaltap_0 ;
-; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_BUFFER_FULL_STOP=1                                               ; --            ; --                   ; auto_signaltap_0 ;
-; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_CURRENT_RESOURCE_WIDTH=1                                         ; --            ; --                   ; auto_signaltap_0 ;
-; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_INCREMENTAL_ROUTING=1                                            ; --            ; --                   ; auto_signaltap_0 ;
-; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_TRIGGER_LEVEL=1                                                  ; --            ; --                   ; auto_signaltap_0 ;
-; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_TRIGGER_IN_ENABLED=0                                             ; --            ; --                   ; auto_signaltap_0 ;
-; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_TRIGGER_PIPELINE=0                                               ; --            ; --                   ; auto_signaltap_0 ;
-; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_RAM_PIPELINE=0                                                   ; --            ; --                   ; auto_signaltap_0 ;
-; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_COUNTER_PIPELINE=0                                               ; --            ; --                   ; auto_signaltap_0 ;
-; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_ADVANCED_TRIGGER_ENTITY=sld_reserved_V1_auto_signaltap_0_1_ba1f, ; --            ; --                   ; auto_signaltap_0 ;
-; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_TRIGGER_LEVEL_PIPELINE=1                                         ; --            ; --                   ; auto_signaltap_0 ;
-; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_ENABLE_ADVANCED_TRIGGER=1                                        ; --            ; --                   ; auto_signaltap_0 ;
-; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_INVERSION_MASK=00000000000000000000000000                        ; --            ; --                   ; auto_signaltap_0 ;
-; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_INVERSION_MASK_LENGTH=26                                         ; --            ; --                   ; auto_signaltap_0 ;
-; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_SEGMENT_SIZE=4096                                                ; --            ; --                   ; auto_signaltap_0 ;
-; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_SAMPLE_DEPTH=4096                                                ; --            ; --                   ; auto_signaltap_0 ;
-; TOP_LEVEL_ENTITY                    ; graphics_module_diag                                                 ; V1            ; --                   ; --               ;
-; USE_SIGNALTAP_FILE                  ; output_files/stp1.stp                                                ; --            ; --                   ; --               ;
-+-------------------------------------+----------------------------------------------------------------------+---------------+----------------------+------------------+
-
-
 +-------------------------------------------------------------------------------------------------------------------------------+
-; Flow Elapsed Time                                                                                                             ;
-+---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
-+---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:34     ; 1.0                     ; 869 MB              ; 00:00:51                           ;
-; Partition Merge           ; 00:00:02     ; 1.0                     ; 639 MB              ; 00:00:02                           ;
-; Fitter                    ; 00:02:09     ; 1.0                     ; 2431 MB             ; 00:02:30                           ;
-; Assembler                 ; 00:00:10     ; 1.0                     ; 749 MB              ; 00:00:09                           ;
-; TimeQuest Timing Analyzer ; 00:00:33     ; 1.6                     ; 1112 MB             ; 00:00:50                           ;
-; Total                     ; 00:03:28     ; --                      ; --                  ; 00:04:22                           ;
-+---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Flow Non-Default Global Settings                                                                                              ;
++-------------------------------------+----------------------------------------+---------------+-------------------+------------+
+; Assignment Name                     ; Value                                  ; Default Value ; Entity Name       ; Section Id ;
++-------------------------------------+----------------------------------------+---------------+-------------------+------------+
+; COMPILER_SIGNATURE_ID               ; 48710646989066.153501484408112         ; --            ; --                ; --         ;
+; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --            ; --                ; --         ;
+; MIN_CORE_JUNCTION_TEMP              ; 0                                      ; --            ; --                ; --         ;
+; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; audio_module_diag ; Top        ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --            ; audio_module_diag ; Top        ;
+; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --            ; audio_module_diag ; Top        ;
+; POWER_BOARD_THERMAL_MODEL           ; None (CONSERVATIVE)                    ; --            ; --                ; --         ;
+; POWER_PRESET_COOLING_SOLUTION       ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW  ; --            ; --                ; --         ;
+; PROJECT_OUTPUT_DIRECTORY            ; output_files                           ; --            ; --                ; --         ;
+; TOP_LEVEL_ENTITY                    ; audio_module_diag                      ; V1            ; --                ; --         ;
++-------------------------------------+----------------------------------------+---------------+-------------------+------------+
 
 
-+----------------------------------------------------------------------------------------+
-; Flow OS Summary                                                                        ;
-+---------------------------+------------------+-----------+------------+----------------+
-; Module Name               ; Machine Hostname ; OS Name   ; OS Version ; Processor type ;
-+---------------------------+------------------+-----------+------------+----------------+
-; Analysis & Synthesis      ; ee-206-24        ; Windows 7 ; 6.1        ; x86_64         ;
-; Partition Merge           ; ee-206-24        ; Windows 7 ; 6.1        ; x86_64         ;
-; Fitter                    ; ee-206-24        ; Windows 7 ; 6.1        ; x86_64         ;
-; Assembler                 ; ee-206-24        ; Windows 7 ; 6.1        ; x86_64         ;
-; TimeQuest Timing Analyzer ; ee-206-24        ; Windows 7 ; 6.1        ; x86_64         ;
-+---------------------------+------------------+-----------+------------+----------------+
++--------------------------------------------------------------------------------------------------------------------------+
+; Flow Elapsed Time                                                                                                        ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Analysis & Synthesis ; 00:00:16     ; 1.3                     ; 759 MB              ; 00:00:27                           ;
+; Fitter               ; 00:00:48     ; 1.1                     ; 2592 MB             ; 00:01:46                           ;
+; Total                ; 00:01:04     ; --                      ; --                  ; 00:02:13                           ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
+
+
++-----------------------------------------------------------------------------------+
+; Flow OS Summary                                                                   ;
++----------------------+------------------+-----------+------------+----------------+
+; Module Name          ; Machine Hostname ; OS Name   ; OS Version ; Processor type ;
++----------------------+------------------+-----------+------------+----------------+
+; Analysis & Synthesis ; ee-206-35        ; Windows 7 ; 6.1        ; x86_64         ;
+; Fitter               ; ee-206-35        ; Windows 7 ; 6.1        ; x86_64         ;
++----------------------+------------------+-----------+------------+----------------+
 
 
 ------------
 ; Flow Log ;
 ------------
-quartus_map --read_settings_files=on --write_settings_files=off V1 -c V1 --recompile=on
-quartus_cdb --read_settings_files=on --write_settings_files=off V1 -c V1 --merge=on --recompile=on
-quartus_fit --read_settings_files=off --write_settings_files=off V1 -c V1 --recompile=on
-quartus_asm --read_settings_files=off --write_settings_files=off V1 -c V1
-quartus_sta V1 -c V1
+quartus_map --read_settings_files=on --write_settings_files=off V1 -c V1
+quartus_fit --read_settings_files=off --write_settings_files=off V1 -c V1
 
 
 

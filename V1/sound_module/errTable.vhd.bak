@@ -1,0 +1,50 @@
+--------------------------------------
+-- SinTable.vhd
+-- Written by Gadi and Eran Tuchman.
+-- All rights reserved, Copyright 2009
+--------------------------------------
+
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+use ieee.std_logic_unsigned.all ;
+
+entity sintable is
+port(
+  CLK     					: in std_logic;
+  resetN 					: in std_logic;
+  ADDR    					: in std_logic_vector(7 downto 0);
+  Q       					: out std_logic_vector(15 downto 0)
+);
+end sintable;
+
+architecture arch of sintable is
+constant array_size 			: integer := 256 ;
+
+type table_type is array(0 to array_size - 1) of std_logic_vector(15 downto 0);
+signal err_table				: table_type;
+signal Q_tmp       			:  std_logic_vector(15 downto 0) ;
+
+
+
+begin
+ 
+   
+  sintable_proc: process(resetN, CLK)
+    constant err_table : table_type := ();
+
+ 
+ begin
+
+    if (resetN='0') then
+		Q_tmp <= ( others => '0');
+    elsif(rising_edge(CLK)) then
+--      if (ENA='1') then
+		Q_tmp <= err_table(conv_integer(ADDR));
+--      end if;
+   end if;
+  end process;
+ Q <= Q_tmp; 
+
+		   
+end arch;

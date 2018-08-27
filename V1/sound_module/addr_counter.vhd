@@ -5,13 +5,15 @@ use ieee.std_logic_arith.all;
 use ieee.std_logic_unsigned.all;
 
 ENTITY addr_counter IS
-GENERIC ( COUNT_SIZE		: INTEGER := 15);
+GENERIC ( COUNT_SIZE		: INTEGER := 8;
+			 MAX_VAL			: INTEGER := 255);
 PORT (
 			CLK_IN			:	IN	STD_LOGIC;	
 			resetN			:	IN	STD_LOGIC;
 			en					: 	in  std_logic ;
 			en1				: 	in  std_logic ;
-			addr				: 	out std_logic_vector(COUNT_SIZE - 1 downto 0)
+			addr				: 	out std_logic_vector(COUNT_SIZE - 1 downto 0);
+			finish			:	out std_logic 
 		);
 
 END addr_counter;
@@ -31,11 +33,14 @@ begin
 	begin
 		if resetN = '0' then
 			temp <= zeros ;
+			finish <= '0';
 		elsif rising_edge(CLK_IN) then
+			finish <= '0';
 			if en = '1' and en1 = '1' then
 				temp <= temp + one;
-				if (temp = maxval) then
+				if (temp = MAX_VAL) then
 					temp <= zeros ;
+					finish <= '1';
 				end if;
 			end if;
 		end if;

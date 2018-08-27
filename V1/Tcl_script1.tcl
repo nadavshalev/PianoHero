@@ -23,14 +23,14 @@ set_location_assignment PIN_AF14 -to CLOCK_50
 #============================================================
 set_location_assignment PIN_AJ4 -to resetN  ; # KEY[0]
 set_location_assignment PIN_AK4 -to reset1N ;
-set_location_assignment PIN_AA14 -to KEY[2]
-set_location_assignment PIN_AA15 -to KEY[3]
+set_location_assignment PIN_AA14 -to qqqqq;
+set_location_assignment PIN_AA15 -to wwwww;
 
 #============================================================
 # SW
 #============================================================
-set_location_assignment PIN_AB30 -to recording ; #SW[0]
-set_location_assignment PIN_Y27 -to playing ; #SW[1]
+set_location_assignment PIN_AB30 -to sound_enable ; #SW[0]
+set_location_assignment PIN_Y27 -to error_enable ; #SW[1]
 set_location_assignment PIN_AB28 -to mux[0] ; #SW[2]
 set_location_assignment PIN_AC30 -to mux[1] ; #SW[3]
 set_location_assignment PIN_W25 -to mux[2] ; #SW[4]

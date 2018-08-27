@@ -8,7 +8,7 @@ entity sound_freq_gen is
 end entity;
 
 architecture arc_sound_freq_gen of sound_freq_gen is
-	signal one_sec_flag, duty_flag	 : std_logic ; 
+	signal one_sec_flag	 : std_logic ; 
 begin
 
 
