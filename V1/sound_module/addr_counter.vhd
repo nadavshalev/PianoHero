@@ -29,19 +29,24 @@ begin
 
 	process(CLK_IN,resetN)
 		variable tmp : integer;
+		variable ready : std_logic;
 	begin
 		if resetN = '0' then
 			tmp := -1 ;
 		elsif rising_edge(CLK_IN) then
 			
-			if en1 = '1' then		--start from 0 again
+			if en1 = '1' and ready = '1' then		--start from 0 again
 				tmp := 0 ;
+				ready := '0';
+			elsif en1 = '0' then
+				ready := '1';
 			end if;
 			
 			if en = '1' and tmp /= -1 then
 				tmp := tmp + 1;
 				if tmp = MAX_VAL then
 					tmp := -1;		-- disable
+					ready := '1';
 				end if;
 			end if;
 		end if;

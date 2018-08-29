@@ -10,6 +10,9 @@ port 	(
 		CLK	: in std_logic; --
 		RESETn : in std_logic;	
 		
+		back_note_request : in std_logic;
+		back_note_RGB 	: in std_logic_vector(7 downto 0); --	,  -- y input signal 
+
 		back_RGB 	: in std_logic_vector(7 downto 0); --	,  -- y input signal 
 		
 		note0_request : in std_logic_vector(2 downto 0);
@@ -41,6 +44,8 @@ begin
 			m_mVGA_t <= note0_RGB(15 downto 8);
 		elsif note0_request(2) = '1'  then  
 			m_mVGA_t <= note0_RGB(23 downto 16);
+		elsif back_note_request = '1' then
+			m_mVGA_t <= back_note_RGB;
 		else 
 			m_mVGA_t <= back_RGB;
 		end if; 

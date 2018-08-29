@@ -4,51 +4,163 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "addr[0]",
+					"name" : "MICROPHON_LED",
 					"strict" : false
 				},
 				{
-					"name" : "addr[1]",
+					"name" : "AUD_DACDAT",
 					"strict" : false
 				},
 				{
-					"name" : "addr[2]",
+					"name" : "AUD_XCK",
 					"strict" : false
 				},
 				{
-					"name" : "addr[3]",
+					"name" : "AUD_I2C_SCLK",
 					"strict" : false
 				},
 				{
-					"name" : "addr[4]",
+					"name" : "AUD_I2C_SDAT",
 					"strict" : false
 				},
 				{
-					"name" : "addr[5]",
+					"name" : "AUD_BCLK",
 					"strict" : false
 				},
 				{
-					"name" : "addr[6]",
+					"name" : "AUD_DACLRCK",
 					"strict" : false
 				},
 				{
-					"name" : "addr[7]",
+					"name" : "AUD_ADCLRCK",
 					"strict" : false
 				},
 				{
-					"name" : "en",
+					"name" : "MICROPHON_ON",
 					"strict" : false
 				},
 				{
-					"name" : "en1",
+					"name" : "AUD_ADCDAT",
 					"strict" : false
 				},
 				{
-					"name" : "CLK_IN",
+					"name" : "VGA_VS",
+					"strict" : false
+				},
+				{
+					"name" : "VGA_HS",
+					"strict" : false
+				},
+				{
+					"name" : "VGA_CLK",
+					"strict" : false
+				},
+				{
+					"name" : "VGA_BLANK_N",
+					"strict" : false
+				},
+				{
+					"name" : "VGA_B[7]",
+					"strict" : false
+				},
+				{
+					"name" : "VGA_B[6]",
+					"strict" : false
+				},
+				{
+					"name" : "VGA_G[7]",
+					"strict" : false
+				},
+				{
+					"name" : "VGA_G[6]",
+					"strict" : false
+				},
+				{
+					"name" : "VGA_G[5]",
+					"strict" : false
+				},
+				{
+					"name" : "VGA_R[7]",
+					"strict" : false
+				},
+				{
+					"name" : "VGA_R[6]",
+					"strict" : false
+				},
+				{
+					"name" : "VGA_R[5]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX0[6]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX0[5]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX0[4]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX0[3]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX0[2]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX0[1]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX0[0]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX1[6]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX1[5]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX1[4]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX1[3]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX1[2]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX1[1]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX1[0]",
+					"strict" : false
+				},
+				{
+					"name" : "CLOCK_50",
 					"strict" : false
 				},
 				{
 					"name" : "resetN",
+					"strict" : false
+				},
+				{
+					"name" : "KBD_DAT",
+					"strict" : false
+				},
+				{
+					"name" : "KBD_CLK",
 					"strict" : false
 				}
 			]

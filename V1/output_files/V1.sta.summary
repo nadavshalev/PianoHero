@@ -2,52 +2,212 @@
 TimeQuest Timing Analyzer Summary
 ------------------------------------------------------------
 
-Type  : Slow 1100mV 85C Model Setup 'CLK_IN'
-Slack : -4.400
-TNS   : -121.089
+Type  : Slow 1100mV 85C Model Setup 'CLOCK_50'
+Slack : -14.811
+TNS   : -3967.595
 
-Type  : Slow 1100mV 85C Model Hold 'CLK_IN'
-Slack : 0.474
+Type  : Slow 1100mV 85C Model Setup 'graphics_module_diag:inst9|VGA_Controller:inst1231|oCoord_X[0]'
+Slack : -7.236
+TNS   : -41.847
+
+Type  : Slow 1100mV 85C Model Setup 'AUD_BCLK'
+Slack : -6.617
+TNS   : -247.894
+
+Type  : Slow 1100mV 85C Model Hold 'CLOCK_50'
+Slack : 0.215
 TNS   : 0.000
 
-Type  : Slow 1100mV 85C Model Minimum Pulse Width 'CLK_IN'
-Slack : -0.394
-TNS   : -16.756
-
-Type  : Slow 1100mV 0C Model Setup 'CLK_IN'
-Slack : -4.398
-TNS   : -121.314
-
-Type  : Slow 1100mV 0C Model Hold 'CLK_IN'
-Slack : 0.452
+Type  : Slow 1100mV 85C Model Hold 'AUD_BCLK'
+Slack : 0.345
 TNS   : 0.000
 
-Type  : Slow 1100mV 0C Model Minimum Pulse Width 'CLK_IN'
-Slack : -0.394
-TNS   : -18.183
-
-Type  : Fast 1100mV 85C Model Setup 'CLK_IN'
-Slack : -2.071
-TNS   : -54.675
-
-Type  : Fast 1100mV 85C Model Hold 'CLK_IN'
-Slack : 0.225
+Type  : Slow 1100mV 85C Model Hold 'graphics_module_diag:inst9|VGA_Controller:inst1231|oCoord_X[0]'
+Slack : 0.436
 TNS   : 0.000
 
-Type  : Fast 1100mV 85C Model Minimum Pulse Width 'CLK_IN'
-Slack : -0.080
-TNS   : -2.525
+Type  : Slow 1100mV 85C Model Recovery 'AUD_BCLK'
+Slack : -5.890
+TNS   : -282.289
 
-Type  : Fast 1100mV 0C Model Setup 'CLK_IN'
-Slack : -1.845
-TNS   : -48.114
+Type  : Slow 1100mV 85C Model Recovery 'CLOCK_50'
+Slack : -1.117
+TNS   : -28.970
 
-Type  : Fast 1100mV 0C Model Hold 'CLK_IN'
-Slack : 0.214
+Type  : Slow 1100mV 85C Model Removal 'AUD_BCLK'
+Slack : 0.715
 TNS   : 0.000
 
-Type  : Fast 1100mV 0C Model Minimum Pulse Width 'CLK_IN'
-Slack : -0.083
-TNS   : -2.600
+Type  : Slow 1100mV 85C Model Removal 'CLOCK_50'
+Slack : 0.944
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'CLOCK_50'
+Slack : -2.174
+TNS   : -803.026
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'AUD_BCLK'
+Slack : -2.174
+TNS   : -268.599
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'graphics_module_diag:inst9|VGA_Controller:inst1231|oCoord_X[0]'
+Slack : -0.072
+TNS   : -0.077
+
+Type  : Slow 1100mV 0C Model Setup 'CLOCK_50'
+Slack : -14.744
+TNS   : -3897.580
+
+Type  : Slow 1100mV 0C Model Setup 'graphics_module_diag:inst9|VGA_Controller:inst1231|oCoord_X[0]'
+Slack : -7.454
+TNS   : -43.074
+
+Type  : Slow 1100mV 0C Model Setup 'AUD_BCLK'
+Slack : -6.357
+TNS   : -238.447
+
+Type  : Slow 1100mV 0C Model Hold 'CLOCK_50'
+Slack : 0.199
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'AUD_BCLK'
+Slack : 0.323
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'graphics_module_diag:inst9|VGA_Controller:inst1231|oCoord_X[0]'
+Slack : 0.444
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Recovery 'AUD_BCLK'
+Slack : -5.695
+TNS   : -271.841
+
+Type  : Slow 1100mV 0C Model Recovery 'CLOCK_50'
+Slack : -1.085
+TNS   : -26.452
+
+Type  : Slow 1100mV 0C Model Removal 'AUD_BCLK'
+Slack : 0.555
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Removal 'CLOCK_50'
+Slack : 0.884
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'CLOCK_50'
+Slack : -2.174
+TNS   : -744.368
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'AUD_BCLK'
+Slack : -2.174
+TNS   : -263.503
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'graphics_module_diag:inst9|VGA_Controller:inst1231|oCoord_X[0]'
+Slack : -0.129
+TNS   : -0.338
+
+Type  : Fast 1100mV 85C Model Setup 'CLOCK_50'
+Slack : -8.234
+TNS   : -1949.252
+
+Type  : Fast 1100mV 85C Model Setup 'AUD_BCLK'
+Slack : -4.768
+TNS   : -77.275
+
+Type  : Fast 1100mV 85C Model Setup 'graphics_module_diag:inst9|VGA_Controller:inst1231|oCoord_X[0]'
+Slack : -3.358
+TNS   : -19.235
+
+Type  : Fast 1100mV 85C Model Hold 'graphics_module_diag:inst9|VGA_Controller:inst1231|oCoord_X[0]'
+Slack : 0.101
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'CLOCK_50'
+Slack : 0.133
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'AUD_BCLK'
+Slack : 0.180
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Recovery 'AUD_BCLK'
+Slack : -3.717
+TNS   : -182.195
+
+Type  : Fast 1100mV 85C Model Recovery 'CLOCK_50'
+Slack : -0.242
+TNS   : -2.301
+
+Type  : Fast 1100mV 85C Model Removal 'CLOCK_50'
+Slack : 0.530
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Removal 'AUD_BCLK'
+Slack : 0.733
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'CLOCK_50'
+Slack : -2.174
+TNS   : -588.838
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'AUD_BCLK'
+Slack : -2.174
+TNS   : -272.778
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'graphics_module_diag:inst9|VGA_Controller:inst1231|oCoord_X[0]'
+Slack : 0.095
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Setup 'CLOCK_50'
+Slack : -7.399
+TNS   : -1697.099
+
+Type  : Fast 1100mV 0C Model Setup 'AUD_BCLK'
+Slack : -3.975
+TNS   : -59.859
+
+Type  : Fast 1100mV 0C Model Setup 'graphics_module_diag:inst9|VGA_Controller:inst1231|oCoord_X[0]'
+Slack : -3.137
+TNS   : -18.019
+
+Type  : Fast 1100mV 0C Model Hold 'CLOCK_50'
+Slack : 0.121
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'AUD_BCLK'
+Slack : 0.170
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'graphics_module_diag:inst9|VGA_Controller:inst1231|oCoord_X[0]'
+Slack : 0.174
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Recovery 'AUD_BCLK'
+Slack : -2.999
+TNS   : -148.367
+
+Type  : Fast 1100mV 0C Model Recovery 'CLOCK_50'
+Slack : -0.143
+TNS   : -1.024
+
+Type  : Fast 1100mV 0C Model Removal 'AUD_BCLK'
+Slack : 0.380
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Removal 'CLOCK_50'
+Slack : 0.481
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'CLOCK_50'
+Slack : -2.174
+TNS   : -674.142
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'AUD_BCLK'
+Slack : -2.174
+TNS   : -291.366
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'graphics_module_diag:inst9|VGA_Controller:inst1231|oCoord_X[0]'
+Slack : 0.126
+TNS   : 0.000
 
 ------------------------------------------------------------

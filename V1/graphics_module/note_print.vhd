@@ -7,7 +7,7 @@ use ieee.numeric_std.all;
 
 
 entity note_print is
-GENERIC ( ObjectStartX		: INTEGER := 200);
+GENERIC ( ObjectStartX		: INTEGER := 50);
 port 	(
 	   CLK      : in std_logic;
 		RESETn	: in std_logic;
@@ -27,7 +27,7 @@ architecture behav of note_print is
 -- Constants for frame drawing
 constant	x_frame	: integer :=	639;
 constant	y_frame	: integer :=	479;
-constant	NoteWidth : integer := 25;
+constant	NoteWidth : integer := 49;
 constant	pianoHight : integer := 100;
 
 signal mVGA_R	: std_logic_vector(2 downto 0); --	,	 			//	VGA Red[2:0]
@@ -58,7 +58,7 @@ begin
 		collision_tmp := '0';
 	end if;
 	
-	if (oCoord_X <  ObjectStartX + NoteWidth and oCoord_X > ObjectStartX - NoteWidth and oCoord_Y < StartY + noteLen and oCoord_Y > StartY) then
+	if (oCoord_X <  ObjectStartX + NoteWidth and oCoord_X >= ObjectStartX and oCoord_Y < StartY + noteLen and oCoord_Y > StartY) then
 		if sound = '0' and collision_tmp = '1' then
 			mVGA_R <= "000";
 			mVGA_G <= "111";
