@@ -1,6 +1,6 @@
 Flow report for V1
-Wed Aug 29 18:08:41 2018
-Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
+Wed Aug 29 22:31:11 2018
+Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Standard Edition
 
 
 ---------------------
@@ -38,29 +38,29 @@ agreement for further details.
 
 
 
-+-------------------------------------------------------------------------------+
-; Flow Summary                                                                  ;
-+---------------------------------+---------------------------------------------+
-; Flow Status                     ; Successful - Wed Aug 29 18:08:15 2018       ;
-; Quartus Prime Version           ; 17.0.0 Build 595 04/25/2017 SJ Lite Edition ;
-; Revision Name                   ; V1                                          ;
-; Top-level Entity Name           ; TOP_module_diag                             ;
-; Family                          ; Cyclone V                                   ;
-; Device                          ; 5CSXFC6D6F31C6                              ;
-; Timing Models                   ; Final                                       ;
-; Logic utilization (in ALMs)     ; 4,618 / 41,910 ( 11 % )                     ;
-; Total registers                 ; 1168                                        ;
-; Total pins                      ; 57 / 499 ( 11 % )                           ;
-; Total virtual pins              ; 0                                           ;
-; Total block memory bits         ; 1,024 / 5,662,720 ( < 1 % )                 ;
-; Total DSP Blocks                ; 0 / 112 ( 0 % )                             ;
-; Total HSSI RX PCSs              ; 0 / 9 ( 0 % )                               ;
-; Total HSSI PMA RX Deserializers ; 0 / 9 ( 0 % )                               ;
-; Total HSSI TX PCSs              ; 0 / 9 ( 0 % )                               ;
-; Total HSSI PMA TX Serializers   ; 0 / 9 ( 0 % )                               ;
-; Total PLLs                      ; 0 / 15 ( 0 % )                              ;
-; Total DLLs                      ; 0 / 4 ( 0 % )                               ;
-+---------------------------------+---------------------------------------------+
++-----------------------------------------------------------------------------------+
+; Flow Summary                                                                      ;
++---------------------------------+-------------------------------------------------+
+; Flow Status                     ; Successful - Wed Aug 29 22:30:58 2018           ;
+; Quartus Prime Version           ; 17.0.0 Build 595 04/25/2017 SJ Standard Edition ;
+; Revision Name                   ; V1                                              ;
+; Top-level Entity Name           ; TOP_module_diag                                 ;
+; Family                          ; Cyclone V                                       ;
+; Device                          ; 5CSXFC6D6F31C6                                  ;
+; Timing Models                   ; Final                                           ;
+; Logic utilization (in ALMs)     ; 4,592 / 41,910 ( 11 % )                         ;
+; Total registers                 ; 1190                                            ;
+; Total pins                      ; 57 / 499 ( 11 % )                               ;
+; Total virtual pins              ; 0                                               ;
+; Total block memory bits         ; 1,024 / 5,662,720 ( < 1 % )                     ;
+; Total DSP Blocks                ; 0 / 112 ( 0 % )                                 ;
+; Total HSSI RX PCSs              ; 0 / 9 ( 0 % )                                   ;
+; Total HSSI PMA RX Deserializers ; 0 / 9 ( 0 % )                                   ;
+; Total HSSI TX PCSs              ; 0 / 9 ( 0 % )                                   ;
+; Total HSSI PMA TX Serializers   ; 0 / 9 ( 0 % )                                   ;
+; Total PLLs                      ; 0 / 15 ( 0 % )                                  ;
+; Total DLLs                      ; 0 / 4 ( 0 % )                                   ;
++---------------------------------+-------------------------------------------------+
 
 
 +-----------------------------------------+
@@ -68,7 +68,7 @@ agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 08/29/2018 18:04:06 ;
+; Start date & time ; 08/29/2018 22:28:46 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; V1                  ;
 +-------------------+---------------------+
@@ -79,7 +79,7 @@ agreement for further details.
 +-------------------------------------+----------------------------------------+---------------+-----------------+------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name     ; Section Id ;
 +-------------------------------------+----------------------------------------+---------------+-----------------+------------+
-; COMPILER_SIGNATURE_ID               ; 220295160980437.153555504613468        ; --            ; --              ; --         ;
+; COMPILER_SIGNATURE_ID               ; 48710646988395.153557092501100         ; --            ; --              ; --         ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --            ; --              ; --         ;
 ; MIN_CORE_JUNCTION_TEMP              ; 0                                      ; --            ; --              ; --         ;
 ; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; TOP_module_diag ; Top        ;
@@ -97,24 +97,24 @@ agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:38     ; 1.3                     ; 4996 MB             ; 00:01:02                           ;
-; Fitter                    ; 00:03:15     ; 1.1                     ; 6343 MB             ; 00:05:59                           ;
-; Assembler                 ; 00:00:12     ; 1.0                     ; 4894 MB             ; 00:00:11                           ;
-; TimeQuest Timing Analyzer ; 00:00:25     ; 1.5                     ; 5240 MB             ; 00:00:34                           ;
-; Total                     ; 00:04:30     ; --                      ; --                  ; 00:07:46                           ;
+; Analysis & Synthesis      ; 00:00:25     ; 2.0                     ; 851 MB              ; 00:00:40                           ;
+; Fitter                    ; 00:01:35     ; 1.2                     ; 2688 MB             ; 00:03:20                           ;
+; Assembler                 ; 00:00:08     ; 1.0                     ; 748 MB              ; 00:00:08                           ;
+; TimeQuest Timing Analyzer ; 00:00:11     ; 2.1                     ; 1114 MB             ; 00:00:19                           ;
+; Total                     ; 00:02:19     ; --                      ; --                  ; 00:04:27                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
-+-----------------------------------------------------------------------------------------+
-; Flow OS Summary                                                                         ;
-+---------------------------+------------------+------------+------------+----------------+
-; Module Name               ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
-+---------------------------+------------------+------------+------------+----------------+
-; Analysis & Synthesis      ; LAPTOP-BET3Q17F  ; Windows 10 ; 10.0       ; x86_64         ;
-; Fitter                    ; LAPTOP-BET3Q17F  ; Windows 10 ; 10.0       ; x86_64         ;
-; Assembler                 ; LAPTOP-BET3Q17F  ; Windows 10 ; 10.0       ; x86_64         ;
-; TimeQuest Timing Analyzer ; LAPTOP-BET3Q17F  ; Windows 10 ; 10.0       ; x86_64         ;
-+---------------------------+------------------+------------+------------+----------------+
++----------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                        ;
++---------------------------+------------------+-----------+------------+----------------+
+; Module Name               ; Machine Hostname ; OS Name   ; OS Version ; Processor type ;
++---------------------------+------------------+-----------+------------+----------------+
+; Analysis & Synthesis      ; ee-206-17        ; Windows 7 ; 6.1        ; x86_64         ;
+; Fitter                    ; ee-206-17        ; Windows 7 ; 6.1        ; x86_64         ;
+; Assembler                 ; ee-206-17        ; Windows 7 ; 6.1        ; x86_64         ;
+; TimeQuest Timing Analyzer ; ee-206-17        ; Windows 7 ; 6.1        ; x86_64         ;
++---------------------------+------------------+-----------+------------+----------------+
 
 
 ------------

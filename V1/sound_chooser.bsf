@@ -41,15 +41,15 @@ agreement for further details.
 	(port
 		(pt 0 64)
 		(input)
-		(text "is_play" (rect 0 0 28 12)(font "Arial" ))
-		(text "is_play" (rect 21 59 49 71)(font "Arial" ))
+		(text "note0" (rect 0 0 21 12)(font "Arial" ))
+		(text "note0" (rect 21 59 42 71)(font "Arial" ))
 		(line (pt 0 64)(pt 16 64)(line_width 1))
 	)
 	(port
 		(pt 0 80)
 		(input)
-		(text "error_play" (rect 0 0 42 12)(font "Arial" ))
-		(text "error_play" (rect 21 75 63 87)(font "Arial" ))
+		(text "error" (rect 0 0 20 12)(font "Arial" ))
+		(text "error" (rect 21 75 41 87)(font "Arial" ))
 		(line (pt 0 80)(pt 16 80)(line_width 1))
 	)
 	(port
@@ -62,8 +62,8 @@ agreement for further details.
 	(port
 		(pt 0 112)
 		(input)
-		(text "play_data[15..0]" (rect 0 0 62 12)(font "Arial" ))
-		(text "play_data[15..0]" (rect 21 107 83 119)(font "Arial" ))
+		(text "note0_data[15..0]" (rect 0 0 67 12)(font "Arial" ))
+		(text "note0_data[15..0]" (rect 21 107 88 119)(font "Arial" ))
 		(line (pt 0 112)(pt 16 112)(line_width 3))
 	)
 	(port

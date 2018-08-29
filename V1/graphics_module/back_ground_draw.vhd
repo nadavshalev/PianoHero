@@ -38,7 +38,7 @@ begin
 
 	mVGA_R <= "000" ;	
 	mVGA_G <= "110"  ;	
-	mVGA_B <= "00" ;
+	mVGA_B <= "10" ;
 
 end process ; 
 

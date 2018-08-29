@@ -5,9 +5,10 @@ use ieee.std_logic_signed.all;
 
 entity sound_chooser is
 	port( RESETN, CLK 					: in std_logic;
-			is_play							: in std_logic;
-			error_play, victory_play	: in std_logic;
-			play_data, error_data		: in std_logic_vector(15 downto 0);
+			note0								: in std_logic;
+			error								: in std_logic;
+			victory_play					: in std_logic;
+			note0_data, error_data		: in std_logic_vector(15 downto 0);
 			out_data	   	  				: out std_logic_vector(15 downto 0) );
 end entity;
 
@@ -21,13 +22,13 @@ begin
 		if RESETN = '0' then
 			data := (others => '0');
 		elsif rising_edge(CLK) then
-			if error_play = '1' then
+			if error = '1' then
 				data := error_data;
 			else
 				data := (others => '0');
 				
-				if is_play = '1' then
-					data := data + play_data;					
+				if note0 = '1' then
+					data := data + note0_data;					
 				end if;
 			end if;
 		end if;

@@ -20,7 +20,7 @@ port(
 end testSong;
 
 architecture arch of testSong is
-	constant song_len 		: integer := 10 ;
+	constant song_len 		: integer := 17 ;
 
 	type table_type is array(0 to song_len - 1) of integer;
 	signal song_table				: table_type;
@@ -28,7 +28,8 @@ begin
  
    
 	process(resetN, CLK)
-		constant song1 : table_type := (1000,-50, 300, -100, 300, -100, 300, -300, 1000, -200);
+		constant song1 : table_type := (40, -10, 40, -10, 40, -10, 10, -10, 10, -10, 10, -10, 10, -10, 10, -10, 100);
+		--constant song1 : table_type := (1000,-50, 300, -100, 300, -100, 300, -300, 1000, -200);
 		--constant song2 : table_type := (-50, 50, -100, 45, -5, 85, -15, 35, -15, 50);
 		
 		

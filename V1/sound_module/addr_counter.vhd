@@ -12,7 +12,8 @@ PORT (
 			resetN			:	IN	STD_LOGIC;
 			en					: 	in  std_logic ;
 			en1				: 	in  std_logic ;
-			addr				: 	out std_logic_vector(COUNT_SIZE - 1 downto 0)
+			addr				: 	out std_logic_vector(COUNT_SIZE - 1 downto 0);
+			isCount			: 	out  std_logic
 		);
 
 END addr_counter;
@@ -20,11 +21,6 @@ END addr_counter;
 
 	
 architecture addr_counter_arch of 		addr_counter is
-
-	
-	constant one : std_logic_vector(COUNT_SIZE - 1 downto 0) := (0 => '1', others => '0');
-	constant zeros : std_logic_vector(COUNT_SIZE - 1 downto 0) := (others => '0');
-	constant maxval : std_logic_vector(COUNT_SIZE - 1 downto 0) := (others => '1');
 begin
 
 	process(CLK_IN,resetN)
@@ -33,10 +29,13 @@ begin
 	begin
 		if resetN = '0' then
 			tmp := -1 ;
+			isCount <= '0';
+			ready := '1';
 		elsif rising_edge(CLK_IN) then
 			
 			if en1 = '1' and ready = '1' then		--start from 0 again
 				tmp := 0 ;
+				isCount <= '1';
 				ready := '0';
 			elsif en1 = '0' then
 				ready := '1';
@@ -47,6 +46,7 @@ begin
 				if tmp = MAX_VAL then
 					tmp := -1;		-- disable
 					ready := '1';
+					isCount <= '0';
 				end if;
 			end if;
 		end if;
