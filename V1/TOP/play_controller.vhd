@@ -65,7 +65,7 @@ begin
 				----------------------------------
 				-- play: collision with press ----
 				when col_pre_play =>
-					sound <= '1';
+					--sound <= '1';
 					if break = '1' then
 						state := col_unpre;
 						sound <= '0';
@@ -77,7 +77,7 @@ begin
 				----------------------------------
 				-- error: press with no collision 
 				when uncol_pre_err =>
-					error <= '1';
+					--error <= '1';
 					if break ='1' then
 						state := uncol_unpre;
 						error <= '0';
@@ -92,7 +92,7 @@ begin
 				----------------------------------
 				-- error: press twice on collision
 				when second_pre_err =>
-					error <= '1';
+					--error <= '1';
 					if break = '1' then
 						state := col_unpre;
 						error <= '0';

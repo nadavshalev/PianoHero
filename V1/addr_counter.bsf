@@ -59,13 +59,6 @@ agreement for further details.
 		(text "addr[count_size-1..0]" (rect 115 27 195 39)(font "Arial" ))
 		(line (pt 216 32)(pt 200 32)(line_width 3))
 	)
-	(port
-		(pt 216 48)
-		(output)
-		(text "finish" (rect 0 0 20 12)(font "Arial" ))
-		(text "finish" (rect 175 43 195 55)(font "Arial" ))
-		(line (pt 216 48)(pt 200 48)(line_width 1))
-	)
 	(parameter
 		"COUNT_SIZE"
 		"8"

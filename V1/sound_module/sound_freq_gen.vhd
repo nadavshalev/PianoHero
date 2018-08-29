@@ -16,7 +16,7 @@ begin
 		variable one_sec: integer ;
 	    constant sec: integer := 50000000 ; -- for Real operation 
 		--constant sec: integer := 300 ; -- for simulation 
-		constant step_num : integer := 256 * FREQUENCY ;
+		constant step_num : integer := FREQUENCY ;
 	begin
 		if RESETN = '0' then
 			one_sec := 0 ;

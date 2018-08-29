@@ -6,7 +6,7 @@ JedecChain;
 	P ActionCode(Ign)
 		Device PartName(SOCVHPS) MfrSpec(OpMask(0));
 	P ActionCode(Cfg)
-		Device PartName(5CSXFC6D6F31) Path("C:/Users/maa3/Desktop/V1/output_files/") File("V1.sof") MfrSpec(OpMask(1));
+		Device PartName(5CSXFC6D6F31) Path("C:/Users/maa3/Desktop/PianoHero-master/V1/output_files/") File("V1.sof") MfrSpec(OpMask(1));
 
 ChainEnd;
 
