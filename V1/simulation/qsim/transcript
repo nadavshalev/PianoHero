@@ -1,31 +1,31 @@
 # do V1.do
 # ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:55:49 on Aug 29,2018
-# vlog -work work V1.vo 
-# -- Compiling module addr_counter
-# 
-# Top level modules:
-# 	addr_counter
-# End time: 16:55:49 on Aug 29,2018, Elapsed time: 0:00:00
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:24:11 on Aug 30,2018
+# vcom -work work V1.vho 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package altera_lnsim_components
+# -- Loading package VITAL_Timing
+# -- Loading package VITAL_Primitives
+# -- Loading package cyclonev_atom_pack
+# -- Loading package cyclonev_components
+# -- Compiling entity noteGraph
+# -- Compiling architecture structure of noteGraph
+# End time: 11:24:11 on Aug 30,2018, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:55:49 on Aug 29,2018
-# vlog -work work Waveform.vwf.vt 
-# -- Compiling module addr_counter_vlg_vec_tst
-# 
-# Top level modules:
-# 	addr_counter_vlg_vec_tst
-# End time: 16:55:49 on Aug 29,2018, Elapsed time: 0:00:00
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:24:12 on Aug 30,2018
+# vcom -work work Waveform.vwf.vht 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity noteGraph_vhd_vec_tst
+# -- Compiling architecture noteGraph_arch of noteGraph_vhd_vec_tst
+# End time: 11:24:12 on Aug 30,2018, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vsim -novopt -c -t 1ps -L cyclonev_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.addr_counter_vlg_vec_tst 
-# Start time: 16:55:49 on Aug 29,2018
-# Loading work.addr_counter_vlg_vec_tst
-# Loading work.addr_counter
-# Loading altera_ver.dffeas
-# Loading altera_ver.PRIM_GDFF_LOW
-# after#25
-# ** Note: $finish    : Waveform.vwf.vt(51)
-#    Time: 1 us  Iteration: 0  Instance: /addr_counter_vlg_vec_tst
-# End time: 16:55:50 on Aug 29,2018, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
+# ** Error (suppressible): (vsim-SDF-3196) Failed to find SDF file "V1_vhd.sdo".
+# vsim -novopt -c -t 1ps -sdfmax noteGraph_vhd_vec_tst/i1=V1_vhd.sdo -L cyclonev -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim work.noteGraph_vhd_vec_tst 
+# Error loading design
+# Errors: 1, Warnings: 0

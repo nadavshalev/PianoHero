@@ -62,15 +62,15 @@ agreement for further details.
 	(port
 		(pt 0 112)
 		(input)
-		(text "note0_request[2..0]" (rect 0 0 76 12)(font "Arial" ))
-		(text "note0_request[2..0]" (rect 21 107 97 119)(font "Arial" ))
-		(line (pt 0 112)(pt 16 112)(line_width 3))
+		(text "note0_request" (rect 0 0 56 12)(font "Arial" ))
+		(text "note0_request" (rect 21 107 77 119)(font "Arial" ))
+		(line (pt 0 112)(pt 16 112)(line_width 1))
 	)
 	(port
 		(pt 0 128)
 		(input)
-		(text "note0_RGB[23..0]" (rect 0 0 73 12)(font "Arial" ))
-		(text "note0_RGB[23..0]" (rect 21 123 94 135)(font "Arial" ))
+		(text "note0_RGB[7..0]" (rect 0 0 68 12)(font "Arial" ))
+		(text "note0_RGB[7..0]" (rect 21 123 89 135)(font "Arial" ))
 		(line (pt 0 128)(pt 16 128)(line_width 3))
 	)
 	(port

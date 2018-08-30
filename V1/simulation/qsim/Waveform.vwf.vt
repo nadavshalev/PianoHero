@@ -19,71 +19,214 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "08/29/2018 16:55:46"
+// Generated on "08/30/2018 11:17:13"
                                                                                 
-// Verilog Test Bench (with test vectors) for design :                          addr_counter
+// Verilog Test Bench (with test vectors) for design :                          noteGraph
 // 
 // Simulation tool : 3rd Party
 // 
 
 `timescale 1 ps/ 1 ps
-module addr_counter_vlg_vec_tst();
+module noteGraph_vlg_vec_tst();
 // constants                                           
 // general purpose registers
-reg CLK_IN;
-reg en;
-reg en1;
+reg clk;
+reg [31:0] note_length;
 reg resetN;
+reg timer_done;
 // wires                                               
-wire [7:0] addr;
+wire droawing_request;
 
 // assign statements (if any)                          
-addr_counter i1 (
+noteGraph i1 (
 // port map - connection between master ports and signals/registers   
-	.addr(addr),
-	.CLK_IN(CLK_IN),
-	.en(en),
-	.en1(en1),
-	.resetN(resetN)
+	.clk(clk),
+	.droawing_request(droawing_request),
+	.note_length(note_length),
+	.resetN(resetN),
+	.timer_done(timer_done)
 );
 initial 
 begin 
 #1000000 $finish;
 end 
 
-// CLK_IN
-always
-begin
-	CLK_IN = 1'b0;
-	CLK_IN = #750 1'b1;
-	#250;
-end 
-
-// en
-always
-begin
-	en = 1'b0;
-	en = #1500 1'b1;
-	#500;
-end 
-
-// en1
+// clk
 initial
 begin
-	en1 = 1'b0;
-	en1 = #60000 1'b1;
-	en1 = #40000 1'b0;
-	en1 = #100000 1'b1;
-	en1 = #10000 1'b0;
-	en1 = #690000 1'b1;
-	en1 = #10000 1'b0;
+	clk = 1'b0;
+end 
+// note_length[ 31 ]
+initial
+begin
+	note_length[31] = 1'b0;
+end 
+// note_length[ 30 ]
+initial
+begin
+	note_length[30] = 1'b0;
+end 
+// note_length[ 29 ]
+initial
+begin
+	note_length[29] = 1'b0;
+end 
+// note_length[ 28 ]
+initial
+begin
+	note_length[28] = 1'b0;
+end 
+// note_length[ 27 ]
+initial
+begin
+	note_length[27] = 1'b0;
+end 
+// note_length[ 26 ]
+initial
+begin
+	note_length[26] = 1'b0;
+end 
+// note_length[ 25 ]
+initial
+begin
+	note_length[25] = 1'b0;
+end 
+// note_length[ 24 ]
+initial
+begin
+	note_length[24] = 1'b0;
+end 
+// note_length[ 23 ]
+initial
+begin
+	note_length[23] = 1'b0;
+end 
+// note_length[ 22 ]
+initial
+begin
+	note_length[22] = 1'b0;
+end 
+// note_length[ 21 ]
+initial
+begin
+	note_length[21] = 1'b0;
+end 
+// note_length[ 20 ]
+initial
+begin
+	note_length[20] = 1'b0;
+end 
+// note_length[ 19 ]
+initial
+begin
+	note_length[19] = 1'b0;
+end 
+// note_length[ 18 ]
+initial
+begin
+	note_length[18] = 1'b0;
+end 
+// note_length[ 17 ]
+initial
+begin
+	note_length[17] = 1'b0;
+end 
+// note_length[ 16 ]
+initial
+begin
+	note_length[16] = 1'b0;
+end 
+// note_length[ 15 ]
+initial
+begin
+	note_length[15] = 1'b0;
+end 
+// note_length[ 14 ]
+initial
+begin
+	note_length[14] = 1'b0;
+end 
+// note_length[ 13 ]
+initial
+begin
+	note_length[13] = 1'b0;
+end 
+// note_length[ 12 ]
+initial
+begin
+	note_length[12] = 1'b0;
+end 
+// note_length[ 11 ]
+initial
+begin
+	note_length[11] = 1'b0;
+end 
+// note_length[ 10 ]
+initial
+begin
+	note_length[10] = 1'b0;
+end 
+// note_length[ 9 ]
+initial
+begin
+	note_length[9] = 1'b0;
+end 
+// note_length[ 8 ]
+initial
+begin
+	note_length[8] = 1'b0;
+end 
+// note_length[ 7 ]
+initial
+begin
+	note_length[7] = 1'b0;
+end 
+// note_length[ 6 ]
+initial
+begin
+	note_length[6] = 1'b0;
+end 
+// note_length[ 5 ]
+initial
+begin
+	note_length[5] = 1'b0;
+end 
+// note_length[ 4 ]
+initial
+begin
+	note_length[4] = 1'b0;
+end 
+// note_length[ 3 ]
+initial
+begin
+	note_length[3] = 1'b0;
+end 
+// note_length[ 2 ]
+initial
+begin
+	note_length[2] = 1'b0;
+end 
+// note_length[ 1 ]
+initial
+begin
+	note_length[1] = 1'b0;
+end 
+// note_length[ 0 ]
+initial
+begin
+	note_length[0] = 1'b0;
 end 
 
 // resetN
 initial
 begin
 	resetN = 1'b0;
-	resetN = #40000 1'b1;
+end 
+
+// timer_done
+initial
+begin
+	timer_done = 1'b0;
 end 
 endmodule
 

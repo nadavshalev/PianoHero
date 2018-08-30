@@ -1,0 +1,13 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.all;
+use IEEE.std_logic_signed.all;
+use IEEE.std_logic_arith.all;
+use ieee.numeric_std.all;
+
+entity noteGraph is
+generic (StartX		: integer := 0)
+port	(
+	clk						: in std_logic;
+	resetN					: in std_logic;
+	timer_done				: in std_logic;
+	note_length				: in integer;

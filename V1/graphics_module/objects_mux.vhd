@@ -15,8 +15,8 @@ port 	(
 
 		back_RGB 	: in std_logic_vector(7 downto 0); --	,  -- y input signal 
 		
-		note0_request : in std_logic_vector(2 downto 0);
-		note0_RGB 	: in std_logic_vector(23 downto 0); --	, -- b  input signal 
+		note0_request : in std_logic;
+		note0_RGB 	: in std_logic_vector(7 downto 0); --	, -- b  input signal 
 	
 		m_mVGA_R 	: out std_logic_vector(7 downto 0); --	,  
 		m_mVGA_G 	: out std_logic_vector(7 downto 0); --	, 
@@ -38,12 +38,8 @@ begin
 			m_mVGA_t	<=  (others => '0') ; 	
 
 	elsif rising_edge(CLK) then
-		if note0_request(0) = '1'  then  
-			m_mVGA_t <= note0_RGB(7 downto 0);  --first priority from B 
-		elsif note0_request(1) = '1'  then  
-			m_mVGA_t <= note0_RGB(15 downto 8);
-		elsif note0_request(2) = '1'  then  
-			m_mVGA_t <= note0_RGB(23 downto 16);
+		if note0_request = '1'  then  
+			m_mVGA_t <= note0_RGB;  --first priority from B 
 		elsif back_note_request = '1' then
 			m_mVGA_t <= back_note_RGB;
 		else 

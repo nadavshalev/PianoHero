@@ -1,0 +1,23 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_arith.all;
+use ieee.std_logic_signed.all;
+
+entity sound_counter is
+	port( D0,D1,D2,D3,D4,D5,D6,D7,D8,D9,D10,D11,D12			: in std_logic_vector(15 downto 0);
+			e1,e2,e3,e4,e5,e6,e7,e8,e9,e10,e11,e12				: in std_logic;
+			out_data	   	  											: out std_logic_vector(15 downto 0) );
+end entity;
+
+architecture arc_sound_counter of sound_counter is
+	variable Da0,Da1,Da2,Da3,Da4,Da5,Da6,Da7,Da8,Da9,Da10,Da11,Da12			: in std_logic_vector(15 downto 0);
+begin
+	
+
+	process(CLK,RESETN)
+		variable data		: std_logic_vector(15 downto 0);
+	begin
+		data <= D0 + D1 + D2 + D3 + D4 + D5
+	end process;
+
+end arc_sound_counter;
