@@ -1,54 +1,248 @@
 <session jtag_chain="DE-SoC [USB-1]" jtag_device="@2: 5CSEBA6(.|ES)/5CSEMA6/.. (0x02D020DD)" sof_file="../output_files/V1.sof">
-  <display_tree gui_logging_enabled="1">
-    <display_branch instance="auto_signaltap_0" log="log: Trig @ 2018/08/30 14:13:24 (0:0:3.7 elapsed)" signal_set="signal_set: 2018/08/30 14:10:19  #0" trigger="trigger: 2018/08/30 14:13:02  #0"/>
+  <display_tree gui_logging_enabled="0">
+    <display_branch instance="auto_signaltap_0" signal_set="USE_GLOBAL_TEMP" trigger="USE_GLOBAL_TEMP"/>
   </display_tree>
   <instance enabled="true" entity_name="sld_signaltap" is_auto_node="yes" is_expanded="true" name="auto_signaltap_0" source_file="sld_signaltap.vhd">
     <node_ip_info instance_id="0" mfg_id="110" node_id="0" version="6"/>
-    <signal_set is_expanded="true" name="signal_set: 2018/08/30 14:10:19  #0">
-      <clock name="CLOCK_50~inputCLKENA0" polarity="posedge" tap_mode="probeonly"/>
-      <config pipeline_level="0" ram_type="AUTO" reserved_data_nodes="0" reserved_storage_qualifier_nodes="0" reserved_trigger_nodes="0" sample_depth="8192" trigger_in_enable="no" trigger_out_enable="no"/>
+    <signal_set global_temp="1" is_expanded="true" name="signal_set: 2018/08/23 11:35:24  #0">
+      <clock name="CLOCK_50" polarity="posedge" tap_mode="classic"/>
+      <config pipeline_level="0" ram_type="AUTO" reserved_data_nodes="0" reserved_storage_qualifier_nodes="0" reserved_trigger_nodes="0" sample_depth="4096" trigger_in_enable="no" trigger_out_enable="no"/>
       <top_entity/>
       <signal_vec>
         <trigger_input_vec>
-          <wire name="KBD_DAT" tap_mode="probeonly"/>
-          <wire name="resetN~inputCLKENA0" tap_mode="probeonly"/>
+          <wire name="AUD_ADCLRCK" tap_mode="classic"/>
+          <wire name="AUD_DACDAT" tap_mode="classic"/>
+          <wire name="AUD_I2C_SCLK" tap_mode="classic"/>
+          <wire name="AUD_I2C_SDAT" tap_mode="classic"/>
+          <wire name="AUD_XCK" tap_mode="classic"/>
+          <wire name="MICROPHON_LED" tap_mode="classic"/>
+          <wire name="addr_counter:inst14" tap_mode="classic"/>
+          <wire name="addr_counter:inst15" tap_mode="classic"/>
+          <wire name="audio_codec_controller:audio_codec_controller_inst" tap_mode="classic"/>
+          <wire name="audio_codec_controller_inst.AUD_DACDAT" tap_mode="classic"/>
+          <wire name="audio_codec_controller_inst.AUD_I2C_SCLK" tap_mode="classic"/>
+          <wire name="audio_codec_controller_inst.AUD_XCK" tap_mode="classic"/>
+          <wire name="audio_codec_controller_inst.MICROPHON_LED" tap_mode="classic"/>
+          <wire name="audio_codec_controller_inst.adcdata_left[0]" tap_mode="classic"/>
+          <wire name="audio_codec_controller_inst.adcdata_right[0]" tap_mode="classic"/>
+          <wire name="errtable:inst832" tap_mode="classic"/>
+          <wire name="sintable:inst" tap_mode="classic"/>
+          <wire name="sound_chooser:inst6" tap_mode="classic"/>
+          <wire name="sound_freq_gen:inst2" tap_mode="classic"/>
+          <wire name="sound_freq_gen:inst5" tap_mode="classic"/>
+          <wire name="AUD_ADCDAT" tap_mode="probeonly"/>
+          <wire name="AUD_BCLK" tap_mode="probeonly"/>
+          <wire name="AUD_DACLRCK" tap_mode="probeonly"/>
+          <wire name="CLOCK_50~inputCLKENA0" tap_mode="probeonly"/>
+          <wire name="MICROPHON_ON" tap_mode="probeonly"/>
+          <wire name="error_enable" tap_mode="probeonly"/>
+          <wire name="error_enable~input" tap_mode="probeonly"/>
+          <wire name="resetN" tap_mode="probeonly"/>
+          <wire name="resetN~input" tap_mode="probeonly"/>
+          <wire name="sound_enable" tap_mode="probeonly"/>
+          <wire name="sound_enable~input" tap_mode="probeonly"/>
+          <wire name="~QUARTUS_CREATED_GND~I" tap_mode="probeonly"/>
         </trigger_input_vec>
         <data_input_vec>
-          <wire name="KBD_DAT" tap_mode="probeonly"/>
-          <wire name="resetN~inputCLKENA0" tap_mode="probeonly"/>
+          <wire name="AUD_ADCLRCK" tap_mode="classic"/>
+          <wire name="AUD_DACDAT" tap_mode="classic"/>
+          <wire name="AUD_I2C_SCLK" tap_mode="classic"/>
+          <wire name="AUD_I2C_SDAT" tap_mode="classic"/>
+          <wire name="AUD_XCK" tap_mode="classic"/>
+          <wire name="MICROPHON_LED" tap_mode="classic"/>
+          <wire name="addr_counter:inst14" tap_mode="classic"/>
+          <wire name="addr_counter:inst15" tap_mode="classic"/>
+          <wire name="audio_codec_controller:audio_codec_controller_inst" tap_mode="classic"/>
+          <wire name="audio_codec_controller_inst.AUD_DACDAT" tap_mode="classic"/>
+          <wire name="audio_codec_controller_inst.AUD_I2C_SCLK" tap_mode="classic"/>
+          <wire name="audio_codec_controller_inst.AUD_XCK" tap_mode="classic"/>
+          <wire name="audio_codec_controller_inst.MICROPHON_LED" tap_mode="classic"/>
+          <wire name="audio_codec_controller_inst.adcdata_left[0]" tap_mode="classic"/>
+          <wire name="audio_codec_controller_inst.adcdata_right[0]" tap_mode="classic"/>
+          <wire name="errtable:inst832" tap_mode="classic"/>
+          <wire name="sintable:inst" tap_mode="classic"/>
+          <wire name="sound_chooser:inst6" tap_mode="classic"/>
+          <wire name="sound_freq_gen:inst2" tap_mode="classic"/>
+          <wire name="sound_freq_gen:inst5" tap_mode="classic"/>
+          <wire name="AUD_ADCDAT" tap_mode="probeonly"/>
+          <wire name="AUD_BCLK" tap_mode="probeonly"/>
+          <wire name="AUD_DACLRCK" tap_mode="probeonly"/>
+          <wire name="CLOCK_50~inputCLKENA0" tap_mode="probeonly"/>
+          <wire name="MICROPHON_ON" tap_mode="probeonly"/>
+          <wire name="error_enable" tap_mode="probeonly"/>
+          <wire name="error_enable~input" tap_mode="probeonly"/>
+          <wire name="resetN" tap_mode="probeonly"/>
+          <wire name="resetN~input" tap_mode="probeonly"/>
+          <wire name="sound_enable" tap_mode="probeonly"/>
+          <wire name="sound_enable~input" tap_mode="probeonly"/>
+          <wire name="~QUARTUS_CREATED_GND~I" tap_mode="probeonly"/>
         </data_input_vec>
         <storage_qualifier_input_vec>
-          <wire name="KBD_DAT" tap_mode="probeonly"/>
-          <wire name="resetN~inputCLKENA0" tap_mode="probeonly"/>
+          <wire name="AUD_ADCLRCK" tap_mode="classic"/>
+          <wire name="AUD_DACDAT" tap_mode="classic"/>
+          <wire name="AUD_I2C_SCLK" tap_mode="classic"/>
+          <wire name="AUD_I2C_SDAT" tap_mode="classic"/>
+          <wire name="AUD_XCK" tap_mode="classic"/>
+          <wire name="MICROPHON_LED" tap_mode="classic"/>
+          <wire name="addr_counter:inst14" tap_mode="classic"/>
+          <wire name="addr_counter:inst15" tap_mode="classic"/>
+          <wire name="audio_codec_controller:audio_codec_controller_inst" tap_mode="classic"/>
+          <wire name="audio_codec_controller_inst.AUD_DACDAT" tap_mode="classic"/>
+          <wire name="audio_codec_controller_inst.AUD_I2C_SCLK" tap_mode="classic"/>
+          <wire name="audio_codec_controller_inst.AUD_XCK" tap_mode="classic"/>
+          <wire name="audio_codec_controller_inst.MICROPHON_LED" tap_mode="classic"/>
+          <wire name="audio_codec_controller_inst.adcdata_left[0]" tap_mode="classic"/>
+          <wire name="audio_codec_controller_inst.adcdata_right[0]" tap_mode="classic"/>
+          <wire name="errtable:inst832" tap_mode="classic"/>
+          <wire name="sintable:inst" tap_mode="classic"/>
+          <wire name="sound_chooser:inst6" tap_mode="classic"/>
+          <wire name="sound_freq_gen:inst2" tap_mode="classic"/>
+          <wire name="sound_freq_gen:inst5" tap_mode="classic"/>
+          <wire name="AUD_ADCDAT" tap_mode="probeonly"/>
+          <wire name="AUD_BCLK" tap_mode="probeonly"/>
+          <wire name="AUD_DACLRCK" tap_mode="probeonly"/>
+          <wire name="CLOCK_50~inputCLKENA0" tap_mode="probeonly"/>
+          <wire name="MICROPHON_ON" tap_mode="probeonly"/>
+          <wire name="error_enable" tap_mode="probeonly"/>
+          <wire name="error_enable~input" tap_mode="probeonly"/>
+          <wire name="resetN" tap_mode="probeonly"/>
+          <wire name="resetN~input" tap_mode="probeonly"/>
+          <wire name="sound_enable" tap_mode="probeonly"/>
+          <wire name="sound_enable~input" tap_mode="probeonly"/>
+          <wire name="~QUARTUS_CREATED_GND~I" tap_mode="probeonly"/>
         </storage_qualifier_input_vec>
       </signal_vec>
       <presentation>
         <unified_setup_data_view>
-          <node data_index="1" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="true" level-0="either edge" name="resetN~inputCLKENA0" storage_index="1" tap_mode="probeonly" trigger_index="1" type="unknown"/>
-          <node data_index="0" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="true" name="KBD_DAT" storage_index="0" tap_mode="probeonly" trigger_index="0" type="unknown"/>
+          <node duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="true" name="AUD_ADCDAT" tap_mode="probeonly" type="input pin"/>
+          <node duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="true" name="AUD_BCLK" tap_mode="probeonly" type="input pin"/>
+          <node duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="true" name="AUD_DACLRCK" tap_mode="probeonly" type="input pin"/>
+          <node duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="true" name="CLOCK_50~inputCLKENA0" tap_mode="probeonly" type="combinatorial"/>
+          <node duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="true" level-0="either edge" name="error_enable" tap_mode="probeonly" type="input pin"/>
+          <node duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="true" name="error_enable~input" tap_mode="probeonly" type="combinatorial"/>
+          <node duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="true" name="MICROPHON_ON" tap_mode="probeonly" type="input pin"/>
+          <node duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="true" name="resetN" tap_mode="probeonly" type="input pin"/>
+          <node duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="true" name="resetN~input" tap_mode="probeonly" type="combinatorial"/>
+          <node duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="true" level-0="either edge" name="sound_enable" tap_mode="probeonly" type="input pin"/>
+          <node duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="true" name="sound_enable~input" tap_mode="probeonly" type="combinatorial"/>
+          <node duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="true" name="~QUARTUS_CREATED_GND~I" tap_mode="probeonly" type="combinatorial"/>
+          <node duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="true" name="AUD_ADCLRCK" tap_mode="classic" type="input pin"/>
+          <node duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="true" name="AUD_DACDAT" tap_mode="classic" type="output pin"/>
+          <node duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="true" name="AUD_I2C_SCLK" tap_mode="classic" type="output pin"/>
+          <node duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="true" name="AUD_I2C_SDAT" tap_mode="classic" type="bidir pin"/>
+          <node duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="true" name="AUD_XCK" tap_mode="classic" type="output pin"/>
+          <node duplicate_name_allowed="false" is_data_input="true" is_node_valid="false" is_selected="false" is_storage_input="true" is_trigger_input="true" name="audio_codec_controller_inst.AUD_DACDAT" tap_mode="classic" type="combinatorial"/>
+          <node duplicate_name_allowed="false" is_data_input="true" is_node_valid="false" is_selected="false" is_storage_input="true" is_trigger_input="true" name="audio_codec_controller_inst.AUD_I2C_SCLK" tap_mode="classic" type="combinatorial"/>
+          <node duplicate_name_allowed="false" is_data_input="true" is_node_valid="false" is_selected="false" is_storage_input="true" is_trigger_input="true" name="audio_codec_controller_inst.AUD_XCK" tap_mode="classic" type="combinatorial"/>
+          <node duplicate_name_allowed="false" is_data_input="true" is_node_valid="false" is_selected="false" is_storage_input="true" is_trigger_input="true" name="audio_codec_controller_inst.MICROPHON_LED" tap_mode="classic" type="combinatorial"/>
+          <node duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="true" name="MICROPHON_LED" tap_mode="classic" type="output pin"/>
+          <node is_selected="false" level-0="alt_or" name="audio_codec_controller_inst.adcdata_left[0..0]" order="msb_to_lsb" type="combinatorial">
+            <node duplicate_name_allowed="false" is_data_input="true" is_node_valid="false" is_selected="false" is_storage_input="true" is_trigger_input="true" name="audio_codec_controller_inst.adcdata_left[0]" tap_mode="classic" type="combinatorial"/>
+          </node>
+          <node is_selected="false" level-0="alt_or" name="audio_codec_controller_inst.adcdata_right[0..0]" order="msb_to_lsb" type="combinatorial">
+            <node duplicate_name_allowed="false" is_data_input="true" is_node_valid="false" is_selected="false" is_storage_input="true" is_trigger_input="true" name="audio_codec_controller_inst.adcdata_right[0]" tap_mode="classic" type="combinatorial"/>
+          </node>
+          <node duplicate_name_allowed="false" is_data_input="true" is_node_valid="false" is_selected="false" is_storage_input="true" is_trigger_input="true" name="audio_codec_controller:audio_codec_controller_inst" tap_mode="classic" type="unknown"/>
+          <node duplicate_name_allowed="false" is_data_input="true" is_node_valid="false" is_selected="false" is_storage_input="true" is_trigger_input="true" name="sintable:inst" tap_mode="classic" type="unknown"/>
+          <node duplicate_name_allowed="false" is_data_input="true" is_node_valid="false" is_selected="false" is_storage_input="true" is_trigger_input="true" name="sound_freq_gen:inst2" tap_mode="classic" type="unknown"/>
+          <node duplicate_name_allowed="false" is_data_input="true" is_node_valid="false" is_selected="false" is_storage_input="true" is_trigger_input="true" name="sound_freq_gen:inst5" tap_mode="classic" type="unknown"/>
+          <node duplicate_name_allowed="false" is_data_input="true" is_node_valid="false" is_selected="false" is_storage_input="true" is_trigger_input="true" name="sound_chooser:inst6" tap_mode="classic" type="unknown"/>
+          <node duplicate_name_allowed="false" is_data_input="true" is_node_valid="false" is_selected="false" is_storage_input="true" is_trigger_input="true" name="addr_counter:inst14" tap_mode="classic" type="unknown"/>
+          <node duplicate_name_allowed="false" is_data_input="true" is_node_valid="false" is_selected="false" is_storage_input="true" is_trigger_input="true" name="addr_counter:inst15" tap_mode="classic" type="unknown"/>
+          <node duplicate_name_allowed="false" is_data_input="true" is_node_valid="false" is_selected="false" is_storage_input="true" is_trigger_input="true" name="errtable:inst832" tap_mode="classic" type="unknown"/>
         </unified_setup_data_view>
         <data_view>
-          <net data_index="1" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="true" level-0="either edge" name="resetN~inputCLKENA0" storage_index="1" tap_mode="probeonly" trigger_index="1" type="unknown"/>
-          <net data_index="0" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="true" name="KBD_DAT" storage_index="0" tap_mode="probeonly" trigger_index="0" type="unknown"/>
+          <net data_index="20" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="true" name="AUD_ADCDAT" storage_index="20" tap_mode="probeonly" trigger_index="20" type="unknown"/>
+          <net data_index="21" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="true" name="AUD_BCLK" storage_index="21" tap_mode="probeonly" trigger_index="21" type="unknown"/>
+          <net data_index="22" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="true" name="AUD_DACLRCK" storage_index="22" tap_mode="probeonly" trigger_index="22" type="unknown"/>
+          <net data_index="23" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="true" name="CLOCK_50~inputCLKENA0" storage_index="23" tap_mode="probeonly" trigger_index="23" type="unknown"/>
+          <net data_index="25" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="true" level-0="either edge" name="error_enable" storage_index="25" tap_mode="probeonly" trigger_index="25" type="unknown"/>
+          <net data_index="26" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="true" name="error_enable~input" storage_index="26" tap_mode="probeonly" trigger_index="26" type="unknown"/>
+          <net data_index="24" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="true" name="MICROPHON_ON" storage_index="24" tap_mode="probeonly" trigger_index="24" type="unknown"/>
+          <net data_index="27" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="true" name="resetN" storage_index="27" tap_mode="probeonly" trigger_index="27" type="unknown"/>
+          <net data_index="28" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="true" name="resetN~input" storage_index="28" tap_mode="probeonly" trigger_index="28" type="unknown"/>
+          <net data_index="29" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="true" level-0="either edge" name="sound_enable" storage_index="29" tap_mode="probeonly" trigger_index="29" type="unknown"/>
+          <net data_index="30" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="true" name="sound_enable~input" storage_index="30" tap_mode="probeonly" trigger_index="30" type="unknown"/>
+          <net data_index="31" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="true" name="~QUARTUS_CREATED_GND~I" storage_index="31" tap_mode="probeonly" trigger_index="31" type="unknown"/>
+          <net data_index="0" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="true" name="AUD_ADCLRCK" storage_index="0" tap_mode="classic" trigger_index="0" type="unknown"/>
+          <net data_index="1" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="true" name="AUD_DACDAT" storage_index="1" tap_mode="classic" trigger_index="1" type="unknown"/>
+          <net data_index="2" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="true" name="AUD_I2C_SCLK" storage_index="2" tap_mode="classic" trigger_index="2" type="unknown"/>
+          <net data_index="3" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="true" name="AUD_I2C_SDAT" storage_index="3" tap_mode="classic" trigger_index="3" type="unknown"/>
+          <net data_index="4" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="true" name="AUD_XCK" storage_index="4" tap_mode="classic" trigger_index="4" type="unknown"/>
+          <net data_index="9" duplicate_name_allowed="false" is_data_input="true" is_node_valid="false" is_selected="false" is_storage_input="true" is_trigger_input="true" name="audio_codec_controller_inst.AUD_DACDAT" storage_index="9" tap_mode="classic" trigger_index="9" type="unknown"/>
+          <net data_index="10" duplicate_name_allowed="false" is_data_input="true" is_node_valid="false" is_selected="false" is_storage_input="true" is_trigger_input="true" name="audio_codec_controller_inst.AUD_I2C_SCLK" storage_index="10" tap_mode="classic" trigger_index="10" type="unknown"/>
+          <net data_index="11" duplicate_name_allowed="false" is_data_input="true" is_node_valid="false" is_selected="false" is_storage_input="true" is_trigger_input="true" name="audio_codec_controller_inst.AUD_XCK" storage_index="11" tap_mode="classic" trigger_index="11" type="unknown"/>
+          <net data_index="12" duplicate_name_allowed="false" is_data_input="true" is_node_valid="false" is_selected="false" is_storage_input="true" is_trigger_input="true" name="audio_codec_controller_inst.MICROPHON_LED" storage_index="12" tap_mode="classic" trigger_index="12" type="unknown"/>
+          <net data_index="5" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="true" name="MICROPHON_LED" storage_index="5" tap_mode="classic" trigger_index="5" type="unknown"/>
+          <bus is_selected="false" level-0="alt_or" name="audio_codec_controller_inst.adcdata_left[0..0]" order="msb_to_lsb" type="combinatorial">
+            <net data_index="13" duplicate_name_allowed="false" is_data_input="true" is_node_valid="false" is_selected="false" is_storage_input="true" is_trigger_input="true" name="audio_codec_controller_inst.adcdata_left[0]" storage_index="13" tap_mode="classic" trigger_index="13" type="unknown"/>
+          </bus>
+          <bus is_selected="false" level-0="alt_or" name="audio_codec_controller_inst.adcdata_right[0..0]" order="msb_to_lsb" type="combinatorial">
+            <net data_index="14" duplicate_name_allowed="false" is_data_input="true" is_node_valid="false" is_selected="false" is_storage_input="true" is_trigger_input="true" name="audio_codec_controller_inst.adcdata_right[0]" storage_index="14" tap_mode="classic" trigger_index="14" type="unknown"/>
+          </bus>
+          <net data_index="8" duplicate_name_allowed="false" is_data_input="true" is_node_valid="false" is_selected="false" is_storage_input="true" is_trigger_input="true" name="audio_codec_controller:audio_codec_controller_inst" storage_index="8" tap_mode="classic" trigger_index="8" type="unknown"/>
+          <net data_index="16" duplicate_name_allowed="false" is_data_input="true" is_node_valid="false" is_selected="false" is_storage_input="true" is_trigger_input="true" name="sintable:inst" storage_index="16" tap_mode="classic" trigger_index="16" type="unknown"/>
+          <net data_index="18" duplicate_name_allowed="false" is_data_input="true" is_node_valid="false" is_selected="false" is_storage_input="true" is_trigger_input="true" name="sound_freq_gen:inst2" storage_index="18" tap_mode="classic" trigger_index="18" type="unknown"/>
+          <net data_index="19" duplicate_name_allowed="false" is_data_input="true" is_node_valid="false" is_selected="false" is_storage_input="true" is_trigger_input="true" name="sound_freq_gen:inst5" storage_index="19" tap_mode="classic" trigger_index="19" type="unknown"/>
+          <net data_index="17" duplicate_name_allowed="false" is_data_input="true" is_node_valid="false" is_selected="false" is_storage_input="true" is_trigger_input="true" name="sound_chooser:inst6" storage_index="17" tap_mode="classic" trigger_index="17" type="unknown"/>
+          <net data_index="6" duplicate_name_allowed="false" is_data_input="true" is_node_valid="false" is_selected="false" is_storage_input="true" is_trigger_input="true" name="addr_counter:inst14" storage_index="6" tap_mode="classic" trigger_index="6" type="unknown"/>
+          <net data_index="7" duplicate_name_allowed="false" is_data_input="true" is_node_valid="false" is_selected="false" is_storage_input="true" is_trigger_input="true" name="addr_counter:inst15" storage_index="7" tap_mode="classic" trigger_index="7" type="unknown"/>
+          <net data_index="15" duplicate_name_allowed="false" is_data_input="true" is_node_valid="false" is_selected="false" is_storage_input="true" is_trigger_input="true" name="errtable:inst832" storage_index="15" tap_mode="classic" trigger_index="15" type="unknown"/>
         </data_view>
         <setup_view>
-          <net data_index="1" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="true" level-0="either edge" name="resetN~inputCLKENA0" storage_index="1" tap_mode="probeonly" trigger_index="1" type="unknown"/>
-          <net data_index="0" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="true" name="KBD_DAT" storage_index="0" tap_mode="probeonly" trigger_index="0" type="unknown"/>
+          <net data_index="20" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="true" name="AUD_ADCDAT" storage_index="20" tap_mode="probeonly" trigger_index="20" type="unknown"/>
+          <net data_index="21" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="true" name="AUD_BCLK" storage_index="21" tap_mode="probeonly" trigger_index="21" type="unknown"/>
+          <net data_index="22" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="true" name="AUD_DACLRCK" storage_index="22" tap_mode="probeonly" trigger_index="22" type="unknown"/>
+          <net data_index="23" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="true" name="CLOCK_50~inputCLKENA0" storage_index="23" tap_mode="probeonly" trigger_index="23" type="unknown"/>
+          <net data_index="25" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="true" level-0="either edge" name="error_enable" storage_index="25" tap_mode="probeonly" trigger_index="25" type="unknown"/>
+          <net data_index="26" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="true" name="error_enable~input" storage_index="26" tap_mode="probeonly" trigger_index="26" type="unknown"/>
+          <net data_index="24" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="true" name="MICROPHON_ON" storage_index="24" tap_mode="probeonly" trigger_index="24" type="unknown"/>
+          <net data_index="27" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="true" name="resetN" storage_index="27" tap_mode="probeonly" trigger_index="27" type="unknown"/>
+          <net data_index="28" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="true" name="resetN~input" storage_index="28" tap_mode="probeonly" trigger_index="28" type="unknown"/>
+          <net data_index="29" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="true" level-0="either edge" name="sound_enable" storage_index="29" tap_mode="probeonly" trigger_index="29" type="unknown"/>
+          <net data_index="30" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="true" name="sound_enable~input" storage_index="30" tap_mode="probeonly" trigger_index="30" type="unknown"/>
+          <net data_index="31" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="true" name="~QUARTUS_CREATED_GND~I" storage_index="31" tap_mode="probeonly" trigger_index="31" type="unknown"/>
+          <net data_index="0" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="true" name="AUD_ADCLRCK" storage_index="0" tap_mode="classic" trigger_index="0" type="unknown"/>
+          <net data_index="1" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="true" name="AUD_DACDAT" storage_index="1" tap_mode="classic" trigger_index="1" type="unknown"/>
+          <net data_index="2" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="true" name="AUD_I2C_SCLK" storage_index="2" tap_mode="classic" trigger_index="2" type="unknown"/>
+          <net data_index="3" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="true" name="AUD_I2C_SDAT" storage_index="3" tap_mode="classic" trigger_index="3" type="unknown"/>
+          <net data_index="4" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="true" name="AUD_XCK" storage_index="4" tap_mode="classic" trigger_index="4" type="unknown"/>
+          <net data_index="9" duplicate_name_allowed="false" is_data_input="true" is_node_valid="false" is_selected="false" is_storage_input="true" is_trigger_input="true" name="audio_codec_controller_inst.AUD_DACDAT" storage_index="9" tap_mode="classic" trigger_index="9" type="unknown"/>
+          <net data_index="10" duplicate_name_allowed="false" is_data_input="true" is_node_valid="false" is_selected="false" is_storage_input="true" is_trigger_input="true" name="audio_codec_controller_inst.AUD_I2C_SCLK" storage_index="10" tap_mode="classic" trigger_index="10" type="unknown"/>
+          <net data_index="11" duplicate_name_allowed="false" is_data_input="true" is_node_valid="false" is_selected="false" is_storage_input="true" is_trigger_input="true" name="audio_codec_controller_inst.AUD_XCK" storage_index="11" tap_mode="classic" trigger_index="11" type="unknown"/>
+          <net data_index="12" duplicate_name_allowed="false" is_data_input="true" is_node_valid="false" is_selected="false" is_storage_input="true" is_trigger_input="true" name="audio_codec_controller_inst.MICROPHON_LED" storage_index="12" tap_mode="classic" trigger_index="12" type="unknown"/>
+          <net data_index="5" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="true" name="MICROPHON_LED" storage_index="5" tap_mode="classic" trigger_index="5" type="unknown"/>
+          <bus is_selected="false" level-0="alt_or" name="audio_codec_controller_inst.adcdata_left[0..0]" order="msb_to_lsb" type="combinatorial">
+            <net data_index="13" duplicate_name_allowed="false" is_data_input="true" is_node_valid="false" is_selected="false" is_storage_input="true" is_trigger_input="true" name="audio_codec_controller_inst.adcdata_left[0]" storage_index="13" tap_mode="classic" trigger_index="13" type="unknown"/>
+          </bus>
+          <bus is_selected="false" level-0="alt_or" name="audio_codec_controller_inst.adcdata_right[0..0]" order="msb_to_lsb" type="combinatorial">
+            <net data_index="14" duplicate_name_allowed="false" is_data_input="true" is_node_valid="false" is_selected="false" is_storage_input="true" is_trigger_input="true" name="audio_codec_controller_inst.adcdata_right[0]" storage_index="14" tap_mode="classic" trigger_index="14" type="unknown"/>
+          </bus>
+          <net data_index="8" duplicate_name_allowed="false" is_data_input="true" is_node_valid="false" is_selected="false" is_storage_input="true" is_trigger_input="true" name="audio_codec_controller:audio_codec_controller_inst" storage_index="8" tap_mode="classic" trigger_index="8" type="unknown"/>
+          <net data_index="16" duplicate_name_allowed="false" is_data_input="true" is_node_valid="false" is_selected="false" is_storage_input="true" is_trigger_input="true" name="sintable:inst" storage_index="16" tap_mode="classic" trigger_index="16" type="unknown"/>
+          <net data_index="18" duplicate_name_allowed="false" is_data_input="true" is_node_valid="false" is_selected="false" is_storage_input="true" is_trigger_input="true" name="sound_freq_gen:inst2" storage_index="18" tap_mode="classic" trigger_index="18" type="unknown"/>
+          <net data_index="19" duplicate_name_allowed="false" is_data_input="true" is_node_valid="false" is_selected="false" is_storage_input="true" is_trigger_input="true" name="sound_freq_gen:inst5" storage_index="19" tap_mode="classic" trigger_index="19" type="unknown"/>
+          <net data_index="17" duplicate_name_allowed="false" is_data_input="true" is_node_valid="false" is_selected="false" is_storage_input="true" is_trigger_input="true" name="sound_chooser:inst6" storage_index="17" tap_mode="classic" trigger_index="17" type="unknown"/>
+          <net data_index="6" duplicate_name_allowed="false" is_data_input="true" is_node_valid="false" is_selected="false" is_storage_input="true" is_trigger_input="true" name="addr_counter:inst14" storage_index="6" tap_mode="classic" trigger_index="6" type="unknown"/>
+          <net data_index="7" duplicate_name_allowed="false" is_data_input="true" is_node_valid="false" is_selected="false" is_storage_input="true" is_trigger_input="true" name="addr_counter:inst15" storage_index="7" tap_mode="classic" trigger_index="7" type="unknown"/>
+          <net data_index="15" duplicate_name_allowed="false" is_data_input="true" is_node_valid="false" is_selected="false" is_storage_input="true" is_trigger_input="true" name="errtable:inst832" storage_index="15" tap_mode="classic" trigger_index="15" type="unknown"/>
         </setup_view>
         <trigger_in_editor/>
         <trigger_out_editor/>
       </presentation>
-      <trigger CRC="69D04243" attribute_mem_mode="false" gap_record="true" is_expanded="true" name="trigger: 2018/08/30 14:13:02  #0" position="pre" power_up_trigger_mode="false" record_data_gap="true" segment_size="64" storage_mode="off" storage_qualifier_disabled="no" storage_qualifier_port_is_pin="false" storage_qualifier_port_name="auto_stp_external_storage_qualifier" storage_qualifier_port_tap_mode="classic" trigger_type="circular">
+      <trigger CRC="80D26C46" attribute_mem_mode="false" gap_record="true" global_temp="1" is_expanded="true" name="trigger: 2018/08/23 11:35:24  #1" position="pre" power_up_trigger_mode="false" record_data_gap="true" segment_size="64" storage_mode="off" storage_qualifier_disabled="no" storage_qualifier_port_is_pin="false" storage_qualifier_port_name="auto_stp_external_storage_qualifier" storage_qualifier_port_tap_mode="classic" trigger_type="circular">
         <power_up_trigger position="pre" storage_qualifier_disabled="no"/>
         <events use_custom_flow_control="no">
-          <level enabled="yes" name="condition1" type="basic">'resetN~inputCLKENA0' == either edge
-            <power_up enabled="yes">
-            </power_up><op_node/>
+          <level editor="basic_or" enabled="yes" name="condition1" type="advanced"><power_up enabled="yes">
+              <power_up_expression><![CDATA[alt_reduction(alt_true, {((mbpm('X', 'AUD_ADCDAT') && variable(1))), ((mbpm('X', 'AUD_ADCLRCK') && variable(1))), ((mbpm('X', 'AUD_BCLK') && variable(1))), ((mbpm('X', 'AUD_DACDAT') && variable(1))), ((mbpm('X', 'AUD_DACLRCK') && variable(1))), ((mbpm('X', 'AUD_I2C_SCLK') && variable(1))), ((mbpm('X', 'AUD_I2C_SDAT') && variable(1))), ((mbpm('X', 'AUD_XCK') && variable(1))), ((mbpm('X', 'CLOCK_50~inputCLKENA0') && variable(1))), ((mbpm('X', 'MICROPHON_LED') && variable(1))), ((mbpm('X', 'MICROPHON_ON') && variable(1))), ((mbpm('X', 'addr_counter:inst14') && variable(1))), ((mbpm('X', 'addr_counter:inst15') && variable(1))), ((mbpm('X', 'audio_codec_controller:audio_codec_controller_inst') && variable(1))), ((mbpm('X', 'audio_codec_controller_inst.AUD_DACDAT') && variable(1))), ((mbpm('X', 'audio_codec_controller_inst.AUD_I2C_SCLK') && variable(1))), ((mbpm('X', 'audio_codec_controller_inst.AUD_XCK') && variable(1))), ((mbpm('X', 'audio_codec_controller_inst.MICROPHON_LED') && variable(1))), ((mbpm('X', 'error_enable') && variable(1))), ((mbpm('X', 'error_enable~input') && variable(1))), ((mbpm('X', 'errtable:inst832') && variable(1))), ((mbpm('X', 'resetN') && variable(1))), ((mbpm('X', 'resetN~input') && variable(1))), ((mbpm('X', 'sintable:inst') && variable(1))), ((mbpm('X', 'sound_chooser:inst6') && variable(1))), ((mbpm('X', 'sound_enable') && variable(1))), ((mbpm('X', 'sound_enable~input') && variable(1))), ((mbpm('X', 'sound_freq_gen:inst2') && variable(1))), ((mbpm('X', 'sound_freq_gen:inst5') && variable(1))), ((mbpm('X', '~QUARTUS_CREATED_GND~I') && variable(1))), (alt_reduction(alt_false, {(mbpm('X', 'audio_codec_controller_inst.adcdata_left[0]') && variable(1))})), (alt_reduction(alt_false, {(mbpm('X', 'audio_codec_controller_inst.adcdata_right[0]') && variable(1))}))})]]>
+              </power_up_expression>
+            </power_up><expression><![CDATA[alt_reduction(alt_or, {((mbpm('X', 'AUD_ADCDAT') && variable(0))), ((mbpm('X', 'AUD_ADCLRCK') && variable(0))), ((mbpm('X', 'AUD_BCLK') && variable(0))), ((mbpm('X', 'AUD_DACDAT') && variable(0))), ((mbpm('X', 'AUD_DACLRCK') && variable(0))), ((mbpm('X', 'AUD_I2C_SCLK') && variable(0))), ((mbpm('X', 'AUD_I2C_SDAT') && variable(0))), ((mbpm('X', 'AUD_XCK') && variable(0))), ((mbpm('X', 'CLOCK_50~inputCLKENA0') && variable(0))), ((mbpm('X', 'MICROPHON_LED') && variable(0))), ((mbpm('X', 'MICROPHON_ON') && variable(0))), ((mbpm('X', 'addr_counter:inst14') && variable(0))), ((mbpm('X', 'addr_counter:inst15') && variable(0))), ((mbpm('X', 'audio_codec_controller:audio_codec_controller_inst') && variable(0))), ((mbpm('X', 'audio_codec_controller_inst.AUD_DACDAT') && variable(0))), ((mbpm('X', 'audio_codec_controller_inst.AUD_I2C_SCLK') && variable(0))), ((mbpm('X', 'audio_codec_controller_inst.AUD_XCK') && variable(0))), ((mbpm('X', 'audio_codec_controller_inst.MICROPHON_LED') && variable(0))), ((mbpm('E', 'error_enable') && variable(1))), ((mbpm('X', 'error_enable~input') && variable(0))), ((mbpm('X', 'errtable:inst832') && variable(0))), ((mbpm('X', 'resetN') && variable(0))), ((mbpm('X', 'resetN~input') && variable(0))), ((mbpm('X', 'sintable:inst') && variable(0))), ((mbpm('X', 'sound_chooser:inst6') && variable(0))), ((mbpm('E', 'sound_enable') && variable(1))), ((mbpm('X', 'sound_enable~input') && variable(0))), ((mbpm('X', 'sound_freq_gen:inst2') && variable(0))), ((mbpm('X', 'sound_freq_gen:inst5') && variable(0))), ((mbpm('X', '~QUARTUS_CREATED_GND~I') && variable(0))), (alt_reduction(alt_false, {(mbpm('X', 'audio_codec_controller_inst.adcdata_left[0]') && variable(0))})), (alt_reduction(alt_false, {(mbpm('X', 'audio_codec_controller_inst.adcdata_right[0]') && variable(0))}))})]]>
+            </expression><op_node/>
           </level>
         </events>
         <storage_qualifier_events>
-          <transitional>11
-            <pwr_up_transitional>11</pwr_up_transitional>
+          <transitional>11111111111111111111111111111111
+            <pwr_up_transitional>11111111111111111111111111111111</pwr_up_transitional>
           </transitional>
           <storage_qualifier_level type="basic">
             <power_up>
@@ -70,14 +264,8 @@
     </signal_set>
     <position_info>
       <single attribute="active tab" value="1"/>
-      <single attribute="data horizontal scroll position" value="0"/>
-      <single attribute="data vertical scroll position" value="0"/>
       <single attribute="setup horizontal scroll position" value="0"/>
       <single attribute="setup vertical scroll position" value="0"/>
-      <single attribute="zoom level denominator" value="1"/>
-      <single attribute="zoom level numerator" value="1"/>
-      <single attribute="zoom offset denominator" value="1"/>
-      <single attribute="zoom offset numerator" value="122880"/>
     </position_info>
   </instance>
   <mnemonics/>
@@ -91,6 +279,6 @@
     <single attribute="jtag widget visible" value="1"/>
     <single attribute="lock mode" value="0"/>
     <multi attribute="frame size" size="2" value="1920,1058"/>
-    <multi attribute="jtag widget size" size="2" value="398,135"/>
+    <multi attribute="jtag widget size" size="2" value="348,135"/>
   </global_info>
 </session>
