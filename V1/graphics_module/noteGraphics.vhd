@@ -32,7 +32,7 @@ architecture behav of noteGraphics is
 	constant zeros	: std_logic_vector(speedNote-1 downto 0) := (others => '0');
 	
 	
-	signal screenTable	: std_logic_vector(y_frame-pianoWidth-1 downto 0) := (others => '0');				-- shift register for screen size
+	signal screenTable	: std_logic_vector(62 downto 0) := (others => '0');				-- shift register for screen size
 	
 	signal mVGA_R	: std_logic_vector(2 downto 0); --	,	 			//	VGA Red[2:0]
 	signal mVGA_G	: std_logic_vector(2 downto 0); --	,	 			//	VGA Green[2:0]
@@ -49,21 +49,23 @@ begin
 			tmp_len := 0;
 			max := 0;
 		elsif rising_edge(CLK) then
-			if clearNote = '1' then
+		
+			if clearNote = '1' then		-- delete notes from screen
 				tmp_len := 0;
-				screenTable <= (others => '0');
-			elsif NoteLength > 0 then
+				screenTable <= (others => '0');	
+			elsif NoteLength > 0 then	--save length for later
 				tmp_len := NoteLength;
 			end if;
+			
 			if timer_done = '1' then
 			
 				if tmp_len > 0 then	--add music to start of the register
 					tmp_len := tmp_len - speedNote;
-					screenTable(y_frame-pianoWidth-1 downto y_frame-pianoWidth - speedNote) <=  (others => '1');
-					screenTable(y_frame-pianoWidth-1- speedNote downto 0) <= screenTable(y_frame-pianoWidth-1 downto speedNote);
+					screenTable(62 downto 63 - speedNote) <=  (others => '1');
+					screenTable(62- speedNote downto 0) <= screenTable(62 downto speedNote);
 				else
-					screenTable(y_frame-pianoWidth-1 downto y_frame-pianoWidth - speedNote) <=  (others => '0');
-					screenTable(y_frame-pianoWidth-1- speedNote downto 0) <= screenTable(y_frame-pianoWidth-1 downto speedNote);
+					screenTable(62 downto 63 - speedNote) <=  (others => '0');
+					screenTable(62- speedNote downto 0) <= screenTable(62 downto speedNote);
 				end if;
 				
 				if screenTable(0) = '1' then	--if there is a collision
@@ -80,12 +82,12 @@ begin
 				else
 					max := max + 1;
 				end if;
-				if oCoord_X <  ObjectStartX + NoteWidth and oCoord_X >= ObjectStartX and screenTable(y_frame-oCoord_Y-pianoWidth) = '1' then
-					if sound = '0' and collision_tmp = '1'and oCoord_Y >= y_frame - pianoWidth -max and oCoord_Y <= y_frame - pianoWidth then
+				if oCoord_X <  ObjectStartX + NoteWidth and oCoord_X >= ObjectStartX and screenTable(62-oCoord_Y/6) = '1' then
+					if sound = '0' and collision_tmp = '1'and oCoord_Y/6 >= 63 -max and oCoord_Y/6 <= 63 then
 						mVGA_R <= "000";
 						mVGA_G <= "111";
 						mVGA_B <= "11";
-					elsif sound = '1' and collision_tmp = '1' and oCoord_Y >= y_frame - pianoWidth -max and oCoord_Y <= y_frame - pianoWidth then
+					elsif sound = '1' and collision_tmp = '1' and oCoord_Y/6 >= 63 -max and oCoord_Y/6 <= 63 then
 						mVGA_R <= "111";
 						mVGA_G <= "000";
 						mVGA_B <= "11";

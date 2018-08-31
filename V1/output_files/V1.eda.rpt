@@ -1,6 +1,6 @@
 EDA Netlist Writer report for V1
-Wed Aug 29 16:55:48 2018
-Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
+Fri Aug 31 13:21:40 2018
+Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Standard Edition
 
 
 ---------------------
@@ -37,9 +37,9 @@ agreement for further details.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Wed Aug 29 16:55:48 2018 ;
+; EDA Netlist Writer Status ; Successful - Fri Aug 31 13:21:40 2018 ;
 ; Revision Name             ; V1                                    ;
-; Top-level Entity Name     ; addr_counter                          ;
+; Top-level Entity Name     ; key_chooser                           ;
 ; Family                    ; Cyclone V                             ;
 ; Simulation Files Creation ; Successful                            ;
 +---------------------------+---------------------------------------+
@@ -66,13 +66,13 @@ agreement for further details.
 +---------------------------------------------------------------------------------------------------+---------------------------+
 
 
-+----------------------------------------------------------+
-; Simulation Generated Files                               ;
-+----------------------------------------------------------+
-; Generated Files                                          ;
-+----------------------------------------------------------+
-; C:/Users/Refael Guetta/Desktop/V1/simulation/qsim//V1.vo ;
-+----------------------------------------------------------+
++-----------------------------------------------------+
+; Simulation Generated Files                          ;
++-----------------------------------------------------+
+; Generated Files                                     ;
++-----------------------------------------------------+
+; C:/Users/maa3/Desktop/V1_pip/simulation/qsim//V1.vo ;
++-----------------------------------------------------+
 
 
 +-----------------------------+
@@ -80,7 +80,7 @@ agreement for further details.
 +-----------------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime EDA Netlist Writer
-    Info: Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
+    Info: Version 17.0.0 Build 595 04/25/2017 SJ Standard Edition
     Info: Copyright (C) 2017  Intel Corporation. All rights reserved.
     Info: Your use of Intel Corporation's design tools, logic functions 
     Info: and other software and tools, and its AMPP partner logic 
@@ -95,14 +95,14 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: devices manufactured by Intel and sold by Intel or its 
     Info: authorized distributors.  Please refer to the applicable 
     Info: agreement for further details.
-    Info: Processing started: Wed Aug 29 16:55:46 2018
-Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory="C:/Users/Refael Guetta/Desktop/V1/simulation/qsim/" V1 -c V1
+    Info: Processing started: Fri Aug 31 13:21:38 2018
+Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=C:/Users/maa3/Desktop/V1_pip/simulation/qsim/ V1 -c V1
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (204019): Generated file V1.vo in folder "C:/Users/Refael Guetta/Desktop/V1/simulation/qsim//" for EDA simulation tool
+Info (204019): Generated file V1.vo in folder "C:/Users/maa3/Desktop/V1_pip/simulation/qsim//" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4737 megabytes
-    Info: Processing ended: Wed Aug 29 16:55:48 2018
+    Info: Peak virtual memory: 583 megabytes
+    Info: Processing ended: Fri Aug 31 13:21:40 2018
     Info: Elapsed time: 00:00:02
-    Info: Total CPU time (on all processors): 00:00:02
+    Info: Total CPU time (on all processors): 00:00:01
 
 

@@ -1,0 +1,27 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use IEEE.std_logic_unsigned.all;
+use ieee.std_logic_arith.all ;
+
+entity play_controller is
+	port( 
+		clk, resetN, freePiano: in std_logic;
+		control_sound, free_sound : in std_logic_vector(12 downto 0);
+		control_sound, free_sound : in std_logic_vector(12 downto 0);
+			);
+			
+end entity;
+architecture arc_play_controller of play_controller is
+begin
+
+
+	process(clk,resetN)
+	begin
+		if resetN = '0' then
+		elsif rising_edge(clk) then
+			
+		end if;
+		
+	end process;
+end arc_play_controller;
+

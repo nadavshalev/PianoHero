@@ -6,7 +6,7 @@ use ieee.std_logic_arith.all ;
 entity play_controller is
 	port( clk, resetN, make, break, collision : in std_logic;
 			sound, error	  			 : out std_logic;
-			scors 						 : out integer);
+			scors 						 : out std_logic_vector(4 downto 0));
 			
 end entity;
 architecture arc_play_controller of play_controller is
@@ -103,7 +103,7 @@ begin
 			end case;
 		end if;
 		
-		scors <= scors_num;
+		scors <= conv_std_logic_vector(scors_num,5);
 	end process;
 end arc_play_controller;
 

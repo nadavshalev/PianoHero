@@ -1,11 +1,11 @@
-Analysis & Synthesis Status : Successful - Fri Aug 31 09:29:39 2018
+Analysis & Synthesis Status : Successful - Fri Aug 31 15:16:24 2018
 Quartus Prime Version : 17.0.0 Build 595 04/25/2017 SJ Standard Edition
 Revision Name : V1
 Top-level Entity Name : TOP_module_diag
 Family : Cyclone V
 Logic utilization (in ALMs) : N/A
-Total registers : 1301
-Total pins : 57
+Total registers : 1704
+Total pins : 58
 Total virtual pins : 0
 Total block memory bits : 1,024
 Total DSP Blocks : 0

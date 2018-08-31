@@ -85,7 +85,7 @@ R19
 Aaddr_counter_arch
 R8
 R9
-Z25 DEx4 work 24 addr_counter_vhd_vec_tst 0 22 W`Q;AO]RAGUX9:gi_jai>3
+DEx4 work 24 addr_counter_vhd_vec_tst 0 22 W`Q;AO]RAGUX9:gi_jai>3
 l53
 L34
 VePL>GBzT2i1U=_Z14gcY`2
@@ -105,61 +105,145 @@ vaddr_counter_vlg_vec_tst
 !i10b 1
 !s100 7FEXF<>bDocY4D0OQbMRE1
 Ife0@:f]R2bb<6KlbhRje]3
-Z26 VDg1SIo80bB@j0V0VzS_@n1
+Z25 VDg1SIo80bB@j0V0VzS_@n1
 R0
 w1535384396
-Z27 8Waveform.vwf.vt
-Z28 FWaveform.vwf.vt
-Z29 L0 30
-Z30 OV;L;10.5b;63
+Z26 8Waveform.vwf.vt
+Z27 FWaveform.vwf.vt
+Z28 L0 30
+Z29 OV;L;10.5b;63
 r1
 !s85 0
 31
 !s108 1535384400.000000
-Z31 !s107 Waveform.vwf.vt|
-Z32 !s90 -work|work|Waveform.vwf.vt|
+Z30 !s107 Waveform.vwf.vt|
+Z31 !s90 -work|work|Waveform.vwf.vt|
 !i113 1
 R18
-Z33 tCvgOpt 0
+Z32 tCvgOpt 0
+vkey_chooser
+Z33 !s110 1535710902
+!i10b 1
+!s100 [j@9TYGW?A]Fa3J<HAUTW0
+IT_H<Gg>BAoK1^K3YXGMW93
+R25
+Z34 dC:/Users/maa3/Desktop/V1_pip/simulation/qsim
+w1535710900
+Z35 8V1.vo
+Z36 FV1.vo
+Z37 L0 32
+R29
+r1
+!s85 0
+31
+Z38 !s108 1535710902.000000
+Z39 !s107 V1.vo|
+Z40 !s90 -work|work|V1.vo|
+!i113 1
+R18
+R32
+vkey_chooser_vlg_vec_tst
+R33
+!i10b 1
+!s100 kY>eR;6;;AKLd^7U@PZ]C3
+IK7hK>4P9N]Uo6Cn[[HiU;1
+R25
+R34
+w1535710898
+R26
+R27
+R28
+R29
+r1
+!s85 0
+31
+R38
+R30
+R31
+!i113 1
+R18
+R32
+vtop_play_controller
+Z41 !s110 1535707720
+!i10b 1
+!s100 C4GQ652SP98@MgVSoeX1;1
+Ic;LB]TX[G^73ao^JW@WY92
+R25
+R34
+w1535707718
+R35
+R36
+R37
+R29
+r1
+!s85 0
+31
+Z42 !s108 1535707720.000000
+R39
+R40
+!i113 1
+R18
+R32
+vtop_play_controller_vlg_vec_tst
+R41
+!i10b 1
+!s100 @Jd9ml`99D8nfN3zEI9<F1
+I]F9i3@8KRABM?<@PWzC_B1
+R25
+R34
+w1535707716
+R26
+R27
+R28
+R29
+r1
+!s85 0
+31
+R42
+R30
+R31
+!i113 1
+R18
+R32
 vvrise
 !s110 1535383143
 !i10b 1
 !s100 HgEHj4_TOo7i_Qj6`B]@c1
 IhJP1n]fZHfMR_hi7[31HA1
-R26
+R25
 R0
 w1535383141
-8V1.vo
-FV1.vo
-L0 32
-R30
+R35
+R36
+R37
+R29
 r1
 !s85 0
 31
 !s108 1535383143.000000
-!s107 V1.vo|
-!s90 -work|work|V1.vo|
+R39
+R40
 !i113 1
 R18
-R33
+R32
 vvrise_vlg_vec_tst
 !s110 1535383144
 !i10b 1
 !s100 Gjb^J3X?VG]AN8BX2Z^]`0
 Idm<TbKKhCJHaGd]I5W`eM3
-R26
+R25
 R0
 w1535383139
+R26
 R27
 R28
 R29
-R30
 r1
 !s85 0
 31
 !s108 1535383144.000000
+R30
 R31
-R32
 !i113 1
 R18
-R33
+R32

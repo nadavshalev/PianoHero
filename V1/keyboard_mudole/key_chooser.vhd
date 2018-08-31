@@ -14,8 +14,7 @@ entity  key_chooser is
 end entity ;
 
 architecture arc_key_chooser of key_chooser is
- type state is ( idle           ,   
-                   makeon     ); 
+ type state is ( idle, makeon); 
 	signal present_state , next_state : state         ;
 					 
 begin

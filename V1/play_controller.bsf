@@ -76,8 +76,8 @@ agreement for further details.
 	(port
 		(pt 176 64)
 		(output)
-		(text "scors[31..0]" (rect 0 0 46 12)(font "Arial" ))
-		(text "scors[31..0]" (rect 109 59 155 71)(font "Arial" ))
+		(text "scors[4..0]" (rect 0 0 43 12)(font "Arial" ))
+		(text "scors[4..0]" (rect 112 59 155 71)(font "Arial" ))
 		(line (pt 176 64)(pt 160 64)(line_width 3))
 	)
 	(drawing

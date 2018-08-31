@@ -1,0 +1,55 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.all;
+use IEEE.std_logic_signed.all;
+use ieee.numeric_std.all;
+-- Alex Grinshpun March 24 2017 
+-- Dudy Nov 13 2017
+
+
+entity noteGraphics is
+port 	(
+		CLK				: in std_logic; --						
+		resetN			: in std_logic; --	
+		lengthNote		: in integer;
+		timer_done		: in std_logic;
+		clearNote		: in std_logic;
+		drawing_request	: out std_logic ;
+		collision		: out std_logic;
+		mVGA_RGB	: out std_logic_vector(7 downto 0);
+		Working			: out std_logic
+		
+		
+	);
+end noteGraphics;
+
+architecture behav of noteGraphics is 
+
+	signal ObjectStartY_t : integer;
+	signal NoteLength_t : integer;
+begin
+ 
+	process ( resetN, start,CLK)
+		variable tmp_len		: integer;
+	begin
+		if resetN = '0' then
+			ObjectStartY_t	<= 480;
+			NoteLength_t <= 0;
+			tmp_len := 0;
+		elsif rising_edge(CLK) then
+			if start = '1' then
+				ObjectStartY_t	<= 0;
+				NoteLength_t <= 0;
+				tmp_len := max_NoteLength;
+			elsif timer_done = '1' and ObjectStartY_t < 480  then
+				if NoteLength_t < tmp_len then
+					NoteLength_t <= NoteLength_t+ 1;
+				else
+					ObjectStartY_t  <= ObjectStartY_t + 1;
+				end if;
+			end if;
+		end if;
+	end process ;
+ObjectStartY <= ObjectStartY_t;	
+NoteLength <= NoteLength_t;
+
+end noteGraphics;
