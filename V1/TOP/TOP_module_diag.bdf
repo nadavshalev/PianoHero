@@ -168,7 +168,7 @@ agreement for further details.
 	(input)
 	(rect -440 224 -272 240)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "piano_play" (rect 5 0 59 12)(font "Arial" ))
+	(text "piano_play" (rect 5 0 58 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -960,6 +960,56 @@ agreement for further details.
 	)
 	(drawing
 		(rectangle (rect 16 16 264 304))
+	)
+)
+(symbol
+	(rect -544 456 -280 600)
+	(text "createSongs" (rect 5 0 66 12)(font "Arial" ))
+	(text "inst1" (rect 8 128 30 145)(font "Intel Clear" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "CLK" (rect 0 0 21 12)(font "Arial" ))
+		(text "CLK" (rect 21 27 42 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "resetN" (rect 0 0 33 12)(font "Arial" ))
+		(text "resetN" (rect 21 43 54 55)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "enable" (rect 0 0 31 12)(font "Arial" ))
+		(text "enable" (rect 21 59 52 71)(font "Arial" ))
+		(line (pt 0 64)(pt 16 64))
+	)
+	(port
+		(pt 0 80)
+		(input)
+		(text "screen_end" (rect 0 0 56 12)(font "Arial" ))
+		(text "screen_end" (rect 21 75 77 87)(font "Arial" ))
+		(line (pt 0 80)(pt 16 80))
+	)
+	(port
+		(pt 0 96)
+		(input)
+		(text "song_choose[1..0]" (rect 0 0 90 12)(font "Arial" ))
+		(text "song_choose[1..0]" (rect 21 91 111 103)(font "Arial" ))
+		(line (pt 0 96)(pt 16 96)(line_width 3))
+	)
+	(port
+		(pt 264 32)
+		(output)
+		(text "note_length[0..12][7..0]" (rect 0 0 114 12)(font "Arial" ))
+		(text "note_length[0..12][7..0]" (rect 147 27 261 39)(font "Arial" ))
+		(line (pt 264 32)(pt 248 32)(line_width 3))
+	)
+	(drawing
+		(rectangle (rect 16 16 248 128))
 	)
 )
 (connector

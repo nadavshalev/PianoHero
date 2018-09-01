@@ -19,125 +19,179 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "08/31/2018 13:21:38"
+// Generated on "09/01/2018 14:28:49"
                                                                                 
-// Verilog Test Bench (with test vectors) for design :                          key_chooser
+// Verilog Test Bench (with test vectors) for design :                          createSongs
 // 
 // Simulation tool : 3rd Party
 // 
 
 `timescale 1 ps/ 1 ps
-module key_chooser_vlg_vec_tst();
+module createSongs_vlg_vec_tst();
 // constants                                           
 // general purpose registers
-reg break_from_key;
-reg clk;
-reg [8:0] din;
-reg make_from_key;
+reg CLK;
+reg enable;
 reg resetN;
+reg screen_end;
+reg [1:0] song_choose;
 // wires                                               
-wire [12:0] break;
-wire break_q;
-wire [12:0] make;
-wire make_q;
+wire note_length_0_7;
+wire note_length_0_6;
+wire note_length_0_5;
+wire note_length_0_4;
+wire note_length_0_3;
+wire note_length_0_2;
+wire note_length_0_1;
+wire note_length_0_0;
+wire note_length_1_7;
+wire note_length_1_6;
+wire note_length_1_5;
+wire note_length_1_4;
+wire note_length_1_3;
+wire note_length_1_2;
+wire note_length_1_1;
+wire note_length_1_0;
+wire note_length_2_7;
+wire note_length_2_6;
+wire note_length_2_5;
+wire note_length_2_4;
+wire note_length_2_3;
+wire note_length_2_2;
+wire note_length_2_1;
+wire note_length_2_0;
+wire note_length_3_7;
+wire note_length_3_6;
+wire note_length_3_5;
+wire note_length_3_4;
+wire note_length_3_3;
+wire note_length_3_2;
+wire note_length_3_1;
+wire note_length_3_0;
+wire note_length_4_7;
+wire note_length_4_6;
+wire note_length_4_5;
+wire note_length_4_4;
+wire note_length_4_3;
+wire note_length_4_2;
+wire note_length_4_1;
+wire note_length_4_0;
+wire note_length_5_7;
+wire note_length_5_6;
+wire note_length_5_5;
+wire note_length_5_4;
+wire note_length_5_3;
+wire note_length_5_2;
+wire note_length_5_1;
+wire note_length_5_0;
+wire note_length_6_7;
+wire note_length_6_6;
+wire note_length_6_5;
+wire note_length_6_4;
+wire note_length_6_3;
+wire note_length_6_2;
+wire note_length_6_1;
+wire note_length_6_0;
+wire note_length_7_7;
+wire note_length_7_6;
+wire note_length_7_5;
+wire note_length_7_4;
+wire note_length_7_3;
+wire note_length_7_2;
+wire note_length_7_1;
+wire note_length_7_0;
+wire note_length_8_7;
+wire note_length_8_6;
+wire note_length_8_5;
+wire note_length_8_4;
+wire note_length_8_3;
+wire note_length_8_2;
+wire note_length_8_1;
+wire note_length_8_0;
+wire note_length_9_7;
+wire note_length_9_6;
+wire note_length_9_5;
+wire note_length_9_4;
+wire note_length_9_3;
+wire note_length_9_2;
+wire note_length_9_1;
+wire note_length_9_0;
+wire note_length_10_7;
+wire note_length_10_6;
+wire note_length_10_5;
+wire note_length_10_4;
+wire note_length_10_3;
+wire note_length_10_2;
+wire note_length_10_1;
+wire note_length_10_0;
+wire note_length_11_7;
+wire note_length_11_6;
+wire note_length_11_5;
+wire note_length_11_4;
+wire note_length_11_3;
+wire note_length_11_2;
+wire note_length_11_1;
+wire note_length_11_0;
+wire note_length_12_7;
+wire note_length_12_6;
+wire note_length_12_5;
+wire note_length_12_4;
+wire note_length_12_3;
+wire note_length_12_2;
+wire note_length_12_1;
+wire note_length_12_0;
 
 // assign statements (if any)                          
-key_chooser i1 (
+createSongs i1 (
 // port map - connection between master ports and signals/registers   
-	.\break (break),
-	.break_from_key(break_from_key),
-	.break_q(break_q),
-	.clk(clk),
-	.din(din),
-	.make(make),
-	.make_from_key(make_from_key),
-	.make_q(make_q),
-	.resetN(resetN)
+	.CLK(CLK),
+	.enable(enable),
+	.resetN(resetN),
+	.screen_end(screen_end),
+	.song_choose(song_choose)
 );
 initial 
 begin 
 #1000000 $finish;
 end 
 
-// clk
+// CLK
 always
 begin
-	clk = 1'b0;
-	clk = #5000 1'b1;
-	#5000;
+	CLK = 1'b0;
+	CLK = #2500 1'b1;
+	#2500;
 end 
 
-// make_from_key
+// enable
 initial
 begin
-	make_from_key = 1'b0;
-	make_from_key = #50000 1'b1;
-	make_from_key = #130000 1'b0;
-end 
-
-// break_from_key
-initial
-begin
-	break_from_key = 1'b0;
-	break_from_key = #180000 1'b1;
-	break_from_key = #10000 1'b0;
+	enable = 1'b1;
 end 
 
 // resetN
 initial
 begin
 	resetN = 1'b0;
+	resetN = #10000 1'b1;
 end 
-// din[ 8 ]
+
+// screen_end
+always
+begin
+	screen_end = 1'b0;
+	screen_end = #7500 1'b1;
+	#2500;
+end 
+// song_choose[ 1 ]
 initial
 begin
-	din[8] = 1'b0;
+	song_choose[1] = 1'b0;
 end 
-// din[ 7 ]
+// song_choose[ 0 ]
 initial
 begin
-	din[7] = 1'b0;
-end 
-// din[ 6 ]
-initial
-begin
-	din[6] = 1'b0;
-end 
-// din[ 5 ]
-initial
-begin
-	din[5] = 1'b0;
-end 
-// din[ 4 ]
-initial
-begin
-	din[4] = 1'b0;
-	din[4] = #50000 1'b1;
-	din[4] = #140000 1'b0;
-end 
-// din[ 3 ]
-initial
-begin
-	din[3] = 1'b0;
-end 
-// din[ 2 ]
-initial
-begin
-	din[2] = 1'b0;
-	din[2] = #50000 1'b1;
-	din[2] = #140000 1'b0;
-end 
-// din[ 1 ]
-initial
-begin
-	din[1] = 1'b0;
-	din[1] = #50000 1'b1;
-	din[1] = #140000 1'b0;
-end 
-// din[ 0 ]
-initial
-begin
-	din[0] = 1'b0;
+	song_choose[0] = 1'b0;
 end 
 endmodule
 

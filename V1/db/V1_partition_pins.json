@@ -4,151 +4,139 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "MICROPHON_LED",
+					"name" : "note_length[12][2]",
 					"strict" : false
 				},
 				{
-					"name" : "AUD_DACDAT",
+					"name" : "note_length[12][5]",
 					"strict" : false
 				},
 				{
-					"name" : "AUD_XCK",
+					"name" : "note_length[12][6]",
 					"strict" : false
 				},
 				{
-					"name" : "AUD_I2C_SCLK",
+					"name" : "note_length[11][2]",
 					"strict" : false
 				},
 				{
-					"name" : "AUD_I2C_SDAT",
+					"name" : "note_length[11][5]",
 					"strict" : false
 				},
 				{
-					"name" : "AUD_BCLK",
+					"name" : "note_length[11][6]",
 					"strict" : false
 				},
 				{
-					"name" : "AUD_DACLRCK",
+					"name" : "note_length[10][2]",
 					"strict" : false
 				},
 				{
-					"name" : "AUD_ADCLRCK",
+					"name" : "note_length[10][5]",
 					"strict" : false
 				},
 				{
-					"name" : "MICROPHON_ON",
+					"name" : "note_length[10][6]",
 					"strict" : false
 				},
 				{
-					"name" : "AUD_ADCDAT",
+					"name" : "note_length[9][2]",
 					"strict" : false
 				},
 				{
-					"name" : "VGA_VS",
+					"name" : "note_length[9][5]",
 					"strict" : false
 				},
 				{
-					"name" : "VGA_HS",
+					"name" : "note_length[9][6]",
 					"strict" : false
 				},
 				{
-					"name" : "VGA_CLK",
+					"name" : "note_length[8][2]",
 					"strict" : false
 				},
 				{
-					"name" : "VGA_BLANK_N",
+					"name" : "note_length[8][5]",
 					"strict" : false
 				},
 				{
-					"name" : "VGA_B[7]",
+					"name" : "note_length[8][6]",
 					"strict" : false
 				},
 				{
-					"name" : "VGA_B[6]",
+					"name" : "note_length[7][2]",
 					"strict" : false
 				},
 				{
-					"name" : "VGA_G[7]",
+					"name" : "note_length[7][5]",
 					"strict" : false
 				},
 				{
-					"name" : "VGA_G[6]",
+					"name" : "note_length[7][6]",
 					"strict" : false
 				},
 				{
-					"name" : "VGA_G[5]",
+					"name" : "note_length[6][2]",
 					"strict" : false
 				},
 				{
-					"name" : "VGA_R[7]",
+					"name" : "note_length[6][5]",
 					"strict" : false
 				},
 				{
-					"name" : "VGA_R[6]",
+					"name" : "note_length[6][6]",
 					"strict" : false
 				},
 				{
-					"name" : "VGA_R[5]",
+					"name" : "note_length[5][2]",
 					"strict" : false
 				},
 				{
-					"name" : "HEX0[6]",
+					"name" : "note_length[5][5]",
 					"strict" : false
 				},
 				{
-					"name" : "HEX0[5]",
+					"name" : "note_length[5][6]",
 					"strict" : false
 				},
 				{
-					"name" : "HEX0[4]",
+					"name" : "note_length[4][2]",
 					"strict" : false
 				},
 				{
-					"name" : "HEX0[3]",
+					"name" : "note_length[4][5]",
 					"strict" : false
 				},
 				{
-					"name" : "HEX0[2]",
+					"name" : "note_length[4][6]",
 					"strict" : false
 				},
 				{
-					"name" : "HEX0[1]",
+					"name" : "note_length[2][2]",
 					"strict" : false
 				},
 				{
-					"name" : "HEX0[0]",
+					"name" : "note_length[2][5]",
 					"strict" : false
 				},
 				{
-					"name" : "HEX1[6]",
+					"name" : "note_length[2][6]",
 					"strict" : false
 				},
 				{
-					"name" : "HEX1[5]",
+					"name" : "note_length[0][2]",
 					"strict" : false
 				},
 				{
-					"name" : "HEX1[4]",
+					"name" : "note_length[0][5]",
 					"strict" : false
 				},
 				{
-					"name" : "HEX1[3]",
+					"name" : "note_length[0][6]",
 					"strict" : false
 				},
 				{
-					"name" : "HEX1[2]",
-					"strict" : false
-				},
-				{
-					"name" : "HEX1[1]",
-					"strict" : false
-				},
-				{
-					"name" : "HEX1[0]",
-					"strict" : false
-				},
-				{
-					"name" : "CLOCK_50",
+					"name" : "CLK",
 					"strict" : false
 				},
 				{
@@ -156,15 +144,19 @@
 					"strict" : false
 				},
 				{
-					"name" : "piano_play",
+					"name" : "song_choose[0]",
 					"strict" : false
 				},
 				{
-					"name" : "KBD_DAT",
+					"name" : "song_choose[1]",
 					"strict" : false
 				},
 				{
-					"name" : "KBD_CLK",
+					"name" : "enable",
+					"strict" : false
+				},
+				{
+					"name" : "screen_end",
 					"strict" : false
 				}
 			]

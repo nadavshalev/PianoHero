@@ -1,13 +1,13 @@
-Analysis & Synthesis Status : Successful - Fri Aug 31 15:16:24 2018
-Quartus Prime Version : 17.0.0 Build 595 04/25/2017 SJ Standard Edition
+Analysis & Synthesis Status : Successful - Sat Sep 01 14:25:49 2018
+Quartus Prime Version : 17.0.0 Build 595 04/25/2017 SJ Lite Edition
 Revision Name : V1
-Top-level Entity Name : TOP_module_diag
+Top-level Entity Name : createSongs
 Family : Cyclone V
 Logic utilization (in ALMs) : N/A
-Total registers : 1704
-Total pins : 58
+Total registers : 408
+Total pins : 110
 Total virtual pins : 0
-Total block memory bits : 1,024
+Total block memory bits : 0
 Total DSP Blocks : 0
 Total HSSI RX PCSs : 0
 Total HSSI PMA RX Deserializers : 0

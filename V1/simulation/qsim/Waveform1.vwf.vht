@@ -19,9 +19,9 @@
 -- the top level entity of the current Quartus project .The user can use this   
 -- testbench to simulate his design using a third-party simulation tool .       
 -- *****************************************************************************
--- Generated on "08/27/2018 10:17:59"
+-- Generated on "09/01/2018 14:13:11"
                                                              
--- Vhdl Test Bench(with test vectors) for design  :          score
+-- Vhdl Test Bench(with test vectors) for design  :          createSongs
 -- 
 -- Simulation tool : 3rd Party
 -- 
@@ -29,514 +29,100 @@
 LIBRARY ieee;                                               
 USE ieee.std_logic_1164.all;                                
 
-ENTITY score_vhd_vec_tst IS
-END score_vhd_vec_tst;
-ARCHITECTURE score_arch OF score_vhd_vec_tst IS
+PACKAGE createSongs_data_type IS 
+TYPE note_length_31_0_type IS ARRAY (31 DOWNTO 0) OF STD_LOGIC;
+TYPE note_length_31_0_0_12_type IS ARRAY (0 TO 12) OF note_length_31_0_type;
+SUBTYPE note_length_type IS note_length_31_0_0_12_type;
+END createSongs_data_type;
+
+LIBRARY ieee;                                               
+USE ieee.std_logic_1164.all;                                
+
+library work;
+use work.createSongs_data_type.all;
+
+ENTITY createSongs_vhd_vec_tst IS
+END createSongs_vhd_vec_tst;
+ARCHITECTURE createSongs_arch OF createSongs_vhd_vec_tst IS
 -- constants                                                 
 -- signals                                                   
-SIGNAL clk : STD_LOGIC;
+SIGNAL CLK : STD_LOGIC;
+SIGNAL enable : STD_LOGIC;
+SIGNAL note_length : note_length_type;
 SIGNAL resetN : STD_LOGIC;
-SIGNAL score_note0 : STD_LOGIC_VECTOR(31 DOWNTO 0);
-SIGNAL tens : STD_LOGIC_VECTOR(31 DOWNTO 0);
-SIGNAL unit : STD_LOGIC_VECTOR(31 DOWNTO 0);
-COMPONENT score
+SIGNAL screen_end : STD_LOGIC;
+SIGNAL song_choose : STD_LOGIC_VECTOR(1 DOWNTO 0);
+COMPONENT createSongs
 	PORT (
-	clk : IN STD_LOGIC;
+	CLK : IN STD_LOGIC;
+	enable : IN STD_LOGIC;
+	note_length : BUFFER note_length_type;
 	resetN : IN STD_LOGIC;
-	score_note0 : IN STD_LOGIC_VECTOR(31 DOWNTO 0);
-	tens : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
-	unit : OUT STD_LOGIC_VECTOR(31 DOWNTO 0)
+	screen_end : IN STD_LOGIC;
+	song_choose : IN STD_LOGIC_VECTOR(1 DOWNTO 0)
 	);
 END COMPONENT;
 BEGIN
-	i1 : score
+	i1 : createSongs
 	PORT MAP (
 -- list connections between master ports and signals
-	clk => clk,
+	CLK => CLK,
+	enable => enable,
+	note_length => note_length,
 	resetN => resetN,
-	score_note0 => score_note0,
-	tens => tens,
-	unit => unit
+	screen_end => screen_end,
+	song_choose => song_choose
 	);
 
--- clk
-t_prcs_clk: PROCESS
+-- CLK
+t_prcs_CLK: PROCESS
 BEGIN
 LOOP
-	clk <= '0';
-	WAIT FOR 5000 ps;
-	clk <= '1';
-	WAIT FOR 5000 ps;
+	CLK <= '0';
+	WAIT FOR 1000 ps;
+	CLK <= '1';
+	WAIT FOR 1000 ps;
 	IF (NOW >= 1000000 ps) THEN WAIT; END IF;
 END LOOP;
-END PROCESS t_prcs_clk;
+END PROCESS t_prcs_CLK;
+
+-- enable
+t_prcs_enable: PROCESS
+BEGIN
+	enable <= '1';
+WAIT;
+END PROCESS t_prcs_enable;
 
 -- resetN
 t_prcs_resetN: PROCESS
 BEGIN
 	resetN <= '0';
-	WAIT FOR 20000 ps;
+	WAIT FOR 10000 ps;
 	resetN <= '1';
 WAIT;
 END PROCESS t_prcs_resetN;
--- score_note0[31]
-t_prcs_score_note0_31: PROCESS
+
+-- screen_end
+t_prcs_screen_end: PROCESS
 BEGIN
-	score_note0(31) <= '0';
-	WAIT FOR 230000 ps;
-	score_note0(31) <= '1';
-	WAIT FOR 10000 ps;
-	score_note0(31) <= '0';
-	WAIT FOR 280000 ps;
-	score_note0(31) <= '1';
-	WAIT FOR 10000 ps;
-	score_note0(31) <= '0';
-WAIT;
-END PROCESS t_prcs_score_note0_31;
--- score_note0[30]
-t_prcs_score_note0_30: PROCESS
+LOOP
+	screen_end <= '0';
+	WAIT FOR 3000 ps;
+	screen_end <= '1';
+	WAIT FOR 1000 ps;
+	IF (NOW >= 1000000 ps) THEN WAIT; END IF;
+END LOOP;
+END PROCESS t_prcs_screen_end;
+-- song_choose[1]
+t_prcs_song_choose_1: PROCESS
 BEGIN
-	score_note0(30) <= '0';
-	WAIT FOR 230000 ps;
-	score_note0(30) <= '1';
-	WAIT FOR 10000 ps;
-	score_note0(30) <= '0';
-	WAIT FOR 280000 ps;
-	score_note0(30) <= '1';
-	WAIT FOR 10000 ps;
-	score_note0(30) <= '0';
+	song_choose(1) <= '0';
 WAIT;
-END PROCESS t_prcs_score_note0_30;
--- score_note0[29]
-t_prcs_score_note0_29: PROCESS
+END PROCESS t_prcs_song_choose_1;
+-- song_choose[0]
+t_prcs_song_choose_0: PROCESS
 BEGIN
-	score_note0(29) <= '0';
-	WAIT FOR 230000 ps;
-	score_note0(29) <= '1';
-	WAIT FOR 10000 ps;
-	score_note0(29) <= '0';
-	WAIT FOR 280000 ps;
-	score_note0(29) <= '1';
-	WAIT FOR 10000 ps;
-	score_note0(29) <= '0';
+	song_choose(0) <= '0';
 WAIT;
-END PROCESS t_prcs_score_note0_29;
--- score_note0[28]
-t_prcs_score_note0_28: PROCESS
-BEGIN
-	score_note0(28) <= '0';
-	WAIT FOR 230000 ps;
-	score_note0(28) <= '1';
-	WAIT FOR 10000 ps;
-	score_note0(28) <= '0';
-	WAIT FOR 280000 ps;
-	score_note0(28) <= '1';
-	WAIT FOR 10000 ps;
-	score_note0(28) <= '0';
-WAIT;
-END PROCESS t_prcs_score_note0_28;
--- score_note0[27]
-t_prcs_score_note0_27: PROCESS
-BEGIN
-	score_note0(27) <= '0';
-	WAIT FOR 230000 ps;
-	score_note0(27) <= '1';
-	WAIT FOR 10000 ps;
-	score_note0(27) <= '0';
-	WAIT FOR 280000 ps;
-	score_note0(27) <= '1';
-	WAIT FOR 10000 ps;
-	score_note0(27) <= '0';
-WAIT;
-END PROCESS t_prcs_score_note0_27;
--- score_note0[26]
-t_prcs_score_note0_26: PROCESS
-BEGIN
-	score_note0(26) <= '0';
-	WAIT FOR 230000 ps;
-	score_note0(26) <= '1';
-	WAIT FOR 10000 ps;
-	score_note0(26) <= '0';
-	WAIT FOR 280000 ps;
-	score_note0(26) <= '1';
-	WAIT FOR 10000 ps;
-	score_note0(26) <= '0';
-WAIT;
-END PROCESS t_prcs_score_note0_26;
--- score_note0[25]
-t_prcs_score_note0_25: PROCESS
-BEGIN
-	score_note0(25) <= '0';
-	WAIT FOR 230000 ps;
-	score_note0(25) <= '1';
-	WAIT FOR 10000 ps;
-	score_note0(25) <= '0';
-	WAIT FOR 280000 ps;
-	score_note0(25) <= '1';
-	WAIT FOR 10000 ps;
-	score_note0(25) <= '0';
-WAIT;
-END PROCESS t_prcs_score_note0_25;
--- score_note0[24]
-t_prcs_score_note0_24: PROCESS
-BEGIN
-	score_note0(24) <= '0';
-	WAIT FOR 230000 ps;
-	score_note0(24) <= '1';
-	WAIT FOR 10000 ps;
-	score_note0(24) <= '0';
-	WAIT FOR 280000 ps;
-	score_note0(24) <= '1';
-	WAIT FOR 10000 ps;
-	score_note0(24) <= '0';
-WAIT;
-END PROCESS t_prcs_score_note0_24;
--- score_note0[23]
-t_prcs_score_note0_23: PROCESS
-BEGIN
-	score_note0(23) <= '0';
-	WAIT FOR 230000 ps;
-	score_note0(23) <= '1';
-	WAIT FOR 10000 ps;
-	score_note0(23) <= '0';
-	WAIT FOR 280000 ps;
-	score_note0(23) <= '1';
-	WAIT FOR 10000 ps;
-	score_note0(23) <= '0';
-WAIT;
-END PROCESS t_prcs_score_note0_23;
--- score_note0[22]
-t_prcs_score_note0_22: PROCESS
-BEGIN
-	score_note0(22) <= '0';
-	WAIT FOR 230000 ps;
-	score_note0(22) <= '1';
-	WAIT FOR 10000 ps;
-	score_note0(22) <= '0';
-	WAIT FOR 280000 ps;
-	score_note0(22) <= '1';
-	WAIT FOR 10000 ps;
-	score_note0(22) <= '0';
-WAIT;
-END PROCESS t_prcs_score_note0_22;
--- score_note0[21]
-t_prcs_score_note0_21: PROCESS
-BEGIN
-	score_note0(21) <= '0';
-	WAIT FOR 230000 ps;
-	score_note0(21) <= '1';
-	WAIT FOR 10000 ps;
-	score_note0(21) <= '0';
-	WAIT FOR 280000 ps;
-	score_note0(21) <= '1';
-	WAIT FOR 10000 ps;
-	score_note0(21) <= '0';
-WAIT;
-END PROCESS t_prcs_score_note0_21;
--- score_note0[20]
-t_prcs_score_note0_20: PROCESS
-BEGIN
-	score_note0(20) <= '0';
-	WAIT FOR 230000 ps;
-	score_note0(20) <= '1';
-	WAIT FOR 10000 ps;
-	score_note0(20) <= '0';
-	WAIT FOR 280000 ps;
-	score_note0(20) <= '1';
-	WAIT FOR 10000 ps;
-	score_note0(20) <= '0';
-WAIT;
-END PROCESS t_prcs_score_note0_20;
--- score_note0[19]
-t_prcs_score_note0_19: PROCESS
-BEGIN
-	score_note0(19) <= '0';
-	WAIT FOR 230000 ps;
-	score_note0(19) <= '1';
-	WAIT FOR 10000 ps;
-	score_note0(19) <= '0';
-	WAIT FOR 280000 ps;
-	score_note0(19) <= '1';
-	WAIT FOR 10000 ps;
-	score_note0(19) <= '0';
-WAIT;
-END PROCESS t_prcs_score_note0_19;
--- score_note0[18]
-t_prcs_score_note0_18: PROCESS
-BEGIN
-	score_note0(18) <= '0';
-	WAIT FOR 230000 ps;
-	score_note0(18) <= '1';
-	WAIT FOR 10000 ps;
-	score_note0(18) <= '0';
-	WAIT FOR 280000 ps;
-	score_note0(18) <= '1';
-	WAIT FOR 10000 ps;
-	score_note0(18) <= '0';
-WAIT;
-END PROCESS t_prcs_score_note0_18;
--- score_note0[17]
-t_prcs_score_note0_17: PROCESS
-BEGIN
-	score_note0(17) <= '0';
-	WAIT FOR 230000 ps;
-	score_note0(17) <= '1';
-	WAIT FOR 10000 ps;
-	score_note0(17) <= '0';
-	WAIT FOR 280000 ps;
-	score_note0(17) <= '1';
-	WAIT FOR 10000 ps;
-	score_note0(17) <= '0';
-WAIT;
-END PROCESS t_prcs_score_note0_17;
--- score_note0[16]
-t_prcs_score_note0_16: PROCESS
-BEGIN
-	score_note0(16) <= '0';
-	WAIT FOR 230000 ps;
-	score_note0(16) <= '1';
-	WAIT FOR 10000 ps;
-	score_note0(16) <= '0';
-	WAIT FOR 280000 ps;
-	score_note0(16) <= '1';
-	WAIT FOR 10000 ps;
-	score_note0(16) <= '0';
-WAIT;
-END PROCESS t_prcs_score_note0_16;
--- score_note0[15]
-t_prcs_score_note0_15: PROCESS
-BEGIN
-	score_note0(15) <= '0';
-	WAIT FOR 230000 ps;
-	score_note0(15) <= '1';
-	WAIT FOR 10000 ps;
-	score_note0(15) <= '0';
-	WAIT FOR 280000 ps;
-	score_note0(15) <= '1';
-	WAIT FOR 10000 ps;
-	score_note0(15) <= '0';
-WAIT;
-END PROCESS t_prcs_score_note0_15;
--- score_note0[14]
-t_prcs_score_note0_14: PROCESS
-BEGIN
-	score_note0(14) <= '0';
-	WAIT FOR 230000 ps;
-	score_note0(14) <= '1';
-	WAIT FOR 10000 ps;
-	score_note0(14) <= '0';
-	WAIT FOR 280000 ps;
-	score_note0(14) <= '1';
-	WAIT FOR 10000 ps;
-	score_note0(14) <= '0';
-WAIT;
-END PROCESS t_prcs_score_note0_14;
--- score_note0[13]
-t_prcs_score_note0_13: PROCESS
-BEGIN
-	score_note0(13) <= '0';
-	WAIT FOR 230000 ps;
-	score_note0(13) <= '1';
-	WAIT FOR 10000 ps;
-	score_note0(13) <= '0';
-	WAIT FOR 280000 ps;
-	score_note0(13) <= '1';
-	WAIT FOR 10000 ps;
-	score_note0(13) <= '0';
-WAIT;
-END PROCESS t_prcs_score_note0_13;
--- score_note0[12]
-t_prcs_score_note0_12: PROCESS
-BEGIN
-	score_note0(12) <= '0';
-	WAIT FOR 230000 ps;
-	score_note0(12) <= '1';
-	WAIT FOR 10000 ps;
-	score_note0(12) <= '0';
-	WAIT FOR 280000 ps;
-	score_note0(12) <= '1';
-	WAIT FOR 10000 ps;
-	score_note0(12) <= '0';
-WAIT;
-END PROCESS t_prcs_score_note0_12;
--- score_note0[11]
-t_prcs_score_note0_11: PROCESS
-BEGIN
-	score_note0(11) <= '0';
-	WAIT FOR 230000 ps;
-	score_note0(11) <= '1';
-	WAIT FOR 10000 ps;
-	score_note0(11) <= '0';
-	WAIT FOR 280000 ps;
-	score_note0(11) <= '1';
-	WAIT FOR 10000 ps;
-	score_note0(11) <= '0';
-WAIT;
-END PROCESS t_prcs_score_note0_11;
--- score_note0[10]
-t_prcs_score_note0_10: PROCESS
-BEGIN
-	score_note0(10) <= '0';
-	WAIT FOR 230000 ps;
-	score_note0(10) <= '1';
-	WAIT FOR 10000 ps;
-	score_note0(10) <= '0';
-	WAIT FOR 280000 ps;
-	score_note0(10) <= '1';
-	WAIT FOR 10000 ps;
-	score_note0(10) <= '0';
-WAIT;
-END PROCESS t_prcs_score_note0_10;
--- score_note0[9]
-t_prcs_score_note0_9: PROCESS
-BEGIN
-	score_note0(9) <= '0';
-	WAIT FOR 230000 ps;
-	score_note0(9) <= '1';
-	WAIT FOR 10000 ps;
-	score_note0(9) <= '0';
-	WAIT FOR 280000 ps;
-	score_note0(9) <= '1';
-	WAIT FOR 10000 ps;
-	score_note0(9) <= '0';
-WAIT;
-END PROCESS t_prcs_score_note0_9;
--- score_note0[8]
-t_prcs_score_note0_8: PROCESS
-BEGIN
-	score_note0(8) <= '0';
-	WAIT FOR 230000 ps;
-	score_note0(8) <= '1';
-	WAIT FOR 10000 ps;
-	score_note0(8) <= '0';
-	WAIT FOR 280000 ps;
-	score_note0(8) <= '1';
-	WAIT FOR 10000 ps;
-	score_note0(8) <= '0';
-WAIT;
-END PROCESS t_prcs_score_note0_8;
--- score_note0[7]
-t_prcs_score_note0_7: PROCESS
-BEGIN
-	score_note0(7) <= '0';
-	WAIT FOR 230000 ps;
-	score_note0(7) <= '1';
-	WAIT FOR 10000 ps;
-	score_note0(7) <= '0';
-	WAIT FOR 280000 ps;
-	score_note0(7) <= '1';
-	WAIT FOR 10000 ps;
-	score_note0(7) <= '0';
-WAIT;
-END PROCESS t_prcs_score_note0_7;
--- score_note0[6]
-t_prcs_score_note0_6: PROCESS
-BEGIN
-	score_note0(6) <= '0';
-	WAIT FOR 230000 ps;
-	score_note0(6) <= '1';
-	WAIT FOR 10000 ps;
-	score_note0(6) <= '0';
-	WAIT FOR 280000 ps;
-	score_note0(6) <= '1';
-	WAIT FOR 10000 ps;
-	score_note0(6) <= '0';
-WAIT;
-END PROCESS t_prcs_score_note0_6;
--- score_note0[5]
-t_prcs_score_note0_5: PROCESS
-BEGIN
-	score_note0(5) <= '0';
-	WAIT FOR 230000 ps;
-	score_note0(5) <= '1';
-	WAIT FOR 10000 ps;
-	score_note0(5) <= '0';
-	WAIT FOR 280000 ps;
-	score_note0(5) <= '1';
-	WAIT FOR 10000 ps;
-	score_note0(5) <= '0';
-WAIT;
-END PROCESS t_prcs_score_note0_5;
--- score_note0[4]
-t_prcs_score_note0_4: PROCESS
-BEGIN
-	score_note0(4) <= '0';
-	WAIT FOR 230000 ps;
-	score_note0(4) <= '1';
-	WAIT FOR 10000 ps;
-	score_note0(4) <= '0';
-	WAIT FOR 280000 ps;
-	score_note0(4) <= '1';
-	WAIT FOR 10000 ps;
-	score_note0(4) <= '0';
-WAIT;
-END PROCESS t_prcs_score_note0_4;
--- score_note0[3]
-t_prcs_score_note0_3: PROCESS
-BEGIN
-	score_note0(3) <= '0';
-	WAIT FOR 230000 ps;
-	score_note0(3) <= '1';
-	WAIT FOR 10000 ps;
-	score_note0(3) <= '0';
-	WAIT FOR 280000 ps;
-	score_note0(3) <= '1';
-	WAIT FOR 10000 ps;
-	score_note0(3) <= '0';
-WAIT;
-END PROCESS t_prcs_score_note0_3;
--- score_note0[2]
-t_prcs_score_note0_2: PROCESS
-BEGIN
-	score_note0(2) <= '0';
-WAIT;
-END PROCESS t_prcs_score_note0_2;
--- score_note0[1]
-t_prcs_score_note0_1: PROCESS
-BEGIN
-	score_note0(1) <= '0';
-	WAIT FOR 230000 ps;
-	score_note0(1) <= '1';
-	WAIT FOR 10000 ps;
-	score_note0(1) <= '0';
-	WAIT FOR 280000 ps;
-	score_note0(1) <= '1';
-	WAIT FOR 10000 ps;
-	score_note0(1) <= '0';
-WAIT;
-END PROCESS t_prcs_score_note0_1;
--- score_note0[0]
-t_prcs_score_note0_0: PROCESS
-BEGIN
-	score_note0(0) <= '0';
-	WAIT FOR 70000 ps;
-	score_note0(0) <= '1';
-	WAIT FOR 10000 ps;
-	score_note0(0) <= '0';
-	WAIT FOR 50000 ps;
-	score_note0(0) <= '1';
-	WAIT FOR 10000 ps;
-	score_note0(0) <= '0';
-	WAIT FOR 20000 ps;
-	score_note0(0) <= '1';
-	WAIT FOR 10000 ps;
-	score_note0(0) <= '0';
-	WAIT FOR 60000 ps;
-	score_note0(0) <= '1';
-	WAIT FOR 10000 ps;
-	score_note0(0) <= '0';
-	WAIT FOR 50000 ps;
-	score_note0(0) <= '1';
-	WAIT FOR 30000 ps;
-	score_note0(0) <= '0';
-	WAIT FOR 120000 ps;
-	score_note0(0) <= '1';
-	WAIT FOR 10000 ps;
-	score_note0(0) <= '0';
-	WAIT FOR 60000 ps;
-	score_note0(0) <= '1';
-	WAIT FOR 20000 ps;
-	score_note0(0) <= '0';
-WAIT;
-END PROCESS t_prcs_score_note0_0;
-END score_arch;
+END PROCESS t_prcs_song_choose_0;
+END createSongs_arch;
