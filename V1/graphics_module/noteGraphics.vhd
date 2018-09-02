@@ -27,7 +27,7 @@ architecture behav of noteGraphics is
 	constant pianoWidth : integer := 100;
 	constant	x_frame	: integer :=	639;
 	constant	y_frame	: integer :=	479;
-	constant	NoteWidth : integer := 49;
+	constant	NoteWidth : integer := 46;
 	constant	table_len : integer := 75; -- len of screenTable -1
 	constant ones	: std_logic := '1';
 	constant zeros	: std_logic := '0';
@@ -90,19 +90,20 @@ begin
 			else
 				max := max + 1;
 			end if;
+			
 			if oCoord_X <  ObjectStartX + NoteWidth and oCoord_X >= ObjectStartX and screenTable(table_len - oCoord_Y/5) = '1' and oCoord_Y < y_frame - pianoWidth then
-				if sound = '0' and collision_tmp = '1'and oCoord_Y/5 >= table_len -max and oCoord_Y/5 <= table_len + 1 then
+				if sound = '0' and collision_tmp = '1' then --and oCoord_Y/5 >= table_len -max  then
 					mVGA_R <= "000";
-					mVGA_G <= "111";
+					mVGA_G <= "101";
 					mVGA_B <= "11";
-				elsif sound = '1' and collision_tmp = '1' and oCoord_Y/5 >= table_len -max and oCoord_Y/5 <= table_len + 1 then
+				elsif sound = '1' and collision_tmp = '1' then -- and oCoord_Y/5 >= table_len -max then
 					mVGA_R <= "111";
 					mVGA_G <= "000";
 					mVGA_B <= "11";
 				else
 					mVGA_R <= "001";
 					mVGA_G <= "101";
-					mVGA_B <= "10";
+					mVGA_B <= "00";
 				end if;	
 				drawing_request <= '1';
 			else

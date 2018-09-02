@@ -35,11 +35,15 @@ mVGA_RGB <=  mVGA_R & mVGA_G &  mVGA_B ;
 
 process ( oCoord_X,oCoord_y )
 begin 
-
-	mVGA_R <= "000" ;	
-	mVGA_G <= "110"  ;	
-	mVGA_B <= "10" ;
-
+	if oCoord_X < x_frame - 4 and  oCoord_Y > 3 then
+		mVGA_R <= "000" ;	
+		mVGA_G <= "110"  ;	
+		mVGA_B <= "10" ;
+	else 	
+		mVGA_R <= "000" ;	
+		mVGA_G <= "000"  ;	
+		mVGA_B <= "00" ;
+	end if;
 end process ; 
 
 		

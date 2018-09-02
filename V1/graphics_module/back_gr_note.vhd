@@ -12,7 +12,8 @@ port 	(
 		RESETn	: in std_logic;
 		oCoord_X : in integer;
 		oCoord_Y : in integer;
-		drawing_request	: out std_logic ;
+		make    : in std_logic_vector(12 downto 0);
+		drawing_request	: out std_logic;
 		mVGA_RGB	: out std_logic_vector(7 downto 0)
 	);
 end back_gr_note;
@@ -23,7 +24,7 @@ architecture arc_back_gr_note of back_gr_note is
 constant	x_frame	: integer :=	639;
 constant	y_frame	: integer :=	479;
 constant	pianoHight : integer := 100;
-constant	note_width : integer := 49;
+constant	note_width : integer := 46;
 
 signal mVGA_R	: std_logic_vector(2 downto 0); --	,	 			//	VGA Red[2:0]
 signal mVGA_G	: std_logic_vector(2 downto 0); --	,	 			//	VGA Green[2:0]
@@ -37,20 +38,50 @@ mVGA_RGB <=  mVGA_R & mVGA_G &  mVGA_B ;
 
 process ( oCoord_X,oCoord_y )
 begin 
-	
-	if ((oCoord_Y > y_frame - pianoHight) and ( (oCoord_X >=0 and oCoord_X <= note_width) or (oCoord_X >= 2*note_width and oCoord_X <= 3*note_width ) or (oCoord_X >= 4*note_width and oCoord_X <= 5*note_width) or (oCoord_X >= 3+ 5*note_width and oCoord_X <=3+ 6*note_width)
-		 or (oCoord_X >=3+ 7*note_width and oCoord_X <=3+ 8*note_width) or (oCoord_X >=3+ 9*note_width and oCoord_X <=3+ 10*note_width) or (oCoord_X >=3+ 11*note_width and oCoord_X <=3+ 12*note_width) or (oCoord_X >= 6+ 12*note_width and oCoord_X <=x_frame)) ) then 
-			mVGA_R <= "111";
-			mVGA_G <= "111";
-			mVGA_B <= "11";
+	if oCoord_Y > y_frame - pianoHight then
+		mVGA_R <= "000";
+		mVGA_G <= "000";
+		mVGA_B <= "00";
+		for i in 0 to 4 loop
+			if oCoord_X >=note_width*i +3*i and oCoord_X <= note_width*(i+1) +3*i then
+				if make(i) = '1' then
+						mVGA_R <= "111";
+						mVGA_G <= "100";
+						mVGA_B <= "00";
+				elsif i = 0 or i = 2 or i = 4 then
+						mVGA_R <= "111";
+						mVGA_G <= "111";
+						mVGA_B <= "11";
+				end if;
+			end if;
+		end loop;
+		for i in 5 to 11 loop
+			if oCoord_X >=note_width*i + 3*i and oCoord_X <= note_width*(i+1) +3*i  then
+				if make(i) = '1' then
+					mVGA_R <= "111";
+					mVGA_G <= "100";
+					mVGA_B <= "00";
+				elsif i = 5 or i = 7 or i = 9 or i = 11 then
+						mVGA_R <= "111";
+						mVGA_G <= "111";
+						mVGA_B <= "11";
+				end if;
+			end if;
+		end loop;
+		if oCoord_X >=note_width*12 +36  and oCoord_X <= x_frame -3  then
+			if make(12) = '1' then
+				mVGA_R <= "111";
+				mVGA_G <= "100";
+				mVGA_B <= "00";
+			else
+				mVGA_R <= "111";
+				mVGA_G <= "111";
+				mVGA_B <= "11";
+			end if;
+		end if;
 		drawing_request <= '1';
-	elsif oCoord_Y > y_frame - pianoHight then 
-			mVGA_R <= "000";
-			mVGA_G <= "000";
-			mVGA_B <= "00";
 	else
 		drawing_request <= '0';
 	end if;
-end process ; 
-		
+end process ; 	
 end architecture;		

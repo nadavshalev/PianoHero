@@ -1,5 +1,5 @@
 TimeQuest Timing Analyzer report for V1
-Sun Sep 02 14:26:21 2018
+Sun Sep 02 18:41:02 2018
 Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Standard Edition
 
 
@@ -102,14 +102,14 @@ agreement for further details.
 ; Number detected on machine ; 8           ;
 ; Maximum allowed            ; 4           ;
 ;                            ;             ;
-; Average used               ; 2.87        ;
+; Average used               ; 3.05        ;
 ; Maximum used               ; 4           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;  62.4%      ;
-;     Processor 3            ;  62.4%      ;
-;     Processor 4            ;  62.3%      ;
+;     Processor 2            ;  68.5%      ;
+;     Processor 3            ;  68.3%      ;
+;     Processor 4            ;  68.2%      ;
 +----------------------------+-------------+
 
 
@@ -128,8 +128,8 @@ agreement for further details.
 +------------+-----------------+------------+------+
 ; Fmax       ; Restricted Fmax ; Clock Name ; Note ;
 +------------+-----------------+------------+------+
-; 17.19 MHz  ; 17.19 MHz       ; CLOCK_50   ;      ;
-; 205.51 MHz ; 205.51 MHz      ; AUD_BCLK   ;      ;
+; 10.86 MHz  ; 10.86 MHz       ; CLOCK_50   ;      ;
+; 182.12 MHz ; 182.12 MHz      ; AUD_BCLK   ;      ;
 +------------+-----------------+------------+------+
 This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
 
@@ -145,8 +145,8 @@ HTML report is unavailable in plain text report export.
 +----------+---------+----------------+
 ; Clock    ; Slack   ; End Point TNS  ;
 +----------+---------+----------------+
-; CLOCK_50 ; -57.182 ; -19724.450     ;
-; AUD_BCLK ; -5.648  ; -251.028       ;
+; CLOCK_50 ; -91.067 ; -35441.687     ;
+; AUD_BCLK ; -6.353  ; -268.775       ;
 +----------+---------+----------------+
 
 
@@ -155,8 +155,8 @@ HTML report is unavailable in plain text report export.
 +----------+-------+-----------------+
 ; Clock    ; Slack ; End Point TNS   ;
 +----------+-------+-----------------+
-; CLOCK_50 ; 0.218 ; 0.000           ;
-; AUD_BCLK ; 0.360 ; 0.000           ;
+; CLOCK_50 ; 0.217 ; 0.000           ;
+; AUD_BCLK ; 0.374 ; 0.000           ;
 +----------+-------+-----------------+
 
 
@@ -165,8 +165,8 @@ HTML report is unavailable in plain text report export.
 +----------+--------+--------------------+
 ; Clock    ; Slack  ; End Point TNS      ;
 +----------+--------+--------------------+
-; CLOCK_50 ; -7.363 ; -42.202            ;
-; AUD_BCLK ; -5.920 ; -296.878           ;
+; CLOCK_50 ; -7.483 ; -65.511            ;
+; AUD_BCLK ; -6.103 ; -329.648           ;
 +----------+--------+--------------------+
 
 
@@ -175,8 +175,8 @@ HTML report is unavailable in plain text report export.
 +----------+-------+--------------------+
 ; Clock    ; Slack ; End Point TNS      ;
 +----------+-------+--------------------+
-; AUD_BCLK ; 0.798 ; 0.000              ;
-; CLOCK_50 ; 0.956 ; 0.000              ;
+; AUD_BCLK ; 0.660 ; 0.000              ;
+; CLOCK_50 ; 0.879 ; 0.000              ;
 +----------+-------+--------------------+
 
 
@@ -185,8 +185,8 @@ HTML report is unavailable in plain text report export.
 +----------+--------+-------------------------------+
 ; Clock    ; Slack  ; End Point TNS                 ;
 +----------+--------+-------------------------------+
-; CLOCK_50 ; -2.174 ; -2256.225                     ;
-; AUD_BCLK ; -2.174 ; -265.463                      ;
+; CLOCK_50 ; -2.174 ; -2334.604                     ;
+; AUD_BCLK ; -2.174 ; -277.419                      ;
 +----------+--------+-------------------------------+
 
 
@@ -197,14 +197,14 @@ Design MTBF is not calculated because the design doesn't meet its timing require
 
 
 
-+-------------------------------------------------+
-; Slow 1100mV 0C Model Fmax Summary               ;
-+-----------+-----------------+------------+------+
-; Fmax      ; Restricted Fmax ; Clock Name ; Note ;
-+-----------+-----------------+------------+------+
-; 16.43 MHz ; 16.43 MHz       ; CLOCK_50   ;      ;
-; 206.7 MHz ; 206.7 MHz       ; AUD_BCLK   ;      ;
-+-----------+-----------------+------------+------+
++--------------------------------------------------+
+; Slow 1100mV 0C Model Fmax Summary                ;
++------------+-----------------+------------+------+
+; Fmax       ; Restricted Fmax ; Clock Name ; Note ;
++------------+-----------------+------------+------+
+; 10.66 MHz  ; 10.66 MHz       ; CLOCK_50   ;      ;
+; 187.76 MHz ; 187.76 MHz      ; AUD_BCLK   ;      ;
++------------+-----------------+------------+------+
 This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
 
 
@@ -213,8 +213,8 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +----------+---------+---------------+
 ; Clock    ; Slack   ; End Point TNS ;
 +----------+---------+---------------+
-; CLOCK_50 ; -59.855 ; -19420.891    ;
-; AUD_BCLK ; -5.447  ; -243.639      ;
+; CLOCK_50 ; -92.787 ; -34652.747    ;
+; AUD_BCLK ; -6.170  ; -259.630      ;
 +----------+---------+---------------+
 
 
@@ -223,8 +223,8 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +----------+-------+----------------+
 ; Clock    ; Slack ; End Point TNS  ;
 +----------+-------+----------------+
-; CLOCK_50 ; 0.206 ; 0.000          ;
-; AUD_BCLK ; 0.345 ; 0.000          ;
+; CLOCK_50 ; 0.208 ; 0.000          ;
+; AUD_BCLK ; 0.372 ; 0.000          ;
 +----------+-------+----------------+
 
 
@@ -233,8 +233,8 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +----------+--------+-------------------+
 ; Clock    ; Slack  ; End Point TNS     ;
 +----------+--------+-------------------+
-; CLOCK_50 ; -6.949 ; -38.659           ;
-; AUD_BCLK ; -5.662 ; -283.919          ;
+; CLOCK_50 ; -7.083 ; -60.471           ;
+; AUD_BCLK ; -5.858 ; -316.903          ;
 +----------+--------+-------------------+
 
 
@@ -243,8 +243,8 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +----------+-------+-------------------+
 ; Clock    ; Slack ; End Point TNS     ;
 +----------+-------+-------------------+
-; AUD_BCLK ; 0.693 ; 0.000             ;
-; CLOCK_50 ; 0.892 ; 0.000             ;
+; AUD_BCLK ; 0.610 ; 0.000             ;
+; CLOCK_50 ; 0.808 ; 0.000             ;
 +----------+-------+-------------------+
 
 
@@ -253,8 +253,8 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +----------+--------+------------------------------+
 ; Clock    ; Slack  ; End Point TNS                ;
 +----------+--------+------------------------------+
-; CLOCK_50 ; -2.174 ; -2073.913                    ;
-; AUD_BCLK ; -2.174 ; -262.252                     ;
+; CLOCK_50 ; -2.174 ; -2136.340                    ;
+; AUD_BCLK ; -2.174 ; -275.664                     ;
 +----------+--------+------------------------------+
 
 
@@ -270,8 +270,8 @@ Design MTBF is not calculated because the design doesn't meet its timing require
 +----------+---------+----------------+
 ; Clock    ; Slack   ; End Point TNS  ;
 +----------+---------+----------------+
-; CLOCK_50 ; -28.442 ; -10802.759     ;
-; AUD_BCLK ; -4.080  ; -83.464        ;
+; CLOCK_50 ; -50.289 ; -20617.782     ;
+; AUD_BCLK ; -4.378  ; -89.618        ;
 +----------+---------+----------------+
 
 
@@ -290,8 +290,8 @@ Design MTBF is not calculated because the design doesn't meet its timing require
 +----------+--------+--------------------+
 ; Clock    ; Slack  ; End Point TNS      ;
 +----------+--------+--------------------+
-; CLOCK_50 ; -4.955 ; -11.603            ;
-; AUD_BCLK ; -3.924 ; -198.162           ;
+; CLOCK_50 ; -5.058 ; -28.466            ;
+; AUD_BCLK ; -3.948 ; -222.823           ;
 +----------+--------+--------------------+
 
 
@@ -300,8 +300,8 @@ Design MTBF is not calculated because the design doesn't meet its timing require
 +----------+-------+--------------------+
 ; Clock    ; Slack ; End Point TNS      ;
 +----------+-------+--------------------+
-; CLOCK_50 ; 0.538 ; 0.000              ;
-; AUD_BCLK ; 0.750 ; 0.000              ;
+; CLOCK_50 ; 0.507 ; 0.000              ;
+; AUD_BCLK ; 0.742 ; 0.000              ;
 +----------+-------+--------------------+
 
 
@@ -310,8 +310,8 @@ Design MTBF is not calculated because the design doesn't meet its timing require
 +----------+--------+-------------------------------+
 ; Clock    ; Slack  ; End Point TNS                 ;
 +----------+--------+-------------------------------+
-; CLOCK_50 ; -2.174 ; -1551.954                     ;
-; AUD_BCLK ; -2.174 ; -271.686                      ;
+; CLOCK_50 ; -2.174 ; -1597.628                     ;
+; AUD_BCLK ; -2.174 ; -290.933                      ;
 +----------+--------+-------------------------------+
 
 
@@ -327,8 +327,8 @@ Design MTBF is not calculated because the design doesn't meet its timing require
 +----------+---------+---------------+
 ; Clock    ; Slack   ; End Point TNS ;
 +----------+---------+---------------+
-; CLOCK_50 ; -27.078 ; -9488.133     ;
-; AUD_BCLK ; -3.392  ; -65.251       ;
+; CLOCK_50 ; -46.654 ; -18215.148    ;
+; AUD_BCLK ; -3.702  ; -68.886       ;
 +----------+---------+---------------+
 
 
@@ -337,8 +337,8 @@ Design MTBF is not calculated because the design doesn't meet its timing require
 +----------+-------+----------------+
 ; Clock    ; Slack ; End Point TNS  ;
 +----------+-------+----------------+
-; CLOCK_50 ; 0.118 ; 0.000          ;
-; AUD_BCLK ; 0.170 ; 0.000          ;
+; CLOCK_50 ; 0.115 ; 0.000          ;
+; AUD_BCLK ; 0.152 ; 0.000          ;
 +----------+-------+----------------+
 
 
@@ -347,8 +347,8 @@ Design MTBF is not calculated because the design doesn't meet its timing require
 +----------+--------+-------------------+
 ; Clock    ; Slack  ; End Point TNS     ;
 +----------+--------+-------------------+
-; CLOCK_50 ; -4.195 ; -8.820            ;
-; AUD_BCLK ; -3.264 ; -162.483          ;
+; CLOCK_50 ; -4.295 ; -23.173           ;
+; AUD_BCLK ; -3.298 ; -183.812          ;
 +----------+--------+-------------------+
 
 
@@ -357,8 +357,8 @@ Design MTBF is not calculated because the design doesn't meet its timing require
 +----------+-------+-------------------+
 ; Clock    ; Slack ; End Point TNS     ;
 +----------+-------+-------------------+
-; AUD_BCLK ; 0.393 ; 0.000             ;
-; CLOCK_50 ; 0.491 ; 0.000             ;
+; AUD_BCLK ; 0.407 ; 0.000             ;
+; CLOCK_50 ; 0.457 ; 0.000             ;
 +----------+-------+-------------------+
 
 
@@ -367,8 +367,8 @@ Design MTBF is not calculated because the design doesn't meet its timing require
 +----------+--------+------------------------------+
 ; Clock    ; Slack  ; End Point TNS                ;
 +----------+--------+------------------------------+
-; CLOCK_50 ; -2.174 ; -1828.958                    ;
-; AUD_BCLK ; -2.174 ; -289.339                     ;
+; CLOCK_50 ; -2.174 ; -1888.683                    ;
+; AUD_BCLK ; -2.174 ; -308.006                     ;
 +----------+--------+------------------------------+
 
 
@@ -384,12 +384,12 @@ Design MTBF is not calculated because the design doesn't meet its timing require
 +------------------+------------+-------+----------+---------+---------------------+
 ; Clock            ; Setup      ; Hold  ; Recovery ; Removal ; Minimum Pulse Width ;
 +------------------+------------+-------+----------+---------+---------------------+
-; Worst-case Slack ; -59.855    ; 0.118 ; -7.363   ; 0.393   ; -2.174              ;
-;  AUD_BCLK        ; -5.648     ; 0.170 ; -5.920   ; 0.393   ; -2.174              ;
-;  CLOCK_50        ; -59.855    ; 0.118 ; -7.363   ; 0.491   ; -2.174              ;
-; Design-wide TNS  ; -19975.478 ; 0.0   ; -339.08  ; 0.0     ; -2521.688           ;
-;  AUD_BCLK        ; -251.028   ; 0.000 ; -296.878 ; 0.000   ; -289.339            ;
-;  CLOCK_50        ; -19724.450 ; 0.000 ; -42.202  ; 0.000   ; -2256.225           ;
+; Worst-case Slack ; -92.787    ; 0.115 ; -7.483   ; 0.407   ; -2.174              ;
+;  AUD_BCLK        ; -6.353     ; 0.152 ; -6.103   ; 0.407   ; -2.174              ;
+;  CLOCK_50        ; -92.787    ; 0.115 ; -7.483   ; 0.457   ; -2.174              ;
+; Design-wide TNS  ; -35710.462 ; 0.0   ; -395.159 ; 0.0     ; -2612.023           ;
+;  AUD_BCLK        ; -268.775   ; 0.000 ; -329.648 ; 0.000   ; -308.006            ;
+;  CLOCK_50        ; -35441.687 ; 0.000 ; -65.511  ; 0.000   ; -2334.604           ;
 +------------------+------------+-------+----------+---------+---------------------+
 
 
@@ -407,6 +407,7 @@ Design MTBF is not calculated because the design doesn't meet its timing require
 ; VGA_HS        ; 3.3-V LVTTL  ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
 ; VGA_CLK       ; 3.3-V LVTTL  ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
 ; VGA_BLANK_N   ; 3.3-V LVTTL  ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; VGA_SYNC_N    ; 3.3-V LVTTL  ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
 ; HEX0[6]       ; 3.3-V LVTTL  ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
 ; HEX0[5]       ; 3.3-V LVTTL  ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
 ; HEX0[4]       ; 3.3-V LVTTL  ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
@@ -423,24 +424,23 @@ Design MTBF is not calculated because the design doesn't meet its timing require
 ; HEX1[0]       ; 3.3-V LVTTL  ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
 ; VGA_B[7]      ; 3.3-V LVTTL  ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
 ; VGA_B[6]      ; 3.3-V LVTTL  ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
-; VGA_G[7]      ; 3.3-V LVTTL  ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
-; VGA_G[6]      ; 3.3-V LVTTL  ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
-; VGA_G[5]      ; 3.3-V LVTTL  ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
-; VGA_R[7]      ; 3.3-V LVTTL  ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
-; VGA_R[6]      ; 3.3-V LVTTL  ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
-; VGA_R[5]      ; 3.3-V LVTTL  ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
-; VGA_SYNC_N    ; 3.3-V LVTTL  ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
 ; VGA_B[5]      ; 3.3-V LVTTL  ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
 ; VGA_B[4]      ; 3.3-V LVTTL  ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
 ; VGA_B[3]      ; 3.3-V LVTTL  ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
 ; VGA_B[2]      ; 3.3-V LVTTL  ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
 ; VGA_B[1]      ; 3.3-V LVTTL  ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
 ; VGA_B[0]      ; 3.3-V LVTTL  ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; VGA_G[7]      ; 3.3-V LVTTL  ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; VGA_G[6]      ; 3.3-V LVTTL  ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; VGA_G[5]      ; 3.3-V LVTTL  ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
 ; VGA_G[4]      ; 3.3-V LVTTL  ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
 ; VGA_G[3]      ; 3.3-V LVTTL  ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
 ; VGA_G[2]      ; 3.3-V LVTTL  ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
 ; VGA_G[1]      ; 3.3-V LVTTL  ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
 ; VGA_G[0]      ; 3.3-V LVTTL  ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; VGA_R[7]      ; 3.3-V LVTTL  ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; VGA_R[6]      ; 3.3-V LVTTL  ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; VGA_R[5]      ; 3.3-V LVTTL  ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
 ; VGA_R[4]      ; 3.3-V LVTTL  ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
 ; VGA_R[3]      ; 3.3-V LVTTL  ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
 ; VGA_R[2]      ; 3.3-V LVTTL  ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
@@ -456,8 +456,8 @@ Design MTBF is not calculated because the design doesn't meet its timing require
 +--------------+--------------+-----------------+-----------------+
 ; AUD_I2C_SDAT ; 3.3-V LVTTL  ; 2640 ps         ; 2640 ps         ;
 ; AUD_BCLK     ; 3.3-V LVTTL  ; 2640 ps         ; 2640 ps         ;
-; AUD_DACLRCK  ; 3.3-V LVTTL  ; 2640 ps         ; 2640 ps         ;
 ; AUD_ADCLRCK  ; 3.3-V LVTTL  ; 2640 ps         ; 2640 ps         ;
+; AUD_DACLRCK  ; 3.3-V LVTTL  ; 2640 ps         ; 2640 ps         ;
 ; AUD_ADCDAT   ; 3.3-V LVTTL  ; 2640 ps         ; 2640 ps         ;
 ; CLOCK_50     ; 3.3-V LVTTL  ; 2640 ps         ; 2640 ps         ;
 ; resetN       ; 3.3-V LVTTL  ; 2640 ps         ; 2640 ps         ;
@@ -481,6 +481,7 @@ Design MTBF is not calculated because the design doesn't meet its timing require
 ; VGA_HS        ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 3.35e-07 V                   ; 3.14 V              ; -0.257 V            ; 0.13 V                               ; 0.399 V                              ; 4.27e-10 s                  ; 1.5e-10 s                   ; Yes                        ; No                         ; 3.08 V                      ; 3.35e-07 V                  ; 3.14 V             ; -0.257 V           ; 0.13 V                              ; 0.399 V                             ; 4.27e-10 s                 ; 1.5e-10 s                  ; Yes                       ; No                        ;
 ; VGA_CLK       ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 3.35e-07 V                   ; 3.14 V              ; -0.258 V            ; 0.13 V                               ; 0.399 V                              ; 4.27e-10 s                  ; 1.5e-10 s                   ; Yes                        ; No                         ; 3.08 V                      ; 3.35e-07 V                  ; 3.14 V             ; -0.258 V           ; 0.13 V                              ; 0.399 V                             ; 4.27e-10 s                 ; 1.5e-10 s                  ; Yes                       ; No                        ;
 ; VGA_BLANK_N   ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 3.35e-07 V                   ; 3.14 V              ; -0.257 V            ; 0.13 V                               ; 0.399 V                              ; 4.27e-10 s                  ; 1.5e-10 s                   ; Yes                        ; No                         ; 3.08 V                      ; 3.35e-07 V                  ; 3.14 V             ; -0.257 V           ; 0.13 V                              ; 0.399 V                             ; 4.27e-10 s                 ; 1.5e-10 s                  ; Yes                       ; No                        ;
+; VGA_SYNC_N    ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 3.35e-07 V                   ; 3.14 V              ; -0.257 V            ; 0.13 V                               ; 0.399 V                              ; 4.27e-10 s                  ; 1.5e-10 s                   ; Yes                        ; No                         ; 3.08 V                      ; 3.35e-07 V                  ; 3.14 V             ; -0.257 V           ; 0.13 V                              ; 0.399 V                             ; 4.27e-10 s                 ; 1.5e-10 s                  ; Yes                       ; No                        ;
 ; HEX0[6]       ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 3.35e-07 V                   ; 3.14 V              ; -0.257 V            ; 0.13 V                               ; 0.399 V                              ; 4.27e-10 s                  ; 1.5e-10 s                   ; Yes                        ; No                         ; 3.08 V                      ; 3.35e-07 V                  ; 3.14 V             ; -0.257 V           ; 0.13 V                              ; 0.399 V                             ; 4.27e-10 s                 ; 1.5e-10 s                  ; Yes                       ; No                        ;
 ; HEX0[5]       ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 3.35e-07 V                   ; 3.14 V              ; -0.258 V            ; 0.13 V                               ; 0.399 V                              ; 4.27e-10 s                  ; 1.5e-10 s                   ; Yes                        ; No                         ; 3.08 V                      ; 3.35e-07 V                  ; 3.14 V             ; -0.258 V           ; 0.13 V                              ; 0.399 V                             ; 4.27e-10 s                 ; 1.5e-10 s                  ; Yes                       ; No                        ;
 ; HEX0[4]       ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 3.35e-07 V                   ; 3.14 V              ; -0.258 V            ; 0.13 V                               ; 0.399 V                              ; 4.27e-10 s                  ; 1.5e-10 s                   ; Yes                        ; No                         ; 3.08 V                      ; 3.35e-07 V                  ; 3.14 V             ; -0.258 V           ; 0.13 V                              ; 0.399 V                             ; 4.27e-10 s                 ; 1.5e-10 s                  ; Yes                       ; No                        ;
@@ -497,24 +498,23 @@ Design MTBF is not calculated because the design doesn't meet its timing require
 ; HEX1[0]       ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 3.35e-07 V                   ; 3.14 V              ; -0.257 V            ; 0.13 V                               ; 0.399 V                              ; 4.27e-10 s                  ; 1.5e-10 s                   ; Yes                        ; No                         ; 3.08 V                      ; 3.35e-07 V                  ; 3.14 V             ; -0.257 V           ; 0.13 V                              ; 0.399 V                             ; 4.27e-10 s                 ; 1.5e-10 s                  ; Yes                       ; No                        ;
 ; VGA_B[7]      ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 3.35e-07 V                   ; 3.14 V              ; -0.257 V            ; 0.13 V                               ; 0.399 V                              ; 4.27e-10 s                  ; 1.5e-10 s                   ; Yes                        ; No                         ; 3.08 V                      ; 3.35e-07 V                  ; 3.14 V             ; -0.257 V           ; 0.13 V                              ; 0.399 V                             ; 4.27e-10 s                 ; 1.5e-10 s                  ; Yes                       ; No                        ;
 ; VGA_B[6]      ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 3.35e-07 V                   ; 3.14 V              ; -0.258 V            ; 0.13 V                               ; 0.399 V                              ; 4.27e-10 s                  ; 1.5e-10 s                   ; Yes                        ; No                         ; 3.08 V                      ; 3.35e-07 V                  ; 3.14 V             ; -0.258 V           ; 0.13 V                              ; 0.399 V                             ; 4.27e-10 s                 ; 1.5e-10 s                  ; Yes                       ; No                        ;
-; VGA_G[7]      ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 3.35e-07 V                   ; 3.14 V              ; -0.258 V            ; 0.13 V                               ; 0.399 V                              ; 4.27e-10 s                  ; 1.5e-10 s                   ; Yes                        ; No                         ; 3.08 V                      ; 3.35e-07 V                  ; 3.14 V             ; -0.258 V           ; 0.13 V                              ; 0.399 V                             ; 4.27e-10 s                 ; 1.5e-10 s                  ; Yes                       ; No                        ;
-; VGA_G[6]      ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 3.35e-07 V                   ; 3.14 V              ; -0.258 V            ; 0.13 V                               ; 0.399 V                              ; 4.27e-10 s                  ; 1.5e-10 s                   ; Yes                        ; No                         ; 3.08 V                      ; 3.35e-07 V                  ; 3.14 V             ; -0.258 V           ; 0.13 V                              ; 0.399 V                             ; 4.27e-10 s                 ; 1.5e-10 s                  ; Yes                       ; No                        ;
-; VGA_G[5]      ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 3.35e-07 V                   ; 3.14 V              ; -0.257 V            ; 0.13 V                               ; 0.399 V                              ; 4.27e-10 s                  ; 1.5e-10 s                   ; Yes                        ; No                         ; 3.08 V                      ; 3.35e-07 V                  ; 3.14 V             ; -0.257 V           ; 0.13 V                              ; 0.399 V                             ; 4.27e-10 s                 ; 1.5e-10 s                  ; Yes                       ; No                        ;
-; VGA_R[7]      ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 3.35e-07 V                   ; 3.14 V              ; -0.258 V            ; 0.13 V                               ; 0.399 V                              ; 4.27e-10 s                  ; 1.5e-10 s                   ; Yes                        ; No                         ; 3.08 V                      ; 3.35e-07 V                  ; 3.14 V             ; -0.258 V           ; 0.13 V                              ; 0.399 V                             ; 4.27e-10 s                 ; 1.5e-10 s                  ; Yes                       ; No                        ;
-; VGA_R[6]      ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 3.35e-07 V                   ; 3.14 V              ; -0.258 V            ; 0.13 V                               ; 0.399 V                              ; 4.27e-10 s                  ; 1.5e-10 s                   ; Yes                        ; No                         ; 3.08 V                      ; 3.35e-07 V                  ; 3.14 V             ; -0.258 V           ; 0.13 V                              ; 0.399 V                             ; 4.27e-10 s                 ; 1.5e-10 s                  ; Yes                       ; No                        ;
-; VGA_R[5]      ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 3.35e-07 V                   ; 3.14 V              ; -0.257 V            ; 0.13 V                               ; 0.399 V                              ; 4.27e-10 s                  ; 1.5e-10 s                   ; Yes                        ; No                         ; 3.08 V                      ; 3.35e-07 V                  ; 3.14 V             ; -0.257 V           ; 0.13 V                              ; 0.399 V                             ; 4.27e-10 s                 ; 1.5e-10 s                  ; Yes                       ; No                        ;
-; VGA_SYNC_N    ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 3.35e-07 V                   ; 3.14 V              ; -0.257 V            ; 0.13 V                               ; 0.399 V                              ; 4.27e-10 s                  ; 1.5e-10 s                   ; Yes                        ; No                         ; 3.08 V                      ; 3.35e-07 V                  ; 3.14 V             ; -0.257 V           ; 0.13 V                              ; 0.399 V                             ; 4.27e-10 s                 ; 1.5e-10 s                  ; Yes                       ; No                        ;
 ; VGA_B[5]      ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 3.5e-07 V                    ; 3.14 V              ; -0.195 V            ; 0.158 V                              ; 0.394 V                              ; 4.46e-10 s                  ; 1.64e-10 s                  ; Yes                        ; No                         ; 3.08 V                      ; 3.5e-07 V                   ; 3.14 V             ; -0.195 V           ; 0.158 V                             ; 0.394 V                             ; 4.46e-10 s                 ; 1.64e-10 s                 ; Yes                       ; No                        ;
 ; VGA_B[4]      ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 3.35e-07 V                   ; 3.14 V              ; -0.257 V            ; 0.13 V                               ; 0.399 V                              ; 4.27e-10 s                  ; 1.5e-10 s                   ; Yes                        ; No                         ; 3.08 V                      ; 3.35e-07 V                  ; 3.14 V             ; -0.257 V           ; 0.13 V                              ; 0.399 V                             ; 4.27e-10 s                 ; 1.5e-10 s                  ; Yes                       ; No                        ;
 ; VGA_B[3]      ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 3.35e-07 V                   ; 3.14 V              ; -0.258 V            ; 0.13 V                               ; 0.399 V                              ; 4.27e-10 s                  ; 1.5e-10 s                   ; Yes                        ; No                         ; 3.08 V                      ; 3.35e-07 V                  ; 3.14 V             ; -0.258 V           ; 0.13 V                              ; 0.399 V                             ; 4.27e-10 s                 ; 1.5e-10 s                  ; Yes                       ; No                        ;
 ; VGA_B[2]      ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 2.62e-07 V                   ; 3.1 V               ; -0.153 V            ; 0.035 V                              ; 0.31 V                               ; 4.23e-10 s                  ; 1.59e-10 s                  ; Yes                        ; No                         ; 3.08 V                      ; 2.62e-07 V                  ; 3.1 V              ; -0.153 V           ; 0.035 V                             ; 0.31 V                              ; 4.23e-10 s                 ; 1.59e-10 s                 ; Yes                       ; No                        ;
 ; VGA_B[1]      ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 3.35e-07 V                   ; 3.14 V              ; -0.258 V            ; 0.13 V                               ; 0.399 V                              ; 4.27e-10 s                  ; 1.5e-10 s                   ; Yes                        ; No                         ; 3.08 V                      ; 3.35e-07 V                  ; 3.14 V             ; -0.258 V           ; 0.13 V                              ; 0.399 V                             ; 4.27e-10 s                 ; 1.5e-10 s                  ; Yes                       ; No                        ;
 ; VGA_B[0]      ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 3.35e-07 V                   ; 3.14 V              ; -0.257 V            ; 0.13 V                               ; 0.399 V                              ; 4.27e-10 s                  ; 1.5e-10 s                   ; Yes                        ; No                         ; 3.08 V                      ; 3.35e-07 V                  ; 3.14 V             ; -0.257 V           ; 0.13 V                              ; 0.399 V                             ; 4.27e-10 s                 ; 1.5e-10 s                  ; Yes                       ; No                        ;
+; VGA_G[7]      ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 3.35e-07 V                   ; 3.14 V              ; -0.258 V            ; 0.13 V                               ; 0.399 V                              ; 4.27e-10 s                  ; 1.5e-10 s                   ; Yes                        ; No                         ; 3.08 V                      ; 3.35e-07 V                  ; 3.14 V             ; -0.258 V           ; 0.13 V                              ; 0.399 V                             ; 4.27e-10 s                 ; 1.5e-10 s                  ; Yes                       ; No                        ;
+; VGA_G[6]      ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 3.35e-07 V                   ; 3.14 V              ; -0.258 V            ; 0.13 V                               ; 0.399 V                              ; 4.27e-10 s                  ; 1.5e-10 s                   ; Yes                        ; No                         ; 3.08 V                      ; 3.35e-07 V                  ; 3.14 V             ; -0.258 V           ; 0.13 V                              ; 0.399 V                             ; 4.27e-10 s                 ; 1.5e-10 s                  ; Yes                       ; No                        ;
+; VGA_G[5]      ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 3.35e-07 V                   ; 3.14 V              ; -0.257 V            ; 0.13 V                               ; 0.399 V                              ; 4.27e-10 s                  ; 1.5e-10 s                   ; Yes                        ; No                         ; 3.08 V                      ; 3.35e-07 V                  ; 3.14 V             ; -0.257 V           ; 0.13 V                              ; 0.399 V                             ; 4.27e-10 s                 ; 1.5e-10 s                  ; Yes                       ; No                        ;
 ; VGA_G[4]      ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 3.35e-07 V                   ; 3.14 V              ; -0.258 V            ; 0.13 V                               ; 0.399 V                              ; 4.27e-10 s                  ; 1.5e-10 s                   ; Yes                        ; No                         ; 3.08 V                      ; 3.35e-07 V                  ; 3.14 V             ; -0.258 V           ; 0.13 V                              ; 0.399 V                             ; 4.27e-10 s                 ; 1.5e-10 s                  ; Yes                       ; No                        ;
 ; VGA_G[3]      ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 3.35e-07 V                   ; 3.14 V              ; -0.257 V            ; 0.13 V                               ; 0.399 V                              ; 4.27e-10 s                  ; 1.5e-10 s                   ; Yes                        ; No                         ; 3.08 V                      ; 3.35e-07 V                  ; 3.14 V             ; -0.257 V           ; 0.13 V                              ; 0.399 V                             ; 4.27e-10 s                 ; 1.5e-10 s                  ; Yes                       ; No                        ;
 ; VGA_G[2]      ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 3.35e-07 V                   ; 3.14 V              ; -0.257 V            ; 0.13 V                               ; 0.399 V                              ; 4.27e-10 s                  ; 1.5e-10 s                   ; Yes                        ; No                         ; 3.08 V                      ; 3.35e-07 V                  ; 3.14 V             ; -0.257 V           ; 0.13 V                              ; 0.399 V                             ; 4.27e-10 s                 ; 1.5e-10 s                  ; Yes                       ; No                        ;
 ; VGA_G[1]      ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 3.35e-07 V                   ; 3.14 V              ; -0.257 V            ; 0.13 V                               ; 0.399 V                              ; 4.27e-10 s                  ; 1.5e-10 s                   ; Yes                        ; No                         ; 3.08 V                      ; 3.35e-07 V                  ; 3.14 V             ; -0.257 V           ; 0.13 V                              ; 0.399 V                             ; 4.27e-10 s                 ; 1.5e-10 s                  ; Yes                       ; No                        ;
 ; VGA_G[0]      ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 3.35e-07 V                   ; 3.14 V              ; -0.257 V            ; 0.13 V                               ; 0.399 V                              ; 4.27e-10 s                  ; 1.5e-10 s                   ; Yes                        ; No                         ; 3.08 V                      ; 3.35e-07 V                  ; 3.14 V             ; -0.257 V           ; 0.13 V                              ; 0.399 V                             ; 4.27e-10 s                 ; 1.5e-10 s                  ; Yes                       ; No                        ;
+; VGA_R[7]      ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 3.35e-07 V                   ; 3.14 V              ; -0.258 V            ; 0.13 V                               ; 0.399 V                              ; 4.27e-10 s                  ; 1.5e-10 s                   ; Yes                        ; No                         ; 3.08 V                      ; 3.35e-07 V                  ; 3.14 V             ; -0.258 V           ; 0.13 V                              ; 0.399 V                             ; 4.27e-10 s                 ; 1.5e-10 s                  ; Yes                       ; No                        ;
+; VGA_R[6]      ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 3.35e-07 V                   ; 3.14 V              ; -0.258 V            ; 0.13 V                               ; 0.399 V                              ; 4.27e-10 s                  ; 1.5e-10 s                   ; Yes                        ; No                         ; 3.08 V                      ; 3.35e-07 V                  ; 3.14 V             ; -0.258 V           ; 0.13 V                              ; 0.399 V                             ; 4.27e-10 s                 ; 1.5e-10 s                  ; Yes                       ; No                        ;
+; VGA_R[5]      ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 3.35e-07 V                   ; 3.14 V              ; -0.257 V            ; 0.13 V                               ; 0.399 V                              ; 4.27e-10 s                  ; 1.5e-10 s                   ; Yes                        ; No                         ; 3.08 V                      ; 3.35e-07 V                  ; 3.14 V             ; -0.257 V           ; 0.13 V                              ; 0.399 V                             ; 4.27e-10 s                 ; 1.5e-10 s                  ; Yes                       ; No                        ;
 ; VGA_R[4]      ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 3.35e-07 V                   ; 3.14 V              ; -0.257 V            ; 0.13 V                               ; 0.399 V                              ; 4.27e-10 s                  ; 1.5e-10 s                   ; Yes                        ; No                         ; 3.08 V                      ; 3.35e-07 V                  ; 3.14 V             ; -0.257 V           ; 0.13 V                              ; 0.399 V                             ; 4.27e-10 s                 ; 1.5e-10 s                  ; Yes                       ; No                        ;
 ; VGA_R[3]      ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 3.35e-07 V                   ; 3.14 V              ; -0.258 V            ; 0.13 V                               ; 0.399 V                              ; 4.27e-10 s                  ; 1.5e-10 s                   ; Yes                        ; No                         ; 3.08 V                      ; 3.35e-07 V                  ; 3.14 V             ; -0.258 V           ; 0.13 V                              ; 0.399 V                             ; 4.27e-10 s                 ; 1.5e-10 s                  ; Yes                       ; No                        ;
 ; VGA_R[2]      ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 3.35e-07 V                   ; 3.14 V              ; -0.257 V            ; 0.13 V                               ; 0.399 V                              ; 4.27e-10 s                  ; 1.5e-10 s                   ; Yes                        ; No                         ; 3.08 V                      ; 3.35e-07 V                  ; 3.14 V             ; -0.257 V           ; 0.13 V                              ; 0.399 V                             ; 4.27e-10 s                 ; 1.5e-10 s                  ; Yes                       ; No                        ;
@@ -537,6 +537,7 @@ Design MTBF is not calculated because the design doesn't meet its timing require
 ; VGA_HS        ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 3.19e-05 V                   ; 3.1 V               ; -0.136 V            ; 0.025 V                              ; 0.167 V                              ; 4.92e-10 s                  ; 3.12e-10 s                  ; Yes                        ; No                         ; 3.08 V                      ; 3.19e-05 V                  ; 3.1 V              ; -0.136 V           ; 0.025 V                             ; 0.167 V                             ; 4.92e-10 s                 ; 3.12e-10 s                 ; Yes                       ; No                        ;
 ; VGA_CLK       ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 3.19e-05 V                   ; 3.1 V               ; -0.133 V            ; 0.025 V                              ; 0.169 V                              ; 4.92e-10 s                  ; 3.13e-10 s                  ; Yes                        ; No                         ; 3.08 V                      ; 3.19e-05 V                  ; 3.1 V              ; -0.133 V           ; 0.025 V                             ; 0.169 V                             ; 4.92e-10 s                 ; 3.13e-10 s                 ; Yes                       ; No                        ;
 ; VGA_BLANK_N   ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 3.19e-05 V                   ; 3.1 V               ; -0.136 V            ; 0.025 V                              ; 0.167 V                              ; 4.92e-10 s                  ; 3.12e-10 s                  ; Yes                        ; No                         ; 3.08 V                      ; 3.19e-05 V                  ; 3.1 V              ; -0.136 V           ; 0.025 V                             ; 0.167 V                             ; 4.92e-10 s                 ; 3.12e-10 s                 ; Yes                       ; No                        ;
+; VGA_SYNC_N    ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 3.19e-05 V                   ; 3.1 V               ; -0.136 V            ; 0.025 V                              ; 0.167 V                              ; 4.92e-10 s                  ; 3.12e-10 s                  ; Yes                        ; No                         ; 3.08 V                      ; 3.19e-05 V                  ; 3.1 V              ; -0.136 V           ; 0.025 V                             ; 0.167 V                             ; 4.92e-10 s                 ; 3.12e-10 s                 ; Yes                       ; No                        ;
 ; HEX0[6]       ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 3.19e-05 V                   ; 3.1 V               ; -0.136 V            ; 0.025 V                              ; 0.167 V                              ; 4.92e-10 s                  ; 3.12e-10 s                  ; Yes                        ; No                         ; 3.08 V                      ; 3.19e-05 V                  ; 3.1 V              ; -0.136 V           ; 0.025 V                             ; 0.167 V                             ; 4.92e-10 s                 ; 3.12e-10 s                 ; Yes                       ; No                        ;
 ; HEX0[5]       ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 3.19e-05 V                   ; 3.1 V               ; -0.133 V            ; 0.025 V                              ; 0.169 V                              ; 4.92e-10 s                  ; 3.13e-10 s                  ; Yes                        ; No                         ; 3.08 V                      ; 3.19e-05 V                  ; 3.1 V              ; -0.133 V           ; 0.025 V                             ; 0.169 V                             ; 4.92e-10 s                 ; 3.13e-10 s                 ; Yes                       ; No                        ;
 ; HEX0[4]       ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 3.19e-05 V                   ; 3.1 V               ; -0.133 V            ; 0.025 V                              ; 0.169 V                              ; 4.92e-10 s                  ; 3.13e-10 s                  ; Yes                        ; No                         ; 3.08 V                      ; 3.19e-05 V                  ; 3.1 V              ; -0.133 V           ; 0.025 V                             ; 0.169 V                             ; 4.92e-10 s                 ; 3.13e-10 s                 ; Yes                       ; No                        ;
@@ -553,24 +554,23 @@ Design MTBF is not calculated because the design doesn't meet its timing require
 ; HEX1[0]       ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 3.19e-05 V                   ; 3.1 V               ; -0.136 V            ; 0.025 V                              ; 0.167 V                              ; 4.92e-10 s                  ; 3.12e-10 s                  ; Yes                        ; No                         ; 3.08 V                      ; 3.19e-05 V                  ; 3.1 V              ; -0.136 V           ; 0.025 V                             ; 0.167 V                             ; 4.92e-10 s                 ; 3.12e-10 s                 ; Yes                       ; No                        ;
 ; VGA_B[7]      ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 3.19e-05 V                   ; 3.1 V               ; -0.136 V            ; 0.025 V                              ; 0.167 V                              ; 4.92e-10 s                  ; 3.12e-10 s                  ; Yes                        ; No                         ; 3.08 V                      ; 3.19e-05 V                  ; 3.1 V              ; -0.136 V           ; 0.025 V                             ; 0.167 V                             ; 4.92e-10 s                 ; 3.12e-10 s                 ; Yes                       ; No                        ;
 ; VGA_B[6]      ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 3.19e-05 V                   ; 3.1 V               ; -0.133 V            ; 0.025 V                              ; 0.169 V                              ; 4.92e-10 s                  ; 3.13e-10 s                  ; Yes                        ; No                         ; 3.08 V                      ; 3.19e-05 V                  ; 3.1 V              ; -0.133 V           ; 0.025 V                             ; 0.169 V                             ; 4.92e-10 s                 ; 3.13e-10 s                 ; Yes                       ; No                        ;
-; VGA_G[7]      ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 3.19e-05 V                   ; 3.1 V               ; -0.133 V            ; 0.025 V                              ; 0.169 V                              ; 4.92e-10 s                  ; 3.13e-10 s                  ; Yes                        ; No                         ; 3.08 V                      ; 3.19e-05 V                  ; 3.1 V              ; -0.133 V           ; 0.025 V                             ; 0.169 V                             ; 4.92e-10 s                 ; 3.13e-10 s                 ; Yes                       ; No                        ;
-; VGA_G[6]      ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 3.19e-05 V                   ; 3.1 V               ; -0.133 V            ; 0.025 V                              ; 0.169 V                              ; 4.92e-10 s                  ; 3.13e-10 s                  ; Yes                        ; No                         ; 3.08 V                      ; 3.19e-05 V                  ; 3.1 V              ; -0.133 V           ; 0.025 V                             ; 0.169 V                             ; 4.92e-10 s                 ; 3.13e-10 s                 ; Yes                       ; No                        ;
-; VGA_G[5]      ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 3.19e-05 V                   ; 3.1 V               ; -0.136 V            ; 0.025 V                              ; 0.167 V                              ; 4.92e-10 s                  ; 3.12e-10 s                  ; Yes                        ; No                         ; 3.08 V                      ; 3.19e-05 V                  ; 3.1 V              ; -0.136 V           ; 0.025 V                             ; 0.167 V                             ; 4.92e-10 s                 ; 3.12e-10 s                 ; Yes                       ; No                        ;
-; VGA_R[7]      ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 3.19e-05 V                   ; 3.1 V               ; -0.133 V            ; 0.025 V                              ; 0.169 V                              ; 4.92e-10 s                  ; 3.13e-10 s                  ; Yes                        ; No                         ; 3.08 V                      ; 3.19e-05 V                  ; 3.1 V              ; -0.133 V           ; 0.025 V                             ; 0.169 V                             ; 4.92e-10 s                 ; 3.13e-10 s                 ; Yes                       ; No                        ;
-; VGA_R[6]      ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 3.19e-05 V                   ; 3.1 V               ; -0.133 V            ; 0.025 V                              ; 0.169 V                              ; 4.92e-10 s                  ; 3.13e-10 s                  ; Yes                        ; No                         ; 3.08 V                      ; 3.19e-05 V                  ; 3.1 V              ; -0.133 V           ; 0.025 V                             ; 0.169 V                             ; 4.92e-10 s                 ; 3.13e-10 s                 ; Yes                       ; No                        ;
-; VGA_R[5]      ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 3.19e-05 V                   ; 3.1 V               ; -0.136 V            ; 0.025 V                              ; 0.167 V                              ; 4.92e-10 s                  ; 3.12e-10 s                  ; Yes                        ; No                         ; 3.08 V                      ; 3.19e-05 V                  ; 3.1 V              ; -0.136 V           ; 0.025 V                             ; 0.167 V                             ; 4.92e-10 s                 ; 3.12e-10 s                 ; Yes                       ; No                        ;
-; VGA_SYNC_N    ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 3.19e-05 V                   ; 3.1 V               ; -0.136 V            ; 0.025 V                              ; 0.167 V                              ; 4.92e-10 s                  ; 3.12e-10 s                  ; Yes                        ; No                         ; 3.08 V                      ; 3.19e-05 V                  ; 3.1 V              ; -0.136 V           ; 0.025 V                             ; 0.167 V                             ; 4.92e-10 s                 ; 3.12e-10 s                 ; Yes                       ; No                        ;
 ; VGA_B[5]      ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 3.32e-05 V                   ; 3.09 V              ; -0.11 V             ; 0.031 V                              ; 0.155 V                              ; 5.43e-10 s                  ; 3.14e-10 s                  ; Yes                        ; Yes                        ; 3.08 V                      ; 3.32e-05 V                  ; 3.09 V             ; -0.11 V            ; 0.031 V                             ; 0.155 V                             ; 5.43e-10 s                 ; 3.14e-10 s                 ; Yes                       ; Yes                       ;
 ; VGA_B[4]      ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 3.19e-05 V                   ; 3.1 V               ; -0.136 V            ; 0.025 V                              ; 0.167 V                              ; 4.92e-10 s                  ; 3.12e-10 s                  ; Yes                        ; No                         ; 3.08 V                      ; 3.19e-05 V                  ; 3.1 V              ; -0.136 V           ; 0.025 V                             ; 0.167 V                             ; 4.92e-10 s                 ; 3.12e-10 s                 ; Yes                       ; No                        ;
 ; VGA_B[3]      ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 3.19e-05 V                   ; 3.1 V               ; -0.133 V            ; 0.025 V                              ; 0.169 V                              ; 4.92e-10 s                  ; 3.13e-10 s                  ; Yes                        ; No                         ; 3.08 V                      ; 3.19e-05 V                  ; 3.1 V              ; -0.133 V           ; 0.025 V                             ; 0.169 V                             ; 4.92e-10 s                 ; 3.13e-10 s                 ; Yes                       ; No                        ;
 ; VGA_B[2]      ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 2.61e-05 V                   ; 3.09 V              ; -0.0638 V           ; 0.034 V                              ; 0.099 V                              ; 5.12e-10 s                  ; 2.97e-10 s                  ; Yes                        ; Yes                        ; 3.08 V                      ; 2.61e-05 V                  ; 3.09 V             ; -0.0638 V          ; 0.034 V                             ; 0.099 V                             ; 5.12e-10 s                 ; 2.97e-10 s                 ; Yes                       ; Yes                       ;
 ; VGA_B[1]      ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 3.19e-05 V                   ; 3.1 V               ; -0.133 V            ; 0.025 V                              ; 0.169 V                              ; 4.92e-10 s                  ; 3.13e-10 s                  ; Yes                        ; No                         ; 3.08 V                      ; 3.19e-05 V                  ; 3.1 V              ; -0.133 V           ; 0.025 V                             ; 0.169 V                             ; 4.92e-10 s                 ; 3.13e-10 s                 ; Yes                       ; No                        ;
 ; VGA_B[0]      ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 3.19e-05 V                   ; 3.1 V               ; -0.136 V            ; 0.025 V                              ; 0.167 V                              ; 4.92e-10 s                  ; 3.12e-10 s                  ; Yes                        ; No                         ; 3.08 V                      ; 3.19e-05 V                  ; 3.1 V              ; -0.136 V           ; 0.025 V                             ; 0.167 V                             ; 4.92e-10 s                 ; 3.12e-10 s                 ; Yes                       ; No                        ;
+; VGA_G[7]      ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 3.19e-05 V                   ; 3.1 V               ; -0.133 V            ; 0.025 V                              ; 0.169 V                              ; 4.92e-10 s                  ; 3.13e-10 s                  ; Yes                        ; No                         ; 3.08 V                      ; 3.19e-05 V                  ; 3.1 V              ; -0.133 V           ; 0.025 V                             ; 0.169 V                             ; 4.92e-10 s                 ; 3.13e-10 s                 ; Yes                       ; No                        ;
+; VGA_G[6]      ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 3.19e-05 V                   ; 3.1 V               ; -0.133 V            ; 0.025 V                              ; 0.169 V                              ; 4.92e-10 s                  ; 3.13e-10 s                  ; Yes                        ; No                         ; 3.08 V                      ; 3.19e-05 V                  ; 3.1 V              ; -0.133 V           ; 0.025 V                             ; 0.169 V                             ; 4.92e-10 s                 ; 3.13e-10 s                 ; Yes                       ; No                        ;
+; VGA_G[5]      ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 3.19e-05 V                   ; 3.1 V               ; -0.136 V            ; 0.025 V                              ; 0.167 V                              ; 4.92e-10 s                  ; 3.12e-10 s                  ; Yes                        ; No                         ; 3.08 V                      ; 3.19e-05 V                  ; 3.1 V              ; -0.136 V           ; 0.025 V                             ; 0.167 V                             ; 4.92e-10 s                 ; 3.12e-10 s                 ; Yes                       ; No                        ;
 ; VGA_G[4]      ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 3.19e-05 V                   ; 3.1 V               ; -0.133 V            ; 0.025 V                              ; 0.169 V                              ; 4.92e-10 s                  ; 3.13e-10 s                  ; Yes                        ; No                         ; 3.08 V                      ; 3.19e-05 V                  ; 3.1 V              ; -0.133 V           ; 0.025 V                             ; 0.169 V                             ; 4.92e-10 s                 ; 3.13e-10 s                 ; Yes                       ; No                        ;
 ; VGA_G[3]      ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 3.19e-05 V                   ; 3.1 V               ; -0.136 V            ; 0.025 V                              ; 0.167 V                              ; 4.92e-10 s                  ; 3.12e-10 s                  ; Yes                        ; No                         ; 3.08 V                      ; 3.19e-05 V                  ; 3.1 V              ; -0.136 V           ; 0.025 V                             ; 0.167 V                             ; 4.92e-10 s                 ; 3.12e-10 s                 ; Yes                       ; No                        ;
 ; VGA_G[2]      ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 3.19e-05 V                   ; 3.1 V               ; -0.136 V            ; 0.025 V                              ; 0.167 V                              ; 4.92e-10 s                  ; 3.12e-10 s                  ; Yes                        ; No                         ; 3.08 V                      ; 3.19e-05 V                  ; 3.1 V              ; -0.136 V           ; 0.025 V                             ; 0.167 V                             ; 4.92e-10 s                 ; 3.12e-10 s                 ; Yes                       ; No                        ;
 ; VGA_G[1]      ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 3.19e-05 V                   ; 3.1 V               ; -0.136 V            ; 0.025 V                              ; 0.167 V                              ; 4.92e-10 s                  ; 3.12e-10 s                  ; Yes                        ; No                         ; 3.08 V                      ; 3.19e-05 V                  ; 3.1 V              ; -0.136 V           ; 0.025 V                             ; 0.167 V                             ; 4.92e-10 s                 ; 3.12e-10 s                 ; Yes                       ; No                        ;
 ; VGA_G[0]      ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 3.19e-05 V                   ; 3.1 V               ; -0.136 V            ; 0.025 V                              ; 0.167 V                              ; 4.92e-10 s                  ; 3.12e-10 s                  ; Yes                        ; No                         ; 3.08 V                      ; 3.19e-05 V                  ; 3.1 V              ; -0.136 V           ; 0.025 V                             ; 0.167 V                             ; 4.92e-10 s                 ; 3.12e-10 s                 ; Yes                       ; No                        ;
+; VGA_R[7]      ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 3.19e-05 V                   ; 3.1 V               ; -0.133 V            ; 0.025 V                              ; 0.169 V                              ; 4.92e-10 s                  ; 3.13e-10 s                  ; Yes                        ; No                         ; 3.08 V                      ; 3.19e-05 V                  ; 3.1 V              ; -0.133 V           ; 0.025 V                             ; 0.169 V                             ; 4.92e-10 s                 ; 3.13e-10 s                 ; Yes                       ; No                        ;
+; VGA_R[6]      ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 3.19e-05 V                   ; 3.1 V               ; -0.133 V            ; 0.025 V                              ; 0.169 V                              ; 4.92e-10 s                  ; 3.13e-10 s                  ; Yes                        ; No                         ; 3.08 V                      ; 3.19e-05 V                  ; 3.1 V              ; -0.133 V           ; 0.025 V                             ; 0.169 V                             ; 4.92e-10 s                 ; 3.13e-10 s                 ; Yes                       ; No                        ;
+; VGA_R[5]      ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 3.19e-05 V                   ; 3.1 V               ; -0.136 V            ; 0.025 V                              ; 0.167 V                              ; 4.92e-10 s                  ; 3.12e-10 s                  ; Yes                        ; No                         ; 3.08 V                      ; 3.19e-05 V                  ; 3.1 V              ; -0.136 V           ; 0.025 V                             ; 0.167 V                             ; 4.92e-10 s                 ; 3.12e-10 s                 ; Yes                       ; No                        ;
 ; VGA_R[4]      ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 3.19e-05 V                   ; 3.1 V               ; -0.136 V            ; 0.025 V                              ; 0.167 V                              ; 4.92e-10 s                  ; 3.12e-10 s                  ; Yes                        ; No                         ; 3.08 V                      ; 3.19e-05 V                  ; 3.1 V              ; -0.136 V           ; 0.025 V                             ; 0.167 V                             ; 4.92e-10 s                 ; 3.12e-10 s                 ; Yes                       ; No                        ;
 ; VGA_R[3]      ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 3.19e-05 V                   ; 3.1 V               ; -0.133 V            ; 0.025 V                              ; 0.169 V                              ; 4.92e-10 s                  ; 3.13e-10 s                  ; Yes                        ; No                         ; 3.08 V                      ; 3.19e-05 V                  ; 3.1 V              ; -0.133 V           ; 0.025 V                             ; 0.169 V                             ; 4.92e-10 s                 ; 3.13e-10 s                 ; Yes                       ; No                        ;
 ; VGA_R[2]      ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 3.19e-05 V                   ; 3.1 V               ; -0.136 V            ; 0.025 V                              ; 0.167 V                              ; 4.92e-10 s                  ; 3.12e-10 s                  ; Yes                        ; No                         ; 3.08 V                      ; 3.19e-05 V                  ; 3.1 V              ; -0.136 V           ; 0.025 V                             ; 0.167 V                             ; 4.92e-10 s                 ; 3.12e-10 s                 ; Yes                       ; No                        ;
@@ -593,6 +593,7 @@ Design MTBF is not calculated because the design doesn't meet its timing require
 ; VGA_HS        ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.63 V                       ; 4.72e-06 V                   ; 3.7 V               ; -0.49 V             ; 0.117 V                              ; 0.621 V                              ; 3.84e-10 s                  ; 1.48e-10 s                  ; Yes                        ; No                         ; 3.63 V                      ; 4.72e-06 V                  ; 3.7 V              ; -0.49 V            ; 0.117 V                             ; 0.621 V                             ; 3.84e-10 s                 ; 1.48e-10 s                 ; Yes                       ; No                        ;
 ; VGA_CLK       ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.63 V                       ; 4.72e-06 V                   ; 3.7 V               ; -0.49 V             ; 0.117 V                              ; 0.622 V                              ; 3.84e-10 s                  ; 1.48e-10 s                  ; Yes                        ; No                         ; 3.63 V                      ; 4.72e-06 V                  ; 3.7 V              ; -0.49 V            ; 0.117 V                             ; 0.622 V                             ; 3.84e-10 s                 ; 1.48e-10 s                 ; Yes                       ; No                        ;
 ; VGA_BLANK_N   ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.63 V                       ; 4.72e-06 V                   ; 3.7 V               ; -0.49 V             ; 0.117 V                              ; 0.621 V                              ; 3.84e-10 s                  ; 1.48e-10 s                  ; Yes                        ; No                         ; 3.63 V                      ; 4.72e-06 V                  ; 3.7 V              ; -0.49 V            ; 0.117 V                             ; 0.621 V                             ; 3.84e-10 s                 ; 1.48e-10 s                 ; Yes                       ; No                        ;
+; VGA_SYNC_N    ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.63 V                       ; 4.72e-06 V                   ; 3.7 V               ; -0.49 V             ; 0.117 V                              ; 0.621 V                              ; 3.84e-10 s                  ; 1.48e-10 s                  ; Yes                        ; No                         ; 3.63 V                      ; 4.72e-06 V                  ; 3.7 V              ; -0.49 V            ; 0.117 V                             ; 0.621 V                             ; 3.84e-10 s                 ; 1.48e-10 s                 ; Yes                       ; No                        ;
 ; HEX0[6]       ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.63 V                       ; 4.72e-06 V                   ; 3.7 V               ; -0.49 V             ; 0.117 V                              ; 0.621 V                              ; 3.84e-10 s                  ; 1.48e-10 s                  ; Yes                        ; No                         ; 3.63 V                      ; 4.72e-06 V                  ; 3.7 V              ; -0.49 V            ; 0.117 V                             ; 0.621 V                             ; 3.84e-10 s                 ; 1.48e-10 s                 ; Yes                       ; No                        ;
 ; HEX0[5]       ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.63 V                       ; 4.72e-06 V                   ; 3.7 V               ; -0.49 V             ; 0.117 V                              ; 0.622 V                              ; 3.84e-10 s                  ; 1.48e-10 s                  ; Yes                        ; No                         ; 3.63 V                      ; 4.72e-06 V                  ; 3.7 V              ; -0.49 V            ; 0.117 V                             ; 0.622 V                             ; 3.84e-10 s                 ; 1.48e-10 s                 ; Yes                       ; No                        ;
 ; HEX0[4]       ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.63 V                       ; 4.72e-06 V                   ; 3.7 V               ; -0.49 V             ; 0.117 V                              ; 0.622 V                              ; 3.84e-10 s                  ; 1.48e-10 s                  ; Yes                        ; No                         ; 3.63 V                      ; 4.72e-06 V                  ; 3.7 V              ; -0.49 V            ; 0.117 V                             ; 0.622 V                             ; 3.84e-10 s                 ; 1.48e-10 s                 ; Yes                       ; No                        ;
@@ -609,24 +610,23 @@ Design MTBF is not calculated because the design doesn't meet its timing require
 ; HEX1[0]       ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.63 V                       ; 4.72e-06 V                   ; 3.7 V               ; -0.49 V             ; 0.117 V                              ; 0.621 V                              ; 3.84e-10 s                  ; 1.48e-10 s                  ; Yes                        ; No                         ; 3.63 V                      ; 4.72e-06 V                  ; 3.7 V              ; -0.49 V            ; 0.117 V                             ; 0.621 V                             ; 3.84e-10 s                 ; 1.48e-10 s                 ; Yes                       ; No                        ;
 ; VGA_B[7]      ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.63 V                       ; 4.72e-06 V                   ; 3.7 V               ; -0.49 V             ; 0.117 V                              ; 0.621 V                              ; 3.84e-10 s                  ; 1.48e-10 s                  ; Yes                        ; No                         ; 3.63 V                      ; 4.72e-06 V                  ; 3.7 V              ; -0.49 V            ; 0.117 V                             ; 0.621 V                             ; 3.84e-10 s                 ; 1.48e-10 s                 ; Yes                       ; No                        ;
 ; VGA_B[6]      ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.63 V                       ; 4.72e-06 V                   ; 3.7 V               ; -0.49 V             ; 0.117 V                              ; 0.622 V                              ; 3.84e-10 s                  ; 1.48e-10 s                  ; Yes                        ; No                         ; 3.63 V                      ; 4.72e-06 V                  ; 3.7 V              ; -0.49 V            ; 0.117 V                             ; 0.622 V                             ; 3.84e-10 s                 ; 1.48e-10 s                 ; Yes                       ; No                        ;
-; VGA_G[7]      ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.63 V                       ; 4.72e-06 V                   ; 3.7 V               ; -0.49 V             ; 0.117 V                              ; 0.622 V                              ; 3.84e-10 s                  ; 1.48e-10 s                  ; Yes                        ; No                         ; 3.63 V                      ; 4.72e-06 V                  ; 3.7 V              ; -0.49 V            ; 0.117 V                             ; 0.622 V                             ; 3.84e-10 s                 ; 1.48e-10 s                 ; Yes                       ; No                        ;
-; VGA_G[6]      ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.63 V                       ; 4.72e-06 V                   ; 3.7 V               ; -0.49 V             ; 0.117 V                              ; 0.622 V                              ; 3.84e-10 s                  ; 1.48e-10 s                  ; Yes                        ; No                         ; 3.63 V                      ; 4.72e-06 V                  ; 3.7 V              ; -0.49 V            ; 0.117 V                             ; 0.622 V                             ; 3.84e-10 s                 ; 1.48e-10 s                 ; Yes                       ; No                        ;
-; VGA_G[5]      ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.63 V                       ; 4.72e-06 V                   ; 3.7 V               ; -0.49 V             ; 0.117 V                              ; 0.621 V                              ; 3.84e-10 s                  ; 1.48e-10 s                  ; Yes                        ; No                         ; 3.63 V                      ; 4.72e-06 V                  ; 3.7 V              ; -0.49 V            ; 0.117 V                             ; 0.621 V                             ; 3.84e-10 s                 ; 1.48e-10 s                 ; Yes                       ; No                        ;
-; VGA_R[7]      ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.63 V                       ; 4.72e-06 V                   ; 3.7 V               ; -0.49 V             ; 0.117 V                              ; 0.622 V                              ; 3.84e-10 s                  ; 1.48e-10 s                  ; Yes                        ; No                         ; 3.63 V                      ; 4.72e-06 V                  ; 3.7 V              ; -0.49 V            ; 0.117 V                             ; 0.622 V                             ; 3.84e-10 s                 ; 1.48e-10 s                 ; Yes                       ; No                        ;
-; VGA_R[6]      ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.63 V                       ; 4.72e-06 V                   ; 3.7 V               ; -0.49 V             ; 0.117 V                              ; 0.622 V                              ; 3.84e-10 s                  ; 1.48e-10 s                  ; Yes                        ; No                         ; 3.63 V                      ; 4.72e-06 V                  ; 3.7 V              ; -0.49 V            ; 0.117 V                             ; 0.622 V                             ; 3.84e-10 s                 ; 1.48e-10 s                 ; Yes                       ; No                        ;
-; VGA_R[5]      ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.63 V                       ; 4.72e-06 V                   ; 3.7 V               ; -0.49 V             ; 0.117 V                              ; 0.621 V                              ; 3.84e-10 s                  ; 1.48e-10 s                  ; Yes                        ; No                         ; 3.63 V                      ; 4.72e-06 V                  ; 3.7 V              ; -0.49 V            ; 0.117 V                             ; 0.621 V                             ; 3.84e-10 s                 ; 1.48e-10 s                 ; Yes                       ; No                        ;
-; VGA_SYNC_N    ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.63 V                       ; 4.72e-06 V                   ; 3.7 V               ; -0.49 V             ; 0.117 V                              ; 0.621 V                              ; 3.84e-10 s                  ; 1.48e-10 s                  ; Yes                        ; No                         ; 3.63 V                      ; 4.72e-06 V                  ; 3.7 V              ; -0.49 V            ; 0.117 V                             ; 0.621 V                             ; 3.84e-10 s                 ; 1.48e-10 s                 ; Yes                       ; No                        ;
 ; VGA_B[5]      ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.63 V                       ; 4.94e-06 V                   ; 3.69 V              ; -0.414 V            ; 0.134 V                              ; 0.585 V                              ; 4.19e-10 s                  ; 1.53e-10 s                  ; Yes                        ; No                         ; 3.63 V                      ; 4.94e-06 V                  ; 3.69 V             ; -0.414 V           ; 0.134 V                             ; 0.585 V                             ; 4.19e-10 s                 ; 1.53e-10 s                 ; Yes                       ; No                        ;
 ; VGA_B[4]      ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.63 V                       ; 4.72e-06 V                   ; 3.7 V               ; -0.49 V             ; 0.117 V                              ; 0.621 V                              ; 3.84e-10 s                  ; 1.48e-10 s                  ; Yes                        ; No                         ; 3.63 V                      ; 4.72e-06 V                  ; 3.7 V              ; -0.49 V            ; 0.117 V                             ; 0.621 V                             ; 3.84e-10 s                 ; 1.48e-10 s                 ; Yes                       ; No                        ;
 ; VGA_B[3]      ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.63 V                       ; 4.72e-06 V                   ; 3.7 V               ; -0.49 V             ; 0.117 V                              ; 0.622 V                              ; 3.84e-10 s                  ; 1.48e-10 s                  ; Yes                        ; No                         ; 3.63 V                      ; 4.72e-06 V                  ; 3.7 V              ; -0.49 V            ; 0.117 V                             ; 0.622 V                             ; 3.84e-10 s                 ; 1.48e-10 s                 ; Yes                       ; No                        ;
 ; VGA_B[2]      ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.63 V                       ; 3.63e-06 V                   ; 3.64 V              ; -0.326 V            ; 0.091 V                              ; 0.479 V                              ; 3.83e-10 s                  ; 1.5e-10 s                   ; Yes                        ; No                         ; 3.63 V                      ; 3.63e-06 V                  ; 3.64 V             ; -0.326 V           ; 0.091 V                             ; 0.479 V                             ; 3.83e-10 s                 ; 1.5e-10 s                  ; Yes                       ; No                        ;
 ; VGA_B[1]      ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.63 V                       ; 4.72e-06 V                   ; 3.7 V               ; -0.49 V             ; 0.117 V                              ; 0.622 V                              ; 3.84e-10 s                  ; 1.48e-10 s                  ; Yes                        ; No                         ; 3.63 V                      ; 4.72e-06 V                  ; 3.7 V              ; -0.49 V            ; 0.117 V                             ; 0.622 V                             ; 3.84e-10 s                 ; 1.48e-10 s                 ; Yes                       ; No                        ;
 ; VGA_B[0]      ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.63 V                       ; 4.72e-06 V                   ; 3.7 V               ; -0.49 V             ; 0.117 V                              ; 0.621 V                              ; 3.84e-10 s                  ; 1.48e-10 s                  ; Yes                        ; No                         ; 3.63 V                      ; 4.72e-06 V                  ; 3.7 V              ; -0.49 V            ; 0.117 V                             ; 0.621 V                             ; 3.84e-10 s                 ; 1.48e-10 s                 ; Yes                       ; No                        ;
+; VGA_G[7]      ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.63 V                       ; 4.72e-06 V                   ; 3.7 V               ; -0.49 V             ; 0.117 V                              ; 0.622 V                              ; 3.84e-10 s                  ; 1.48e-10 s                  ; Yes                        ; No                         ; 3.63 V                      ; 4.72e-06 V                  ; 3.7 V              ; -0.49 V            ; 0.117 V                             ; 0.622 V                             ; 3.84e-10 s                 ; 1.48e-10 s                 ; Yes                       ; No                        ;
+; VGA_G[6]      ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.63 V                       ; 4.72e-06 V                   ; 3.7 V               ; -0.49 V             ; 0.117 V                              ; 0.622 V                              ; 3.84e-10 s                  ; 1.48e-10 s                  ; Yes                        ; No                         ; 3.63 V                      ; 4.72e-06 V                  ; 3.7 V              ; -0.49 V            ; 0.117 V                             ; 0.622 V                             ; 3.84e-10 s                 ; 1.48e-10 s                 ; Yes                       ; No                        ;
+; VGA_G[5]      ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.63 V                       ; 4.72e-06 V                   ; 3.7 V               ; -0.49 V             ; 0.117 V                              ; 0.621 V                              ; 3.84e-10 s                  ; 1.48e-10 s                  ; Yes                        ; No                         ; 3.63 V                      ; 4.72e-06 V                  ; 3.7 V              ; -0.49 V            ; 0.117 V                             ; 0.621 V                             ; 3.84e-10 s                 ; 1.48e-10 s                 ; Yes                       ; No                        ;
 ; VGA_G[4]      ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.63 V                       ; 4.72e-06 V                   ; 3.7 V               ; -0.49 V             ; 0.117 V                              ; 0.622 V                              ; 3.84e-10 s                  ; 1.48e-10 s                  ; Yes                        ; No                         ; 3.63 V                      ; 4.72e-06 V                  ; 3.7 V              ; -0.49 V            ; 0.117 V                             ; 0.622 V                             ; 3.84e-10 s                 ; 1.48e-10 s                 ; Yes                       ; No                        ;
 ; VGA_G[3]      ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.63 V                       ; 4.72e-06 V                   ; 3.7 V               ; -0.49 V             ; 0.117 V                              ; 0.621 V                              ; 3.84e-10 s                  ; 1.48e-10 s                  ; Yes                        ; No                         ; 3.63 V                      ; 4.72e-06 V                  ; 3.7 V              ; -0.49 V            ; 0.117 V                             ; 0.621 V                             ; 3.84e-10 s                 ; 1.48e-10 s                 ; Yes                       ; No                        ;
 ; VGA_G[2]      ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.63 V                       ; 4.72e-06 V                   ; 3.7 V               ; -0.49 V             ; 0.117 V                              ; 0.621 V                              ; 3.84e-10 s                  ; 1.48e-10 s                  ; Yes                        ; No                         ; 3.63 V                      ; 4.72e-06 V                  ; 3.7 V              ; -0.49 V            ; 0.117 V                             ; 0.621 V                             ; 3.84e-10 s                 ; 1.48e-10 s                 ; Yes                       ; No                        ;
 ; VGA_G[1]      ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.63 V                       ; 4.72e-06 V                   ; 3.7 V               ; -0.49 V             ; 0.117 V                              ; 0.621 V                              ; 3.84e-10 s                  ; 1.48e-10 s                  ; Yes                        ; No                         ; 3.63 V                      ; 4.72e-06 V                  ; 3.7 V              ; -0.49 V            ; 0.117 V                             ; 0.621 V                             ; 3.84e-10 s                 ; 1.48e-10 s                 ; Yes                       ; No                        ;
 ; VGA_G[0]      ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.63 V                       ; 4.72e-06 V                   ; 3.7 V               ; -0.49 V             ; 0.117 V                              ; 0.621 V                              ; 3.84e-10 s                  ; 1.48e-10 s                  ; Yes                        ; No                         ; 3.63 V                      ; 4.72e-06 V                  ; 3.7 V              ; -0.49 V            ; 0.117 V                             ; 0.621 V                             ; 3.84e-10 s                 ; 1.48e-10 s                 ; Yes                       ; No                        ;
+; VGA_R[7]      ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.63 V                       ; 4.72e-06 V                   ; 3.7 V               ; -0.49 V             ; 0.117 V                              ; 0.622 V                              ; 3.84e-10 s                  ; 1.48e-10 s                  ; Yes                        ; No                         ; 3.63 V                      ; 4.72e-06 V                  ; 3.7 V              ; -0.49 V            ; 0.117 V                             ; 0.622 V                             ; 3.84e-10 s                 ; 1.48e-10 s                 ; Yes                       ; No                        ;
+; VGA_R[6]      ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.63 V                       ; 4.72e-06 V                   ; 3.7 V               ; -0.49 V             ; 0.117 V                              ; 0.622 V                              ; 3.84e-10 s                  ; 1.48e-10 s                  ; Yes                        ; No                         ; 3.63 V                      ; 4.72e-06 V                  ; 3.7 V              ; -0.49 V            ; 0.117 V                             ; 0.622 V                             ; 3.84e-10 s                 ; 1.48e-10 s                 ; Yes                       ; No                        ;
+; VGA_R[5]      ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.63 V                       ; 4.72e-06 V                   ; 3.7 V               ; -0.49 V             ; 0.117 V                              ; 0.621 V                              ; 3.84e-10 s                  ; 1.48e-10 s                  ; Yes                        ; No                         ; 3.63 V                      ; 4.72e-06 V                  ; 3.7 V              ; -0.49 V            ; 0.117 V                             ; 0.621 V                             ; 3.84e-10 s                 ; 1.48e-10 s                 ; Yes                       ; No                        ;
 ; VGA_R[4]      ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.63 V                       ; 4.72e-06 V                   ; 3.7 V               ; -0.49 V             ; 0.117 V                              ; 0.621 V                              ; 3.84e-10 s                  ; 1.48e-10 s                  ; Yes                        ; No                         ; 3.63 V                      ; 4.72e-06 V                  ; 3.7 V              ; -0.49 V            ; 0.117 V                             ; 0.621 V                             ; 3.84e-10 s                 ; 1.48e-10 s                 ; Yes                       ; No                        ;
 ; VGA_R[3]      ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.63 V                       ; 4.72e-06 V                   ; 3.7 V               ; -0.49 V             ; 0.117 V                              ; 0.622 V                              ; 3.84e-10 s                  ; 1.48e-10 s                  ; Yes                        ; No                         ; 3.63 V                      ; 4.72e-06 V                  ; 3.7 V              ; -0.49 V            ; 0.117 V                             ; 0.622 V                             ; 3.84e-10 s                 ; 1.48e-10 s                 ; Yes                       ; No                        ;
 ; VGA_R[2]      ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.63 V                       ; 4.72e-06 V                   ; 3.7 V               ; -0.49 V             ; 0.117 V                              ; 0.621 V                              ; 3.84e-10 s                  ; 1.48e-10 s                  ; Yes                        ; No                         ; 3.63 V                      ; 4.72e-06 V                  ; 3.7 V              ; -0.49 V            ; 0.117 V                             ; 0.621 V                             ; 3.84e-10 s                 ; 1.48e-10 s                 ; Yes                       ; No                        ;
@@ -649,6 +649,7 @@ Design MTBF is not calculated because the design doesn't meet its timing require
 ; VGA_HS        ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.63 V                       ; 0.000229 V                   ; 3.65 V              ; -0.319 V            ; 0.041 V                              ; 0.528 V                              ; 4.29e-10 s                  ; 1.87e-10 s                  ; Yes                        ; No                         ; 3.63 V                      ; 0.000229 V                  ; 3.65 V             ; -0.319 V           ; 0.041 V                             ; 0.528 V                             ; 4.29e-10 s                 ; 1.87e-10 s                 ; Yes                       ; No                        ;
 ; VGA_CLK       ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.63 V                       ; 0.000229 V                   ; 3.65 V              ; -0.316 V            ; 0.041 V                              ; 0.53 V                               ; 4.29e-10 s                  ; 1.87e-10 s                  ; Yes                        ; No                         ; 3.63 V                      ; 0.000229 V                  ; 3.65 V             ; -0.316 V           ; 0.041 V                             ; 0.53 V                              ; 4.29e-10 s                 ; 1.87e-10 s                 ; Yes                       ; No                        ;
 ; VGA_BLANK_N   ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.63 V                       ; 0.000229 V                   ; 3.65 V              ; -0.319 V            ; 0.041 V                              ; 0.528 V                              ; 4.29e-10 s                  ; 1.87e-10 s                  ; Yes                        ; No                         ; 3.63 V                      ; 0.000229 V                  ; 3.65 V             ; -0.319 V           ; 0.041 V                             ; 0.528 V                             ; 4.29e-10 s                 ; 1.87e-10 s                 ; Yes                       ; No                        ;
+; VGA_SYNC_N    ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.63 V                       ; 0.000229 V                   ; 3.65 V              ; -0.319 V            ; 0.041 V                              ; 0.528 V                              ; 4.29e-10 s                  ; 1.87e-10 s                  ; Yes                        ; No                         ; 3.63 V                      ; 0.000229 V                  ; 3.65 V             ; -0.319 V           ; 0.041 V                             ; 0.528 V                             ; 4.29e-10 s                 ; 1.87e-10 s                 ; Yes                       ; No                        ;
 ; HEX0[6]       ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.63 V                       ; 0.000229 V                   ; 3.65 V              ; -0.319 V            ; 0.041 V                              ; 0.528 V                              ; 4.29e-10 s                  ; 1.87e-10 s                  ; Yes                        ; No                         ; 3.63 V                      ; 0.000229 V                  ; 3.65 V             ; -0.319 V           ; 0.041 V                             ; 0.528 V                             ; 4.29e-10 s                 ; 1.87e-10 s                 ; Yes                       ; No                        ;
 ; HEX0[5]       ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.63 V                       ; 0.000229 V                   ; 3.65 V              ; -0.316 V            ; 0.041 V                              ; 0.53 V                               ; 4.29e-10 s                  ; 1.87e-10 s                  ; Yes                        ; No                         ; 3.63 V                      ; 0.000229 V                  ; 3.65 V             ; -0.316 V           ; 0.041 V                             ; 0.53 V                              ; 4.29e-10 s                 ; 1.87e-10 s                 ; Yes                       ; No                        ;
 ; HEX0[4]       ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.63 V                       ; 0.000229 V                   ; 3.65 V              ; -0.316 V            ; 0.041 V                              ; 0.53 V                               ; 4.29e-10 s                  ; 1.87e-10 s                  ; Yes                        ; No                         ; 3.63 V                      ; 0.000229 V                  ; 3.65 V             ; -0.316 V           ; 0.041 V                             ; 0.53 V                              ; 4.29e-10 s                 ; 1.87e-10 s                 ; Yes                       ; No                        ;
@@ -665,24 +666,23 @@ Design MTBF is not calculated because the design doesn't meet its timing require
 ; HEX1[0]       ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.63 V                       ; 0.000229 V                   ; 3.65 V              ; -0.319 V            ; 0.041 V                              ; 0.528 V                              ; 4.29e-10 s                  ; 1.87e-10 s                  ; Yes                        ; No                         ; 3.63 V                      ; 0.000229 V                  ; 3.65 V             ; -0.319 V           ; 0.041 V                             ; 0.528 V                             ; 4.29e-10 s                 ; 1.87e-10 s                 ; Yes                       ; No                        ;
 ; VGA_B[7]      ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.63 V                       ; 0.000229 V                   ; 3.65 V              ; -0.319 V            ; 0.041 V                              ; 0.528 V                              ; 4.29e-10 s                  ; 1.87e-10 s                  ; Yes                        ; No                         ; 3.63 V                      ; 0.000229 V                  ; 3.65 V             ; -0.319 V           ; 0.041 V                             ; 0.528 V                             ; 4.29e-10 s                 ; 1.87e-10 s                 ; Yes                       ; No                        ;
 ; VGA_B[6]      ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.63 V                       ; 0.000229 V                   ; 3.65 V              ; -0.316 V            ; 0.041 V                              ; 0.53 V                               ; 4.29e-10 s                  ; 1.87e-10 s                  ; Yes                        ; No                         ; 3.63 V                      ; 0.000229 V                  ; 3.65 V             ; -0.316 V           ; 0.041 V                             ; 0.53 V                              ; 4.29e-10 s                 ; 1.87e-10 s                 ; Yes                       ; No                        ;
-; VGA_G[7]      ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.63 V                       ; 0.000229 V                   ; 3.65 V              ; -0.316 V            ; 0.041 V                              ; 0.53 V                               ; 4.29e-10 s                  ; 1.87e-10 s                  ; Yes                        ; No                         ; 3.63 V                      ; 0.000229 V                  ; 3.65 V             ; -0.316 V           ; 0.041 V                             ; 0.53 V                              ; 4.29e-10 s                 ; 1.87e-10 s                 ; Yes                       ; No                        ;
-; VGA_G[6]      ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.63 V                       ; 0.000229 V                   ; 3.65 V              ; -0.316 V            ; 0.041 V                              ; 0.53 V                               ; 4.29e-10 s                  ; 1.87e-10 s                  ; Yes                        ; No                         ; 3.63 V                      ; 0.000229 V                  ; 3.65 V             ; -0.316 V           ; 0.041 V                             ; 0.53 V                              ; 4.29e-10 s                 ; 1.87e-10 s                 ; Yes                       ; No                        ;
-; VGA_G[5]      ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.63 V                       ; 0.000229 V                   ; 3.65 V              ; -0.319 V            ; 0.041 V                              ; 0.528 V                              ; 4.29e-10 s                  ; 1.87e-10 s                  ; Yes                        ; No                         ; 3.63 V                      ; 0.000229 V                  ; 3.65 V             ; -0.319 V           ; 0.041 V                             ; 0.528 V                             ; 4.29e-10 s                 ; 1.87e-10 s                 ; Yes                       ; No                        ;
-; VGA_R[7]      ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.63 V                       ; 0.000229 V                   ; 3.65 V              ; -0.316 V            ; 0.041 V                              ; 0.53 V                               ; 4.29e-10 s                  ; 1.87e-10 s                  ; Yes                        ; No                         ; 3.63 V                      ; 0.000229 V                  ; 3.65 V             ; -0.316 V           ; 0.041 V                             ; 0.53 V                              ; 4.29e-10 s                 ; 1.87e-10 s                 ; Yes                       ; No                        ;
-; VGA_R[6]      ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.63 V                       ; 0.000229 V                   ; 3.65 V              ; -0.316 V            ; 0.041 V                              ; 0.53 V                               ; 4.29e-10 s                  ; 1.87e-10 s                  ; Yes                        ; No                         ; 3.63 V                      ; 0.000229 V                  ; 3.65 V             ; -0.316 V           ; 0.041 V                             ; 0.53 V                              ; 4.29e-10 s                 ; 1.87e-10 s                 ; Yes                       ; No                        ;
-; VGA_R[5]      ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.63 V                       ; 0.000229 V                   ; 3.65 V              ; -0.319 V            ; 0.041 V                              ; 0.528 V                              ; 4.29e-10 s                  ; 1.87e-10 s                  ; Yes                        ; No                         ; 3.63 V                      ; 0.000229 V                  ; 3.65 V             ; -0.319 V           ; 0.041 V                             ; 0.528 V                             ; 4.29e-10 s                 ; 1.87e-10 s                 ; Yes                       ; No                        ;
-; VGA_SYNC_N    ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.63 V                       ; 0.000229 V                   ; 3.65 V              ; -0.319 V            ; 0.041 V                              ; 0.528 V                              ; 4.29e-10 s                  ; 1.87e-10 s                  ; Yes                        ; No                         ; 3.63 V                      ; 0.000229 V                  ; 3.65 V             ; -0.319 V           ; 0.041 V                             ; 0.528 V                             ; 4.29e-10 s                 ; 1.87e-10 s                 ; Yes                       ; No                        ;
 ; VGA_B[5]      ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.63 V                       ; 0.000238 V                   ; 3.64 V              ; -0.254 V            ; 0.052 V                              ; 0.543 V                              ; 4.59e-10 s                  ; 1.96e-10 s                  ; Yes                        ; No                         ; 3.63 V                      ; 0.000238 V                  ; 3.64 V             ; -0.254 V           ; 0.052 V                             ; 0.543 V                             ; 4.59e-10 s                 ; 1.96e-10 s                 ; Yes                       ; No                        ;
 ; VGA_B[4]      ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.63 V                       ; 0.000229 V                   ; 3.65 V              ; -0.319 V            ; 0.041 V                              ; 0.528 V                              ; 4.29e-10 s                  ; 1.87e-10 s                  ; Yes                        ; No                         ; 3.63 V                      ; 0.000229 V                  ; 3.65 V             ; -0.319 V           ; 0.041 V                             ; 0.528 V                             ; 4.29e-10 s                 ; 1.87e-10 s                 ; Yes                       ; No                        ;
 ; VGA_B[3]      ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.63 V                       ; 0.000229 V                   ; 3.65 V              ; -0.316 V            ; 0.041 V                              ; 0.53 V                               ; 4.29e-10 s                  ; 1.87e-10 s                  ; Yes                        ; No                         ; 3.63 V                      ; 0.000229 V                  ; 3.65 V             ; -0.316 V           ; 0.041 V                             ; 0.53 V                              ; 4.29e-10 s                 ; 1.87e-10 s                 ; Yes                       ; No                        ;
 ; VGA_B[2]      ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.63 V                       ; 0.000184 V                   ; 3.64 V              ; -0.19 V             ; 0.019 V                              ; 0.425 V                              ; 4.44e-10 s                  ; 1.91e-10 s                  ; Yes                        ; No                         ; 3.63 V                      ; 0.000184 V                  ; 3.64 V             ; -0.19 V            ; 0.019 V                             ; 0.425 V                             ; 4.44e-10 s                 ; 1.91e-10 s                 ; Yes                       ; No                        ;
 ; VGA_B[1]      ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.63 V                       ; 0.000229 V                   ; 3.65 V              ; -0.316 V            ; 0.041 V                              ; 0.53 V                               ; 4.29e-10 s                  ; 1.87e-10 s                  ; Yes                        ; No                         ; 3.63 V                      ; 0.000229 V                  ; 3.65 V             ; -0.316 V           ; 0.041 V                             ; 0.53 V                              ; 4.29e-10 s                 ; 1.87e-10 s                 ; Yes                       ; No                        ;
 ; VGA_B[0]      ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.63 V                       ; 0.000229 V                   ; 3.65 V              ; -0.319 V            ; 0.041 V                              ; 0.528 V                              ; 4.29e-10 s                  ; 1.87e-10 s                  ; Yes                        ; No                         ; 3.63 V                      ; 0.000229 V                  ; 3.65 V             ; -0.319 V           ; 0.041 V                             ; 0.528 V                             ; 4.29e-10 s                 ; 1.87e-10 s                 ; Yes                       ; No                        ;
+; VGA_G[7]      ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.63 V                       ; 0.000229 V                   ; 3.65 V              ; -0.316 V            ; 0.041 V                              ; 0.53 V                               ; 4.29e-10 s                  ; 1.87e-10 s                  ; Yes                        ; No                         ; 3.63 V                      ; 0.000229 V                  ; 3.65 V             ; -0.316 V           ; 0.041 V                             ; 0.53 V                              ; 4.29e-10 s                 ; 1.87e-10 s                 ; Yes                       ; No                        ;
+; VGA_G[6]      ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.63 V                       ; 0.000229 V                   ; 3.65 V              ; -0.316 V            ; 0.041 V                              ; 0.53 V                               ; 4.29e-10 s                  ; 1.87e-10 s                  ; Yes                        ; No                         ; 3.63 V                      ; 0.000229 V                  ; 3.65 V             ; -0.316 V           ; 0.041 V                             ; 0.53 V                              ; 4.29e-10 s                 ; 1.87e-10 s                 ; Yes                       ; No                        ;
+; VGA_G[5]      ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.63 V                       ; 0.000229 V                   ; 3.65 V              ; -0.319 V            ; 0.041 V                              ; 0.528 V                              ; 4.29e-10 s                  ; 1.87e-10 s                  ; Yes                        ; No                         ; 3.63 V                      ; 0.000229 V                  ; 3.65 V             ; -0.319 V           ; 0.041 V                             ; 0.528 V                             ; 4.29e-10 s                 ; 1.87e-10 s                 ; Yes                       ; No                        ;
 ; VGA_G[4]      ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.63 V                       ; 0.000229 V                   ; 3.65 V              ; -0.316 V            ; 0.041 V                              ; 0.53 V                               ; 4.29e-10 s                  ; 1.87e-10 s                  ; Yes                        ; No                         ; 3.63 V                      ; 0.000229 V                  ; 3.65 V             ; -0.316 V           ; 0.041 V                             ; 0.53 V                              ; 4.29e-10 s                 ; 1.87e-10 s                 ; Yes                       ; No                        ;
 ; VGA_G[3]      ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.63 V                       ; 0.000229 V                   ; 3.65 V              ; -0.319 V            ; 0.041 V                              ; 0.528 V                              ; 4.29e-10 s                  ; 1.87e-10 s                  ; Yes                        ; No                         ; 3.63 V                      ; 0.000229 V                  ; 3.65 V             ; -0.319 V           ; 0.041 V                             ; 0.528 V                             ; 4.29e-10 s                 ; 1.87e-10 s                 ; Yes                       ; No                        ;
 ; VGA_G[2]      ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.63 V                       ; 0.000229 V                   ; 3.65 V              ; -0.319 V            ; 0.041 V                              ; 0.528 V                              ; 4.29e-10 s                  ; 1.87e-10 s                  ; Yes                        ; No                         ; 3.63 V                      ; 0.000229 V                  ; 3.65 V             ; -0.319 V           ; 0.041 V                             ; 0.528 V                             ; 4.29e-10 s                 ; 1.87e-10 s                 ; Yes                       ; No                        ;
 ; VGA_G[1]      ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.63 V                       ; 0.000229 V                   ; 3.65 V              ; -0.319 V            ; 0.041 V                              ; 0.528 V                              ; 4.29e-10 s                  ; 1.87e-10 s                  ; Yes                        ; No                         ; 3.63 V                      ; 0.000229 V                  ; 3.65 V             ; -0.319 V           ; 0.041 V                             ; 0.528 V                             ; 4.29e-10 s                 ; 1.87e-10 s                 ; Yes                       ; No                        ;
 ; VGA_G[0]      ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.63 V                       ; 0.000229 V                   ; 3.65 V              ; -0.319 V            ; 0.041 V                              ; 0.528 V                              ; 4.29e-10 s                  ; 1.87e-10 s                  ; Yes                        ; No                         ; 3.63 V                      ; 0.000229 V                  ; 3.65 V             ; -0.319 V           ; 0.041 V                             ; 0.528 V                             ; 4.29e-10 s                 ; 1.87e-10 s                 ; Yes                       ; No                        ;
+; VGA_R[7]      ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.63 V                       ; 0.000229 V                   ; 3.65 V              ; -0.316 V            ; 0.041 V                              ; 0.53 V                               ; 4.29e-10 s                  ; 1.87e-10 s                  ; Yes                        ; No                         ; 3.63 V                      ; 0.000229 V                  ; 3.65 V             ; -0.316 V           ; 0.041 V                             ; 0.53 V                              ; 4.29e-10 s                 ; 1.87e-10 s                 ; Yes                       ; No                        ;
+; VGA_R[6]      ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.63 V                       ; 0.000229 V                   ; 3.65 V              ; -0.316 V            ; 0.041 V                              ; 0.53 V                               ; 4.29e-10 s                  ; 1.87e-10 s                  ; Yes                        ; No                         ; 3.63 V                      ; 0.000229 V                  ; 3.65 V             ; -0.316 V           ; 0.041 V                             ; 0.53 V                              ; 4.29e-10 s                 ; 1.87e-10 s                 ; Yes                       ; No                        ;
+; VGA_R[5]      ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.63 V                       ; 0.000229 V                   ; 3.65 V              ; -0.319 V            ; 0.041 V                              ; 0.528 V                              ; 4.29e-10 s                  ; 1.87e-10 s                  ; Yes                        ; No                         ; 3.63 V                      ; 0.000229 V                  ; 3.65 V             ; -0.319 V           ; 0.041 V                             ; 0.528 V                             ; 4.29e-10 s                 ; 1.87e-10 s                 ; Yes                       ; No                        ;
 ; VGA_R[4]      ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.63 V                       ; 0.000229 V                   ; 3.65 V              ; -0.319 V            ; 0.041 V                              ; 0.528 V                              ; 4.29e-10 s                  ; 1.87e-10 s                  ; Yes                        ; No                         ; 3.63 V                      ; 0.000229 V                  ; 3.65 V             ; -0.319 V           ; 0.041 V                             ; 0.528 V                             ; 4.29e-10 s                 ; 1.87e-10 s                 ; Yes                       ; No                        ;
 ; VGA_R[3]      ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.63 V                       ; 0.000229 V                   ; 3.65 V              ; -0.316 V            ; 0.041 V                              ; 0.53 V                               ; 4.29e-10 s                  ; 1.87e-10 s                  ; Yes                        ; No                         ; 3.63 V                      ; 0.000229 V                  ; 3.65 V             ; -0.316 V           ; 0.041 V                             ; 0.53 V                              ; 4.29e-10 s                 ; 1.87e-10 s                 ; Yes                       ; No                        ;
 ; VGA_R[2]      ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.63 V                       ; 0.000229 V                   ; 3.65 V              ; -0.319 V            ; 0.041 V                              ; 0.528 V                              ; 4.29e-10 s                  ; 1.87e-10 s                  ; Yes                        ; No                         ; 3.63 V                      ; 0.000229 V                  ; 3.65 V             ; -0.319 V           ; 0.041 V                             ; 0.528 V                             ; 4.29e-10 s                 ; 1.87e-10 s                 ; Yes                       ; No                        ;
@@ -696,7 +696,7 @@ Design MTBF is not calculated because the design doesn't meet its timing require
 +------------+----------+--------------+----------+----------+----------+
 ; From Clock ; To Clock ; RR Paths     ; FR Paths ; RF Paths ; FF Paths ;
 +------------+----------+--------------+----------+----------+----------+
-; AUD_BCLK   ; AUD_BCLK ; 1301         ; 14       ; 4        ; 168      ;
+; AUD_BCLK   ; AUD_BCLK ; 1395         ; 14       ; 4        ; 168      ;
 ; CLOCK_50   ; AUD_BCLK ; 30           ; 0        ; 0        ; 0        ;
 ; AUD_BCLK   ; CLOCK_50 ; 24           ; 0        ; 0        ; 0        ;
 ; CLOCK_50   ; CLOCK_50 ; > 2147483647 ; 0        ; 0        ; 0        ;
@@ -709,7 +709,7 @@ Entries labeled "false path" only account for clock-to-clock false paths and not
 +------------+----------+--------------+----------+----------+----------+
 ; From Clock ; To Clock ; RR Paths     ; FR Paths ; RF Paths ; FF Paths ;
 +------------+----------+--------------+----------+----------+----------+
-; AUD_BCLK   ; AUD_BCLK ; 1301         ; 14       ; 4        ; 168      ;
+; AUD_BCLK   ; AUD_BCLK ; 1395         ; 14       ; 4        ; 168      ;
 ; CLOCK_50   ; AUD_BCLK ; 30           ; 0        ; 0        ; 0        ;
 ; AUD_BCLK   ; CLOCK_50 ; 24           ; 0        ; 0        ; 0        ;
 ; CLOCK_50   ; CLOCK_50 ; > 2147483647 ; 0        ; 0        ; 0        ;
@@ -722,8 +722,8 @@ Entries labeled "false path" only account for clock-to-clock false paths and not
 +------------+----------+----------+----------+----------+----------+
 ; From Clock ; To Clock ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
 +------------+----------+----------+----------+----------+----------+
-; CLOCK_50   ; AUD_BCLK ; 22       ; 0        ; 30       ; 0        ;
-; CLOCK_50   ; CLOCK_50 ; 55       ; 0        ; 0        ; 0        ;
+; CLOCK_50   ; AUD_BCLK ; 27       ; 0        ; 30       ; 0        ;
+; CLOCK_50   ; CLOCK_50 ; 63       ; 0        ; 0        ; 0        ;
 +------------+----------+----------+----------+----------+----------+
 Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
 
@@ -733,8 +733,8 @@ Entries labeled "false path" only account for clock-to-clock false paths and not
 +------------+----------+----------+----------+----------+----------+
 ; From Clock ; To Clock ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
 +------------+----------+----------+----------+----------+----------+
-; CLOCK_50   ; AUD_BCLK ; 22       ; 0        ; 30       ; 0        ;
-; CLOCK_50   ; CLOCK_50 ; 55       ; 0        ; 0        ; 0        ;
+; CLOCK_50   ; AUD_BCLK ; 27       ; 0        ; 30       ; 0        ;
+; CLOCK_50   ; CLOCK_50 ; 63       ; 0        ; 0        ; 0        ;
 +------------+----------+----------+----------+----------+----------+
 Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
 
@@ -759,7 +759,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 ; Illegal Clocks                  ; 0     ; 0    ;
 ; Unconstrained Clocks            ; 0     ; 0    ;
 ; Unconstrained Input Ports       ; 7     ; 7    ;
-; Unconstrained Input Port Paths  ; 4237  ; 4237 ;
+; Unconstrained Input Port Paths  ; 4609  ; 4609 ;
 ; Unconstrained Output Ports      ; 31    ; 31   ;
 ; Unconstrained Output Port Paths ; 91    ; 91   ;
 +---------------------------------+-------+------+
@@ -781,7 +781,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 ; Input Port  ; Comment                                                                              ;
 +-------------+--------------------------------------------------------------------------------------+
 ; AUD_ADCDAT  ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; AUD_DACLRCK ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; AUD_ADCLRCK ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; CLOCK_50    ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; KBD_CLK     ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; KBD_DAT     ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
@@ -835,7 +835,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 ; Input Port  ; Comment                                                                              ;
 +-------------+--------------------------------------------------------------------------------------+
 ; AUD_ADCDAT  ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; AUD_DACLRCK ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; AUD_ADCLRCK ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; CLOCK_50    ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; KBD_CLK     ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; KBD_DAT     ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
@@ -889,7 +889,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 Info: *******************************************************************
 Info: Running Quartus Prime TimeQuest Timing Analyzer
     Info: Version 17.0.0 Build 595 04/25/2017 SJ Standard Edition
-    Info: Processing started: Sun Sep 02 14:25:43 2018
+    Info: Processing started: Sun Sep 02 18:40:14 2018
 Info: Command: quartus_sta V1 -c V1
 Info: qsta_default_script.tcl version: #1
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
@@ -914,32 +914,32 @@ Info: Found TIMEQUEST_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
 Info: Analyzing Slow 1100mV 85C Model
 Critical Warning (332148): Timing requirements not met
     Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the TimeQuest Timing Analyzer.
-Info (332146): Worst-case setup slack is -57.182
+Info (332146): Worst-case setup slack is -91.067
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):   -57.182          -19724.450 CLOCK_50 
-    Info (332119):    -5.648            -251.028 AUD_BCLK 
-Info (332146): Worst-case hold slack is 0.218
+    Info (332119):   -91.067          -35441.687 CLOCK_50 
+    Info (332119):    -6.353            -268.775 AUD_BCLK 
+Info (332146): Worst-case hold slack is 0.217
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.218               0.000 CLOCK_50 
-    Info (332119):     0.360               0.000 AUD_BCLK 
-Info (332146): Worst-case recovery slack is -7.363
+    Info (332119):     0.217               0.000 CLOCK_50 
+    Info (332119):     0.374               0.000 AUD_BCLK 
+Info (332146): Worst-case recovery slack is -7.483
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -7.363             -42.202 CLOCK_50 
-    Info (332119):    -5.920            -296.878 AUD_BCLK 
-Info (332146): Worst-case removal slack is 0.798
+    Info (332119):    -7.483             -65.511 CLOCK_50 
+    Info (332119):    -6.103            -329.648 AUD_BCLK 
+Info (332146): Worst-case removal slack is 0.660
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.798               0.000 AUD_BCLK 
-    Info (332119):     0.956               0.000 CLOCK_50 
+    Info (332119):     0.660               0.000 AUD_BCLK 
+    Info (332119):     0.879               0.000 CLOCK_50 
 Info (332146): Worst-case minimum pulse width slack is -2.174
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -2.174           -2256.225 CLOCK_50 
-    Info (332119):    -2.174            -265.463 AUD_BCLK 
-Info (332114): Report Metastability: Found 50 synchronizer chains.
+    Info (332119):    -2.174           -2334.604 CLOCK_50 
+    Info (332119):    -2.174            -277.419 AUD_BCLK 
+Info (332114): Report Metastability: Found 55 synchronizer chains.
     Info (332114): Design MTBF is not calculated because the design doesn't meet its timing requirements.
 Info: Analyzing Slow 1100mV 0C Model
 Info (334003): Started post-fitting delay annotation
@@ -947,32 +947,32 @@ Info (334004): Delay annotation completed successfully
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in TimeQuest to see clock uncertainties.
 Critical Warning (332148): Timing requirements not met
     Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the TimeQuest Timing Analyzer.
-Info (332146): Worst-case setup slack is -59.855
+Info (332146): Worst-case setup slack is -92.787
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):   -59.855          -19420.891 CLOCK_50 
-    Info (332119):    -5.447            -243.639 AUD_BCLK 
-Info (332146): Worst-case hold slack is 0.206
+    Info (332119):   -92.787          -34652.747 CLOCK_50 
+    Info (332119):    -6.170            -259.630 AUD_BCLK 
+Info (332146): Worst-case hold slack is 0.208
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.206               0.000 CLOCK_50 
-    Info (332119):     0.345               0.000 AUD_BCLK 
-Info (332146): Worst-case recovery slack is -6.949
+    Info (332119):     0.208               0.000 CLOCK_50 
+    Info (332119):     0.372               0.000 AUD_BCLK 
+Info (332146): Worst-case recovery slack is -7.083
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -6.949             -38.659 CLOCK_50 
-    Info (332119):    -5.662            -283.919 AUD_BCLK 
-Info (332146): Worst-case removal slack is 0.693
+    Info (332119):    -7.083             -60.471 CLOCK_50 
+    Info (332119):    -5.858            -316.903 AUD_BCLK 
+Info (332146): Worst-case removal slack is 0.610
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.693               0.000 AUD_BCLK 
-    Info (332119):     0.892               0.000 CLOCK_50 
+    Info (332119):     0.610               0.000 AUD_BCLK 
+    Info (332119):     0.808               0.000 CLOCK_50 
 Info (332146): Worst-case minimum pulse width slack is -2.174
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -2.174           -2073.913 CLOCK_50 
-    Info (332119):    -2.174            -262.252 AUD_BCLK 
-Info (332114): Report Metastability: Found 50 synchronizer chains.
+    Info (332119):    -2.174           -2136.340 CLOCK_50 
+    Info (332119):    -2.174            -275.664 AUD_BCLK 
+Info (332114): Report Metastability: Found 55 synchronizer chains.
     Info (332114): Design MTBF is not calculated because the design doesn't meet its timing requirements.
 Info: Analyzing Fast 1100mV 85C Model
 Info (334003): Started post-fitting delay annotation
@@ -980,70 +980,70 @@ Info (334004): Delay annotation completed successfully
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in TimeQuest to see clock uncertainties.
 Critical Warning (332148): Timing requirements not met
     Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the TimeQuest Timing Analyzer.
-Info (332146): Worst-case setup slack is -28.442
+Info (332146): Worst-case setup slack is -50.289
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):   -28.442          -10802.759 CLOCK_50 
-    Info (332119):    -4.080             -83.464 AUD_BCLK 
+    Info (332119):   -50.289          -20617.782 CLOCK_50 
+    Info (332119):    -4.378             -89.618 AUD_BCLK 
 Info (332146): Worst-case hold slack is 0.128
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
     Info (332119):     0.128               0.000 CLOCK_50 
     Info (332119):     0.180               0.000 AUD_BCLK 
-Info (332146): Worst-case recovery slack is -4.955
+Info (332146): Worst-case recovery slack is -5.058
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -4.955             -11.603 CLOCK_50 
-    Info (332119):    -3.924            -198.162 AUD_BCLK 
-Info (332146): Worst-case removal slack is 0.538
+    Info (332119):    -5.058             -28.466 CLOCK_50 
+    Info (332119):    -3.948            -222.823 AUD_BCLK 
+Info (332146): Worst-case removal slack is 0.507
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.538               0.000 CLOCK_50 
-    Info (332119):     0.750               0.000 AUD_BCLK 
+    Info (332119):     0.507               0.000 CLOCK_50 
+    Info (332119):     0.742               0.000 AUD_BCLK 
 Info (332146): Worst-case minimum pulse width slack is -2.174
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -2.174           -1551.954 CLOCK_50 
-    Info (332119):    -2.174            -271.686 AUD_BCLK 
-Info (332114): Report Metastability: Found 50 synchronizer chains.
+    Info (332119):    -2.174           -1597.628 CLOCK_50 
+    Info (332119):    -2.174            -290.933 AUD_BCLK 
+Info (332114): Report Metastability: Found 55 synchronizer chains.
     Info (332114): Design MTBF is not calculated because the design doesn't meet its timing requirements.
 Info: Analyzing Fast 1100mV 0C Model
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in TimeQuest to see clock uncertainties.
 Critical Warning (332148): Timing requirements not met
     Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the TimeQuest Timing Analyzer.
-Info (332146): Worst-case setup slack is -27.078
+Info (332146): Worst-case setup slack is -46.654
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):   -27.078           -9488.133 CLOCK_50 
-    Info (332119):    -3.392             -65.251 AUD_BCLK 
-Info (332146): Worst-case hold slack is 0.118
+    Info (332119):   -46.654          -18215.148 CLOCK_50 
+    Info (332119):    -3.702             -68.886 AUD_BCLK 
+Info (332146): Worst-case hold slack is 0.115
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.118               0.000 CLOCK_50 
-    Info (332119):     0.170               0.000 AUD_BCLK 
-Info (332146): Worst-case recovery slack is -4.195
+    Info (332119):     0.115               0.000 CLOCK_50 
+    Info (332119):     0.152               0.000 AUD_BCLK 
+Info (332146): Worst-case recovery slack is -4.295
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -4.195              -8.820 CLOCK_50 
-    Info (332119):    -3.264            -162.483 AUD_BCLK 
-Info (332146): Worst-case removal slack is 0.393
+    Info (332119):    -4.295             -23.173 CLOCK_50 
+    Info (332119):    -3.298            -183.812 AUD_BCLK 
+Info (332146): Worst-case removal slack is 0.407
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.393               0.000 AUD_BCLK 
-    Info (332119):     0.491               0.000 CLOCK_50 
+    Info (332119):     0.407               0.000 AUD_BCLK 
+    Info (332119):     0.457               0.000 CLOCK_50 
 Info (332146): Worst-case minimum pulse width slack is -2.174
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -2.174           -1828.958 CLOCK_50 
-    Info (332119):    -2.174            -289.339 AUD_BCLK 
-Info (332114): Report Metastability: Found 50 synchronizer chains.
+    Info (332119):    -2.174           -1888.683 CLOCK_50 
+    Info (332119):    -2.174            -308.006 AUD_BCLK 
+Info (332114): Report Metastability: Found 55 synchronizer chains.
     Info (332114): Design MTBF is not calculated because the design doesn't meet its timing requirements.
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus Prime TimeQuest Timing Analyzer was successful. 0 errors, 7 warnings
-    Info: Peak virtual memory: 1569 megabytes
-    Info: Processing ended: Sun Sep 02 14:26:21 2018
-    Info: Elapsed time: 00:00:38
-    Info: Total CPU time (on all processors): 00:01:36
+    Info: Peak virtual memory: 1591 megabytes
+    Info: Processing ended: Sun Sep 02 18:41:02 2018
+    Info: Elapsed time: 00:00:48
+    Info: Total CPU time (on all processors): 00:02:10
 
 

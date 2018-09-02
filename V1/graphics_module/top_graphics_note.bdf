@@ -152,7 +152,7 @@ agreement for further details.
 	(input)
 	(rect -696 168 -488 184)
 	(text "INPUT" (rect 165 0 193 10)(font "Arial" (font_size 6)))
-	(text "NotesLength[0..12][7..0]" (rect 5 0 119 17)(font "Intel Clear" ))
+	(text "NotesLength[0..12][7..0]" (rect 5 0 118 17)(font "Intel Clear" ))
 	(pt 208 8)
 	(drawing
 		(line (pt 124 12)(pt 149 12))
@@ -464,104 +464,6 @@ agreement for further details.
 	(drawing
 		(rectangle (rect 16 16 200 256))
 	)
-)
-(symbol
-	(rect 504 -8 752 200)
-	(text "noteGraphics" (rect 5 0 69 12)(font "Arial" ))
-	(text "inst13" (rect 8 192 36 209)(font "Intel Clear" ))
-	(port
-		(pt 0 32)
-		(input)
-		(text "CLK" (rect 0 0 21 12)(font "Arial" ))
-		(text "CLK" (rect 21 27 42 39)(font "Arial" ))
-		(line (pt 0 32)(pt 16 32))
-	)
-	(port
-		(pt 0 48)
-		(input)
-		(text "resetN" (rect 0 0 33 12)(font "Arial" ))
-		(text "resetN" (rect 21 43 54 55)(font "Arial" ))
-		(line (pt 0 48)(pt 16 48))
-	)
-	(port
-		(pt 0 64)
-		(input)
-		(text "NoteLength[7..0]" (rect 0 0 82 12)(font "Arial" ))
-		(text "NoteLength[7..0]" (rect 21 59 103 71)(font "Arial" ))
-		(line (pt 0 64)(pt 16 64)(line_width 3))
-	)
-	(port
-		(pt 0 80)
-		(input)
-		(text "timer_done" (rect 0 0 54 12)(font "Arial" ))
-		(text "timer_done" (rect 21 75 75 87)(font "Arial" ))
-		(line (pt 0 80)(pt 16 80))
-	)
-	(port
-		(pt 0 96)
-		(input)
-		(text "clearNote" (rect 0 0 47 12)(font "Arial" ))
-		(text "clearNote" (rect 21 91 68 103)(font "Arial" ))
-		(line (pt 0 96)(pt 16 96))
-	)
-	(port
-		(pt 0 112)
-		(input)
-		(text "speedNote[31..0]" (rect 0 0 84 12)(font "Arial" ))
-		(text "speedNote[31..0]" (rect 21 107 105 119)(font "Arial" ))
-		(line (pt 0 112)(pt 16 112)(line_width 3))
-	)
-	(port
-		(pt 0 128)
-		(input)
-		(text "oCoord_X[31..0]" (rect 0 0 79 12)(font "Arial" ))
-		(text "oCoord_X[31..0]" (rect 21 123 100 135)(font "Arial" ))
-		(line (pt 0 128)(pt 16 128)(line_width 3))
-	)
-	(port
-		(pt 0 144)
-		(input)
-		(text "oCoord_Y[31..0]" (rect 0 0 81 12)(font "Arial" ))
-		(text "oCoord_Y[31..0]" (rect 21 139 102 151)(font "Arial" ))
-		(line (pt 0 144)(pt 16 144)(line_width 3))
-	)
-	(port
-		(pt 0 160)
-		(input)
-		(text "sound" (rect 0 0 29 12)(font "Arial" ))
-		(text "sound" (rect 21 155 50 167)(font "Arial" ))
-		(line (pt 0 160)(pt 16 160))
-	)
-	(port
-		(pt 248 32)
-		(output)
-		(text "drawing_request" (rect 0 0 79 12)(font "Arial" ))
-		(text "drawing_request" (rect 161 27 240 39)(font "Arial" ))
-		(line (pt 248 32)(pt 232 32))
-	)
-	(port
-		(pt 248 48)
-		(output)
-		(text "collision" (rect 0 0 38 12)(font "Arial" ))
-		(text "collision" (rect 195 43 233 55)(font "Arial" ))
-		(line (pt 248 48)(pt 232 48))
-	)
-	(port
-		(pt 248 64)
-		(output)
-		(text "mVGA_RGB[7..0]" (rect 0 0 87 12)(font "Arial" ))
-		(text "mVGA_RGB[7..0]" (rect 154 59 241 71)(font "Arial" ))
-		(line (pt 248 64)(pt 232 64)(line_width 3))
-	)
-	(parameter
-		"ObjectStartX"
-		"0"
-		""
-		(type "PARAMETER_SIGNED_DEC")	)
-	(drawing
-		(rectangle (rect 16 16 232 192))
-	)
-	(annotation_block (parameter)(rect 752 -48 933 -10))
 )
 (symbol
 	(rect 504 200 752 408)
@@ -1143,7 +1045,7 @@ agreement for further details.
 	)
 	(parameter
 		"ObjectStartX"
-		"297"
+		"294"
 		""
 		(type "PARAMETER_SIGNED_DEC")	)
 	(drawing
@@ -1241,7 +1143,7 @@ agreement for further details.
 	)
 	(parameter
 		"ObjectStartX"
-		"346"
+		"343"
 		""
 		(type "PARAMETER_SIGNED_DEC")	)
 	(drawing
@@ -1339,7 +1241,7 @@ agreement for further details.
 	)
 	(parameter
 		"ObjectStartX"
-		"395"
+		"392"
 		""
 		(type "PARAMETER_SIGNED_DEC")	)
 	(drawing
@@ -1437,7 +1339,7 @@ agreement for further details.
 	)
 	(parameter
 		"ObjectStartX"
-		"444"
+		"441"
 		""
 		(type "PARAMETER_SIGNED_DEC")	)
 	(drawing
@@ -1535,7 +1437,7 @@ agreement for further details.
 	)
 	(parameter
 		"ObjectStartX"
-		"493"
+		"490"
 		""
 		(type "PARAMETER_SIGNED_DEC")	)
 	(drawing
@@ -1633,7 +1535,7 @@ agreement for further details.
 	)
 	(parameter
 		"ObjectStartX"
-		"542"
+		"539"
 		""
 		(type "PARAMETER_SIGNED_DEC")	)
 	(drawing
@@ -1731,13 +1633,111 @@ agreement for further details.
 	)
 	(parameter
 		"ObjectStartX"
-		"594"
+		"588"
 		""
 		(type "PARAMETER_SIGNED_DEC")	)
 	(drawing
 		(rectangle (rect 16 16 232 192))
 	)
 	(annotation_block (parameter)(rect 64 1048 245 1086))
+)
+(symbol
+	(rect 504 -8 752 200)
+	(text "noteGraphics" (rect 5 0 69 12)(font "Arial" ))
+	(text "inst13" (rect 8 192 36 209)(font "Intel Clear" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "CLK" (rect 0 0 21 12)(font "Arial" ))
+		(text "CLK" (rect 21 27 42 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "resetN" (rect 0 0 33 12)(font "Arial" ))
+		(text "resetN" (rect 21 43 54 55)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "NoteLength[7..0]" (rect 0 0 82 12)(font "Arial" ))
+		(text "NoteLength[7..0]" (rect 21 59 103 71)(font "Arial" ))
+		(line (pt 0 64)(pt 16 64)(line_width 3))
+	)
+	(port
+		(pt 0 80)
+		(input)
+		(text "timer_done" (rect 0 0 54 12)(font "Arial" ))
+		(text "timer_done" (rect 21 75 75 87)(font "Arial" ))
+		(line (pt 0 80)(pt 16 80))
+	)
+	(port
+		(pt 0 96)
+		(input)
+		(text "clearNote" (rect 0 0 47 12)(font "Arial" ))
+		(text "clearNote" (rect 21 91 68 103)(font "Arial" ))
+		(line (pt 0 96)(pt 16 96))
+	)
+	(port
+		(pt 0 112)
+		(input)
+		(text "speedNote[31..0]" (rect 0 0 84 12)(font "Arial" ))
+		(text "speedNote[31..0]" (rect 21 107 105 119)(font "Arial" ))
+		(line (pt 0 112)(pt 16 112)(line_width 3))
+	)
+	(port
+		(pt 0 128)
+		(input)
+		(text "oCoord_X[31..0]" (rect 0 0 79 12)(font "Arial" ))
+		(text "oCoord_X[31..0]" (rect 21 123 100 135)(font "Arial" ))
+		(line (pt 0 128)(pt 16 128)(line_width 3))
+	)
+	(port
+		(pt 0 144)
+		(input)
+		(text "oCoord_Y[31..0]" (rect 0 0 81 12)(font "Arial" ))
+		(text "oCoord_Y[31..0]" (rect 21 139 102 151)(font "Arial" ))
+		(line (pt 0 144)(pt 16 144)(line_width 3))
+	)
+	(port
+		(pt 0 160)
+		(input)
+		(text "sound" (rect 0 0 29 12)(font "Arial" ))
+		(text "sound" (rect 21 155 50 167)(font "Arial" ))
+		(line (pt 0 160)(pt 16 160))
+	)
+	(port
+		(pt 248 32)
+		(output)
+		(text "drawing_request" (rect 0 0 79 12)(font "Arial" ))
+		(text "drawing_request" (rect 161 27 240 39)(font "Arial" ))
+		(line (pt 248 32)(pt 232 32))
+	)
+	(port
+		(pt 248 48)
+		(output)
+		(text "collision" (rect 0 0 38 12)(font "Arial" ))
+		(text "collision" (rect 195 43 233 55)(font "Arial" ))
+		(line (pt 248 48)(pt 232 48))
+	)
+	(port
+		(pt 248 64)
+		(output)
+		(text "mVGA_RGB[7..0]" (rect 0 0 87 12)(font "Arial" ))
+		(text "mVGA_RGB[7..0]" (rect 154 59 241 71)(font "Arial" ))
+		(line (pt 248 64)(pt 232 64)(line_width 3))
+	)
+	(parameter
+		"ObjectStartX"
+		"0"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(drawing
+		(rectangle (rect 16 16 232 192))
+	)
+	(annotation_block (parameter)(rect 752 -48 933 -10))
 )
 (connector
 	(text "resetN" (rect 456 232 489 244)(font "Arial" ))

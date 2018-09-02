@@ -9,7 +9,7 @@ end entity;
 
 architecture arc_sound_freq_gen_all of sound_freq_gen_all is
 	type freq_type is array (0 to 12) of integer;
-	constant freq : freq_type := (11442,10799, 4906, 5197, 5506, 5834, 6181, 6548, 6935,6803, 7787, 8250, 8741); --(4370, 4630, 4906, 5197, 5506, 5834, 6181, 6548, 6935, 7350, 7787, 8250, 8741);	-- all frequancies
+	constant freq : freq_type :=  (4370, 4630, 4906, 5197, 5506, 5834, 6181, 6548, 6935, 7350, 7787, 8250, 8741);--(11442,10799, 4906, 5197, 5506, 5834, 6181, 6548, 6935,6803, 7787, 8250, 8741);	-- all frequancies
 	    constant MAX_COUNT: integer := 50000000 ; 	-- clock freq
 begin
 

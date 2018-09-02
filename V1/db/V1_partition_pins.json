@@ -28,11 +28,11 @@
 					"strict" : false
 				},
 				{
-					"name" : "AUD_DACLRCK",
+					"name" : "AUD_ADCLRCK",
 					"strict" : false
 				},
 				{
-					"name" : "AUD_ADCLRCK",
+					"name" : "AUD_DACLRCK",
 					"strict" : false
 				},
 				{

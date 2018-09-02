@@ -1,6 +1,5 @@
 function [hex, hex_string] = bin2hex(bin_str, num)
 hex_string = '';
-count = 0;
 for row = 1:size(bin_str,1)
     i = length(bin_str(row,:));
     % disp(i);
@@ -26,6 +25,5 @@ for row = 1:size(bin_str,1)
         hex(row,:) = hex_str;
     end
     
-    hex_string = [hex_string '\t' num2str(count) '\t:\t' hex(row,:) ';\n'];
-    count = count + 1;
+    hex_string = [hex_string 'X"' hex(row,:) '",'];
 end
