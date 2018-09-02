@@ -22,7 +22,7 @@ agreement for further details.
 (header "graphic" (version "1.4"))
 (pin
 	(input)
-	(rect -1144 304 -976 320)
+	(rect -1072 328 -904 344)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
 	(text "CLOCK_50" (rect 5 0 58 17)(font "Intel Clear" ))
 	(pt 168 8)
@@ -102,7 +102,7 @@ agreement for further details.
 )
 (pin
 	(input)
-	(rect -1144 328 -976 344)
+	(rect -1072 352 -904 368)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
 	(text "resetN" (rect 5 0 35 17)(font "Intel Clear" ))
 	(pt 168 8)
@@ -118,7 +118,7 @@ agreement for further details.
 )
 (pin
 	(input)
-	(rect -1144 360 -976 376)
+	(rect -1072 384 -904 400)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
 	(text "error_enable" (rect 5 0 66 17)(font "Intel Clear" ))
 	(pt 168 8)
@@ -134,7 +134,7 @@ agreement for further details.
 )
 (pin
 	(input)
-	(rect -1144 400 -976 416)
+	(rect -1072 424 -904 440)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
 	(text "StartPlay[12..0]" (rect 5 0 79 17)(font "Intel Clear" ))
 	(pt 168 8)
@@ -150,7 +150,7 @@ agreement for further details.
 )
 (pin
 	(input)
-	(rect -1160 384 -976 400)
+	(rect -1088 408 -904 424)
 	(text "INPUT" (rect 141 0 169 10)(font "Arial" (font_size 6)))
 	(text "SoundChoose[1..0]" (rect 5 0 93 17)(font "Intel Clear" ))
 	(pt 184 8)
@@ -163,6 +163,22 @@ agreement for further details.
 		(line (pt 125 12)(pt 129 8))
 	)
 	(text "VCC" (rect 144 7 164 17)(font "Arial" (font_size 6)))
+)
+(pin
+	(input)
+	(rect -208 336 -40 352)
+	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
+	(text "piano_free" (rect 5 0 57 12)(font "Arial" ))
+	(pt 168 8)
+	(drawing
+		(line (pt 84 12)(pt 109 12))
+		(line (pt 84 4)(pt 109 4))
+		(line (pt 113 8)(pt 168 8))
+		(line (pt 84 12)(pt 84 4))
+		(line (pt 109 4)(pt 113 8))
+		(line (pt 109 12)(pt 113 8))
+	)
+	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
 )
 (pin
 	(output)
@@ -366,7 +382,7 @@ agreement for further details.
 	)
 )
 (symbol
-	(rect -1120 560 -944 640)
+	(rect -1048 592 -872 672)
 	(text "sound_freq_gen" (rect 5 0 84 12)(font "Arial" ))
 	(text "inst9" (rect 8 64 30 81)(font "Intel Clear" ))
 	(port
@@ -398,10 +414,10 @@ agreement for further details.
 	(drawing
 		(rectangle (rect 16 16 160 64))
 	)
-	(annotation_block (parameter)(rect -1200 496 -1019 534))
+	(annotation_block (parameter)(rect -1128 528 -947 566))
 )
 (symbol
-	(rect -488 504 -304 616)
+	(rect -416 528 -232 640)
 	(text "errtable" (rect 5 0 41 12)(font "Arial" ))
 	(text "ewqe2" (rect 8 96 39 113)(font "Intel Clear" ))
 	(port
@@ -437,7 +453,7 @@ agreement for further details.
 	)
 )
 (symbol
-	(rect -784 536 -568 648)
+	(rect -712 560 -496 672)
 	(text "addr_counter" (rect 5 0 68 12)(font "Arial" ))
 	(text "inst3" (rect 8 96 30 113)(font "Intel Clear" ))
 	(port
@@ -495,57 +511,7 @@ agreement for further details.
 	(drawing
 		(rectangle (rect 16 16 200 96))
 	)
-	(annotation_block (parameter)(rect -744 448 -560 505))
-)
-(symbol
-	(rect -16 280 208 424)
-	(text "sound_chooser" (rect 5 0 79 12)(font "Arial" ))
-	(text "inst2" (rect 8 128 30 145)(font "Intel Clear" ))
-	(port
-		(pt 0 32)
-		(input)
-		(text "RESETN" (rect 0 0 43 12)(font "Arial" ))
-		(text "RESETN" (rect 21 27 64 39)(font "Arial" ))
-		(line (pt 0 32)(pt 16 32))
-	)
-	(port
-		(pt 0 48)
-		(input)
-		(text "CLK" (rect 0 0 21 12)(font "Arial" ))
-		(text "CLK" (rect 21 43 42 55)(font "Arial" ))
-		(line (pt 0 48)(pt 16 48))
-	)
-	(port
-		(pt 0 64)
-		(input)
-		(text "error" (rect 0 0 22 12)(font "Arial" ))
-		(text "error" (rect 21 59 43 71)(font "Arial" ))
-		(line (pt 0 64)(pt 16 64))
-	)
-	(port
-		(pt 0 80)
-		(input)
-		(text "note_data[15..0]" (rect 0 0 80 12)(font "Arial" ))
-		(text "note_data[15..0]" (rect 21 75 101 87)(font "Arial" ))
-		(line (pt 0 80)(pt 16 80)(line_width 3))
-	)
-	(port
-		(pt 0 96)
-		(input)
-		(text "error_data[15..0]" (rect 0 0 81 12)(font "Arial" ))
-		(text "error_data[15..0]" (rect 21 91 102 103)(font "Arial" ))
-		(line (pt 0 96)(pt 16 96)(line_width 3))
-	)
-	(port
-		(pt 224 32)
-		(output)
-		(text "out_data[15..0]" (rect 0 0 74 12)(font "Arial" ))
-		(text "out_data[15..0]" (rect 141 27 215 39)(font "Arial" ))
-		(line (pt 224 32)(pt 208 32)(line_width 3))
-	)
-	(drawing
-		(rectangle (rect 16 16 208 128))
-	)
+	(annotation_block (parameter)(rect -672 472 -488 529))
 )
 (symbol
 	(rect 64 80 96 112)
@@ -566,7 +532,7 @@ agreement for further details.
 	(rotate270)
 )
 (symbol
-	(rect -448 328 -192 456)
+	(rect -376 352 -120 480)
 	(text "notes_top2" (rect 5 0 72 19)(font "Intel Clear" (font_size 8)))
 	(text "inst" (rect 8 107 24 124)(font "Intel Clear" ))
 	(port
@@ -615,6 +581,63 @@ agreement for further details.
 		(rectangle (rect 16 16 240 112))
 	)
 )
+(symbol
+	(rect 64 288 288 432)
+	(text "sound_chooser" (rect 5 0 79 12)(font "Arial" ))
+	(text "inst1" (rect 8 128 30 145)(font "Intel Clear" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "RESETN" (rect 0 0 43 12)(font "Arial" ))
+		(text "RESETN" (rect 21 27 64 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "CLK" (rect 0 0 21 12)(font "Arial" ))
+		(text "CLK" (rect 21 43 42 55)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "piano_free" (rect 0 0 51 12)(font "Arial" ))
+		(text "piano_free" (rect 21 59 72 71)(font "Arial" ))
+		(line (pt 0 64)(pt 16 64))
+	)
+	(port
+		(pt 0 80)
+		(input)
+		(text "error" (rect 0 0 22 12)(font "Arial" ))
+		(text "error" (rect 21 75 43 87)(font "Arial" ))
+		(line (pt 0 80)(pt 16 80))
+	)
+	(port
+		(pt 0 96)
+		(input)
+		(text "note_data[15..0]" (rect 0 0 80 12)(font "Arial" ))
+		(text "note_data[15..0]" (rect 21 91 101 103)(font "Arial" ))
+		(line (pt 0 96)(pt 16 96)(line_width 3))
+	)
+	(port
+		(pt 0 112)
+		(input)
+		(text "error_data[15..0]" (rect 0 0 81 12)(font "Arial" ))
+		(text "error_data[15..0]" (rect 21 107 102 119)(font "Arial" ))
+		(line (pt 0 112)(pt 16 112)(line_width 3))
+	)
+	(port
+		(pt 224 32)
+		(output)
+		(text "out_data[15..0]" (rect 0 0 74 12)(font "Arial" ))
+		(text "out_data[15..0]" (rect 141 27 215 39)(font "Arial" ))
+		(line (pt 224 32)(pt 208 32)(line_width 3))
+	)
+	(drawing
+		(rectangle (rect 16 16 208 128))
+	)
+)
 (connector
 	(pt 304 112)
 	(pt 336 112)
@@ -639,11 +662,6 @@ agreement for further details.
 (connector
 	(pt 608 144)
 	(pt 768 144)
-)
-(connector
-	(pt 304 112)
-	(pt 304 128)
-	(bus)
 )
 (connector
 	(pt 96 96)
@@ -676,143 +694,147 @@ agreement for further details.
 	(pt 336 80)
 )
 (connector
-	(pt -72 536)
-	(pt -304 536)
-	(bus)
-)
-(connector
-	(text "CLOCK_50" (rect -536 520 -483 537)(font "Intel Clear" ))
-	(pt -536 536)
-	(pt -488 536)
-)
-(connector
-	(text "resetN" (rect -550 536 -520 553)(font "Intel Clear" ))
-	(pt -552 552)
-	(pt -488 552)
-)
-(connector
-	(pt -568 568)
-	(pt -488 568)
-	(bus)
-)
-(connector
-	(text "CLOCK_50" (rect -846 552 -793 569)(font "Intel Clear" ))
-	(pt -864 568)
-	(pt -784 568)
-)
-(connector
-	(text "resetN" (rect -846 568 -816 585)(font "Intel Clear" ))
-	(pt -848 584)
-	(pt -784 584)
-)
-(connector
-	(pt -784 616)
-	(pt -872 616)
-)
-(connector
-	(pt -872 616)
-	(pt -872 760)
-)
-(connector
-	(text "resetN" (rect -1182 576 -1152 593)(font "Intel Clear" ))
-	(pt -1184 592)
-	(pt -1120 592)
-)
-(connector
-	(text "CLOCK_50" (rect -1182 592 -1129 609)(font "Intel Clear" ))
-	(pt -1184 608)
-	(pt -1120 608)
-)
-(connector
-	(pt -792 600)
-	(pt -792 592)
-)
-(connector
-	(pt -784 600)
-	(pt -792 600)
-)
-(connector
-	(pt -792 592)
-	(pt -944 592)
-)
-(connector
-	(text "error_enable" (rect -966 744 -905 761)(font "Intel Clear" ))
-	(pt -968 760)
-	(pt -872 760)
-)
-(connector
-	(text "error_play" (rect -566 568 -517 585)(font "Intel Clear" ))
-	(pt -568 584)
-	(pt -520 584)
-)
-(connector
-	(pt 216 128)
-	(pt 304 128)
-	(bus)
-)
-(connector
 	(pt 304 128)
 	(pt 336 128)
 	(bus)
 )
 (connector
-	(text "CLOCK_50" (rect -502 344 -449 361)(font "Intel Clear" ))
-	(pt -520 360)
-	(pt -448 360)
-)
-(connector
-	(text "resetN" (rect -502 360 -472 377)(font "Intel Clear" ))
-	(pt -504 376)
-	(pt -448 376)
-)
-(connector
-	(pt -72 536)
-	(pt -72 376)
+	(pt 288 320)
+	(pt 304 320)
 	(bus)
 )
 (connector
-	(pt -72 376)
-	(pt -16 376)
+	(pt 304 112)
+	(pt 304 128)
 	(bus)
 )
 (connector
-	(text "resetN" (rect -78 296 -48 313)(font "Intel Clear" ))
-	(pt -80 312)
-	(pt -16 312)
-)
-(connector
-	(text "CLOCK_50" (rect -64 312 -11 329)(font "Intel Clear" ))
-	(pt -64 328)
-	(pt -16 328)
-)
-(connector
-	(text "error_play" (rect -78 328 -29 345)(font "Intel Clear" ))
-	(pt -80 344)
-	(pt -16 344)
-)
-(connector
-	(pt 216 128)
-	(pt 216 312)
+	(pt 304 128)
+	(pt 304 320)
 	(bus)
 )
 (connector
-	(pt 216 312)
-	(pt 208 312)
+	(text "resetN" (rect 2 304 32 321)(font "Intel Clear" ))
+	(pt 0 320)
+	(pt 64 320)
+)
+(connector
+	(text "CLOCK_50" (rect 16 320 69 337)(font "Intel Clear" ))
+	(pt 16 336)
+	(pt 64 336)
+)
+(connector
+	(text "error_play" (rect 2 352 51 369)(font "Intel Clear" ))
+	(pt 0 368)
+	(pt 64 368)
+)
+(connector
+	(pt -800 640)
+	(pt -800 784)
+)
+(connector
+	(text "error_enable" (rect -894 768 -833 785)(font "Intel Clear" ))
+	(pt -896 784)
+	(pt -800 784)
+)
+(connector
+	(pt 0 560)
+	(pt 0 400)
 	(bus)
 )
 (connector
-	(pt -192 360)
-	(pt -16 360)
+	(pt 64 400)
+	(pt 0 400)
 	(bus)
 )
 (connector
-	(pt -976 408)
-	(pt -448 408)
+	(pt -232 560)
+	(pt 0 560)
 	(bus)
 )
 (connector
-	(pt -976 392)
-	(pt -448 392)
+	(text "error_play" (rect -494 592 -445 609)(font "Intel Clear" ))
+	(pt -496 608)
+	(pt -448 608)
+)
+(connector
+	(pt 64 384)
+	(pt -120 384)
 	(bus)
+)
+(connector
+	(text "CLOCK_50" (rect -464 544 -411 561)(font "Intel Clear" ))
+	(pt -464 560)
+	(pt -416 560)
+)
+(connector
+	(text "resetN" (rect -478 560 -448 577)(font "Intel Clear" ))
+	(pt -480 576)
+	(pt -416 576)
+)
+(connector
+	(pt -496 592)
+	(pt -416 592)
+	(bus)
+)
+(connector
+	(text "CLOCK_50" (rect -774 576 -721 593)(font "Intel Clear" ))
+	(pt -792 592)
+	(pt -712 592)
+)
+(connector
+	(text "resetN" (rect -774 592 -744 609)(font "Intel Clear" ))
+	(pt -776 608)
+	(pt -712 608)
+)
+(connector
+	(pt -800 640)
+	(pt -712 640)
+)
+(connector
+	(text "CLOCK_50" (rect -430 368 -377 385)(font "Intel Clear" ))
+	(pt -448 384)
+	(pt -376 384)
+)
+(connector
+	(text "resetN" (rect -430 384 -400 401)(font "Intel Clear" ))
+	(pt -432 400)
+	(pt -376 400)
+)
+(connector
+	(pt -904 416)
+	(pt -376 416)
+	(bus)
+)
+(connector
+	(pt -904 432)
+	(pt -376 432)
+	(bus)
+)
+(connector
+	(text "resetN" (rect -1110 608 -1080 625)(font "Intel Clear" ))
+	(pt -1112 624)
+	(pt -1048 624)
+)
+(connector
+	(text "CLOCK_50" (rect -1110 624 -1057 641)(font "Intel Clear" ))
+	(pt -1112 640)
+	(pt -1048 640)
+)
+(connector
+	(pt -872 624)
+	(pt -712 624)
+)
+(connector
+	(pt 56 352)
+	(pt 56 344)
+)
+(connector
+	(pt 64 352)
+	(pt 56 352)
+)
+(connector
+	(pt 56 344)
+	(pt -40 344)
 )
 (junction (pt 304 128))

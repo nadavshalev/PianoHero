@@ -2244,12 +2244,6 @@ agreement for further details.
 	(bus)
 )
 (connector
-	(text "speedNotes[31..0]" (rect 448 504 532 521)(font "Intel Clear" ))
-	(pt 504 520)
-	(pt 448 520)
-	(bus)
-)
-(connector
 	(text "speedNotes[31..0]" (rect 448 296 532 313)(font "Intel Clear" ))
 	(pt 504 312)
 	(pt 448 312)
@@ -2694,18 +2688,6 @@ agreement for further details.
 	(bus)
 )
 (connector
-	(text "NotesLength[0][7..0]" (rect 448 40 544 57)(font "Intel Clear" ))
-	(pt 504 56)
-	(pt 448 56)
-	(bus)
-)
-(connector
-	(text "NotesLength[1][7..0]" (rect 448 248 544 265)(font "Intel Clear" ))
-	(pt 504 264)
-	(pt 448 264)
-	(bus)
-)
-(connector
 	(text "NotesLength[2][7..0]" (rect 448 456 544 473)(font "Intel Clear" ))
 	(pt 504 472)
 	(pt 448 472)
@@ -2715,12 +2697,6 @@ agreement for further details.
 	(text "NotesLength[3][7..0]" (rect 448 664 544 681)(font "Intel Clear" ))
 	(pt 504 680)
 	(pt 448 680)
-	(bus)
-)
-(connector
-	(text "NotesLength[4][7..0]" (rect 448 872 544 889)(font "Intel Clear" ))
-	(pt 504 888)
-	(pt 448 888)
 	(bus)
 )
 (connector
@@ -2769,5 +2745,29 @@ agreement for further details.
 	(text "NotesLength[12][7..0]" (rect -240 1136 -138 1153)(font "Intel Clear" ))
 	(pt -184 1152)
 	(pt -240 1152)
+	(bus)
+)
+(connector
+	(text "NotesLength[0][7..0]" (rect 424 40 520 57)(font "Intel Clear" ))
+	(pt 504 56)
+	(pt 408 56)
+	(bus)
+)
+(connector
+	(text "NotesLength[1][7..0]" (rect 384 248 480 265)(font "Intel Clear" ))
+	(pt 504 264)
+	(pt 384 264)
+	(bus)
+)
+(connector
+	(text "speedNotes[31..0]" (rect 448 504 532 521)(font "Intel Clear" ))
+	(pt 376 520)
+	(pt 504 520)
+	(bus)
+)
+(connector
+	(text "NotesLength[4][7..0]" (rect 400 872 496 889)(font "Intel Clear" ))
+	(pt 504 888)
+	(pt 400 888)
 	(bus)
 )

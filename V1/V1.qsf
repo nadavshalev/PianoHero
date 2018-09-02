@@ -99,7 +99,6 @@ set_location_assignment PIN_W25 -to mux[2]
 set_location_assignment PIN_V25 -to mux[3]
 set_location_assignment PIN_AC28 -to SW[6]
 set_location_assignment PIN_AD30 -to SW[7]
-set_location_assignment PIN_AC29 -to SW[8]
 set_location_assignment PIN_AA30 -to piano_play
 set_location_assignment PIN_AA24 -to Collision
 set_location_assignment PIN_AB23 -to LEDR[1]
@@ -259,6 +258,7 @@ set_global_assignment -name VHDL_FILE sound_module/addr_counter_all.vhd
 set_global_assignment -name VHDL_FILE sound_module/sound_freq_gen_all.vhd
 set_global_assignment -name BDF_FILE sound_module/notes_top2.bdf
 set_global_assignment -name MIF_FILE sound_module/mem1.mif
+set_location_assignment PIN_AC29 -to auto_play
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top

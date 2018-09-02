@@ -1,16 +1,16 @@
-Fitter Status : Successful - Sun Sep 02 18:39:40 2018
+Fitter Status : Successful - Sun Sep 02 23:38:53 2018
 Quartus Prime Version : 17.0.0 Build 595 04/25/2017 SJ Standard Edition
 Revision Name : V1
 Top-level Entity Name : TOP_module_diag
 Family : Cyclone V
 Device : 5CSXFC6D6F31C6
 Timing Models : Final
-Logic utilization (in ALMs) : 33,701 / 41,910 ( 80 % )
-Total registers : 3532
-Total pins : 57 / 499 ( 11 % )
+Logic utilization (in ALMs) : 6,880 / 41,910 ( 16 % )
+Total registers : 3689
+Total pins : 58 / 499 ( 12 % )
 Total virtual pins : 0
-Total block memory bits : 1,024 / 5,662,720 ( < 1 % )
-Total RAM Blocks : 2 / 553 ( < 1 % )
+Total block memory bits : 1,598,464 / 5,662,720 ( 28 % )
+Total RAM Blocks : 197 / 553 ( 36 % )
 Total DSP Blocks : 0 / 112 ( 0 % )
 Total HSSI RX PCSs : 0 / 9 ( 0 % )
 Total HSSI PMA RX Deserializers : 0 / 9 ( 0 % )

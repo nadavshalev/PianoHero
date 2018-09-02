@@ -37,7 +37,7 @@ set_location_assignment PIN_W25 -to mux[2] ; #SW[4]
 set_location_assignment PIN_V25 -to mux[3] ; #SW[5]
 set_location_assignment PIN_AC28 -to SW[6]
 set_location_assignment PIN_AD30 -to SW[7]
-set_location_assignment PIN_AC29 -to SW[8]
+set_location_assignment PIN_AC29 -to auto_play;
 set_location_assignment PIN_AA30 -to piano_play ; #SW[9]
 
 #============================================================

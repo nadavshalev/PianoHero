@@ -9,6 +9,8 @@ entity play_controller_chooser is
 			control_sound, free_sound : in std_logic_vector(12 downto 0);
 			error_in : in std_logic_vector(12 downto 0);
 			s0,s1,s2,s3,s4,s5,s6,s7,s8,s9,s10,s11,s12 : in std_logic_vector(4 downto 0);
+			auto_play											: in std_logic;
+			collision											: in std_logic_vector(12 downto 0);
 			score													: out integer;
 			error													: out std_logic;
 			sound													: out std_logic_vector(12 downto 0)
@@ -29,7 +31,11 @@ begin
 			sound <= (others => '0');
 		elsif rising_edge(clk) then
 			if enable = '1' then
-				if freePiano = '1' then		--play free piano
+				if auto_play = '1' then
+					score <= 0;
+					sound <= collision;
+					error <= '0';
+				elsif freePiano = '1' then		--play free piano
 					score <= 0;
 					error <= '0';
 					sound <= free_sound;
