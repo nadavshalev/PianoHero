@@ -37,9 +37,7 @@ begin
     if (resetN='0') then
 		Q_tmp <= ( others => '0');
     elsif(rising_edge(CLK)) then
---      if (ENA='1') then
 		Q_tmp <= sin_table(conv_integer(ADDR));
---      end if;
    end if;
   end process;
  Q <= Q_tmp; 

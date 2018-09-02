@@ -2,7 +2,7 @@ library ieee;
 use ieee.std_logic_1164.all;
 
 entity sound_freq_gen is
-	GENERIC ( FREQUENCY		: INTEGER := 440);
+	GENERIC ( FREQUENCY		: INTEGER := 7350);
 	port( RESETN, CLK : in std_logic;
 			OneSec	   	  		: out std_logic );
 end entity;

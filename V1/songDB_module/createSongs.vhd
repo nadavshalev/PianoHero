@@ -36,6 +36,7 @@ port(
   enable 						: in std_logic;
   screen_end    				: in std_logic;
   song_choose    				: in std_logic_vector(1 downto 0);
+  speedNotes					: in integer;
   note_length       			: out noteArr
 );
 end createSongs;
@@ -73,6 +74,7 @@ begin
 		variable index : tmpArr := (0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
 		variable tmp_song  : std_logic_vector(1 downto 0);
 		variable song : song_type;
+		variable count : integer;
 	begin
 
 		if (resetN='0' or tmp_song /= song_choose) then
@@ -80,6 +82,7 @@ begin
 				index(i) := 0;
 				tmp_wait(i) := 0;
 				note_length(i) <= (others => '0');
+				count := 0;
 			end loop;
 			tmp_song := song_choose;
 			
@@ -97,23 +100,29 @@ begin
 				
 			
 			if enable = '1' then
-			
-				if screen_end = '1' then
-					
-					for i in 0 to 12 loop
-						if tmp_wait(i) = 0 and song(index(i),i) <= 0 then
-							tmp_wait(i) := -song(index(i),i);
-							index(i) := index(i) + 1;
-						elsif tmp_wait(i) = 0 then
-							note_length(i) <= conv_std_logic_vector(song(index(i),i),8);
-							tmp_wait(i) := -song(index(i),i);
-							index(i) := index(i) + 1;
-						end if;
-						tmp_wait(i) := tmp_wait(i) - 1;
-					end loop;
-					
+				if screen_end = '1'  then
+					count := count + 1;
+					if count = speedNotes then
+						count := 0;
+						for i in 0 to 12 loop
+							if tmp_wait(i) = 0 and song(index(i),i) <= 0 then
+								tmp_wait(i) := -song(index(i),i);
+								index(i) := index(i) + 1;
+							elsif tmp_wait(i) = 0 then
+								note_length(i) <= conv_std_logic_vector(song(index(i),i),8);
+								tmp_wait(i) := -song(index(i),i);
+								index(i) := index(i) + 1;
+							end if;
+							tmp_wait(i) := tmp_wait(i) - 1;
+						end loop;
+					end if;
 				end if;
-				
+			else
+				for i in 0 to 12 loop
+					index(i) := 0;
+					tmp_wait(i) := 0;
+					note_length(i) <= (others => '0');
+				end loop;
 			end if;
 		end if;
 	end process;

@@ -5,8 +5,8 @@ use ieee.std_logic_arith.all;
 use ieee.std_logic_signed.all;
 
 ENTITY addr_counter IS
-GENERIC ( COUNT_SIZE		: INTEGER := 8;
-			 MAX_VAL			: INTEGER := 255);
+GENERIC ( COUNT_SIZE		: INTEGER := 14;
+			 MAX_VAL			: INTEGER := 11350);
 PORT (
 			CLK_IN			:	IN	STD_LOGIC;	
 			resetN			:	IN	STD_LOGIC;
@@ -50,7 +50,11 @@ begin
 				end if;
 			end if;
 		end if;
-		addr <= conv_std_logic_vector(tmp,COUNT_SIZE);
+		if tmp > 0 then
+			addr <= conv_std_logic_vector(tmp,COUNT_SIZE);
+		else
+			addr <= (others => '0');
+		end if;
 	end process;
 
 

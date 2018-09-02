@@ -88,7 +88,7 @@ agreement for further details.
 	(output)
 	(rect 1168 80 1344 96)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
-	(text "make[12..0]" (rect 90 0 149 12)(font "Arial" ))
+	(text "make_out[12..0]" (rect 90 0 170 12)(font "Arial" ))
 	(pt 0 8)
 	(drawing
 		(line (pt 0 8)(pt 52 8))
@@ -104,7 +104,7 @@ agreement for further details.
 	(output)
 	(rect 1168 104 1344 120)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
-	(text "break[12..0]" (rect 90 0 146 17)(font "Intel Clear" ))
+	(text "break_out[12..0]" (rect 90 0 167 17)(font "Intel Clear" ))
 	(pt 0 8)
 	(drawing
 		(line (pt 0 8)(pt 52 8))
@@ -1006,37 +1006,6 @@ agreement for further details.
 	)
 )
 (symbol
-	(rect 472 64 584 112)
-	(text "LPM_CONSTANT" (rect 4 0 125 16)(font "Arial" (font_size 10)))
-	(text "inst3" (rect 3 37 25 54)(font "Intel Clear" ))
-	(port
-		(pt 112 32)
-		(output)
-		(text "result[LPM_WIDTH-1..0]" (rect 75 19 208 33)(font "Arial" (font_size 8)))
-		(text "result[]" (rect 75 19 113 33)(font "Arial" (font_size 8)))
-		(line (pt 64 32)(pt 112 32)(line_width 3))
-	)
-	(parameter
-		"LPM_CVALUE"
-		"E0"
-		"Unsigned value to which outputs will be set"
-		(type "PARAMETER_UNSIGNED_HEX")	)
-	(parameter
-		"LPM_WIDTH"
-		"9"
-		"Width of output, any integer > 0"
-		" 1" " 2" " 3" " 4" " 5" " 6" " 7" " 8" " 9" "10" "11" "12" "13" "14" "15" "16" "20" "24" "28" "32" 
-	)
-	(drawing
-		(text "(cvalue)" (rect 21 26 68 40)(font "Arial" (font_size 8)))
-		(line (pt 16 24)(pt 64 24))
-		(line (pt 16 40)(pt 64 40))
-		(line (pt 64 40)(pt 64 24))
-		(line (pt 16 40)(pt 16 24))
-	)
-	(annotation_block (parameter)(rect 280 48 457 105))
-)
-(symbol
 	(rect 480 216 592 264)
 	(text "LPM_CONSTANT" (rect 4 0 125 16)(font "Arial" (font_size 10)))
 	(text "inst2" (rect 3 37 25 54)(font "Intel Clear" ))
@@ -1285,37 +1254,6 @@ agreement for further details.
 	(annotation_block (parameter)(rect 264 1264 441 1321))
 )
 (symbol
-	(rect 464 1432 576 1480)
-	(text "LPM_CONSTANT" (rect 4 0 125 16)(font "Arial" (font_size 10)))
-	(text "inst14" (rect 3 37 31 54)(font "Intel Clear" ))
-	(port
-		(pt 112 32)
-		(output)
-		(text "result[LPM_WIDTH-1..0]" (rect 75 19 208 33)(font "Arial" (font_size 8)))
-		(text "result[]" (rect 75 19 113 33)(font "Arial" (font_size 8)))
-		(line (pt 64 32)(pt 112 32)(line_width 3))
-	)
-	(parameter
-		"LPM_CVALUE"
-		"0E"
-		"Unsigned value to which outputs will be set"
-		(type "PARAMETER_UNSIGNED_HEX")	)
-	(parameter
-		"LPM_WIDTH"
-		"9"
-		"Width of output, any integer > 0"
-		" 1" " 2" " 3" " 4" " 5" " 6" " 7" " 8" " 9" "10" "11" "12" "13" "14" "15" "16" "20" "24" "28" "32" 
-	)
-	(drawing
-		(text "(cvalue)" (rect 21 26 68 40)(font "Arial" (font_size 8)))
-		(line (pt 16 24)(pt 64 24))
-		(line (pt 16 40)(pt 64 40))
-		(line (pt 64 40)(pt 64 24))
-		(line (pt 16 40)(pt 16 24))
-	)
-	(annotation_block (parameter)(rect 264 1424 441 1481))
-)
-(symbol
 	(rect 448 1584 560 1632)
 	(text "LPM_CONSTANT" (rect 4 0 125 16)(font "Arial" (font_size 10)))
 	(text "inst16" (rect 3 37 31 54)(font "Intel Clear" ))
@@ -1407,6 +1345,68 @@ agreement for further details.
 		(line (pt 16 40)(pt 16 24))
 	)
 	(annotation_block (parameter)(rect 256 1872 433 1929))
+)
+(symbol
+	(rect 472 64 584 112)
+	(text "LPM_CONSTANT" (rect 4 0 125 16)(font "Arial" (font_size 10)))
+	(text "inst3" (rect 3 37 25 54)(font "Intel Clear" ))
+	(port
+		(pt 112 32)
+		(output)
+		(text "result[LPM_WIDTH-1..0]" (rect 75 19 208 33)(font "Arial" (font_size 8)))
+		(text "result[]" (rect 75 19 113 33)(font "Arial" (font_size 8)))
+		(line (pt 64 32)(pt 112 32)(line_width 3))
+	)
+	(parameter
+		"LPM_CVALUE"
+		"0E"
+		"Unsigned value to which outputs will be set"
+		(type "PARAMETER_UNSIGNED_HEX")	)
+	(parameter
+		"LPM_WIDTH"
+		"9"
+		"Width of output, any integer > 0"
+		" 1" " 2" " 3" " 4" " 5" " 6" " 7" " 8" " 9" "10" "11" "12" "13" "14" "15" "16" "20" "24" "28" "32" 
+	)
+	(drawing
+		(text "(cvalue)" (rect 21 26 68 40)(font "Arial" (font_size 8)))
+		(line (pt 16 24)(pt 64 24))
+		(line (pt 16 40)(pt 64 40))
+		(line (pt 64 40)(pt 64 24))
+		(line (pt 16 40)(pt 16 24))
+	)
+	(annotation_block (parameter)(rect 280 48 457 105))
+)
+(symbol
+	(rect 464 1432 576 1480)
+	(text "LPM_CONSTANT" (rect 4 0 125 16)(font "Arial" (font_size 10)))
+	(text "inst14" (rect 3 37 31 54)(font "Intel Clear" ))
+	(port
+		(pt 112 32)
+		(output)
+		(text "result[LPM_WIDTH-1..0]" (rect 75 19 208 33)(font "Arial" (font_size 8)))
+		(text "result[]" (rect 75 19 113 33)(font "Arial" (font_size 8)))
+		(line (pt 64 32)(pt 112 32)(line_width 3))
+	)
+	(parameter
+		"LPM_CVALUE"
+		"46"
+		"Unsigned value to which outputs will be set"
+		(type "PARAMETER_UNSIGNED_HEX")	)
+	(parameter
+		"LPM_WIDTH"
+		"9"
+		"Width of output, any integer > 0"
+		" 1" " 2" " 3" " 4" " 5" " 6" " 7" " 8" " 9" "10" "11" "12" "13" "14" "15" "16" "20" "24" "28" "32" 
+	)
+	(drawing
+		(text "(cvalue)" (rect 21 26 68 40)(font "Arial" (font_size 8)))
+		(line (pt 16 24)(pt 64 24))
+		(line (pt 16 40)(pt 64 40))
+		(line (pt 64 40)(pt 64 24))
+		(line (pt 16 40)(pt 16 24))
+	)
+	(annotation_block (parameter)(rect 264 1424 441 1481))
 )
 (connector
 	(text "clk" (rect 738 88 752 105)(font "Intel Clear" ))
@@ -1526,16 +1526,6 @@ agreement for further details.
 	(pt 608 304)
 	(pt 856 304)
 	(bus)
-)
-(connector
-	(text "make[0]" (rect 1050 56 1090 73)(font "Intel Clear" ))
-	(pt 1088 72)
-	(pt 1040 72)
-)
-(connector
-	(text "break[0]" (rect 1050 72 1090 89)(font "Intel Clear" ))
-	(pt 1040 88)
-	(pt 1088 88)
 )
 (connector
 	(text "clk" (rect 730 392 744 409)(font "Intel Clear" ))
@@ -1989,122 +1979,132 @@ agreement for further details.
 	(bus)
 )
 (connector
-	(text "make[1]" (rect 1050 208 1090 225)(font "Intel Clear" ))
+	(text "make_out[0]" (rect 1050 56 1111 73)(font "Intel Clear" ))
+	(pt 1088 72)
+	(pt 1040 72)
+)
+(connector
+	(text "break_out[0]" (rect 1050 72 1111 89)(font "Intel Clear" ))
+	(pt 1040 88)
+	(pt 1088 88)
+)
+(connector
+	(text "make_out[1]" (rect 1050 208 1111 225)(font "Intel Clear" ))
 	(pt 1088 224)
 	(pt 1040 224)
 )
 (connector
-	(text "break[1]" (rect 1050 224 1090 241)(font "Intel Clear" ))
+	(text "break_out[1]" (rect 1050 224 1111 241)(font "Intel Clear" ))
 	(pt 1040 240)
 	(pt 1088 240)
 )
 (connector
-	(text "make[2]" (rect 1042 360 1082 377)(font "Intel Clear" ))
+	(text "make_out[2]" (rect 1042 360 1103 377)(font "Intel Clear" ))
 	(pt 1080 376)
 	(pt 1032 376)
 )
 (connector
-	(text "break[2]" (rect 1042 376 1082 393)(font "Intel Clear" ))
+	(text "break_out[2]" (rect 1042 376 1103 393)(font "Intel Clear" ))
 	(pt 1032 392)
 	(pt 1080 392)
 )
 (connector
-	(text "make[3]" (rect 1042 512 1082 529)(font "Intel Clear" ))
+	(text "make_out[3]" (rect 1042 512 1103 529)(font "Intel Clear" ))
 	(pt 1080 528)
 	(pt 1032 528)
 )
 (connector
-	(text "break[3]" (rect 1042 528 1082 545)(font "Intel Clear" ))
+	(text "break_out[3]" (rect 1042 528 1103 545)(font "Intel Clear" ))
 	(pt 1032 544)
 	(pt 1080 544)
 )
 (connector
-	(text "make[4]" (rect 1042 664 1082 681)(font "Intel Clear" ))
+	(text "make_out[4]" (rect 1042 664 1103 681)(font "Intel Clear" ))
 	(pt 1080 680)
 	(pt 1032 680)
 )
 (connector
-	(text "break[4]" (rect 1042 680 1082 697)(font "Intel Clear" ))
+	(text "break_out[4]" (rect 1042 680 1103 697)(font "Intel Clear" ))
 	(pt 1032 696)
 	(pt 1080 696)
 )
 (connector
-	(text "make[5]" (rect 1042 816 1082 833)(font "Intel Clear" ))
+	(text "make_out[5]" (rect 1042 816 1103 833)(font "Intel Clear" ))
 	(pt 1080 832)
 	(pt 1032 832)
 )
 (connector
-	(text "break[5]" (rect 1042 832 1082 849)(font "Intel Clear" ))
+	(text "break_out[5]" (rect 1042 832 1103 849)(font "Intel Clear" ))
 	(pt 1032 848)
 	(pt 1080 848)
 )
 (connector
-	(text "make[6]" (rect 1034 968 1074 985)(font "Intel Clear" ))
+	(text "make_out[6]" (rect 1034 968 1095 985)(font "Intel Clear" ))
 	(pt 1024 984)
 	(pt 1072 984)
 )
 (connector
-	(text "break[6]" (rect 1034 984 1074 1001)(font "Intel Clear" ))
+	(text "break_out[6]" (rect 1034 984 1095 1001)(font "Intel Clear" ))
 	(pt 1024 1000)
 	(pt 1072 1000)
 )
 (connector
-	(text "make[7]" (rect 1034 1120 1074 1137)(font "Intel Clear" ))
+	(text "make_out[7]" (rect 1034 1120 1095 1137)(font "Intel Clear" ))
 	(pt 1024 1136)
 	(pt 1072 1136)
 )
 (connector
-	(text "break[7]" (rect 1034 1136 1074 1153)(font "Intel Clear" ))
+	(text "break_out[7]" (rect 1034 1136 1095 1153)(font "Intel Clear" ))
 	(pt 1024 1152)
 	(pt 1072 1152)
 )
 (connector
-	(text "make[8]" (rect 1034 1272 1074 1289)(font "Intel Clear" ))
+	(text "make_out[8]" (rect 1034 1272 1095 1289)(font "Intel Clear" ))
 	(pt 1072 1288)
 	(pt 1024 1288)
 )
 (connector
-	(text "break[8]" (rect 1034 1288 1074 1305)(font "Intel Clear" ))
+	(text "break_out[8]" (rect 1034 1288 1095 1305)(font "Intel Clear" ))
 	(pt 1024 1304)
 	(pt 1072 1304)
 )
 (connector
-	(text "make[9]" (rect 1034 1424 1074 1441)(font "Intel Clear" ))
+	(text "make_out[9]" (rect 1034 1424 1095 1441)(font "Intel Clear" ))
 	(pt 1072 1440)
 	(pt 1024 1440)
 )
 (connector
-	(text "break[9]" (rect 1034 1440 1074 1457)(font "Intel Clear" ))
+	(text "break_out[9]" (rect 1034 1440 1095 1457)(font "Intel Clear" ))
 	(pt 1024 1456)
 	(pt 1072 1456)
 )
 (connector
-	(text "make[10]" (rect 1026 1576 1072 1593)(font "Intel Clear" ))
+	(text "make_out[10]" (rect 1026 1576 1093 1593)(font "Intel Clear" ))
 	(pt 1064 1592)
 	(pt 1016 1592)
 )
 (connector
-	(text "break[10]" (rect 1026 1592 1072 1609)(font "Intel Clear" ))
+	(text "break_out[10]" (rect 1026 1592 1093 1609)(font "Intel Clear" ))
 	(pt 1016 1608)
 	(pt 1064 1608)
 )
 (connector
-	(text "make[11]" (rect 1026 1728 1072 1745)(font "Intel Clear" ))
+	(text "make_out[11]" (rect 1026 1728 1093 1745)(font "Intel Clear" ))
 	(pt 1064 1744)
 	(pt 1016 1744)
 )
 (connector
-	(text "break[11]" (rect 1026 1744 1072 1761)(font "Intel Clear" ))
+	(text "break_out[11]" (rect 1026 1744 1093 1761)(font "Intel Clear" ))
 	(pt 1016 1760)
 	(pt 1064 1760)
 )
 (connector
-	(text "make[12]" (rect 1026 1880 1072 1897)(font "Intel Clear" ))
+	(text "make_out[12]" (rect 1026 1880 1093 1897)(font "Intel Clear" ))
 	(pt 1064 1896)
 	(pt 1016 1896)
 )
 (connector
-	(text "break[12]" (rect 1026 1896 1072 1913)(font "Intel Clear" ))
+	(text "break_out[12]" (rect 1026 1896 1093 1913)(font "Intel Clear" ))
 	(pt 1016 1912)
 	(pt 1064 1912)
 )

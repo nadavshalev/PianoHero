@@ -21,7 +21,7 @@ agreement for further details.
 */
 (header "symbol" (version "1.2"))
 (symbol
-	(rect 16 16 200 144)
+	(rect 16 16 232 144)
 	(text "keyboard_module_diag" (rect 5 0 146 19)(font "Intel Clear" (font_size 8)))
 	(text "inst" (rect 8 107 24 124)(font "Intel Clear" ))
 	(port
@@ -53,20 +53,20 @@ agreement for further details.
 		(line (pt 0 80)(pt 16 80))
 	)
 	(port
-		(pt 184 32)
+		(pt 216 32)
 		(output)
-		(text "make[12..0]" (rect 0 0 71 19)(font "Intel Clear" (font_size 8)))
-		(text "make[12..0]" (rect 92 27 163 46)(font "Intel Clear" (font_size 8)))
-		(line (pt 184 32)(pt 168 32)(line_width 3))
+		(text "make_out[12..0]" (rect 0 0 97 19)(font "Intel Clear" (font_size 8)))
+		(text "make_out[12..0]" (rect 98 27 195 46)(font "Intel Clear" (font_size 8)))
+		(line (pt 216 32)(pt 200 32)(line_width 3))
 	)
 	(port
-		(pt 184 48)
+		(pt 216 48)
 		(output)
-		(text "break[12..0]" (rect 0 0 73 19)(font "Intel Clear" (font_size 8)))
-		(text "break[12..0]" (rect 90 43 163 62)(font "Intel Clear" (font_size 8)))
-		(line (pt 184 48)(pt 168 48)(line_width 3))
+		(text "break_out[12..0]" (rect 0 0 99 19)(font "Intel Clear" (font_size 8)))
+		(text "break_out[12..0]" (rect 96 43 195 62)(font "Intel Clear" (font_size 8)))
+		(line (pt 216 48)(pt 200 48)(line_width 3))
 	)
 	(drawing
-		(rectangle (rect 16 16 168 112))
+		(rectangle (rect 16 16 200 112))
 	)
 )
