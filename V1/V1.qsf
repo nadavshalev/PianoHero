@@ -82,7 +82,6 @@ set_global_assignment -name VHDL_FILE sound_module/vrise.vhd
 set_global_assignment -name BDF_FILE TOP/top_play_controller.bdf
 set_global_assignment -name VHDL_FILE TOP/play_controller_chooser.vhd
 set_global_assignment -name VHDL_FILE songDB_module/createSongs.vhd
-set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform.vwf
 set_location_assignment PIN_AA16 -to CLOCK2_50
 set_location_assignment PIN_Y26 -to CLOCK3_50
 set_location_assignment PIN_K14 -to CLOCK4_50
@@ -91,14 +90,7 @@ set_location_assignment PIN_AJ4 -to resetN
 set_location_assignment PIN_AK4 -to reset1N
 set_location_assignment PIN_AA14 -to qqqqq
 set_location_assignment PIN_AA15 -to wwwww
-set_location_assignment PIN_AB30 -to sound_enable
-set_location_assignment PIN_Y27 -to error_enable
-set_location_assignment PIN_AB28 -to mux[0]
-set_location_assignment PIN_AC30 -to mux[1]
-set_location_assignment PIN_W25 -to mux[2]
-set_location_assignment PIN_V25 -to mux[3]
 set_location_assignment PIN_AC28 -to SW[6]
-set_location_assignment PIN_AD30 -to SW[7]
 set_location_assignment PIN_AA30 -to piano_play
 set_location_assignment PIN_AA24 -to Collision
 set_location_assignment PIN_AB23 -to LEDR[1]
@@ -195,6 +187,18 @@ set_location_assignment PIN_V23 -to ADC_DOUT
 set_location_assignment PIN_W24 -to ADC_SCLK
 set_location_assignment PIN_Y24 -to AUD_I2C_SCLK
 set_location_assignment PIN_Y23 -to AUD_I2C_SDAT
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to resetN
+set_global_assignment -name VHDL_FILE sound_module/noteTable.vhd
+set_global_assignment -name BDF_FILE sound_module/notes_top.bdf
+set_global_assignment -name VHDL_FILE sound_module/addr_counter_all.vhd
+set_global_assignment -name VHDL_FILE sound_module/sound_freq_gen_all.vhd
+set_global_assignment -name BDF_FILE sound_module/notes_top2.bdf
+set_global_assignment -name MIF_FILE sound_module/mem1.mif
+set_location_assignment PIN_AC29 -to auto_play
+set_global_assignment -name VHDL_FILE metronomTable.vhd
+set_location_assignment PIN_AD30 -to metronomSW
+set_location_assignment PIN_AB30 -to soundEffect[0]
+set_location_assignment PIN_Y27 -to soundEffect[1]
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to AUD_ADCDAT
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to AUD_ADCLRCK
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to AUD_BCLK
@@ -203,6 +207,7 @@ set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to AUD_DACLRCK
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to AUD_I2C_SCLK
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to AUD_I2C_SDAT
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to AUD_XCK
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to auto_play
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CLOCK_50
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX0[0]
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX0[1]
@@ -220,9 +225,11 @@ set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX1[5]
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX1[6]
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to KBD_CLK
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to KBD_DAT
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to metronomSW
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to MICROPHON_LED
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to piano_play
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to resetN
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to soundEffect[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to soundEffect[1]
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to VGA_B[0]
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to VGA_B[1]
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to VGA_B[2]
@@ -252,13 +259,14 @@ set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to VGA_R[6]
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to VGA_R[7]
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to VGA_SYNC_N
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to VGA_VS
-set_global_assignment -name VHDL_FILE sound_module/noteTable.vhd
-set_global_assignment -name BDF_FILE sound_module/notes_top.bdf
-set_global_assignment -name VHDL_FILE sound_module/addr_counter_all.vhd
-set_global_assignment -name VHDL_FILE sound_module/sound_freq_gen_all.vhd
-set_global_assignment -name BDF_FILE sound_module/notes_top2.bdf
-set_global_assignment -name MIF_FILE sound_module/mem1.mif
-set_location_assignment PIN_AC29 -to auto_play
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform.vwf
+set_global_assignment -name VHDL_FILE TOP/speed_notes.vhd
+set_location_assignment PIN_AC30 -to speed_notes
+set_location_assignment PIN_AB28 -to speed_notes[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to speed_notes[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to speed_notes[1]
+set_location_assignment PIN_W25 -to songChoose[0]
+set_location_assignment PIN_V25 -to songChoose[1]
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top

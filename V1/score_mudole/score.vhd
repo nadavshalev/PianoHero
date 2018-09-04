@@ -9,6 +9,7 @@ port 	(
 		resetN			     : in std_logic;
 		clk				     : in std_logic;
 		score_note0 		  : in integer;
+		total_score			  : out  integer;
 		unit					  : out  std_logic_vector(3 downto 0);
 		tens					  : out std_logic_vector(3 downto 0)
 	);
@@ -57,6 +58,7 @@ begin
 	end if;
 	unit <= conv_std_logic_vector(tmp_unit,4);
 	tens <= conv_std_logic_vector(tmp_tens,4);
+	total_score <= tmp_unit + 10 * tmp_unit;
 end process;
 
 end architecture;

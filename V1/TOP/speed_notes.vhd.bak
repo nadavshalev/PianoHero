@@ -1,0 +1,66 @@
+	--------------------------------------
+-- SinTable.vhd
+-- Written by Gadi and Eran Tuchman.
+-- All rights reserved, Copyright 2009
+--------------------------------------
+
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+use ieee.std_logic_signed.all ;
+
+library work;
+use work.pkg.all;
+
+
+package pkg is
+  type noteArr is array (0 to 12) of std_logic_vector(7 downto 0);
+end package;
+
+package body pkg is
+end package body;
+
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+use ieee.std_logic_signed.all ;
+use ieee.std_logic_arith.all;
+use ieee.numeric_std.all;
+library work;
+use work.pkg.all;
+
+entity speed_notes is
+port(
+  CLK     						: in std_logic;
+  resetN 						: in std_logic;
+  speed 							: in std_logic;
+  speedNotes   			  	: out integer
+);
+end speed_notes;
+
+architecture arch_speed_notes of speed_notes is
+
+begin
+ 
+	process(resetN, CLK)
+
+	begin
+
+		if resetN= '0'  then
+		
+			speedNotes <= 1;
+			
+		elsif(rising_edge(CLK)) then
+		
+			if speed = '0' then
+				
+				speedNotes <= 1;
+				
+			else 
+				
+				speedNotes <= 0;
+			
+			end if;
+			
+	end process;
+end architecture;

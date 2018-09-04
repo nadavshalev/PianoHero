@@ -1,9 +1,3 @@
-	--------------------------------------
--- SinTable.vhd
--- Written by Gadi and Eran Tuchman.
--- All rights reserved, Copyright 2009
---------------------------------------
-
 library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
@@ -36,54 +30,58 @@ port(
   enable 						: in std_logic;
   screen_end    				: in std_logic;
   song_choose    				: in std_logic_vector(1 downto 0);
+  metronom_sw	    			: in std_logic;
   speedNotes					: in integer;
-  note_length       			: out noteArr
+  note_length       			: out noteArr;
+  metronon_enable       	: out std_logic
 );
 end createSongs;
 
 architecture arch of createSongs is
-	type song_type is array (0 to 7 , 0 to 12) of integer;
-	constant song0 : song_type := (
-		(57, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100),
+	constant song_size : integer := 8;
+	
+	type song_type is array (0 to song_size - 1 , 0 to 12) of integer;
+	constant song1 : song_type := (
+		(57, -123, -23, 132, -100, 12, -100, -100, -100, -100, -100, -100, -100),
 		(-100, -100, 100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100),
 		(-100, -100, -100, -100, 35, -100, -100, -100, -100, -100, -100, -100, -100),
-		(-100, -100, -100, -100, -100, 100, -100, 32, -100, -100, -100, -100, -100),
+		(-100, 40, -100, -100, -100, 100, -100, 32, -100, -100, -100, -100, -100),
 		(-100, -100, -100, -100, -100, -100, -100, 100, -100, -100, -100, -100, -100),
-		(-100, -100, -100, -100, -100, -100, -100, -100, -100, 100, -100, -100, -100),
+		(-100, -24, -100, 1, -100, -100, -100, -100, -100, 100, -100, -100, -100),
 		(-100, -100, -100, -100, -100, -100, 28, -100, -100, -100, -100, 100, -100),
 		(-100, -100, -100, 45, -100, -100, -100, -100, -100, -100, -100, -100, 100)
 	);
-	constant song1 : song_type := (
-		(100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100,  100, -100),
-		(-100, -100, 100, -100, -100, -100,  100, -100, -100, -100,  100, -100, -100),
-		(-100, -100, -100, -100, 100, -100, -100, -100, -100, -100, -100, -100, -100),
-		(-100, -100, -100, -100, -100, 100, -100, -100,  100, -100, -100, -100, -100),
-		(-100, -100, -100, -100, -100, -100, -100, 100, -100, -100, -100, -100, -100),
-		(-100, -100,  100, -100, -100, -100, -100, -100, -100, 100, -100, -100, -100),
-		(-100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, 100, -100),
-		(-100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, 100, 100)
+	constant song0 : song_type := (
+		( 100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100),
+		(-100, -100,  100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100),
+		( 50 , -100, -100, -100, 100, -100, -100, -100, -100, -100, -100, -100, -100),
+		(-150, -100,  50 , -100, -100, 100, -100, -100, -100, -100, -100, -100, -100),
+		(-100, -100, -150, -100,  50 , -100, -100, 100, -100, -100, -100, -100, -100),
+		(-100, -100,  100, -100, -150,  50 , -100, -100, -100, 100, -100, -100, -100),
+		(-100, -100, -100, -100, -100, -150, -100,  50 , -100, -100, -100, 100, -100),
+		( 100, -100, -100, -100, -100, -100, -100, -150, -100, 50 , -100, -100, 100)
 	);
 	
-	
+	constant metronomSpeed : integer := 25;
 begin
  
    
 	process(resetN, CLK)
 		type tmpArr is array (0 to 12) of integer;
-		variable tmp_wait : tmpArr := (0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
-		variable index : tmpArr := (0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+		variable tmp_wait : tmpArr := (others => 0);
+		variable index : tmpArr := (others => 0);
 		variable tmp_song  : std_logic_vector(1 downto 0);
 		variable song : song_type;
-		variable count : integer;
+		variable speed_count, metronom_count : integer := 0;
+		variable isFinish : std_logic;
 	begin
 
 		if (resetN='0' or tmp_song /= song_choose) then
-			for i in 0 to 12 loop
-				index(i) := 0;
-				tmp_wait(i) := 0;
-				note_length(i) <= (others => '0');
-				count := 0;
-			end loop;
+			index := (others => 0);
+			tmp_wait := (others => 0);
+			note_length <= (others => (others => '0'));
+			speed_count := 0;
+			metronom_count := 0;
 			tmp_song := song_choose;
 			
 			case song_choose is
@@ -94,35 +92,70 @@ begin
 			
 		elsif(rising_edge(CLK)) then
 		
-			for i in 0 to 12 loop		--clear all out length
-				note_length(i) <= (others => '0');
-			end loop;	
-				
+			note_length <= (others => (others => '0'));	--clear all length
+			metronon_enable <= '0';
+			
+			---------------- metronom counter -----------
+			if screen_end = '1'  then
+				metronom_count := metronom_count + 1;
+				if metronom_count > speedNotes * metronomSpeed  then
+					metronom_count := 0;
+					metronon_enable <= '1';
+				end if;
+			end if;
 			
 			if enable = '1' then
 				if screen_end = '1'  then
-					count := count + 1;
-					if count = speedNotes then
-						count := 0;
+					---------------- speed counter -----------
+					speed_count := speed_count + 1;
+					if speed_count = speedNotes then
+						speed_count := 0;
+						
+						
+						isFinish := '1';
 						for i in 0 to 12 loop
+							---------------- song =< 0: so wait -----------
 							if tmp_wait(i) = 0 and song(index(i),i) <= 0 then
 								tmp_wait(i) := -song(index(i),i);
-								index(i) := index(i) + 1;
+								
+								if index(i) < song_size then  -- increment index if not finish
+									index(i) := index(i) + 1;
+									isFinish := '0';
+								else
+									tmp_wait(i) := -1;
+								end if;
+							---------------- song > 0: play -----------
 							elsif tmp_wait(i) = 0 then
 								note_length(i) <= conv_std_logic_vector(song(index(i),i),8);
-								tmp_wait(i) := -song(index(i),i);
-								index(i) := index(i) + 1;
+								tmp_wait(i) := song(index(i),i);
+								
+								if index(i) < song_size then  -- increment index if not finish
+									index(i) := index(i) + 1;
+								else
+									tmp_wait(i) := -1;
+								end if;
+								
 							end if;
 							tmp_wait(i) := tmp_wait(i) - 1;
 						end loop;
+						
+						------------ start again if finish--------------
+						--if isFinish = '1' then
+						--	index := (others => 0);
+						--	tmp_wait := (others => 0);
+						--	note_length <= (others => (others => '0'));
+						--	speed_count := 0;
+						--	metronom_count := 0;
+						-- end if;
 					end if;
 				end if;
 			else
-				for i in 0 to 12 loop
-					index(i) := 0;
-					tmp_wait(i) := 0;
-					note_length(i) <= (others => '0');
-				end loop;
+			------------ not enable: clear all--------------
+				index := (others => 0);
+				tmp_wait := (others => 0);
+				note_length <= (others => (others => '0'));
+				speed_count := 0;
+				metronom_count := 0;
 			end if;
 		end if;
 	end process;

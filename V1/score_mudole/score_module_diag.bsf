@@ -21,7 +21,7 @@ agreement for further details.
 */
 (header "symbol" (version "1.2"))
 (symbol
-	(rect 16 16 208 112)
+	(rect 16 16 248 112)
 	(text "score_module_diag" (rect 5 0 120 19)(font "Intel Clear" (font_size 8)))
 	(text "inst" (rect 8 75 24 92)(font "Intel Clear" ))
 	(port
@@ -46,20 +46,27 @@ agreement for further details.
 		(line (pt 0 64)(pt 16 64)(line_width 3))
 	)
 	(port
-		(pt 192 32)
+		(pt 232 32)
 		(output)
-		(text "HEX0[6..0]" (rect 0 0 63 19)(font "Intel Clear" (font_size 8)))
-		(text "HEX0[6..0]" (rect 108 27 171 46)(font "Intel Clear" (font_size 8)))
-		(line (pt 192 32)(pt 176 32)(line_width 3))
+		(text "Total_score[31..0]" (rect 0 0 107 19)(font "Intel Clear" (font_size 8)))
+		(text "Total_score[31..0]" (rect 104 27 211 46)(font "Intel Clear" (font_size 8)))
+		(line (pt 232 32)(pt 216 32)(line_width 3))
 	)
 	(port
-		(pt 192 48)
+		(pt 232 48)
+		(output)
+		(text "HEX0[6..0]" (rect 0 0 63 19)(font "Intel Clear" (font_size 8)))
+		(text "HEX0[6..0]" (rect 148 43 211 62)(font "Intel Clear" (font_size 8)))
+		(line (pt 232 48)(pt 216 48)(line_width 3))
+	)
+	(port
+		(pt 232 64)
 		(output)
 		(text "HEX1[6..0]" (rect 0 0 63 19)(font "Intel Clear" (font_size 8)))
-		(text "HEX1[6..0]" (rect 108 43 171 62)(font "Intel Clear" (font_size 8)))
-		(line (pt 192 48)(pt 176 48)(line_width 3))
+		(text "HEX1[6..0]" (rect 148 59 211 78)(font "Intel Clear" (font_size 8)))
+		(line (pt 232 64)(pt 216 64)(line_width 3))
 	)
 	(drawing
-		(rectangle (rect 16 16 176 80))
+		(rectangle (rect 16 16 216 80))
 	)
 )

@@ -15,7 +15,7 @@ begin
 
 	process(clk,resetN)
 		variable press : std_logic;
-		type count_state is (col_pre_play, uncol_pre_err, col_unpre, uncol_unpre, second_pre_err);
+		type count_state is (col_pre_play, uncol_pre_err, col_unpre, uncol_unpre, second_pre_err); --TBD full names:
 		variable state : count_state;
 		constant scors_up : integer := 5;
 		constant scors_down: integer := -1;

@@ -182,7 +182,7 @@ agreement for further details.
 )
 (pin
 	(output)
-	(rect 1320 200 1497 216)
+	(rect 1344 200 1521 216)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "mVGA_RGB[7..0]" (rect 90 0 171 17)(font "Intel Clear" ))
 	(pt 0 8)
@@ -2769,5 +2769,10 @@ agreement for further details.
 	(text "NotesLength[4][7..0]" (rect 400 872 496 889)(font "Intel Clear" ))
 	(pt 504 888)
 	(pt 400 888)
+	(bus)
+)
+(connector
+	(pt 1320 208)
+	(pt 1344 208)
 	(bus)
 )

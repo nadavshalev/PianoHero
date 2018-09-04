@@ -95,6 +95,13 @@ agreement for further details.
 		(line (pt 0 176)(pt 16 176)(line_width 3))
 	)
 	(port
+		(pt 0 192)
+		(input)
+		(text "metronom_enable" (rect 0 0 108 19)(font "Intel Clear" (font_size 8)))
+		(text "metronom_enable" (rect 21 187 129 206)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 192)(pt 16 192))
+	)
+	(port
 		(pt 272 32)
 		(output)
 		(text "MICROPHON_LED" (rect 0 0 107 19)(font "Intel Clear" (font_size 8)))

@@ -21,7 +21,7 @@ agreement for further details.
 */
 (header "symbol" (version "1.1"))
 (symbol
-	(rect 16 16 224 128)
+	(rect 16 16 256 128)
 	(text "score" (rect 5 0 27 12)(font "Arial" ))
 	(text "inst" (rect 8 96 20 108)(font "Arial" ))
 	(port
@@ -46,20 +46,27 @@ agreement for further details.
 		(line (pt 0 64)(pt 16 64)(line_width 3))
 	)
 	(port
-		(pt 208 32)
+		(pt 240 32)
 		(output)
-		(text "unit[3..0]" (rect 0 0 33 12)(font "Arial" ))
-		(text "unit[3..0]" (rect 154 27 187 39)(font "Arial" ))
-		(line (pt 208 32)(pt 192 32)(line_width 3))
+		(text "total_score[31..0]" (rect 0 0 67 12)(font "Arial" ))
+		(text "total_score[31..0]" (rect 152 27 219 39)(font "Arial" ))
+		(line (pt 240 32)(pt 224 32)(line_width 3))
 	)
 	(port
-		(pt 208 48)
+		(pt 240 48)
+		(output)
+		(text "unit[3..0]" (rect 0 0 33 12)(font "Arial" ))
+		(text "unit[3..0]" (rect 186 43 219 55)(font "Arial" ))
+		(line (pt 240 48)(pt 224 48)(line_width 3))
+	)
+	(port
+		(pt 240 64)
 		(output)
 		(text "tens[3..0]" (rect 0 0 36 12)(font "Arial" ))
-		(text "tens[3..0]" (rect 151 43 187 55)(font "Arial" ))
-		(line (pt 208 48)(pt 192 48)(line_width 3))
+		(text "tens[3..0]" (rect 183 59 219 71)(font "Arial" ))
+		(line (pt 240 64)(pt 224 64)(line_width 3))
 	)
 	(drawing
-		(rectangle (rect 16 16 192 96)(line_width 1))
+		(rectangle (rect 16 16 224 96)(line_width 1))
 	)
 )

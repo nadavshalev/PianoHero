@@ -117,7 +117,7 @@ agreement for further details.
 	)
 )
 (symbol
-	(rect 728 48 944 160)
+	(rect 728 40 944 152)
 	(text "noteTable" (rect 5 0 52 12)(font "Arial" ))
 	(text "inst1" (rect 8 96 30 113)(font "Intel Clear" ))
 	(port
@@ -275,40 +275,50 @@ agreement for further details.
 	(pt -112 208)
 )
 (connector
-	(text "CLOCK_50" (rect 680 64 733 81)(font "Intel Clear" ))
-	(pt 680 80)
-	(pt 728 80)
-)
-(connector
-	(text "resetN" (rect 666 80 696 97)(font "Intel Clear" ))
-	(pt 680 96)
-	(pt 728 96)
-)
-(connector
-	(text "soundChoose[1..0]" (rect 680 112 767 129)(font "Intel Clear" ))
-	(pt 680 128)
-	(pt 728 128)
-	(bus)
-)
-(connector
-	(pt 944 80)
-	(pt 1000 80)
-	(bus)
-)
-(connector
-	(text "addr[0..12][13..0]" (rect 680 96 760 113)(font "Intel Clear" ))
-	(pt 664 112)
-	(pt 728 112)
-	(bus)
-)
-(connector
 	(text "OneSecond[12..0]" (rect 170 192 253 209)(font "Intel Clear" ))
 	(pt 160 208)
 	(pt 424 208)
 	(bus)
 )
 (connector
+	(text "CLOCK_50" (rect 680 56 733 73)(font "Intel Clear" ))
+	(pt 680 72)
+	(pt 728 72)
+)
+(connector
+	(text "resetN" (rect 666 72 696 89)(font "Intel Clear" ))
+	(pt 680 88)
+	(pt 728 88)
+)
+(connector
+	(text "soundChoose[1..0]" (rect 680 104 767 121)(font "Intel Clear" ))
+	(pt 680 120)
+	(pt 728 120)
+	(bus)
+)
+(connector
+	(text "addr[0..12][13..0]" (rect 680 88 760 105)(font "Intel Clear" ))
+	(pt 664 104)
+	(pt 728 104)
+	(bus)
+)
+(connector
 	(pt 664 176)
-	(pt 664 112)
+	(pt 664 104)
+	(bus)
+)
+(connector
+	(pt 992 80)
+	(pt 992 72)
+	(bus)
+)
+(connector
+	(pt 1000 80)
+	(pt 992 80)
+	(bus)
+)
+(connector
+	(pt 992 72)
+	(pt 944 72)
 	(bus)
 )

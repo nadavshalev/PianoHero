@@ -24,19 +24,16 @@ port 	(
 end noteGraphics;
 
 architecture behav of noteGraphics is 
-	constant pianoWidth : integer := 100;
+	constant pianoWidth : integer := 150;
 	constant	x_frame	: integer :=	639;
 	constant	y_frame	: integer :=	479;
 	constant	NoteWidth : integer := 46;
-	constant	table_len : integer := 75; -- len of screenTable -1
-	constant ones	: std_logic := '1';
-	constant zeros	: std_logic := '0';
-	
-	
+	constant	table_len : integer := 66; -- len of screenTable -1
 	
 	signal mVGA_R	: std_logic_vector(2 downto 0); --	,	 			//	VGA Red[2:0]
 	signal mVGA_G	: std_logic_vector(2 downto 0); --	,	 			//	VGA Green[2:0]
 	signal mVGA_B	: std_logic_vector(1 downto 0); --	,  			//	VGA Blue[1:0]
+	
 begin
 	mVGA_RGB <=  mVGA_R & mVGA_G &  mVGA_B ;
 	process ( resetN,CLK)
@@ -64,7 +61,7 @@ begin
 			
 			if timer_done = '1' then
 				count := count + 1;
-				if count = speedNote then
+				if count >= speedNote then
 					count := 0;
 					if tmp_len > 0 then	--add music to start of the register
 						tmp_len := tmp_len - 1;
@@ -92,12 +89,12 @@ begin
 			end if;
 			
 			if oCoord_X <  ObjectStartX + NoteWidth and oCoord_X >= ObjectStartX and screenTable(table_len - oCoord_Y/5) = '1' and oCoord_Y < y_frame - pianoWidth then
-				if collision_tmp = '1' then
-					if sound = '0' then --and oCoord_Y/5 >= table_len -max  then
+				if collision_tmp = '1'  and oCoord_Y/5 >= table_len -max then
+					if sound = '0' then
 						mVGA_R <= "000";
 						mVGA_G <= "101";
 						mVGA_B <= "11";
-					else -- and oCoord_Y/5 >= table_len -max then
+					else 
 						mVGA_R <= "111";
 						mVGA_G <= "000";
 						mVGA_B <= "11";
@@ -111,6 +108,9 @@ begin
 				drawing_request <= '1';
 			else
 				drawing_request <= '0';
+				mVGA_R <= "000";
+				mVGA_G <= "000";
+				mVGA_B <= "00";
 			end if;
 		end if;
 		collision <= collision_tmp;
