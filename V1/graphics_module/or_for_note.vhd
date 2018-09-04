@@ -5,7 +5,7 @@ use IEEE.std_logic_arith.all;
 use ieee.numeric_std.all;
 
 
-entity or_fot_notes is
+entity or_for_note is
 port 	(
 		CLK				: in std_logic;
 		a0    		: in std_logic_vector(7 downto 0);
@@ -21,56 +21,73 @@ port 	(
 		a10    		: in std_logic_vector(7 downto 0);
 		a11    		: in std_logic_vector(7 downto 0);
 		a12    		: in std_logic_vector(7 downto 0);
+		request0    : in std_logic;
+		request1    : in std_logic;
+		request2    : in std_logic;
+		request3    : in std_logic;
+		request4    : in std_logic;
+		request5    : in std_logic;
+		request6    : in std_logic;
+		request7    : in std_logic;
+		request8    : in std_logic;
+		request9    : in std_logic;
+		request10   : in std_logic;
+		request11   : in std_logic;
+		request12   : in std_logic;
+		request		: out std_logic;
 		mVGA_RGB	: out std_logic_vector(7 downto 0)
 	);
 end entity;
 
-architecture arc_or_fot_notes of or_fot_notes is 
+architecture arc_or_for_note of or_for_note is 
 
 	begin
 		
-		process(clk)
+		process(CLK)
 			begin
 				if rising_edge(CLk) then
-					if a0 /= "00000000" then
+					request <= '0';
+					if request0 = '1' then
 						mVGA_RGB <= a0;
-					end if;
-					if a1 /= "00000000" then
+						request <= '1';
+					elsif request1 = '1' then
+						request <= '1';
 						mVGA_RGB <= a1;
-					end if;
-					if a2 /= "00000000" then
+					elsif request2 = '1' then
 						mVGA_RGB <= a2;
-					end if;
-					if a3 /= "00000000" then
+						request <= '1';
+					elsif request3 = '1' then
 						mVGA_RGB <= a3;
-					end if;
-					if a4 /= "00000000" then
+						request <= '1';
+					elsif request4 = '1' then
 						mVGA_RGB <= a4;
-					end if;
-					if a5 /= "00000000" then
+						request <= '1';
+					elsif request5 = '1' then
 						mVGA_RGB <= a5;
-					end if;
-					if a6 /= "00000000" then
+						request <= '1';
+					elsif request6 = '1' then
 						mVGA_RGB <= a6;
-					end if;
-					if a7 /= "00000000" then
+						request <= '1';
+					elsif request7 = '1' then
 						mVGA_RGB <= a7;
-					end if;
-					if a8 /= "00000000" then
+						request <= '1';
+					elsif request8 = '1' then
 						mVGA_RGB <= a8;
-					end if;
-					if a9 /= "00000000" then
+						request <= '1';
+					elsif request9 = '1' then
 						mVGA_RGB <= a9;
-					end if;
-					if a10 /= "00000000" then
+						request <= '1';
+					elsif request10 = '1' then
 						mVGA_RGB <= a10;
-					end if;
-					if a11 /= "00000000" then
+						request <= '1';
+					elsif request11 = '1' then
 						mVGA_RGB <= a11;
-					end if;
-					if a12 /= "00000000" then
+						request <= '1';
+					elsif request12 = '1' then
 						mVGA_RGB <= a12;
+						request <= '1';
 					end if;
+					
 				end if;
 			end process;
 end architecture;

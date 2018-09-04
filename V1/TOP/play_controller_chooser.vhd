@@ -22,7 +22,7 @@ begin
 
 	process(clk,resetN)
 		constant zeros : std_logic_vector(12 downto 0) := (others => '0');
-		constant scors_up : integer := 5;
+		constant scors_up : integer := 2;
 		constant scors_down: integer := -1;
 	begin
 		if resetN = '0' then

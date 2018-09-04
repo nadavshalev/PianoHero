@@ -4,7 +4,7 @@ use IEEE.std_logic_unsigned.all;
 use ieee.std_logic_arith.all ;
 
 entity play_controller is
-	port( clk, resetN, make, break, collision : in std_logic;
+	port( clk, resetN, make, break, collision, long_flag : in std_logic;
 			sound, error	  			 : out std_logic;
 			scors 						 : out std_logic_vector(4 downto 0));
 			
@@ -17,7 +17,7 @@ begin
 		variable press : std_logic;
 		type count_state is (col_pre_play, uncol_pre_err, col_unpre, uncol_unpre, second_pre_err); --TBD full names:
 		variable state : count_state;
-		constant scors_up : integer := 5;
+		constant scors_up : integer := 2;
 		constant scors_down: integer := -1;
 		variable scors_num : integer := 0;
 	begin
@@ -51,6 +51,9 @@ begin
 						sound <= '1';
 						press := '1';
 						scors_num := scors_up;
+					elsif long_flag = '1' and make = '0' then -- long note error
+						error <= '1';
+						scors_num := scors_down;
 					elsif collision = '0' and press = '0' then --never press
 						state := uncol_unpre;
 						error <= '1';

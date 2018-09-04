@@ -23,27 +23,32 @@ architecture behav of back_ground_draw is
 constant	x_frame	: integer :=	639;
 constant	y_frame	: integer :=	479;
 constant	int_frame	: integer :=	10;
-
-signal mVGA_R	: std_logic_vector(2 downto 0); --	,	 			//	VGA Red[2:0]
-signal mVGA_G	: std_logic_vector(2 downto 0); --	,	 			//	VGA Green[2:0]
-signal mVGA_B	: std_logic_vector(1 downto 0); --	,  			//	VGA Blue[1:0]
 	
 begin
 
-mVGA_RGB <=  mVGA_R & mVGA_G &  mVGA_B ;
+--mVGA_RGB <=  mVGA_R & mVGA_G &  mVGA_B ;
 -- defining three rectangles 
 
 process ( oCoord_X,oCoord_y )
 begin 
-	if oCoord_X < x_frame - 3 and  oCoord_X > 3 then
-		mVGA_R <= "000" ;	
-		mVGA_G <= "110"  ;	
-		mVGA_B <= "10" ;
-	else 	
-		mVGA_R <= "010" ;	
-		mVGA_G <= "001"  ;	
-		mVGA_B <= "00" ;
-	end if;
+	
+	for i in -10 to 10 loop
+		if oCoord_X > oCoord_y + 200 * i and oCoord_X < oCoord_y + 100 + 200 * i then
+			mVGA_RGB <= "01010111"; -- ligh bloue
+		elsif oCoord_X > oCoord_y -100 + 200 * i and oCoord_X < oCoord_y + 200 * i then
+			mVGA_RGB <= X"07";	-- dark blue
+			
+		end if;
+	end loop;
+	--if oCoord_X < x_frame - 3 and  oCoord_X > 3 then
+	--	mVGA_R <= "000" ;	
+	--	mVGA_G <= "110"  ;	
+	--	mVGA_B <= "10" ;
+	--else 	
+	--	mVGA_R <= "010" ;	
+	--	mVGA_G <= "001"  ;	
+	--	mVGA_B <= "00" ;
+	--end if;
 end process ; 
 
 		

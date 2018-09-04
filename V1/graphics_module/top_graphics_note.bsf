@@ -21,7 +21,7 @@ agreement for further details.
 */
 (header "symbol" (version "1.2"))
 (symbol
-	(rect 16 16 312 208)
+	(rect 16 16 320 208)
 	(text "top_graphics_note" (rect 5 0 114 19)(font "Intel Clear" (font_size 8)))
 	(text "inst" (rect 8 171 24 188)(font "Intel Clear" ))
 	(port
@@ -88,27 +88,34 @@ agreement for further details.
 		(line (pt 0 160)(pt 16 160)(line_width 3))
 	)
 	(port
-		(pt 296 32)
+		(pt 304 32)
 		(output)
 		(text "collisions[12..0]" (rect 0 0 92 19)(font "Intel Clear" (font_size 8)))
-		(text "collisions[12..0]" (rect 183 27 275 46)(font "Intel Clear" (font_size 8)))
-		(line (pt 296 32)(pt 280 32)(line_width 3))
+		(text "collisions[12..0]" (rect 191 27 283 46)(font "Intel Clear" (font_size 8)))
+		(line (pt 304 32)(pt 288 32)(line_width 3))
 	)
 	(port
-		(pt 296 48)
+		(pt 304 48)
+		(output)
+		(text "long_note_f[12..0]" (rect 0 0 108 19)(font "Intel Clear" (font_size 8)))
+		(text "long_note_f[12..0]" (rect 175 43 283 62)(font "Intel Clear" (font_size 8)))
+		(line (pt 304 48)(pt 288 48)(line_width 3))
+	)
+	(port
+		(pt 304 64)
 		(output)
 		(text "request" (rect 0 0 44 19)(font "Intel Clear" (font_size 8)))
-		(text "request" (rect 231 43 275 62)(font "Intel Clear" (font_size 8)))
-		(line (pt 296 48)(pt 280 48))
+		(text "request" (rect 239 59 283 78)(font "Intel Clear" (font_size 8)))
+		(line (pt 304 64)(pt 288 64))
 	)
 	(port
-		(pt 296 64)
+		(pt 304 80)
 		(output)
 		(text "mVGA_RGB[7..0]" (rect 0 0 101 19)(font "Intel Clear" (font_size 8)))
-		(text "mVGA_RGB[7..0]" (rect 174 59 275 78)(font "Intel Clear" (font_size 8)))
-		(line (pt 296 64)(pt 280 64)(line_width 3))
+		(text "mVGA_RGB[7..0]" (rect 182 75 283 94)(font "Intel Clear" (font_size 8)))
+		(line (pt 304 80)(pt 288 80)(line_width 3))
 	)
 	(drawing
-		(rectangle (rect 16 16 280 176))
+		(rectangle (rect 16 16 288 176))
 	)
 )

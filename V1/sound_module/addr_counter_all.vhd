@@ -7,6 +7,7 @@ library work;
 use work.pkg2.all;
 
 ENTITY addr_counter_all IS
+GENERIC ( MAX_VAL			: integer := 5000);
 PORT (
 			CLK_IN			:	IN	STD_LOGIC;	
 			resetN			:	IN	STD_LOGIC;
@@ -21,9 +22,6 @@ END addr_counter_all;
 
 	
 architecture addr_counter_all_arch of 		addr_counter_all is
-	
-		constant MAX_VAL : integer := 8201;
-		constant COUNT_SIZE : integer := 14;
 begin
 
 	process(CLK_IN,resetN)
@@ -34,7 +32,7 @@ begin
 	begin
 		if resetN = '0' then
 			for i in 0 to 12 loop 
-				count(i) := 0;
+				count(i) := -1;
 				ready(i) := '1';
 				isCount(i) <= '0';
 			end loop;

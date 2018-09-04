@@ -108,6 +108,13 @@ agreement for further details.
 		(text "mVGA_RGB[7..0]" (rect 148 59 227 71)(font "Arial" ))
 		(line (pt 248 64)(pt 232 64)(line_width 3))
 	)
+	(port
+		(pt 248 80)
+		(output)
+		(text "long_note_flag" (rect 0 0 57 12)(font "Arial" ))
+		(text "long_note_flag" (rect 170 75 227 87)(font "Arial" ))
+		(line (pt 248 80)(pt 232 80)(line_width 1))
+	)
 	(parameter
 		"ObjectStartX"
 		"50"

@@ -21,9 +21,9 @@ agreement for further details.
 */
 (header "symbol" (version "1.1"))
 (symbol
-	(rect 16 16 264 192)
+	(rect 16 16 264 224)
 	(text "sound_chooser" (rect 5 0 66 12)(font "Arial" ))
-	(text "inst" (rect 8 160 20 172)(font "Arial" ))
+	(text "inst" (rect 8 192 20 204)(font "Arial" ))
 	(port
 		(pt 0 32)
 		(input)
@@ -55,23 +55,44 @@ agreement for further details.
 	(port
 		(pt 0 96)
 		(input)
-		(text "note_data[15..0]" (rect 0 0 62 12)(font "Arial" ))
-		(text "note_data[15..0]" (rect 21 91 83 103)(font "Arial" ))
+		(text "sound_choose[1..0]" (rect 0 0 76 12)(font "Arial" ))
+		(text "sound_choose[1..0]" (rect 21 91 97 103)(font "Arial" ))
 		(line (pt 0 96)(pt 16 96)(line_width 3))
 	)
 	(port
 		(pt 0 112)
 		(input)
-		(text "error_data[15..0]" (rect 0 0 66 12)(font "Arial" ))
-		(text "error_data[15..0]" (rect 21 107 87 119)(font "Arial" ))
+		(text "note_data0[15..0]" (rect 0 0 67 12)(font "Arial" ))
+		(text "note_data0[15..0]" (rect 21 107 88 119)(font "Arial" ))
 		(line (pt 0 112)(pt 16 112)(line_width 3))
 	)
 	(port
 		(pt 0 128)
 		(input)
-		(text "metronom_data[15..0]" (rect 0 0 87 12)(font "Arial" ))
-		(text "metronom_data[15..0]" (rect 21 123 108 135)(font "Arial" ))
+		(text "note_data1[15..0]" (rect 0 0 66 12)(font "Arial" ))
+		(text "note_data1[15..0]" (rect 21 123 87 135)(font "Arial" ))
 		(line (pt 0 128)(pt 16 128)(line_width 3))
+	)
+	(port
+		(pt 0 144)
+		(input)
+		(text "note_data2[15..0]" (rect 0 0 67 12)(font "Arial" ))
+		(text "note_data2[15..0]" (rect 21 139 88 151)(font "Arial" ))
+		(line (pt 0 144)(pt 16 144)(line_width 3))
+	)
+	(port
+		(pt 0 160)
+		(input)
+		(text "error_data[15..0]" (rect 0 0 66 12)(font "Arial" ))
+		(text "error_data[15..0]" (rect 21 155 87 167)(font "Arial" ))
+		(line (pt 0 160)(pt 16 160)(line_width 3))
+	)
+	(port
+		(pt 0 176)
+		(input)
+		(text "metronom_data[15..0]" (rect 0 0 87 12)(font "Arial" ))
+		(text "metronom_data[15..0]" (rect 21 171 108 183)(font "Arial" ))
+		(line (pt 0 176)(pt 16 176)(line_width 3))
 	)
 	(port
 		(pt 248 32)
@@ -81,6 +102,6 @@ agreement for further details.
 		(line (pt 248 32)(pt 232 32)(line_width 3))
 	)
 	(drawing
-		(rectangle (rect 16 16 232 160)(line_width 1))
+		(rectangle (rect 16 16 232 192)(line_width 1))
 	)
 )

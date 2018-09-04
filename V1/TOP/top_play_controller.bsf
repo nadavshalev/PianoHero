@@ -21,7 +21,7 @@ agreement for further details.
 */
 (header "symbol" (version "1.2"))
 (symbol
-	(rect 16 16 232 208)
+	(rect 16 16 280 208)
 	(text "top_play_controller" (rect 5 0 120 19)(font "Intel Clear" (font_size 8)))
 	(text "inst" (rect 8 171 24 188)(font "Intel Clear" ))
 	(port
@@ -81,27 +81,34 @@ agreement for further details.
 		(line (pt 0 144)(pt 16 144))
 	)
 	(port
-		(pt 216 32)
+		(pt 0 160)
+		(input)
+		(text "long__note_flag[12..0]" (rect 0 0 133 19)(font "Intel Clear" (font_size 8)))
+		(text "long__note_flag[12..0]" (rect 21 155 154 174)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 160)(pt 16 160)(line_width 3))
+	)
+	(port
+		(pt 264 32)
 		(output)
 		(text "Scors[31..0]" (rect 0 0 70 19)(font "Intel Clear" (font_size 8)))
-		(text "Scors[31..0]" (rect 125 27 195 46)(font "Intel Clear" (font_size 8)))
-		(line (pt 216 32)(pt 200 32)(line_width 3))
+		(text "Scors[31..0]" (rect 173 27 243 46)(font "Intel Clear" (font_size 8)))
+		(line (pt 264 32)(pt 248 32)(line_width 3))
 	)
 	(port
-		(pt 216 48)
+		(pt 264 48)
 		(output)
 		(text "Error" (rect 0 0 28 19)(font "Intel Clear" (font_size 8)))
-		(text "Error" (rect 167 43 195 62)(font "Intel Clear" (font_size 8)))
-		(line (pt 216 48)(pt 200 48))
+		(text "Error" (rect 215 43 243 62)(font "Intel Clear" (font_size 8)))
+		(line (pt 264 48)(pt 248 48))
 	)
 	(port
-		(pt 216 64)
+		(pt 264 64)
 		(output)
 		(text "Sound[12..0]" (rect 0 0 76 19)(font "Intel Clear" (font_size 8)))
-		(text "Sound[12..0]" (rect 119 59 195 78)(font "Intel Clear" (font_size 8)))
-		(line (pt 216 64)(pt 200 64)(line_width 3))
+		(text "Sound[12..0]" (rect 167 59 243 78)(font "Intel Clear" (font_size 8)))
+		(line (pt 264 64)(pt 248 64)(line_width 3))
 	)
 	(drawing
-		(rectangle (rect 16 16 200 176))
+		(rectangle (rect 16 16 248 176))
 	)
 )

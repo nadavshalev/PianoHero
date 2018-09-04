@@ -40,23 +40,15 @@
 					"strict" : false
 				},
 				{
+					"name" : "VGA_VS",
+					"strict" : false
+				},
+				{
+					"name" : "VGA_HS",
+					"strict" : false
+				},
+				{
 					"name" : "VGA_CLK",
-					"strict" : false
-				},
-				{
-					"name" : "HEX0[6]",
-					"strict" : false
-				},
-				{
-					"name" : "HEX0[5]",
-					"strict" : false
-				},
-				{
-					"name" : "HEX0[4]",
-					"strict" : false
-				},
-				{
-					"name" : "HEX0[3]",
 					"strict" : false
 				},
 				{
@@ -100,18 +92,6 @@
 					"strict" : false
 				},
 				{
-					"name" : "VGA_VS",
-					"strict" : false
-				},
-				{
-					"name" : "VGA_HS",
-					"strict" : false
-				},
-				{
-					"name" : "VGA_BLANK_N",
-					"strict" : false
-				},
-				{
 					"name" : "VGA_B[7]",
 					"strict" : false
 				},
@@ -144,6 +124,26 @@
 					"strict" : false
 				},
 				{
+					"name" : "VGA_BLANK_N",
+					"strict" : false
+				},
+				{
+					"name" : "HEX0[6]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX0[5]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX0[4]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX0[3]",
+					"strict" : false
+				},
+				{
 					"name" : "CLOCK_50",
 					"strict" : false
 				},
@@ -152,11 +152,23 @@
 					"strict" : false
 				},
 				{
+					"name" : "auto_play",
+					"strict" : false
+				},
+				{
 					"name" : "piano_play",
 					"strict" : false
 				},
 				{
-					"name" : "auto_play",
+					"name" : "soundEffect[1]",
+					"strict" : false
+				},
+				{
+					"name" : "soundEffect[0]",
+					"strict" : false
+				},
+				{
+					"name" : "metronomSW",
 					"strict" : false
 				},
 				{

@@ -62,15 +62,15 @@ agreement for further details.
 	(port
 		(pt 0 112)
 		(input)
-		(text "piano_free" (rect 0 0 63 19)(font "Intel Clear" (font_size 8)))
-		(text "piano_free" (rect 21 107 84 126)(font "Intel Clear" (font_size 8)))
+		(text "resetN" (rect 0 0 38 19)(font "Intel Clear" (font_size 8)))
+		(text "resetN" (rect 21 107 59 126)(font "Intel Clear" (font_size 8)))
 		(line (pt 0 112)(pt 16 112))
 	)
 	(port
 		(pt 0 128)
 		(input)
-		(text "resetN" (rect 0 0 38 19)(font "Intel Clear" (font_size 8)))
-		(text "resetN" (rect 21 123 59 142)(font "Intel Clear" (font_size 8)))
+		(text "piano_free" (rect 0 0 63 19)(font "Intel Clear" (font_size 8)))
+		(text "piano_free" (rect 21 123 84 142)(font "Intel Clear" (font_size 8)))
 		(line (pt 0 128)(pt 16 128))
 	)
 	(port

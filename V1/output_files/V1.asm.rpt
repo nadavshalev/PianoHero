@@ -1,5 +1,5 @@
 Assembler report for V1
-Mon Sep 03 18:42:41 2018
+Wed Sep 05 00:17:25 2018
 Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Standard Edition
 
 
@@ -10,7 +10,7 @@ Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Standard Edition
   2. Assembler Summary
   3. Assembler Settings
   4. Assembler Generated Files
-  5. Assembler Device Options: C:/Users/maa3/Desktop/PianoHero-master/V1/output_files/V1.sof
+  5. Assembler Device Options: C:/piano/trunk/PianoHero-master/V1/output_files/V1.sof
   6. Assembler Messages
 
 
@@ -38,7 +38,7 @@ agreement for further details.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Mon Sep 03 18:42:41 2018 ;
+; Assembler Status      ; Successful - Wed Sep 05 00:17:25 2018 ;
 ; Revision Name         ; V1                                    ;
 ; Top-level Entity Name ; TOP_module_diag                       ;
 ; Family                ; Cyclone V                             ;
@@ -53,23 +53,23 @@ agreement for further details.
 +--------+---------+---------------+
 
 
-+---------------------------------------------------------------+
-; Assembler Generated Files                                     ;
-+---------------------------------------------------------------+
-; File Name                                                     ;
-+---------------------------------------------------------------+
-; C:/Users/maa3/Desktop/PianoHero-master/V1/output_files/V1.sof ;
-+---------------------------------------------------------------+
++--------------------------------------------------------+
+; Assembler Generated Files                              ;
++--------------------------------------------------------+
+; File Name                                              ;
++--------------------------------------------------------+
+; C:/piano/trunk/PianoHero-master/V1/output_files/V1.sof ;
++--------------------------------------------------------+
 
 
-+-----------------------------------------------------------------------------------------+
-; Assembler Device Options: C:/Users/maa3/Desktop/PianoHero-master/V1/output_files/V1.sof ;
-+----------------+------------------------------------------------------------------------+
-; Option         ; Setting                                                                ;
-+----------------+------------------------------------------------------------------------+
-; JTAG usercode  ; 0x048B8650                                                             ;
-; Checksum       ; 0x048B8650                                                             ;
-+----------------+------------------------------------------------------------------------+
++----------------------------------------------------------------------------------+
+; Assembler Device Options: C:/piano/trunk/PianoHero-master/V1/output_files/V1.sof ;
++----------------+-----------------------------------------------------------------+
+; Option         ; Setting                                                         ;
++----------------+-----------------------------------------------------------------+
+; JTAG usercode  ; 0x08656497                                                      ;
+; Checksum       ; 0x08656497                                                      ;
++----------------+-----------------------------------------------------------------+
 
 
 +--------------------+
@@ -78,14 +78,14 @@ agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus Prime Assembler
     Info: Version 17.0.0 Build 595 04/25/2017 SJ Standard Edition
-    Info: Processing started: Mon Sep 03 18:42:26 2018
+    Info: Processing started: Wed Sep 05 00:17:05 2018
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off V1 -c V1
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (115030): Assembler is generating device programming files
 Info: Quartus Prime Assembler was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 884 megabytes
-    Info: Processing ended: Mon Sep 03 18:42:41 2018
-    Info: Elapsed time: 00:00:15
-    Info: Total CPU time (on all processors): 00:00:14
+    Info: Peak virtual memory: 973 megabytes
+    Info: Processing ended: Wed Sep 05 00:17:25 2018
+    Info: Elapsed time: 00:00:20
+    Info: Total CPU time (on all processors): 00:00:19
 
 

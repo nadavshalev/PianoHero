@@ -58,7 +58,7 @@ begin
 	end if;
 	unit <= conv_std_logic_vector(tmp_unit,4);
 	tens <= conv_std_logic_vector(tmp_tens,4);
-	total_score <= tmp_unit + 10 * tmp_unit;
+	total_score <= tmp_unit + 10 * tmp_tens;
 end process;
 
 end architecture;

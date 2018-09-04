@@ -46,13 +46,6 @@ agreement for further details.
 		(line (pt 0 64)(pt 16 64)(line_width 3))
 	)
 	(port
-		(pt 0 80)
-		(input)
-		(text "sound_choose[1..0]" (rect 0 0 76 12)(font "Arial" ))
-		(text "sound_choose[1..0]" (rect 21 75 97 87)(font "Arial" ))
-		(line (pt 0 80)(pt 16 80)(line_width 3))
-	)
-	(port
 		(pt 216 32)
 		(output)
 		(text "Q[15..0]" (rect 0 0 30 12)(font "Arial" ))
