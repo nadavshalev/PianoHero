@@ -52,6 +52,26 @@
 					"strict" : false
 				},
 				{
+					"name" : "VGA_BLANK_N",
+					"strict" : false
+				},
+				{
+					"name" : "HEX0[6]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX0[5]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX0[4]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX0[3]",
+					"strict" : false
+				},
+				{
 					"name" : "HEX0[2]",
 					"strict" : false
 				},
@@ -124,26 +144,6 @@
 					"strict" : false
 				},
 				{
-					"name" : "VGA_BLANK_N",
-					"strict" : false
-				},
-				{
-					"name" : "HEX0[6]",
-					"strict" : false
-				},
-				{
-					"name" : "HEX0[5]",
-					"strict" : false
-				},
-				{
-					"name" : "HEX0[4]",
-					"strict" : false
-				},
-				{
-					"name" : "HEX0[3]",
-					"strict" : false
-				},
-				{
 					"name" : "CLOCK_50",
 					"strict" : false
 				},
@@ -152,15 +152,11 @@
 					"strict" : false
 				},
 				{
-					"name" : "auto_play",
-					"strict" : false
-				},
-				{
 					"name" : "piano_play",
 					"strict" : false
 				},
 				{
-					"name" : "soundEffect[1]",
+					"name" : "auto_play",
 					"strict" : false
 				},
 				{
@@ -168,11 +164,7 @@
 					"strict" : false
 				},
 				{
-					"name" : "metronomSW",
-					"strict" : false
-				},
-				{
-					"name" : "songChoose[0]",
+					"name" : "soundEffect[1]",
 					"strict" : false
 				},
 				{
@@ -180,7 +172,19 @@
 					"strict" : false
 				},
 				{
+					"name" : "songChoose[0]",
+					"strict" : false
+				},
+				{
 					"name" : "speed_notes",
+					"strict" : false
+				},
+				{
+					"name" : "withLevels",
+					"strict" : false
+				},
+				{
+					"name" : "metronomSW",
 					"strict" : false
 				},
 				{

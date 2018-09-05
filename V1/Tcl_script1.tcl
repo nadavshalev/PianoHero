@@ -34,7 +34,7 @@ set_location_assignment PIN_Y27 -to soundEffect[1] ; #SW[1]
 set_location_assignment PIN_AB28 -to speed_notes ; #SW[2]
 set_location_assignment PIN_AC30 -to songChoose[0]; #SW[3]
 set_location_assignment PIN_W25 -to  songChoose[1] ; #SW[4]
-set_location_assignment PIN_V25 -to SW[5] ; #SW[5]
+set_location_assignment PIN_V25 -to withLevels ; #SW[5]
 set_location_assignment PIN_AC28 -to SW[6]
 set_location_assignment PIN_AD30 -to metronomSW;
 set_location_assignment PIN_AC29 -to auto_play;

@@ -680,9 +680,9 @@ agreement for further details.
 	)
 )
 (symbol
-	(rect -416 424 -184 520)
+	(rect -416 424 -184 552)
 	(text "notes_top2" (rect 5 0 72 19)(font "Intel Clear" (font_size 8)))
-	(text "inst" (rect 8 75 24 92)(font "Intel Clear" ))
+	(text "inst" (rect 8 107 24 124)(font "Intel Clear" ))
 	(port
 		(pt 0 32)
 		(input)
@@ -725,14 +725,21 @@ agreement for further details.
 		(text "Sound2[15..0]" (rect 127 59 211 78)(font "Intel Clear" (font_size 8)))
 		(line (pt 232 64)(pt 216 64)(line_width 3))
 	)
+	(port
+		(pt 232 80)
+		(output)
+		(text "Sound3[15..0]" (rect 0 0 84 19)(font "Intel Clear" (font_size 8)))
+		(text "Sound3[15..0]" (rect 127 75 211 94)(font "Intel Clear" (font_size 8)))
+		(line (pt 232 80)(pt 216 80)(line_width 3))
+	)
 	(drawing
-		(rectangle (rect 16 16 216 80))
+		(rectangle (rect 16 16 216 112))
 	)
 )
 (symbol
-	(rect 64 288 312 496)
+	(rect 64 288 312 528)
 	(text "sound_chooser" (rect 5 0 79 12)(font "Arial" ))
-	(text "inst7" (rect 8 192 30 209)(font "Intel Clear" ))
+	(text "inst1" (rect 8 224 30 241)(font "Intel Clear" ))
 	(port
 		(pt 0 32)
 		(input)
@@ -792,16 +799,23 @@ agreement for further details.
 	(port
 		(pt 0 160)
 		(input)
-		(text "error_data[15..0]" (rect 0 0 81 12)(font "Arial" ))
-		(text "error_data[15..0]" (rect 21 155 102 167)(font "Arial" ))
+		(text "note_data3[15..0]" (rect 0 0 86 12)(font "Arial" ))
+		(text "note_data3[15..0]" (rect 21 155 107 167)(font "Arial" ))
 		(line (pt 0 160)(pt 16 160)(line_width 3))
 	)
 	(port
 		(pt 0 176)
 		(input)
-		(text "metronom_data[15..0]" (rect 0 0 108 12)(font "Arial" ))
-		(text "metronom_data[15..0]" (rect 21 171 129 183)(font "Arial" ))
+		(text "error_data[15..0]" (rect 0 0 81 12)(font "Arial" ))
+		(text "error_data[15..0]" (rect 21 171 102 183)(font "Arial" ))
 		(line (pt 0 176)(pt 16 176)(line_width 3))
+	)
+	(port
+		(pt 0 192)
+		(input)
+		(text "metronom_data[15..0]" (rect 0 0 108 12)(font "Arial" ))
+		(text "metronom_data[15..0]" (rect 21 187 129 199)(font "Arial" ))
+		(line (pt 0 192)(pt 16 192)(line_width 3))
 	)
 	(port
 		(pt 248 32)
@@ -811,7 +825,7 @@ agreement for further details.
 		(line (pt 248 32)(pt 232 32)(line_width 3))
 	)
 	(drawing
-		(rectangle (rect 16 16 232 192))
+		(rectangle (rect 16 16 232 224))
 	)
 )
 (connector
@@ -1016,36 +1030,6 @@ agreement for further details.
 	(bus)
 )
 (connector
-	(pt -232 776)
-	(pt 0 776)
-	(bus)
-)
-(connector
-	(pt -232 1000)
-	(pt 32 1000)
-	(bus)
-)
-(connector
-	(pt 32 1000)
-	(pt 32 464)
-	(bus)
-)
-(connector
-	(pt 32 464)
-	(pt 64 464)
-	(bus)
-)
-(connector
-	(pt 0 776)
-	(pt 0 448)
-	(bus)
-)
-(connector
-	(pt 0 448)
-	(pt 64 448)
-	(bus)
-)
-(connector
 	(pt 448 640)
 	(pt 480 640)
 	(bus)
@@ -1128,6 +1112,51 @@ agreement for further details.
 (connector
 	(pt 448 648)
 	(pt 448 656)
+	(bus)
+)
+(connector
+	(pt -232 776)
+	(pt 0 776)
+	(bus)
+)
+(connector
+	(pt -232 1000)
+	(pt 32 1000)
+	(bus)
+)
+(connector
+	(pt 32 1000)
+	(pt 32 480)
+	(bus)
+)
+(connector
+	(pt 32 480)
+	(pt 64 480)
+	(bus)
+)
+(connector
+	(pt 0 776)
+	(pt 0 464)
+	(bus)
+)
+(connector
+	(pt 0 464)
+	(pt 64 464)
+	(bus)
+)
+(connector
+	(pt -184 504)
+	(pt -104 504)
+	(bus)
+)
+(connector
+	(pt -104 504)
+	(pt -104 448)
+	(bus)
+)
+(connector
+	(pt -104 448)
+	(pt 64 448)
 	(bus)
 )
 (junction (pt 448 648))

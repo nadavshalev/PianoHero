@@ -34,6 +34,8 @@ port 	(
 		request10   : in std_logic;
 		request11   : in std_logic;
 		request12   : in std_logic;
+		collision   : in std_logic_vector(12 downto 0);
+		first_col	: out std_logic;
 		request		: out std_logic;
 		mVGA_RGB	: out std_logic_vector(7 downto 0)
 	);
@@ -42,6 +44,8 @@ end entity;
 architecture arc_or_for_note of or_for_note is 
 
 	begin
+	
+		first_col <= ((((collision(0) or collision(1)) or (collision(2) or collision(3))) or ((collision(4) or collision(5)) or (collision(6) or collision(7)))) or (((collision(8) or collision(9)) or (collision(10) or collision(11))) or collision(12)));
 		
 		process(CLK)
 			begin

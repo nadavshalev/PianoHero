@@ -316,6 +316,22 @@ agreement for further details.
 		(line (pt 78 12)(pt 82 8))
 	)
 )
+(pin
+	(output)
+	(rect 88 192 264 208)
+	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
+	(text "firstCollison" (rect 90 0 146 17)(font "Intel Clear" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
+)
 (symbol
 	(rect -304 400 -56 512)
 	(text "back_ground_draw" (rect 5 0 95 12)(font "Arial" ))
@@ -698,16 +714,23 @@ agreement for further details.
 	(port
 		(pt 304 64)
 		(output)
-		(text "request" (rect 0 0 44 19)(font "Intel Clear" (font_size 8)))
-		(text "request" (rect 239 59 283 78)(font "Intel Clear" (font_size 8)))
+		(text "first_collision" (rect 0 0 77 19)(font "Intel Clear" (font_size 8)))
+		(text "first_collision" (rect 206 59 283 78)(font "Intel Clear" (font_size 8)))
 		(line (pt 304 64)(pt 288 64))
 	)
 	(port
 		(pt 304 80)
 		(output)
+		(text "request" (rect 0 0 44 19)(font "Intel Clear" (font_size 8)))
+		(text "request" (rect 239 75 283 94)(font "Intel Clear" (font_size 8)))
+		(line (pt 304 80)(pt 288 80))
+	)
+	(port
+		(pt 304 96)
+		(output)
 		(text "mVGA_RGB[7..0]" (rect 0 0 101 19)(font "Intel Clear" (font_size 8)))
-		(text "mVGA_RGB[7..0]" (rect 182 75 283 94)(font "Intel Clear" (font_size 8)))
-		(line (pt 304 80)(pt 288 80)(line_width 3))
+		(text "mVGA_RGB[7..0]" (rect 182 91 283 110)(font "Intel Clear" (font_size 8)))
+		(line (pt 304 96)(pt 288 96)(line_width 3))
 	)
 	(drawing
 		(rectangle (rect 16 16 288 176))
@@ -782,15 +805,6 @@ agreement for further details.
 	(pt 264 288)
 )
 (connector
-	(pt -32 368)
-	(pt 336 368)
-	(bus)
-)
-(connector
-	(pt -8 352)
-	(pt 336 352)
-)
-(connector
 	(pt 608 272)
 	(pt 768 272)
 	(bus)
@@ -839,34 +853,6 @@ agreement for further details.
 (connector
 	(pt -456 216)
 	(pt -352 216)
-	(bus)
-)
-(connector
-	(pt -32 368)
-	(pt -32 216)
-	(bus)
-)
-(connector
-	(pt -8 352)
-	(pt -8 200)
-)
-(connector
-	(pt -48 168)
-	(pt 88 168)
-	(bus)
-)
-(connector
-	(pt -48 200)
-	(pt -8 200)
-)
-(connector
-	(pt -48 216)
-	(pt -32 216)
-	(bus)
-)
-(connector
-	(pt -48 184)
-	(pt 88 184)
 	(bus)
 )
 (connector
@@ -974,4 +960,45 @@ agreement for further details.
 	(pt -352 280)
 	(pt -440 280)
 	(bus)
+)
+(connector
+	(pt -48 168)
+	(pt 88 168)
+	(bus)
+)
+(connector
+	(pt -48 184)
+	(pt 88 184)
+	(bus)
+)
+(connector
+	(pt 336 368)
+	(pt -32 368)
+	(bus)
+)
+(connector
+	(pt 336 352)
+	(pt -8 352)
+)
+(connector
+	(pt -32 368)
+	(pt -32 232)
+	(bus)
+)
+(connector
+	(pt -8 352)
+	(pt -8 216)
+)
+(connector
+	(pt -48 216)
+	(pt -8 216)
+)
+(connector
+	(pt -48 232)
+	(pt -32 232)
+	(bus)
+)
+(connector
+	(pt -48 200)
+	(pt 88 200)
 )

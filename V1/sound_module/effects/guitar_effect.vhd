@@ -34,8 +34,12 @@ begin
 	elsif(rising_edge(CLK)) then
 		dataTmp := (others  => 0);
 		for i in 0 to 12 loop
-			if conv_integer(addrArr(i)) > 0 then
-				dataTmp(i) := conv_integer(sound0(conv_integer(addrArr(i))));
+			if addrArr(i) < array_size then
+				if conv_integer(addrArr(i)) > 0 then
+					dataTmp(i) := conv_integer(sound0(conv_integer(addrArr(i))));
+				end if;
+			else
+				dataTmp(i) := 0;
 			end if;
 		end loop;
 	end if;

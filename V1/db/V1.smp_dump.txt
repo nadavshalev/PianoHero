@@ -1,4 +1,36 @@
 
+State Machine - |TOP_module_diag|top_play_controller:inst|play_controller:inst5|state
+Name state.second_pre_err state.col_pre_play state.col_unpre state.uncol_pre_err state.uncol_unpre 
+state.uncol_unpre 0 0 0 0 0 
+state.uncol_pre_err 0 0 0 1 1 
+state.col_unpre 0 0 1 0 1 
+state.col_pre_play 0 1 0 0 1 
+state.second_pre_err 1 0 0 0 1 
+
+State Machine - |TOP_module_diag|top_play_controller:inst|play_controller:inst10|state
+Name state.second_pre_err state.col_pre_play state.col_unpre state.uncol_pre_err state.uncol_unpre 
+state.uncol_unpre 0 0 0 0 0 
+state.uncol_pre_err 0 0 0 1 1 
+state.col_unpre 0 0 1 0 1 
+state.col_pre_play 0 1 0 0 1 
+state.second_pre_err 1 0 0 0 1 
+
+State Machine - |TOP_module_diag|top_play_controller:inst|play_controller:inst8|state
+Name state.second_pre_err state.col_pre_play state.col_unpre state.uncol_pre_err state.uncol_unpre 
+state.uncol_unpre 0 0 0 0 0 
+state.uncol_pre_err 0 0 0 1 1 
+state.col_unpre 0 0 1 0 1 
+state.col_pre_play 0 1 0 0 1 
+state.second_pre_err 1 0 0 0 1 
+
+State Machine - |TOP_module_diag|top_play_controller:inst|play_controller:inst2|state
+Name state.second_pre_err state.col_pre_play state.col_unpre state.uncol_pre_err state.uncol_unpre 
+state.uncol_unpre 0 0 0 0 0 
+state.uncol_pre_err 0 0 0 1 1 
+state.col_unpre 0 0 1 0 1 
+state.col_pre_play 0 1 0 0 1 
+state.second_pre_err 1 0 0 0 1 
+
 State Machine - |TOP_module_diag|keyboard_module_diag:inst4|KBDINTF:inst1|bitrec:b2v_inst|present_state
 Name present_state.NewData present_state.ChkData present_state.LowClk present_state.HighClk present_state.idle 
 present_state.idle 0 0 0 0 0 
@@ -20,23 +52,7 @@ present_state.sample_ext 0 0 1 0 0 0 0 0 0 1
 present_state.wait_ext_rel 0 1 0 0 0 0 0 0 0 1 
 present_state.sample_ext_rel 1 0 0 0 0 0 0 0 0 1 
 
-State Machine - |TOP_module_diag|top_play_controller:inst|play_controller:inst10|state
-Name state.second_pre_err state.col_pre_play state.col_unpre state.uncol_pre_err state.uncol_unpre 
-state.uncol_unpre 0 0 0 0 0 
-state.uncol_pre_err 0 0 0 1 1 
-state.col_unpre 0 0 1 0 1 
-state.col_pre_play 0 1 0 0 1 
-state.second_pre_err 1 0 0 0 1 
-
 State Machine - |TOP_module_diag|top_play_controller:inst|play_controller:inst9|state
-Name state.second_pre_err state.col_pre_play state.col_unpre state.uncol_pre_err state.uncol_unpre 
-state.uncol_unpre 0 0 0 0 0 
-state.uncol_pre_err 0 0 0 1 1 
-state.col_unpre 0 0 1 0 1 
-state.col_pre_play 0 1 0 0 1 
-state.second_pre_err 1 0 0 0 1 
-
-State Machine - |TOP_module_diag|top_play_controller:inst|play_controller:inst8|state
 Name state.second_pre_err state.col_pre_play state.col_unpre state.uncol_pre_err state.uncol_unpre 
 state.uncol_unpre 0 0 0 0 0 
 state.uncol_pre_err 0 0 0 1 1 
@@ -60,14 +76,6 @@ state.col_unpre 0 0 1 0 1
 state.col_pre_play 0 1 0 0 1 
 state.second_pre_err 1 0 0 0 1 
 
-State Machine - |TOP_module_diag|top_play_controller:inst|play_controller:inst5|state
-Name state.second_pre_err state.col_pre_play state.col_unpre state.uncol_pre_err state.uncol_unpre 
-state.uncol_unpre 0 0 0 0 0 
-state.uncol_pre_err 0 0 0 1 1 
-state.col_unpre 0 0 1 0 1 
-state.col_pre_play 0 1 0 0 1 
-state.second_pre_err 1 0 0 0 1 
-
 State Machine - |TOP_module_diag|top_play_controller:inst|play_controller:inst4|state
 Name state.second_pre_err state.col_pre_play state.col_unpre state.uncol_pre_err state.uncol_unpre 
 state.uncol_unpre 0 0 0 0 0 
@@ -77,14 +85,6 @@ state.col_pre_play 0 1 0 0 1
 state.second_pre_err 1 0 0 0 1 
 
 State Machine - |TOP_module_diag|top_play_controller:inst|play_controller:inst3|state
-Name state.second_pre_err state.col_pre_play state.col_unpre state.uncol_pre_err state.uncol_unpre 
-state.uncol_unpre 0 0 0 0 0 
-state.uncol_pre_err 0 0 0 1 1 
-state.col_unpre 0 0 1 0 1 
-state.col_pre_play 0 1 0 0 1 
-state.second_pre_err 1 0 0 0 1 
-
-State Machine - |TOP_module_diag|top_play_controller:inst|play_controller:inst2|state
 Name state.second_pre_err state.col_pre_play state.col_unpre state.uncol_pre_err state.uncol_unpre 
 state.uncol_unpre 0 0 0 0 0 
 state.uncol_pre_err 0 0 0 1 1 

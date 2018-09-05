@@ -7,7 +7,7 @@ entity sound_chooser is
 	port( RESETN, CLK ,piano_free										: in std_logic;
 			error																: in std_logic;
 			sound_choose													: in std_logic_vector(1 downto 0);
-			note_data0, note_data1, note_data2						: in std_logic_vector(15 downto 0);
+			note_data0, note_data1, note_data2, note_data3		: in std_logic_vector(15 downto 0);
 			error_data, metronom_data									: in std_logic_vector(15 downto 0);
 			out_data	   	  												: out std_logic_vector(15 downto 0) );
 end entity;
@@ -32,7 +32,7 @@ begin
 				when "10" =>
 					sound := note_data2;
 				when others =>
-					sound := note_data0;
+					sound := note_data3;
 			end case;
 				
 			

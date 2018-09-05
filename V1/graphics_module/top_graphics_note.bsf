@@ -104,16 +104,23 @@ agreement for further details.
 	(port
 		(pt 304 64)
 		(output)
-		(text "request" (rect 0 0 44 19)(font "Intel Clear" (font_size 8)))
-		(text "request" (rect 239 59 283 78)(font "Intel Clear" (font_size 8)))
+		(text "first_collision" (rect 0 0 77 19)(font "Intel Clear" (font_size 8)))
+		(text "first_collision" (rect 206 59 283 78)(font "Intel Clear" (font_size 8)))
 		(line (pt 304 64)(pt 288 64))
 	)
 	(port
 		(pt 304 80)
 		(output)
+		(text "request" (rect 0 0 44 19)(font "Intel Clear" (font_size 8)))
+		(text "request" (rect 239 75 283 94)(font "Intel Clear" (font_size 8)))
+		(line (pt 304 80)(pt 288 80))
+	)
+	(port
+		(pt 304 96)
+		(output)
 		(text "mVGA_RGB[7..0]" (rect 0 0 101 19)(font "Intel Clear" (font_size 8)))
-		(text "mVGA_RGB[7..0]" (rect 182 75 283 94)(font "Intel Clear" (font_size 8)))
-		(line (pt 304 80)(pt 288 80)(line_width 3))
+		(text "mVGA_RGB[7..0]" (rect 182 91 283 110)(font "Intel Clear" (font_size 8)))
+		(line (pt 304 96)(pt 288 96)(line_width 3))
 	)
 	(drawing
 		(rectangle (rect 16 16 288 176))

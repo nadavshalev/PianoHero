@@ -21,9 +21,9 @@ agreement for further details.
 */
 (header "symbol" (version "1.2"))
 (symbol
-	(rect 16 16 248 112)
+	(rect 16 16 248 144)
 	(text "notes_top2" (rect 5 0 72 19)(font "Intel Clear" (font_size 8)))
-	(text "inst" (rect 8 75 24 92)(font "Intel Clear" ))
+	(text "inst" (rect 8 107 24 124)(font "Intel Clear" ))
 	(port
 		(pt 0 32)
 		(input)
@@ -66,7 +66,14 @@ agreement for further details.
 		(text "Sound2[15..0]" (rect 127 59 211 78)(font "Intel Clear" (font_size 8)))
 		(line (pt 232 64)(pt 216 64)(line_width 3))
 	)
+	(port
+		(pt 232 80)
+		(output)
+		(text "Sound3[15..0]" (rect 0 0 84 19)(font "Intel Clear" (font_size 8)))
+		(text "Sound3[15..0]" (rect 127 75 211 94)(font "Intel Clear" (font_size 8)))
+		(line (pt 232 80)(pt 216 80)(line_width 3))
+	)
 	(drawing
-		(rectangle (rect 16 16 216 80))
+		(rectangle (rect 16 16 216 112))
 	)
 )

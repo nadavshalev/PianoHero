@@ -76,6 +76,8 @@ begin
 						state := uncol_pre_err;
 						error <= '1';
 						scors_num := scors_down;
+					elsif long_flag = '1' then
+						scors_num := scors_up;
 					end if;
 				----------------------------------
 				-- error: press with no collision 

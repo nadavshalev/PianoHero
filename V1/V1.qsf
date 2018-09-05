@@ -157,58 +157,6 @@ set_location_assignment PIN_AB28 -to speed_notes
 set_location_assignment PIN_AC30 -to songChoose[0]
 set_location_assignment PIN_W25 -to songChoose[1]
 set_location_assignment PIN_V25 -to SW[5]
-set_global_assignment -name VHDL_FILE sound_module/noteTable.vhd
-set_global_assignment -name VHDL_FILE sound_module/effect2Table.vhd
-set_global_assignment -name BDF_FILE graphics_module/top_graphics_note.bdf
-set_global_assignment -name VHDL_FILE graphics_module/or_for_note.vhd
-set_global_assignment -name VHDL_FILE graphics_module/back_gr_black.vhd
-set_global_assignment -name VHDL_FILE graphics_module/noteGraphics.vhd
-set_global_assignment -name VHDL_FILE graphics_module/back_gr_note.vhd
-set_global_assignment -name BDF_FILE graphics_module/note_module.bdf
-set_global_assignment -name VHDL_FILE graphics_module/note_controller.vhd
-set_global_assignment -name VHDL_FILE score_mudole/score.vhd
-set_global_assignment -name VHDL_FILE score_mudole/HEXSS.vhd
-set_global_assignment -name VHDL_FILE TOP/play_controller.vhd
-set_global_assignment -name VHDL_FILE keyboard_mudole/lpf.vhd
-set_global_assignment -name VHDL_FILE keyboard_mudole/key_chooser.vhd
-set_global_assignment -name VHDL_FILE keyboard_mudole/KBDINTF.vhd
-set_global_assignment -name VHDL_FILE keyboard_mudole/byterec.vhd
-set_global_assignment -name VHDL_FILE keyboard_mudole/bitrec.vhd
-set_global_assignment -name VHDL_FILE graphics_module/VGA_Controller.vhd
-set_global_assignment -name VHDL_FILE graphics_module/objects_mux.vhd
-set_global_assignment -name VHDL_FILE graphics_module/note_print.vhd
-set_global_assignment -name QXP_FILE sound_module/audio_codec_controller.qxp
-set_global_assignment -name BDF_FILE sound_module/audio_module_diag.bdf
-set_global_assignment -name VHDL_FILE sound_module/SinTable.vhd
-set_global_assignment -name VHDL_FILE sound_module/addr_counter.vhd
-set_global_assignment -name VHDL_FILE sound_module/sound_freq_gen.vhd
-set_global_assignment -name TCL_SCRIPT_FILE Tcl_script1.tcl
-set_global_assignment -name BDF_FILE graphics_module/graphics_module_diag.bdf
-set_global_assignment -name VHDL_FILE graphics_module/back_ground_draw.vhd
-set_global_assignment -name VHDL_FILE graphics_module/note_move.vhd
-set_global_assignment -name SIGNALTAP_FILE output_files/stp1.stp
-set_global_assignment -name BDF_FILE keyboard_mudole/keyboard_module_diag.bdf
-set_global_assignment -name VHDL_FILE sound_module/sound_chooser.vhd
-set_global_assignment -name VHDL_FILE sound_module/errTable.vhd
-set_global_assignment -name BDF_FILE TOP/TOP_module_diag.bdf
-set_global_assignment -name BDF_FILE score_mudole/score_module_diag.bdf
-set_global_assignment -name VHDL_FILE songDB_module/testSong.vhd
-set_global_assignment -name VHDL_FILE sound_module/vrise.vhd
-set_global_assignment -name BDF_FILE TOP/top_play_controller.bdf
-set_global_assignment -name VHDL_FILE TOP/play_controller_chooser.vhd
-set_global_assignment -name VHDL_FILE songDB_module/createSongs.vhd
-set_global_assignment -name BDF_FILE sound_module/notes_top.bdf
-set_global_assignment -name VHDL_FILE sound_module/addr_counter_all.vhd
-set_global_assignment -name VHDL_FILE sound_module/sound_freq_gen_all.vhd
-set_global_assignment -name BDF_FILE sound_module/notes_top2.bdf
-set_global_assignment -name MIF_FILE sound_module/mem1.mif
-set_global_assignment -name VHDL_FILE metronomTable.vhd
-set_global_assignment -name VHDL_FILE TOP/speed_notes.vhd
-set_global_assignment -name VHDL_FILE sound_module/effects/piano_effect.vhd
-set_global_assignment -name VHDL_FILE sound_module/effects/sing_effect.vhd
-set_global_assignment -name VHDL_FILE sound_module/effects/wisle_effect.vhd
-set_global_assignment -name VHDL_FILE sound_module/effects/guitar_effect.vhd
-set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform.vwf
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to altera_reserved_tck
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to altera_reserved_tdi
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to altera_reserved_tdo
@@ -333,6 +281,68 @@ set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to speedNote[29]
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to speedNote[30]
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to speedNote[31]
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to timer_done
+set_global_assignment -name VHDL_FILE TOP/songs/create_octave.vhd
+set_global_assignment -name VHDL_FILE sound_module/noteTable.vhd
+set_global_assignment -name VHDL_FILE sound_module/effect2Table.vhd
+set_global_assignment -name BDF_FILE graphics_module/top_graphics_note.bdf
+set_global_assignment -name VHDL_FILE graphics_module/or_for_note.vhd
+set_global_assignment -name VHDL_FILE graphics_module/back_gr_black.vhd
+set_global_assignment -name VHDL_FILE graphics_module/noteGraphics.vhd
+set_global_assignment -name VHDL_FILE graphics_module/back_gr_note.vhd
+set_global_assignment -name BDF_FILE graphics_module/note_module.bdf
+set_global_assignment -name VHDL_FILE graphics_module/note_controller.vhd
+set_global_assignment -name VHDL_FILE score_mudole/score.vhd
+set_global_assignment -name VHDL_FILE score_mudole/HEXSS.vhd
+set_global_assignment -name VHDL_FILE TOP/play_controller.vhd
+set_global_assignment -name VHDL_FILE keyboard_mudole/lpf.vhd
+set_global_assignment -name VHDL_FILE keyboard_mudole/key_chooser.vhd
+set_global_assignment -name VHDL_FILE keyboard_mudole/KBDINTF.vhd
+set_global_assignment -name VHDL_FILE keyboard_mudole/byterec.vhd
+set_global_assignment -name VHDL_FILE keyboard_mudole/bitrec.vhd
+set_global_assignment -name VHDL_FILE graphics_module/VGA_Controller.vhd
+set_global_assignment -name VHDL_FILE graphics_module/objects_mux.vhd
+set_global_assignment -name VHDL_FILE graphics_module/note_print.vhd
+set_global_assignment -name QXP_FILE sound_module/audio_codec_controller.qxp
+set_global_assignment -name BDF_FILE sound_module/audio_module_diag.bdf
+set_global_assignment -name VHDL_FILE sound_module/SinTable.vhd
+set_global_assignment -name VHDL_FILE sound_module/addr_counter.vhd
+set_global_assignment -name VHDL_FILE sound_module/sound_freq_gen.vhd
+set_global_assignment -name TCL_SCRIPT_FILE Tcl_script1.tcl
+set_global_assignment -name BDF_FILE graphics_module/graphics_module_diag.bdf
+set_global_assignment -name VHDL_FILE graphics_module/back_ground_draw.vhd
+set_global_assignment -name VHDL_FILE graphics_module/note_move.vhd
+set_global_assignment -name SIGNALTAP_FILE output_files/stp1.stp
+set_global_assignment -name BDF_FILE keyboard_mudole/keyboard_module_diag.bdf
+set_global_assignment -name VHDL_FILE sound_module/sound_chooser.vhd
+set_global_assignment -name VHDL_FILE sound_module/errTable.vhd
+set_global_assignment -name BDF_FILE TOP/TOP_module_diag.bdf
+set_global_assignment -name BDF_FILE score_mudole/score_module_diag.bdf
+set_global_assignment -name VHDL_FILE songDB_module/testSong.vhd
+set_global_assignment -name VHDL_FILE sound_module/vrise.vhd
+set_global_assignment -name BDF_FILE TOP/top_play_controller.bdf
+set_global_assignment -name VHDL_FILE TOP/play_controller_chooser.vhd
+set_global_assignment -name VHDL_FILE songDB_module/createSongs.vhd
+set_global_assignment -name BDF_FILE sound_module/notes_top.bdf
+set_global_assignment -name VHDL_FILE sound_module/addr_counter_all.vhd
+set_global_assignment -name VHDL_FILE sound_module/sound_freq_gen_all.vhd
+set_global_assignment -name BDF_FILE sound_module/notes_top2.bdf
+set_global_assignment -name MIF_FILE sound_module/mem1.mif
+set_global_assignment -name VHDL_FILE metronomTable.vhd
+set_global_assignment -name VHDL_FILE TOP/speed_notes.vhd
+set_global_assignment -name VHDL_FILE sound_module/effects/piano_effect.vhd
+set_global_assignment -name VHDL_FILE sound_module/effects/sing_effect.vhd
+set_global_assignment -name VHDL_FILE sound_module/effects/wisle_effect.vhd
+set_global_assignment -name VHDL_FILE sound_module/effects/guitar_effect.vhd
+set_global_assignment -name VHDL_FILE PKG_noteArr.vhd
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
+set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+set_global_assignment -name VHDL_FILE TOP/songs/create_little_star.vhd
+set_global_assignment -name BDF_FILE TOP/createSong_top.bdf
+set_global_assignment -name VHDL_FILE TOP/song_chooser.vhd
+set_global_assignment -name VHDL_FILE TOP/songs/create_american_song.vhd
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform.vwf
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top

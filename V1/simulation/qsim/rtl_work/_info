@@ -207,8 +207,92 @@ R31
 !i113 1
 R18
 R32
+vscore
+Z43 !s110 1536158530
+!i10b 1
+!s100 3JGVBVD:jDEWbZ6Q`@VDS3
+I2JgRhM<A=1A?2nfB8jFkN0
+R25
+Z44 dC:/piano/trunk/PianoHero-master/V1/simulation/qsim
+w1536158528
+R35
+R36
+R37
+R29
+r1
+!s85 0
+31
+Z45 !s108 1536158530.000000
+R38
+R39
+!i113 1
+R18
+R32
+vscore_vlg_vec_tst
+R43
+!i10b 1
+!s100 9U>H8cg4H4P2cT@C24G:<2
+IHIi`S?<N9YXnRnjF<dBNa0
+R25
+R44
+w1536158527
+R26
+R27
+R28
+R29
+r1
+!s85 0
+31
+R45
+R30
+R31
+!i113 1
+R18
+R32
+vsound_freq_gen_all
+Z46 !s110 1536158073
+!i10b 1
+!s100 ^8maf59OLGf@RkcSOl3Ao0
+IIJZ_lCjFU6E6`68P[LL;z2
+R25
+R44
+w1536158071
+R35
+R36
+R37
+R29
+r1
+!s85 0
+31
+Z47 !s108 1536158073.000000
+R38
+R39
+!i113 1
+R18
+R32
+vsound_freq_gen_all_vlg_vec_tst
+R46
+!i10b 1
+!s100 VS:gSG^d>3D3XShLRabIb2
+Ia^Q=Tae=SbP@:Qie747jG3
+R25
+R44
+w1536158069
+8Waveform1.vwf.vt
+FWaveform1.vwf.vt
+R28
+R29
+r1
+!s85 0
+31
+R47
+!s107 Waveform1.vwf.vt|
+!s90 -work|work|Waveform1.vwf.vt|
+!i113 1
+R18
+R32
 vtop_play_controller
-Z43 !s110 1535707720
+Z48 !s110 1535707720
 !i10b 1
 !s100 C4GQ652SP98@MgVSoeX1;1
 Ic;LB]TX[G^73ao^JW@WY92
@@ -222,14 +306,14 @@ R29
 r1
 !s85 0
 31
-Z44 !s108 1535707720.000000
+Z49 !s108 1535707720.000000
 R38
 R39
 !i113 1
 R18
 R32
 vtop_play_controller_vlg_vec_tst
-R43
+R48
 !i10b 1
 !s100 @Jd9ml`99D8nfN3zEI9<F1
 I]F9i3@8KRABM?<@PWzC_B1
@@ -243,7 +327,7 @@ R29
 r1
 !s85 0
 31
-R44
+R49
 R30
 R31
 !i113 1

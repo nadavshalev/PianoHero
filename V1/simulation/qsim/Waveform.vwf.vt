@@ -19,166 +19,46 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "09/03/2018 12:30:58"
+// Generated on "09/05/2018 17:42:06"
                                                                                 
-// Verilog Test Bench (with test vectors) for design :                          createSongs
+// Verilog Test Bench (with test vectors) for design :                          score
 // 
 // Simulation tool : 3rd Party
 // 
 
 `timescale 1 ps/ 1 ps
-module createSongs_vlg_vec_tst();
+module score_vlg_vec_tst();
 // constants                                           
 // general purpose registers
-reg CLK;
-reg enable;
-reg metronom_sw;
+reg clk;
 reg resetN;
-reg screen_end;
-reg [1:0] song_choose;
-reg [31:0] speedNotes;
+reg [31:0] score_note0;
 // wires                                               
-wire metronon_enable;
-wire note_length_0_7;
-wire note_length_0_6;
-wire note_length_0_5;
-wire note_length_0_4;
-wire note_length_0_3;
-wire note_length_0_2;
-wire note_length_0_1;
-wire note_length_0_0;
-wire note_length_1_7;
-wire note_length_1_6;
-wire note_length_1_5;
-wire note_length_1_4;
-wire note_length_1_3;
-wire note_length_1_2;
-wire note_length_1_1;
-wire note_length_1_0;
-wire note_length_2_7;
-wire note_length_2_6;
-wire note_length_2_5;
-wire note_length_2_4;
-wire note_length_2_3;
-wire note_length_2_2;
-wire note_length_2_1;
-wire note_length_2_0;
-wire note_length_3_7;
-wire note_length_3_6;
-wire note_length_3_5;
-wire note_length_3_4;
-wire note_length_3_3;
-wire note_length_3_2;
-wire note_length_3_1;
-wire note_length_3_0;
-wire note_length_4_7;
-wire note_length_4_6;
-wire note_length_4_5;
-wire note_length_4_4;
-wire note_length_4_3;
-wire note_length_4_2;
-wire note_length_4_1;
-wire note_length_4_0;
-wire note_length_5_7;
-wire note_length_5_6;
-wire note_length_5_5;
-wire note_length_5_4;
-wire note_length_5_3;
-wire note_length_5_2;
-wire note_length_5_1;
-wire note_length_5_0;
-wire note_length_6_7;
-wire note_length_6_6;
-wire note_length_6_5;
-wire note_length_6_4;
-wire note_length_6_3;
-wire note_length_6_2;
-wire note_length_6_1;
-wire note_length_6_0;
-wire note_length_7_7;
-wire note_length_7_6;
-wire note_length_7_5;
-wire note_length_7_4;
-wire note_length_7_3;
-wire note_length_7_2;
-wire note_length_7_1;
-wire note_length_7_0;
-wire note_length_8_7;
-wire note_length_8_6;
-wire note_length_8_5;
-wire note_length_8_4;
-wire note_length_8_3;
-wire note_length_8_2;
-wire note_length_8_1;
-wire note_length_8_0;
-wire note_length_9_7;
-wire note_length_9_6;
-wire note_length_9_5;
-wire note_length_9_4;
-wire note_length_9_3;
-wire note_length_9_2;
-wire note_length_9_1;
-wire note_length_9_0;
-wire note_length_10_7;
-wire note_length_10_6;
-wire note_length_10_5;
-wire note_length_10_4;
-wire note_length_10_3;
-wire note_length_10_2;
-wire note_length_10_1;
-wire note_length_10_0;
-wire note_length_11_7;
-wire note_length_11_6;
-wire note_length_11_5;
-wire note_length_11_4;
-wire note_length_11_3;
-wire note_length_11_2;
-wire note_length_11_1;
-wire note_length_11_0;
-wire note_length_12_7;
-wire note_length_12_6;
-wire note_length_12_5;
-wire note_length_12_4;
-wire note_length_12_3;
-wire note_length_12_2;
-wire note_length_12_1;
-wire note_length_12_0;
+wire [3:0] tens;
+wire [31:0] total_score;
+wire [3:0] unit;
 
 // assign statements (if any)                          
-createSongs i1 (
+score i1 (
 // port map - connection between master ports and signals/registers   
-	.CLK(CLK),
-	.enable(enable),
-	.metronom_sw(metronom_sw),
-	.metronon_enable(metronon_enable),
+	.clk(clk),
 	.resetN(resetN),
-	.screen_end(screen_end),
-	.song_choose(song_choose),
-	.speedNotes(speedNotes)
+	.score_note0(score_note0),
+	.tens(tens),
+	.total_score(total_score),
+	.unit(unit)
 );
 initial 
 begin 
 #1000000 $finish;
 end 
 
-// CLK
+// clk
 always
 begin
-	CLK = 1'b0;
-	CLK = #500 1'b1;
-	#500;
-end 
-
-// enable
-initial
-begin
-	enable = 1'b1;
-end 
-
-// metronom_sw
-initial
-begin
-	metronom_sw = 1'b0;
+	clk = 1'b0;
+	clk = #5000 1'b1;
+	#5000;
 end 
 
 // resetN
@@ -187,183 +67,363 @@ begin
 	resetN = 1'b0;
 	resetN = #20000 1'b1;
 end 
-
-// screen_end
-always
-begin
-	screen_end = 1'b0;
-	screen_end = #1500 1'b1;
-	#500;
-end 
-// song_choose[ 1 ]
+// score_note0[ 31 ]
 initial
 begin
-	song_choose[1] = 1'b0;
+	score_note0[31] = 1'b0;
+	score_note0[31] = #120000 1'b1;
+	score_note0[31] = #10000 1'b0;
+	score_note0[31] = #30000 1'b1;
+	score_note0[31] = #20000 1'b0;
+	score_note0[31] = #60000 1'b1;
+	score_note0[31] = #30000 1'b0;
 end 
-// song_choose[ 0 ]
+// score_note0[ 30 ]
 initial
 begin
-	song_choose[0] = 1'b0;
+	score_note0[30] = 1'b0;
+	score_note0[30] = #120000 1'b1;
+	score_note0[30] = #10000 1'b0;
+	score_note0[30] = #30000 1'b1;
+	score_note0[30] = #20000 1'b0;
+	score_note0[30] = #60000 1'b1;
+	score_note0[30] = #30000 1'b0;
 end 
-// speedNotes[ 31 ]
+// score_note0[ 29 ]
 initial
 begin
-	speedNotes[31] = 1'b0;
+	score_note0[29] = 1'b0;
+	score_note0[29] = #120000 1'b1;
+	score_note0[29] = #10000 1'b0;
+	score_note0[29] = #30000 1'b1;
+	score_note0[29] = #20000 1'b0;
+	score_note0[29] = #60000 1'b1;
+	score_note0[29] = #30000 1'b0;
 end 
-// speedNotes[ 30 ]
+// score_note0[ 28 ]
 initial
 begin
-	speedNotes[30] = 1'b0;
+	score_note0[28] = 1'b0;
+	score_note0[28] = #120000 1'b1;
+	score_note0[28] = #10000 1'b0;
+	score_note0[28] = #30000 1'b1;
+	score_note0[28] = #20000 1'b0;
+	score_note0[28] = #60000 1'b1;
+	score_note0[28] = #30000 1'b0;
 end 
-// speedNotes[ 29 ]
+// score_note0[ 27 ]
 initial
 begin
-	speedNotes[29] = 1'b0;
+	score_note0[27] = 1'b0;
+	score_note0[27] = #120000 1'b1;
+	score_note0[27] = #10000 1'b0;
+	score_note0[27] = #30000 1'b1;
+	score_note0[27] = #20000 1'b0;
+	score_note0[27] = #60000 1'b1;
+	score_note0[27] = #30000 1'b0;
 end 
-// speedNotes[ 28 ]
+// score_note0[ 26 ]
 initial
 begin
-	speedNotes[28] = 1'b0;
+	score_note0[26] = 1'b0;
+	score_note0[26] = #120000 1'b1;
+	score_note0[26] = #10000 1'b0;
+	score_note0[26] = #30000 1'b1;
+	score_note0[26] = #20000 1'b0;
+	score_note0[26] = #60000 1'b1;
+	score_note0[26] = #30000 1'b0;
 end 
-// speedNotes[ 27 ]
+// score_note0[ 25 ]
 initial
 begin
-	speedNotes[27] = 1'b0;
+	score_note0[25] = 1'b0;
+	score_note0[25] = #120000 1'b1;
+	score_note0[25] = #10000 1'b0;
+	score_note0[25] = #30000 1'b1;
+	score_note0[25] = #20000 1'b0;
+	score_note0[25] = #60000 1'b1;
+	score_note0[25] = #30000 1'b0;
 end 
-// speedNotes[ 26 ]
+// score_note0[ 24 ]
 initial
 begin
-	speedNotes[26] = 1'b0;
+	score_note0[24] = 1'b0;
+	score_note0[24] = #120000 1'b1;
+	score_note0[24] = #10000 1'b0;
+	score_note0[24] = #30000 1'b1;
+	score_note0[24] = #20000 1'b0;
+	score_note0[24] = #60000 1'b1;
+	score_note0[24] = #30000 1'b0;
 end 
-// speedNotes[ 25 ]
+// score_note0[ 23 ]
 initial
 begin
-	speedNotes[25] = 1'b0;
+	score_note0[23] = 1'b0;
+	score_note0[23] = #120000 1'b1;
+	score_note0[23] = #10000 1'b0;
+	score_note0[23] = #30000 1'b1;
+	score_note0[23] = #20000 1'b0;
+	score_note0[23] = #60000 1'b1;
+	score_note0[23] = #30000 1'b0;
 end 
-// speedNotes[ 24 ]
+// score_note0[ 22 ]
 initial
 begin
-	speedNotes[24] = 1'b0;
+	score_note0[22] = 1'b0;
+	score_note0[22] = #120000 1'b1;
+	score_note0[22] = #10000 1'b0;
+	score_note0[22] = #30000 1'b1;
+	score_note0[22] = #20000 1'b0;
+	score_note0[22] = #60000 1'b1;
+	score_note0[22] = #30000 1'b0;
 end 
-// speedNotes[ 23 ]
+// score_note0[ 21 ]
 initial
 begin
-	speedNotes[23] = 1'b0;
+	score_note0[21] = 1'b0;
+	score_note0[21] = #120000 1'b1;
+	score_note0[21] = #10000 1'b0;
+	score_note0[21] = #30000 1'b1;
+	score_note0[21] = #20000 1'b0;
+	score_note0[21] = #60000 1'b1;
+	score_note0[21] = #30000 1'b0;
 end 
-// speedNotes[ 22 ]
+// score_note0[ 20 ]
 initial
 begin
-	speedNotes[22] = 1'b0;
+	score_note0[20] = 1'b0;
+	score_note0[20] = #120000 1'b1;
+	score_note0[20] = #10000 1'b0;
+	score_note0[20] = #30000 1'b1;
+	score_note0[20] = #20000 1'b0;
+	score_note0[20] = #60000 1'b1;
+	score_note0[20] = #30000 1'b0;
 end 
-// speedNotes[ 21 ]
+// score_note0[ 19 ]
 initial
 begin
-	speedNotes[21] = 1'b0;
+	score_note0[19] = 1'b0;
+	score_note0[19] = #120000 1'b1;
+	score_note0[19] = #10000 1'b0;
+	score_note0[19] = #30000 1'b1;
+	score_note0[19] = #20000 1'b0;
+	score_note0[19] = #60000 1'b1;
+	score_note0[19] = #30000 1'b0;
 end 
-// speedNotes[ 20 ]
+// score_note0[ 18 ]
 initial
 begin
-	speedNotes[20] = 1'b0;
+	score_note0[18] = 1'b0;
+	score_note0[18] = #120000 1'b1;
+	score_note0[18] = #10000 1'b0;
+	score_note0[18] = #30000 1'b1;
+	score_note0[18] = #20000 1'b0;
+	score_note0[18] = #60000 1'b1;
+	score_note0[18] = #30000 1'b0;
 end 
-// speedNotes[ 19 ]
+// score_note0[ 17 ]
 initial
 begin
-	speedNotes[19] = 1'b0;
+	score_note0[17] = 1'b0;
+	score_note0[17] = #120000 1'b1;
+	score_note0[17] = #10000 1'b0;
+	score_note0[17] = #30000 1'b1;
+	score_note0[17] = #20000 1'b0;
+	score_note0[17] = #60000 1'b1;
+	score_note0[17] = #30000 1'b0;
 end 
-// speedNotes[ 18 ]
+// score_note0[ 16 ]
 initial
 begin
-	speedNotes[18] = 1'b0;
+	score_note0[16] = 1'b0;
+	score_note0[16] = #120000 1'b1;
+	score_note0[16] = #10000 1'b0;
+	score_note0[16] = #30000 1'b1;
+	score_note0[16] = #20000 1'b0;
+	score_note0[16] = #60000 1'b1;
+	score_note0[16] = #30000 1'b0;
 end 
-// speedNotes[ 17 ]
+// score_note0[ 15 ]
 initial
 begin
-	speedNotes[17] = 1'b0;
+	score_note0[15] = 1'b0;
+	score_note0[15] = #120000 1'b1;
+	score_note0[15] = #10000 1'b0;
+	score_note0[15] = #30000 1'b1;
+	score_note0[15] = #20000 1'b0;
+	score_note0[15] = #60000 1'b1;
+	score_note0[15] = #30000 1'b0;
 end 
-// speedNotes[ 16 ]
+// score_note0[ 14 ]
 initial
 begin
-	speedNotes[16] = 1'b0;
+	score_note0[14] = 1'b0;
+	score_note0[14] = #120000 1'b1;
+	score_note0[14] = #10000 1'b0;
+	score_note0[14] = #30000 1'b1;
+	score_note0[14] = #20000 1'b0;
+	score_note0[14] = #60000 1'b1;
+	score_note0[14] = #30000 1'b0;
 end 
-// speedNotes[ 15 ]
+// score_note0[ 13 ]
 initial
 begin
-	speedNotes[15] = 1'b0;
+	score_note0[13] = 1'b0;
+	score_note0[13] = #120000 1'b1;
+	score_note0[13] = #10000 1'b0;
+	score_note0[13] = #30000 1'b1;
+	score_note0[13] = #20000 1'b0;
+	score_note0[13] = #60000 1'b1;
+	score_note0[13] = #30000 1'b0;
 end 
-// speedNotes[ 14 ]
+// score_note0[ 12 ]
 initial
 begin
-	speedNotes[14] = 1'b0;
+	score_note0[12] = 1'b0;
+	score_note0[12] = #120000 1'b1;
+	score_note0[12] = #10000 1'b0;
+	score_note0[12] = #30000 1'b1;
+	score_note0[12] = #20000 1'b0;
+	score_note0[12] = #60000 1'b1;
+	score_note0[12] = #30000 1'b0;
 end 
-// speedNotes[ 13 ]
+// score_note0[ 11 ]
 initial
 begin
-	speedNotes[13] = 1'b0;
+	score_note0[11] = 1'b0;
+	score_note0[11] = #120000 1'b1;
+	score_note0[11] = #10000 1'b0;
+	score_note0[11] = #30000 1'b1;
+	score_note0[11] = #20000 1'b0;
+	score_note0[11] = #60000 1'b1;
+	score_note0[11] = #30000 1'b0;
 end 
-// speedNotes[ 12 ]
+// score_note0[ 10 ]
 initial
 begin
-	speedNotes[12] = 1'b0;
+	score_note0[10] = 1'b0;
+	score_note0[10] = #120000 1'b1;
+	score_note0[10] = #10000 1'b0;
+	score_note0[10] = #30000 1'b1;
+	score_note0[10] = #20000 1'b0;
+	score_note0[10] = #60000 1'b1;
+	score_note0[10] = #30000 1'b0;
 end 
-// speedNotes[ 11 ]
+// score_note0[ 9 ]
 initial
 begin
-	speedNotes[11] = 1'b0;
+	score_note0[9] = 1'b0;
+	score_note0[9] = #120000 1'b1;
+	score_note0[9] = #10000 1'b0;
+	score_note0[9] = #30000 1'b1;
+	score_note0[9] = #20000 1'b0;
+	score_note0[9] = #60000 1'b1;
+	score_note0[9] = #30000 1'b0;
 end 
-// speedNotes[ 10 ]
+// score_note0[ 8 ]
 initial
 begin
-	speedNotes[10] = 1'b0;
+	score_note0[8] = 1'b0;
+	score_note0[8] = #120000 1'b1;
+	score_note0[8] = #10000 1'b0;
+	score_note0[8] = #30000 1'b1;
+	score_note0[8] = #20000 1'b0;
+	score_note0[8] = #60000 1'b1;
+	score_note0[8] = #30000 1'b0;
 end 
-// speedNotes[ 9 ]
+// score_note0[ 7 ]
 initial
 begin
-	speedNotes[9] = 1'b0;
+	score_note0[7] = 1'b0;
+	score_note0[7] = #120000 1'b1;
+	score_note0[7] = #10000 1'b0;
+	score_note0[7] = #30000 1'b1;
+	score_note0[7] = #20000 1'b0;
+	score_note0[7] = #60000 1'b1;
+	score_note0[7] = #30000 1'b0;
 end 
-// speedNotes[ 8 ]
+// score_note0[ 6 ]
 initial
 begin
-	speedNotes[8] = 1'b0;
+	score_note0[6] = 1'b0;
+	score_note0[6] = #120000 1'b1;
+	score_note0[6] = #10000 1'b0;
+	score_note0[6] = #30000 1'b1;
+	score_note0[6] = #20000 1'b0;
+	score_note0[6] = #60000 1'b1;
+	score_note0[6] = #30000 1'b0;
 end 
-// speedNotes[ 7 ]
+// score_note0[ 5 ]
 initial
 begin
-	speedNotes[7] = 1'b0;
+	score_note0[5] = 1'b0;
+	score_note0[5] = #120000 1'b1;
+	score_note0[5] = #10000 1'b0;
+	score_note0[5] = #30000 1'b1;
+	score_note0[5] = #20000 1'b0;
+	score_note0[5] = #60000 1'b1;
+	score_note0[5] = #30000 1'b0;
 end 
-// speedNotes[ 6 ]
+// score_note0[ 4 ]
 initial
 begin
-	speedNotes[6] = 1'b0;
+	score_note0[4] = 1'b0;
+	score_note0[4] = #120000 1'b1;
+	score_note0[4] = #10000 1'b0;
+	score_note0[4] = #30000 1'b1;
+	score_note0[4] = #20000 1'b0;
+	score_note0[4] = #60000 1'b1;
+	score_note0[4] = #30000 1'b0;
 end 
-// speedNotes[ 5 ]
+// score_note0[ 3 ]
 initial
 begin
-	speedNotes[5] = 1'b0;
+	score_note0[3] = 1'b0;
+	score_note0[3] = #120000 1'b1;
+	score_note0[3] = #10000 1'b0;
+	score_note0[3] = #30000 1'b1;
+	score_note0[3] = #20000 1'b0;
+	score_note0[3] = #60000 1'b1;
+	score_note0[3] = #30000 1'b0;
 end 
-// speedNotes[ 4 ]
+// score_note0[ 2 ]
 initial
 begin
-	speedNotes[4] = 1'b0;
+	score_note0[2] = 1'b0;
+	score_note0[2] = #120000 1'b1;
+	score_note0[2] = #10000 1'b0;
+	score_note0[2] = #30000 1'b1;
+	score_note0[2] = #20000 1'b0;
+	score_note0[2] = #60000 1'b1;
+	score_note0[2] = #30000 1'b0;
 end 
-// speedNotes[ 3 ]
+// score_note0[ 1 ]
 initial
 begin
-	speedNotes[3] = 1'b0;
+	score_note0[1] = 1'b0;
+	score_note0[1] = #50000 1'b1;
+	score_note0[1] = #10000 1'b0;
+	score_note0[1] = #30000 1'b1;
+	score_note0[1] = #10000 1'b0;
+	score_note0[1] = #20000 1'b1;
+	score_note0[1] = #10000 1'b0;
+	score_note0[1] = #10000 1'b1;
+	score_note0[1] = #10000 1'b0;
+	score_note0[1] = #10000 1'b1;
+	score_note0[1] = #110000 1'b0;
+	score_note0[1] = #10000 1'b1;
+	score_note0[1] = #110000 1'b0;
 end 
-// speedNotes[ 2 ]
+// score_note0[ 0 ]
 initial
 begin
-	speedNotes[2] = 1'b0;
-end 
-// speedNotes[ 1 ]
-initial
-begin
-	speedNotes[1] = 1'b0;
-end 
-// speedNotes[ 0 ]
-initial
-begin
-	speedNotes[0] = 1'b0;
+	score_note0[0] = 1'b0;
+	score_note0[0] = #120000 1'b1;
+	score_note0[0] = #10000 1'b0;
+	score_note0[0] = #30000 1'b1;
+	score_note0[0] = #20000 1'b0;
+	score_note0[0] = #60000 1'b1;
+	score_note0[0] = #30000 1'b0;
 end 
 endmodule
 

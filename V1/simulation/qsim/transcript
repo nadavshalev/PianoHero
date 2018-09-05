@@ -1,140 +1,31 @@
 # do V1.do
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 12:31:05 on Sep 03,2018
+# Start time: 17:42:10 on Sep 05,2018
 # vlog -work work V1.vo 
-# -- Compiling module createSongs
+# -- Compiling module score
 # 
 # Top level modules:
-# 	createSongs
-# End time: 12:31:06 on Sep 03,2018, Elapsed time: 0:00:01
+# 	score
+# End time: 17:42:10 on Sep 05,2018, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 12:31:06 on Sep 03,2018
+# Start time: 17:42:10 on Sep 05,2018
 # vlog -work work Waveform.vwf.vt 
-# -- Compiling module createSongs_vlg_vec_tst
+# -- Compiling module score_vlg_vec_tst
 # 
 # Top level modules:
-# 	createSongs_vlg_vec_tst
-# End time: 12:31:06 on Sep 03,2018, Elapsed time: 0:00:00
+# 	score_vlg_vec_tst
+# End time: 17:42:10 on Sep 05,2018, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vsim -novopt -c -t 1ps -L cyclonev_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.createSongs_vlg_vec_tst 
-# Start time: 12:31:07 on Sep 03,2018
-# Loading work.createSongs_vlg_vec_tst
-# Loading work.createSongs
+# vsim -novopt -c -t 1ps -L cyclonev_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.score_vlg_vec_tst 
+# Start time: 17:42:11 on Sep 05,2018
+# Loading work.score_vlg_vec_tst
+# Loading work.score
 # Loading altera_ver.dffeas
-# ** Warning: (vsim-3017) Waveform.vwf.vt(148): [TFMPC] - Too few port connections. Expected 112, found 8.
-#    Time: 0 ps  Iteration: 0  Instance: /createSongs_vlg_vec_tst/i1 File: V1.vo
-# ** Warning: (vsim-3722) Waveform.vwf.vt(148): [TFMPC] - Missing connection for port 'note_length_12_1'.
-# ** Warning: (vsim-3722) Waveform.vwf.vt(148): [TFMPC] - Missing connection for port 'note_length_12_2'.
-# ** Warning: (vsim-3722) Waveform.vwf.vt(148): [TFMPC] - Missing connection for port 'note_length_12_3'.
-# ** Warning: (vsim-3722) Waveform.vwf.vt(148): [TFMPC] - Missing connection for port 'note_length_12_4'.
-# ** Warning: (vsim-3722) Waveform.vwf.vt(148): [TFMPC] - Missing connection for port 'note_length_12_5'.
-# ** Warning: (vsim-3722) Waveform.vwf.vt(148): [TFMPC] - Missing connection for port 'note_length_12_6'.
-# ** Warning: (vsim-3722) Waveform.vwf.vt(148): [TFMPC] - Missing connection for port 'note_length_12_7'.
-# ** Warning: (vsim-3722) Waveform.vwf.vt(148): [TFMPC] - Missing connection for port 'note_length_11_1'.
-# ** Warning: (vsim-3722) Waveform.vwf.vt(148): [TFMPC] - Missing connection for port 'note_length_11_2'.
-# ** Warning: (vsim-3722) Waveform.vwf.vt(148): [TFMPC] - Missing connection for port 'note_length_11_3'.
-# ** Warning: (vsim-3722) Waveform.vwf.vt(148): [TFMPC] - Missing connection for port 'note_length_11_4'.
-# ** Warning: (vsim-3722) Waveform.vwf.vt(148): [TFMPC] - Missing connection for port 'note_length_11_5'.
-# ** Warning: (vsim-3722) Waveform.vwf.vt(148): [TFMPC] - Missing connection for port 'note_length_11_6'.
-# ** Warning: (vsim-3722) Waveform.vwf.vt(148): [TFMPC] - Missing connection for port 'note_length_11_7'.
-# ** Warning: (vsim-3722) Waveform.vwf.vt(148): [TFMPC] - Missing connection for port 'note_length_10_1'.
-# ** Warning: (vsim-3722) Waveform.vwf.vt(148): [TFMPC] - Missing connection for port 'note_length_10_2'.
-# ** Warning: (vsim-3722) Waveform.vwf.vt(148): [TFMPC] - Missing connection for port 'note_length_10_3'.
-# ** Warning: (vsim-3722) Waveform.vwf.vt(148): [TFMPC] - Missing connection for port 'note_length_10_6'.
-# ** Warning: (vsim-3722) Waveform.vwf.vt(148): [TFMPC] - Missing connection for port 'note_length_10_7'.
-# ** Warning: (vsim-3722) Waveform.vwf.vt(148): [TFMPC] - Missing connection for port 'note_length_9_1'.
-# ** Warning: (vsim-3722) Waveform.vwf.vt(148): [TFMPC] - Missing connection for port 'note_length_9_2'.
-# ** Warning: (vsim-3722) Waveform.vwf.vt(148): [TFMPC] - Missing connection for port 'note_length_9_3'.
-# ** Warning: (vsim-3722) Waveform.vwf.vt(148): [TFMPC] - Missing connection for port 'note_length_9_4'.
-# ** Warning: (vsim-3722) Waveform.vwf.vt(148): [TFMPC] - Missing connection for port 'note_length_9_5'.
-# ** Warning: (vsim-3722) Waveform.vwf.vt(148): [TFMPC] - Missing connection for port 'note_length_9_6'.
-# ** Warning: (vsim-3722) Waveform.vwf.vt(148): [TFMPC] - Missing connection for port 'note_length_9_7'.
-# ** Warning: (vsim-3722) Waveform.vwf.vt(148): [TFMPC] - Missing connection for port 'note_length_8_1'.
-# ** Warning: (vsim-3722) Waveform.vwf.vt(148): [TFMPC] - Missing connection for port 'note_length_8_2'.
-# ** Warning: (vsim-3722) Waveform.vwf.vt(148): [TFMPC] - Missing connection for port 'note_length_8_3'.
-# ** Warning: (vsim-3722) Waveform.vwf.vt(148): [TFMPC] - Missing connection for port 'note_length_8_6'.
-# ** Warning: (vsim-3722) Waveform.vwf.vt(148): [TFMPC] - Missing connection for port 'note_length_8_7'.
-# ** Warning: (vsim-3722) Waveform.vwf.vt(148): [TFMPC] - Missing connection for port 'note_length_7_1'.
-# ** Warning: (vsim-3722) Waveform.vwf.vt(148): [TFMPC] - Missing connection for port 'note_length_7_2'.
-# ** Warning: (vsim-3722) Waveform.vwf.vt(148): [TFMPC] - Missing connection for port 'note_length_7_3'.
-# ** Warning: (vsim-3722) Waveform.vwf.vt(148): [TFMPC] - Missing connection for port 'note_length_7_4'.
-# ** Warning: (vsim-3722) Waveform.vwf.vt(148): [TFMPC] - Missing connection for port 'note_length_7_5'.
-# ** Warning: (vsim-3722) Waveform.vwf.vt(148): [TFMPC] - Missing connection for port 'note_length_7_6'.
-# ** Warning: (vsim-3722) Waveform.vwf.vt(148): [TFMPC] - Missing connection for port 'note_length_7_7'.
-# ** Warning: (vsim-3722) Waveform.vwf.vt(148): [TFMPC] - Missing connection for port 'note_length_6_1'.
-# ** Warning: (vsim-3722) Waveform.vwf.vt(148): [TFMPC] - Missing connection for port 'note_length_6_2'.
-# ** Warning: (vsim-3722) Waveform.vwf.vt(148): [TFMPC] - Missing connection for port 'note_length_6_3'.
-# ** Warning: (vsim-3722) Waveform.vwf.vt(148): [TFMPC] - Missing connection for port 'note_length_6_6'.
-# ** Warning: (vsim-3722) Waveform.vwf.vt(148): [TFMPC] - Missing connection for port 'note_length_6_7'.
-# ** Warning: (vsim-3722) Waveform.vwf.vt(148): [TFMPC] - Missing connection for port 'note_length_5_1'.
-# ** Warning: (vsim-3722) Waveform.vwf.vt(148): [TFMPC] - Missing connection for port 'note_length_5_2'.
-# ** Warning: (vsim-3722) Waveform.vwf.vt(148): [TFMPC] - Missing connection for port 'note_length_5_3'.
-# ** Warning: (vsim-3722) Waveform.vwf.vt(148): [TFMPC] - Missing connection for port 'note_length_5_4'.
-# ** Warning: (vsim-3722) Waveform.vwf.vt(148): [TFMPC] - Missing connection for port 'note_length_5_5'.
-# ** Warning: (vsim-3722) Waveform.vwf.vt(148): [TFMPC] - Missing connection for port 'note_length_5_6'.
-# ** Warning: (vsim-3722) Waveform.vwf.vt(148): [TFMPC] - Missing connection for port 'note_length_5_7'.
-# ** Warning: (vsim-3722) Waveform.vwf.vt(148): [TFMPC] - Missing connection for port 'note_length_4_1'.
-# ** Warning: (vsim-3722) Waveform.vwf.vt(148): [TFMPC] - Missing connection for port 'note_length_4_2'.
-# ** Warning: (vsim-3722) Waveform.vwf.vt(148): [TFMPC] - Missing connection for port 'note_length_4_3'.
-# ** Warning: (vsim-3722) Waveform.vwf.vt(148): [TFMPC] - Missing connection for port 'note_length_4_4'.
-# ** Warning: (vsim-3722) Waveform.vwf.vt(148): [TFMPC] - Missing connection for port 'note_length_4_5'.
-# ** Warning: (vsim-3722) Waveform.vwf.vt(148): [TFMPC] - Missing connection for port 'note_length_4_6'.
-# ** Warning: (vsim-3722) Waveform.vwf.vt(148): [TFMPC] - Missing connection for port 'note_length_4_7'.
-# ** Warning: (vsim-3722) Waveform.vwf.vt(148): [TFMPC] - Missing connection for port 'note_length_3_1'.
-# ** Warning: (vsim-3722) Waveform.vwf.vt(148): [TFMPC] - Missing connection for port 'note_length_3_2'.
-# ** Warning: (vsim-3722) Waveform.vwf.vt(148): [TFMPC] - Missing connection for port 'note_length_3_3'.
-# ** Warning: (vsim-3722) Waveform.vwf.vt(148): [TFMPC] - Missing connection for port 'note_length_3_6'.
-# ** Warning: (vsim-3722) Waveform.vwf.vt(148): [TFMPC] - Missing connection for port 'note_length_3_7'.
-# ** Warning: (vsim-3722) Waveform.vwf.vt(148): [TFMPC] - Missing connection for port 'note_length_2_0'.
-# ** Warning: (vsim-3722) Waveform.vwf.vt(148): [TFMPC] - Missing connection for port 'note_length_2_1'.
-# ** Warning: (vsim-3722) Waveform.vwf.vt(148): [TFMPC] - Missing connection for port 'note_length_2_2'.
-# ** Warning: (vsim-3722) Waveform.vwf.vt(148): [TFMPC] - Missing connection for port 'note_length_2_3'.
-# ** Warning: (vsim-3722) Waveform.vwf.vt(148): [TFMPC] - Missing connection for port 'note_length_2_4'.
-# ** Warning: (vsim-3722) Waveform.vwf.vt(148): [TFMPC] - Missing connection for port 'note_length_2_5'.
-# ** Warning: (vsim-3722) Waveform.vwf.vt(148): [TFMPC] - Missing connection for port 'note_length_2_6'.
-# ** Warning: (vsim-3722) Waveform.vwf.vt(148): [TFMPC] - Missing connection for port 'note_length_2_7'.
-# ** Warning: (vsim-3722) Waveform.vwf.vt(148): [TFMPC] - Missing connection for port 'note_length_1_1'.
-# ** Warning: (vsim-3722) Waveform.vwf.vt(148): [TFMPC] - Missing connection for port 'note_length_1_2'.
-# ** Warning: (vsim-3722) Waveform.vwf.vt(148): [TFMPC] - Missing connection for port 'note_length_1_3'.
-# ** Warning: (vsim-3722) Waveform.vwf.vt(148): [TFMPC] - Missing connection for port 'note_length_1_6'.
-# ** Warning: (vsim-3722) Waveform.vwf.vt(148): [TFMPC] - Missing connection for port 'note_length_1_7'.
-# ** Warning: (vsim-3722) Waveform.vwf.vt(148): [TFMPC] - Missing connection for port 'note_length_0_0'.
-# ** Warning: (vsim-3722) Waveform.vwf.vt(148): [TFMPC] - Missing connection for port 'note_length_0_1'.
-# ** Warning: (vsim-3722) Waveform.vwf.vt(148): [TFMPC] - Missing connection for port 'note_length_0_2'.
-# ** Warning: (vsim-3722) Waveform.vwf.vt(148): [TFMPC] - Missing connection for port 'note_length_0_3'.
-# ** Warning: (vsim-3722) Waveform.vwf.vt(148): [TFMPC] - Missing connection for port 'note_length_0_4'.
-# ** Warning: (vsim-3722) Waveform.vwf.vt(148): [TFMPC] - Missing connection for port 'note_length_0_5'.
-# ** Warning: (vsim-3722) Waveform.vwf.vt(148): [TFMPC] - Missing connection for port 'note_length_0_6'.
-# ** Warning: (vsim-3722) Waveform.vwf.vt(148): [TFMPC] - Missing connection for port 'note_length_0_7'.
-# ** Warning: (vsim-3722) Waveform.vwf.vt(148): [TFMPC] - Missing connection for port 'note_length_12_0'.
-# ** Warning: (vsim-3722) Waveform.vwf.vt(148): [TFMPC] - Missing connection for port 'note_length_11_0'.
-# ** Warning: (vsim-3722) Waveform.vwf.vt(148): [TFMPC] - Missing connection for port 'note_length_10_0'.
-# ** Warning: (vsim-3722) Waveform.vwf.vt(148): [TFMPC] - Missing connection for port 'note_length_10_4'.
-# ** Warning: (vsim-3722) Waveform.vwf.vt(148): [TFMPC] - Missing connection for port 'note_length_10_5'.
-# ** Warning: (vsim-3722) Waveform.vwf.vt(148): [TFMPC] - Missing connection for port 'note_length_9_0'.
-# ** Warning: (vsim-3722) Waveform.vwf.vt(148): [TFMPC] - Missing connection for port 'note_length_8_0'.
-# ** Warning: (vsim-3722) Waveform.vwf.vt(148): [TFMPC] - Missing connection for port 'note_length_8_4'.
-# ** Warning: (vsim-3722) Waveform.vwf.vt(148): [TFMPC] - Missing connection for port 'note_length_8_5'.
-# ** Warning: (vsim-3722) Waveform.vwf.vt(148): [TFMPC] - Missing connection for port 'note_length_7_0'.
-# ** Warning: (vsim-3722) Waveform.vwf.vt(148): [TFMPC] - Missing connection for port 'note_length_6_0'.
-# ** Warning: (vsim-3722) Waveform.vwf.vt(148): [TFMPC] - Missing connection for port 'note_length_6_4'.
-# ** Warning: (vsim-3722) Waveform.vwf.vt(148): [TFMPC] - Missing connection for port 'note_length_6_5'.
-# ** Warning: (vsim-3722) Waveform.vwf.vt(148): [TFMPC] - Missing connection for port 'note_length_5_0'.
-# ** Warning: (vsim-3722) Waveform.vwf.vt(148): [TFMPC] - Missing connection for port 'note_length_4_0'.
-# ** Warning: (vsim-3722) Waveform.vwf.vt(148): [TFMPC] - Missing connection for port 'note_length_3_0'.
-# ** Warning: (vsim-3722) Waveform.vwf.vt(148): [TFMPC] - Missing connection for port 'note_length_3_4'.
-# ** Warning: (vsim-3722) Waveform.vwf.vt(148): [TFMPC] - Missing connection for port 'note_length_3_5'.
-# ** Warning: (vsim-3722) Waveform.vwf.vt(148): [TFMPC] - Missing connection for port 'note_length_1_0'.
-# ** Warning: (vsim-3722) Waveform.vwf.vt(148): [TFMPC] - Missing connection for port 'note_length_1_4'.
-# ** Warning: (vsim-3722) Waveform.vwf.vt(148): [TFMPC] - Missing connection for port 'note_length_1_5'.
 # Loading altera_ver.PRIM_GDFF_LOW
-# ** Warning: Design size of 15537 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
-# Expect performance to be adversely affected.
-# after#27
-# Simulation time: 0 ps
-# ** Note: $finish    : Waveform.vwf.vt(161)
-#    Time: 1 us  Iteration: 0  Instance: /createSongs_vlg_vec_tst
-# End time: 12:31:10 on Sep 03,2018, Elapsed time: 0:00:03
-# Errors: 0, Warnings: 106
+# after#25
+# ** Note: $finish    : Waveform.vwf.vt(53)
+#    Time: 1 us  Iteration: 0  Instance: /score_vlg_vec_tst
+# End time: 17:42:11 on Sep 05,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0

@@ -29,9 +29,9 @@ architecture behav of noteGraphics is
 	constant	x_frame	: integer :=	639;
 	constant	y_frame	: integer :=	479;
 	constant	NoteWidth : integer := 46;
-	constant	table_len : integer := 66; -- len of screenTable -1
+	constant	table_len : integer := 164; -- len of screenTable -1
 	constant longNote_MAX : integer := 25;
-	
+	constant sizeFuctor : integer := 2;
 begin
 	--mVGA_RGB <=  mVGA_R & mVGA_G &  mVGA_B ;
 	process ( resetN,CLK)
@@ -104,8 +104,8 @@ begin
 				longNote_counter := 0;
 			end if;
 			------------------------------ colors --------------------
-			if oCoord_X <  ObjectStartX + NoteWidth and oCoord_X > ObjectStartX and screenTable(table_len - oCoord_Y/5) = '1' and oCoord_Y < y_frame - pianoWidth then
-				if collision_tmp = '1'  and oCoord_Y/5 >= table_len - max then
+			if oCoord_X <  ObjectStartX + NoteWidth and oCoord_X > ObjectStartX and screenTable(table_len - oCoord_Y / sizeFuctor) = '1' and oCoord_Y < y_frame - pianoWidth then
+				if collision_tmp = '1'  and oCoord_Y / sizeFuctor >= table_len - max-2 then
 					if sound = '0' then
 						mVGA_RGB <=  "11111100"; --orang
 					else 
