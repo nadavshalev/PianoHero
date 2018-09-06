@@ -29,9 +29,9 @@ architecture behav of noteGraphics is
 	constant	x_frame	: integer :=	639;
 	constant	y_frame	: integer :=	479;
 	constant	NoteWidth : integer := 46;
-	constant	table_len : integer := 164; -- len of screenTable -1
+	constant	table_len : integer := 110; -- len of screenTable -1
 	constant longNote_MAX : integer := 25;
-	constant sizeFuctor : integer := 2;
+	constant sizeFuctor : integer := 3;
 begin
 	--mVGA_RGB <=  mVGA_R & mVGA_G &  mVGA_B ;
 	process ( resetN,CLK)

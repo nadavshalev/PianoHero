@@ -10,7 +10,6 @@ port(
   resetN 						: in std_logic;
   score							: in integer;
   speed 							: in std_logic;
-  with_levels 					: in std_logic;
   speedNotes   			  	: out integer
 );
 end speed_notes;
@@ -20,20 +19,21 @@ architecture arch_speed_notes of speed_notes is
 begin
  
 	process(resetN, CLK)
-
+		variable tmpLevel :std_logic;
 	begin
 
 		if resetN= '0'  then
-		
+			tmpLevel := '0';
 			speedNotes <= 2;
 			
 		elsif(rising_edge(CLK)) then
 		
 			if speed = '0' then
-				if score <= 25 or with_levels = '0' then
+				if score <= 40 and tmpLevel = '0' then
 					speedNotes <= 2;
 				else 
 					speedNotes <= 1;
+					tmpLevel := '1';
 				end if;
 			else
 				speedNotes <= 1;

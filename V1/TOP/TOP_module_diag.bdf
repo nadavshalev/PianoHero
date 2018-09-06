@@ -245,22 +245,6 @@ agreement for further details.
 	(text "VCC" (rect 144 7 164 17)(font "Arial" (font_size 6)))
 )
 (pin
-	(input)
-	(rect -1008 312 -840 328)
-	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "withLevels" (rect 5 0 56 17)(font "Intel Clear" ))
-	(pt 168 8)
-	(drawing
-		(line (pt 84 12)(pt 109 12))
-		(line (pt 84 4)(pt 109 4))
-		(line (pt 113 8)(pt 168 8))
-		(line (pt 84 12)(pt 84 4))
-		(line (pt 109 4)(pt 113 8))
-		(line (pt 109 12)(pt 113 8))
-	)
-	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
-)
-(pin
 	(output)
 	(rect 1328 48 1512 64)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
@@ -1057,9 +1041,9 @@ agreement for further details.
 	)
 )
 (symbol
-	(rect -800 224 -584 368)
+	(rect -800 224 -584 336)
 	(text "speed_notes" (rect 5 0 67 12)(font "Arial" ))
-	(text "inst2" (rect 8 128 30 145)(font "Intel Clear" ))
+	(text "inst2" (rect 8 96 30 113)(font "Intel Clear" ))
 	(port
 		(pt 0 32)
 		(input)
@@ -1089,13 +1073,6 @@ agreement for further details.
 		(line (pt 0 80)(pt 16 80))
 	)
 	(port
-		(pt 0 96)
-		(input)
-		(text "with_levels" (rect 0 0 54 12)(font "Arial" ))
-		(text "with_levels" (rect 21 91 75 103)(font "Arial" ))
-		(line (pt 0 96)(pt 16 96))
-	)
-	(port
 		(pt 216 32)
 		(output)
 		(text "speedNotes[31..0]" (rect 0 0 90 12)(font "Arial" ))
@@ -1103,7 +1080,7 @@ agreement for further details.
 		(line (pt 216 32)(pt 200 32)(line_width 3))
 	)
 	(drawing
-		(rectangle (rect 16 16 200 128))
+		(rectangle (rect 16 16 200 96))
 	)
 )
 (connector
@@ -1493,8 +1470,4 @@ agreement for further details.
 	(text "first_col" (rect -806 544 -769 561)(font "Intel Clear" ))
 	(pt -816 560)
 	(pt -720 560)
-)
-(connector
-	(pt -840 320)
-	(pt -800 320)
 )

@@ -40,19 +40,7 @@
 					"strict" : false
 				},
 				{
-					"name" : "VGA_VS",
-					"strict" : false
-				},
-				{
-					"name" : "VGA_HS",
-					"strict" : false
-				},
-				{
 					"name" : "VGA_CLK",
-					"strict" : false
-				},
-				{
-					"name" : "VGA_BLANK_N",
 					"strict" : false
 				},
 				{
@@ -109,6 +97,18 @@
 				},
 				{
 					"name" : "HEX1[0]",
+					"strict" : false
+				},
+				{
+					"name" : "VGA_VS",
+					"strict" : false
+				},
+				{
+					"name" : "VGA_HS",
+					"strict" : false
+				},
+				{
+					"name" : "VGA_BLANK_N",
 					"strict" : false
 				},
 				{
@@ -176,15 +176,11 @@
 					"strict" : false
 				},
 				{
-					"name" : "speed_notes",
-					"strict" : false
-				},
-				{
-					"name" : "withLevels",
-					"strict" : false
-				},
-				{
 					"name" : "metronomSW",
+					"strict" : false
+				},
+				{
+					"name" : "speed_notes",
 					"strict" : false
 				},
 				{
